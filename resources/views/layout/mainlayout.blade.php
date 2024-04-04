@@ -13,14 +13,14 @@
     <meta property="og:title" content="ProSkill Akademia">
     <meta property="og:description"
         content="ProSkill Akademia BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh INSTRUKTUR yang KOMPETEN.">
-    <meta property="og:image" content="assets/img/favicon.png">
+    <meta property="og:image" content="public/assets/img/favicon.png">
     <meta name="google-site-verification" content="hCMbf-C99zBHv278k_biSK9VKVvC8tMprI1k7Dl7NkQ" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
     <title>@yield('title')</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
 
     @include('layout.partials.head')
     <!-- Main Wrapper -->

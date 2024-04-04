@@ -6,7 +6,7 @@
                 <div class="col-lg-3 col-md-4">
                     <div class="footer-widget footer-about">
                         <div class="footer-logo">
-                            <a href="{{ url('/') }}"><img src="assets/img/logo.png" alt="logo"></a>
+                            <a href="{{ url('/') }}"><img src="public/assets/img/logo.png" alt="logo"></a>
                         </div>
                         <div class="footer-about-content ">
                             <p style=" text-align: justify;">"ProSkill Akademia" BERKOMITMEN membantu memudahkan Anda
