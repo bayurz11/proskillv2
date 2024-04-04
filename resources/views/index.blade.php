@@ -583,7 +583,8 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="blog-details.html" class="blog-inner-right-fourt-care">{{ $article->title }}</a>
+                                <a href="{{ route('blog-details', ['id' => $article->id]) }}"
+                                    class="blog-inner-right-fourt-care">{{ $article->title }}</a>
                                 <ul class="articles-list nav blog-articles-list">
                                     <li>
                                         <i class="feather-calendar"></i> {{ $article->tgl }}
