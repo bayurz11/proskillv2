@@ -577,7 +577,7 @@
                             <div class="blog-inner-right-fourt">
                                 <a href="{{ route('blog-details', ['id' => $article->id]) }}">
                                     <div class="blog-inner-right-img">
-                                        <img src="{{ asset('uploads/' . $article->banner) }}" alt="image"
+                                        <img src="{{ asset('public/uploads/' . $article->banner) }}" alt="image"
                                             class="img-fluid" width="377" height="306">
                                         <div class="blog-inner-top-content">
 
