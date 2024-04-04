@@ -32,8 +32,8 @@
                         <div class="blog">
                             <div class="blog-image">
                                 <a href="{{ route('blog-details', ['id' => $article->id]) }}">
-                                    <img class="img-fluid" src="{{ asset('uploads/' . $article->banner) }}" alt="Gambar"
-                                        width="1200" height="800">
+                                    <img class="img-fluid" src="{{ asset('public/uploads/' . $article->banner) }}"
+                                        alt="Gambar" width="1200" height="800">
                                 </a>
 
                             </div>
@@ -208,7 +208,8 @@
                                     <li>
                                         <div class="post-thumb">
                                             <a href={{ route('blog-details', ['id' => $article->id]) }}>
-                                                <img class="img-fluid" src="{{ asset('uploads/' . $article->banner) }}"
+                                                <img class="img-fluid"
+                                                    src="{{ asset('public/uploads/' . $article->banner) }}"
                                                     alt="blog-image">
                                             </a>
                                         </div>
