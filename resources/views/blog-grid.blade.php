@@ -69,15 +69,17 @@
                                 <p style="text-align: justify;">
                                     {!! nl2br(substr($article->isi, 0, 250)) !!}....
                                 </p>
-                                <button id="view-article-btn-{{ $key }}" class="btn btn-primary">Lihat
-                                    Artikel</button>
-                                <div id="full-article-{{ $key }}" style="display: none;">
+                                <a href="{{ route('blog-details', ['id' => $article->id]) }}" class="btn btn-primary">Baca
+                                    Selengkapnya</a>
+                                {{-- <button id="view-article-btn-{{ $key }}" class="btn btn-primary">Lihat
+                                    Artikel</button> --}}
+                                {{-- <div id="full-article-{{ $key }}" style="display: none;">
 
-                                </div>
+                                </div> --}}
                             </div>
 
 
-                            <script>
+                            {{-- <script>
                                 document.getElementById('view-article-btn-{{ $key }}').addEventListener('click', function() {
                                     var btn = this;
                                     var fullArticleDiv = document.getElementById('full-article-{{ $key }}');
@@ -91,7 +93,7 @@
                                         btn.textContent = 'Lihat Artikel';
                                     }
                                 });
-                            </script>
+                            </script> --}}
 
                         </div>
                     @endforeach
