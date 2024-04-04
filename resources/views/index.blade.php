@@ -7,21 +7,21 @@
     <!-- Home Banner -->
     <section class="banner-section-fourteen banner-section-twelve">
         <div class="banner-section-twelve-bg">
-            <img src="assets/img/bg/home-12-banner-bg-1.png" alt="design-image">
-            <img src="assets/img/bg/home-12-banner-bg-2.png" alt="design-image">
+            <img src="public/assets/home-12-banner-bg-1.png" alt="design-image">
+            <img src="public/assets/home-12-banner-bg-2.png" alt="design-image">
         </div>
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-6">
                     <div class="banner-img banner-img-twelve aos" data-aos="fade-up">
-                        <img src="assets/img/bg/home-12-banner-1.png" class="img-fluid" alt="banner-1">
-                        <img src="assets/img/bg/home-12-banner-2.png" class="img-fluid" alt="banner-2">
+                        <img src="public/assets/home-12-banner-1.png" class="img-fluid" alt="banner-1">
+                        <img src="public/assets/home-12-banner-2.png" class="img-fluid" alt="banner-2">
                         <div class="banner-banner-img-twelve-bg">
-                            <img src="assets/img/bg/dot-1.png" alt="dot-icon">
-                            <img src="assets/img/bg/dot-2.png" alt="dot-icon">
-                            <img src="assets/img/bg/ring-1.png" alt="ring-icon">
-                            <img src="assets/img/bg/ring-2.png" alt="ring-icon">
+                            <img src="public/assets/dot-1.png" alt="dot-icon">
+                            <img src="public/assets/dot-2.png" alt="dot-icon">
+                            <img src="public/assets/ring-1.png" alt="ring-icon">
+                            <img src="public/assets/ring-2.png" alt="ring-icon">
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
 
                 <div class="col-lg-6">
                     <div class="choose-us-right-main">
-                        <img src="assets/img/bg/home-12-why-us.png" alt="image" class="img-fluid">
+                        <img src="public/assets/home-12-why-us.png" alt="image" class="img-fluid">
 
                     </div>
                 </div>
@@ -203,8 +203,8 @@
     <!-- Our Class -->
     <div class="blog-section-fourteen our-doctor-twelve">
         <div class="floating-bg">
-            <img src="assets/img/bg/two-paw.png" alt="paw-image">
-            <img src="assets/img/bg/two-paw.png" alt="paw-image">
+            <img src="public/assets/two-paw.png" alt="paw-image">
+            <img src="public/assets/two-paw.png" alt="paw-image">
         </div>
         <div class="container">
             <div class="row">
@@ -325,9 +325,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="price-card-twelve">
                         <div class="price-bg">
-                            <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-4.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-5.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-3.png" alt="design-image">
                         </div>
                         <div class="price-content">
                             <div class="card-title">
@@ -376,9 +376,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="price-card-twelve">
                         <div class="price-bg">
-                            <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-4.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-5.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-3.png" alt="design-image">
                         </div>
                         <div class="price-content">
                             <div class="card-title">
@@ -428,9 +428,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="price-card-twelve">
                         <div class="price-bg">
-                            <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
-                            <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-4.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-5.png" alt="design-image">
+                            <img src="public/assets/home-12-pricing-bg-3.png" alt="design-image">
                         </div>
                         <div class="price-content">
                             <div class="card-title">
@@ -476,13 +476,13 @@
     <!-- Feedback -->
     <section class="clients-section-fourteen">
         <div class="floating-bg">
-            <img src="assets/img/bg/two-paw.png" alt="paw-image">
+            <img src="public/assets/two-paw.png" alt="paw-image">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="client-inner-main">
-                        <img src="assets/img/bg/home-12-testimonial.png" alt="image" class="img-fluid">
+                        <img src="public/assets/home-12-testimonial.png" alt="image" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12">
