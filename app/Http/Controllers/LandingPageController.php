@@ -26,21 +26,33 @@ class LandingPageController extends Controller
         $links = ArtikelYt::all();
         return view('blog-grid', compact('userLoggedIn', 'articles', 'links'));
     }
-    public function ShowBlogDetails()
+    // public function ShowBlogDetails()
+    // {
+    //     $userLoggedIn = Auth::check();
+    //     $articleId = request()->query('id');
+    //     $article = Artikel::find($articleId);
+    //     $articles = Artikel::all();
+    //     if (!$article) {
+
+    //         abort(404);
+    //     }
+
+    //     $links = ArtikelYt::all();
+    //     return view('blog_details', compact('userLoggedIn', 'links', 'article', 'articles'));
+    // }
+    public function showBlogDetails(Request $request, $id) // tambahkan Request sebagai parameter
     {
         $userLoggedIn = Auth::check();
-        $articleId = request()->query('id');
-        $article = Artikel::find($articleId);
+        $article = Artikel::find($id); // gunakan parameter $id langsung
         $articles = Artikel::all();
-        if (!$article) {
 
+        if (!$article) {
             abort(404);
         }
 
         $links = ArtikelYt::all();
         return view('blog_details', compact('userLoggedIn', 'links', 'article', 'articles'));
     }
-
 
     public function ShowAboutUs()
     {
