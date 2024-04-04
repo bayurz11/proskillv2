@@ -15,7 +15,7 @@
 
                 <div class="col-lg-6">
                     <div class="banner-img banner-img-twelve aos" data-aos="fade-up">
-                        <img src="public/public/assets/img/bg/home-12-banner-1.png" class="img-fluid" alt="banner-1">
+                        <img src="public/assets/img/bg/home-12-banner-1.png" class="img-fluid" alt="banner-1">
                         <img src="public/assets/img/bg/home-12-banner-2.png" class="img-fluid" alt="banner-2">
                         <div class="banner-banner-img-twelve-bg">
                             <img src="public/assets/img/bg/dot-1.png" alt="dot-icon">
