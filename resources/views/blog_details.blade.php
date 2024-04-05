@@ -70,7 +70,9 @@
                     <div class="main-menu-wrapper">
                         <div class="menu-header">
                             <a href="{{ url('/') }}" class="menu-logo">
-                                <img src="public/assets/img/logo.png" class="img-fluid" alt="Logo">
+                                <img src="https://tesproskillv2.proskill.sch.id/public/assets/img/logo.png"
+                                    alt="Logo">
+
                             </a>
                             <a id="menu_close" class="menu-close" href="javascript:void(0);">
                                 <i class="fas fa-times"></i>
