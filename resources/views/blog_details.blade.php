@@ -18,7 +18,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://tesproskillv2.proskill.sch.id/public/assets/img/favicon.png"
         type="image/x-icon">
-    <title>@yield('title')</title>
+    <title>ProSkill Akademia | Detail</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://tesproskillv2.proskill.sch.id/public/assets/img/favicon.png"
@@ -30,7 +30,8 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet"
         href="https://tesproskillv2.proskill.sch.id/public/assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="public/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://tesproskillv2.proskill.sch.id/public/assets/plugins/fontawesome/css/all.min.css">
 
     <!-- Feathericon CSS -->
     <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/feather.css">
