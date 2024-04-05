@@ -37,7 +37,9 @@
                                 </a>
 
                             </div>
-                            <h3 class="blog-title"><a href="blog-details.html">{{ $article->title }}</a></h3>
+                            <h3 class="blog-title"><a
+                                    href="{{ route('blog-details', ['id' => $article->id]) }}">{{ $article->title }}</a>
+                            </h3>
                             <div class="blog-info clearfix">
                                 <div class="post-left">
                                     <ul>
@@ -71,29 +73,9 @@
                                 </p>
                                 <a href="{{ route('blog-details', ['id' => $article->id]) }}" class="btn btn-primary">Baca
                                     Selengkapnya</a>
-                                {{-- <button id="view-article-btn-{{ $key }}" class="btn btn-primary">Lihat
-                                    Artikel</button> --}}
-                                {{-- <div id="full-article-{{ $key }}" style="display: none;">
 
-                                </div> --}}
                             </div>
 
-
-                            {{-- <script>
-                                document.getElementById('view-article-btn-{{ $key }}').addEventListener('click', function() {
-                                    var btn = this;
-                                    var fullArticleDiv = document.getElementById('full-article-{{ $key }}');
-                                    if (fullArticleDiv.style.display === 'none') {
-                                        var isiArtikel = '{!! nl2br(substr($article->isi, 0, 5000)) !!}';
-                                        fullArticleDiv.innerHTML = isiArtikel;
-                                        fullArticleDiv.style.display = 'block';
-                                        btn.textContent = 'Lihat lebih sedikit';
-                                    } else {
-                                        fullArticleDiv.style.display = 'none';
-                                        btn.textContent = 'Lihat Artikel';
-                                    }
-                                });
-                            </script> --}}
 
                         </div>
                     @endforeach
