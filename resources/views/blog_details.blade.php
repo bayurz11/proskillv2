@@ -16,33 +16,37 @@
     <meta property="og:image" content="public/assets/img/favicon.png">
     <meta name="google-site-verification" content="hCMbf-C99zBHv278k_biSK9VKVvC8tMprI1k7Dl7NkQ" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://tesproskillv2.proskill.sch.id/public/assets/img/favicon.png"
+        type="image/x-icon">
     <title>@yield('title')</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://tesproskillv2.proskill.sch.id/public/assets/img/favicon.png"
+        type="image/x-icon">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/bootstrap.min.css">
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="public/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet"
+        href="https://tesproskillv2.proskill.sch.id/public/assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="public/assets/plugins/fontawesome/css/all.min.css">
 
     <!-- Feathericon CSS -->
-    <link rel="stylesheet" href="public/assets/css/feather.css">
+    <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/feather.css">
 
     <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="public/assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet"
+        href="https://tesproskillv2.proskill.sch.id/public/assets/css/bootstrap-datetimepicker.min.css">
 
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="public/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/owl.carousel.min.css">
 
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="public/assets/css/aos.css">
+    <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/aos.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="public/assets/css/custom.css">
+    <link rel="stylesheet" href="https://tesproskillv2.proskill.sch.id/public/assets/css/custom.css">
 
 </head>
 
@@ -64,7 +68,8 @@
                             </span>
                         </a>
                         <a href="{{ url('/') }}" class="navbar-brand logo">
-                            <img src="public/assets/img/logo1.svg" class="img-fluid" alt="Logo">
+                            <img src="https://tesproskillv2.proskill.sch.id/public/assets/img/logo1.svg"
+                                class="img-fluid" alt="Logo">
                         </a>
                     </div>
                     <div class="main-menu-wrapper">
