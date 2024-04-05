@@ -303,7 +303,8 @@
             style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
             ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
             <a href="https://wa.me/6281266187125?" target="_blank">
-                <img src="public/assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
+                <img src="https://tesproskillv2.proskill.sch.id/public/assets/img/whatsapp.png" alt="WhatsApp Icon"
+                    style="width: 50px; height: auto;">
             </a>
             <div id="popup-message"
                 style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
@@ -357,7 +358,8 @@
                         <div class="col-lg-3 col-md-4">
                             <div class="footer-widget footer-about">
                                 <div class="footer-logo">
-                                    <a href="{{ url('/') }}"><img src="public/assets/img/logo.png"
+                                    <a href="{{ url('/') }}"><img
+                                            src="https://tesproskillv2.proskill.sch.id/public/assets/img/logo.png"
                                             alt="logo"></a>
                                 </div>
                                 <div class="footer-about-content ">
@@ -494,29 +496,29 @@
     <!-- /Main Wrapper -->
 
     <!-- jQuery -->
-    <script src="public/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/jquery-3.7.1.min.js"></script>
 
     <!-- Bootstrap Core JS -->
-    <script src="public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Owl Carousel JS -->
-    <script src="public/assets/js/owl.carousel.min.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/owl.carousel.min.js"></script>
 
     <!-- Slick JS -->
-    <script src="public/assets/js/slick.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/slick.js"></script>
 
     <!-- BacktoTop JS -->
-    <script src="public/assets/js/backToTop.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/backToTop.js"></script>
 
     <!-- Datepicker JS -->
-    <script src="public/assets/js/moment.min.js"></script>
-    <script src="public/assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/moment.min.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/bootstrap-datetimepicker.min.js"></script>
 
     <!-- Animation JS -->
-    <script src="public/assets/js/aos.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/aos.js"></script>
 
     <!-- Custom JS -->
-    <script src="public/assets/js/script.js"></script>
+    <script src="https://tesproskillv2.proskill.sch.id/public/assets/js/script.js"></script>
 
 
 </body>
