@@ -8,6 +8,6 @@ class AuthUserController extends Controller
 {
     public function show()
     {
-        return view('login_email');
+        return view('Login_email');
     }
 }

@@ -12,10 +12,10 @@
                     <div class="account-content">
                         <div class="login-shapes">
                             <div class="shape-img-left">
-                                <img src="assets/img/shape-01.png" alt="shape-image">
+                                <img src="public/assets/img/shape-01.png" alt="shape-image">
                             </div>
                             <div class="shape-img-right">
-                                <img src="assets/img/shape-02.png" alt="shape-image">
+                                <img src="public/assets/img/shape-02.png" alt="shape-image">
                             </div>
                         </div>
                         <div class="account-info">
@@ -61,7 +61,8 @@
                                 </div>
                                 <div class="social-login-btn">
                                     <a href="javascript:void(0);" class="btn w-100">
-                                        <img src="assets/img/icons/google-icon.svg" alt="google-icon"> Masuk dengan Google
+                                        <img src="public/assets/img/icons/google-icon.svg" alt="google-icon"> Masuk dengan
+                                        Google
                                     </a>
                                 </div>
                                 <div class="account-signup">
@@ -86,7 +87,7 @@
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
-            <img src="assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
+            <img src="public/assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
