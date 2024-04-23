@@ -110,8 +110,8 @@
                                 <div class="doc-info-left">
                                     <div class="doctor-img">
                                         <a href="#">
-                                            <img src="publick/assets/img/kelas/Fundamental Computer Skill.png"
-                                                class="img-fluid" alt="User Image">
+                                            <img src="public/assets/img/kelas/Fundamental Computer Skill.png" alt="image"
+                                                class="img-fluid ">
                                         </a>
                                     </div>
                                     <div class="doc-info-cont">
