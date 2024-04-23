@@ -115,7 +115,8 @@ class AuthController extends Controller
     {
         $googleUser = Socialite::driver('google')->stateless()->user();
 
-        $user = User::Where(['email' => $googleUser->email])->first();
+        $user = User::where(['email' => $googleUser->email])->first();
+
         if (!$user) {
             $user = User::create([
                 'name' => $googleUser->name,
@@ -128,7 +129,12 @@ class AuthController extends Controller
         } elseif (!$user->role) {
             $user->update(['role' => 'User']);
         }
-        Auth::login($user);
-        return redirect('index_admin')->with('success', 'Anda telah berhasil masuk');
+
+        // Pengecekan peran pengguna
+        if ($user->role === 'Admin') {
+            return redirect('index_admin')->with('success', 'Anda telah berhasil masuk');
+        } else {
+            return redirect('dashboard_user')->with('success', 'Anda telah berhasil masuk');
+        }
     }
 }

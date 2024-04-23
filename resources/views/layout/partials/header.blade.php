@@ -27,25 +27,29 @@
 
                     <li class="{{ Request::is('/') ? 'active' : '' }}" style="margin-right: 50px;">
                         <a href="{{ url('/') }}"> <span
-                                {{ Request::is('/') ? 'style=color:##028E83;' : '' }}>Home</span></a>
+                                {{ Request::is('/') ? 'style=color:##028E83;' : '' }}>Beranda</span></a>
                     </li>
                     <li class="{{ Request::is('blog*') ? 'active' : '' }}" style="margin-right: 50px;">
                         <a href="{{ url('/blog') }}"><span
                                 {{ Request::is('blog*') ? 'style=color:##028E83;' : '' }}>Artikel</span></a>
                     </li>
-                    <li class="{{ Request::is('tentang*') ? 'active' : '' }}" style="margin-right: 50px;">
-                        <a href="{{ url('/tentang') }}"><span
-                                {{ Request::is('tentang*') ? 'style=color:##028E83;' : '' }}>Tentang Kami</span></a>
+                    <li class="{{ Request::is('tatap_muka*') ? 'active' : '' }}" style="margin-right: 50px;">
+                        <a href="{{ url('/tatap_muka') }}"><span
+                                {{ Request::is('tatap_muka*') ? 'style=color:##028E83;' : '' }}>Kelas Tatap
+                                Muka</span></a>
                     </li>
-                    <li class="{{ Request::is('hubungi*') ? 'active' : '' }}" style="margin-right: 50px;">
-                        <a href="{{ url('/hubungi') }}"><span
-                                {{ Request::is('hubungi*') ? 'style=color:##028E83;' : '' }}>Hubungi Kami</span></a>
+                    <li class="{{ Request::is('Kelas_online*') ? 'active' : '' }}" style="margin-right: 50px;">
+                        <a href="{{ url('/Kelas_online') }}"><span
+                                {{ Request::is('Kelas_online*') ? 'style=color:##028E83;' : '' }}>Kelas
+                                Online</span></a>
                     </li>
                     <li class="has-submenu" style="margin-right: 50px;">
                         <a href="#">Lainnya <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
                                     target="_blank">Brosur</a></li>
+                            <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
+                            <li><a href="{{ url('/hubungi') }}">Hubungi Kami</a></li>
                         </ul>
                     </li>
 
