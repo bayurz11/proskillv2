@@ -116,7 +116,7 @@
                                         </a>
                                     </li>
                                     <!-- Tautan logout -->
-                                    <li>
+                                    {{-- <li>
                                         <a href="#"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <i class="fas fa-sign-out-alt"></i>
@@ -127,7 +127,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                         style="display: none;">
                                         @csrf
-                                    </form>
+                                    </form> --}}
                                 </ul>
                             </nav>
                         </div>
