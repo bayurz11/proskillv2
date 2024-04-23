@@ -30,7 +30,7 @@ use App\Http\Controllers\SertifikatController;
 Route::get('/', [LandingPageController::class, 'index'])->name('/');
 Route::get('/blog', [LandingPageController::class, 'ShowBlog'])->name('blog');
 Route::get('/blog-details/{id}', [LandingPageController::class, 'ShowBlogDetails'])->name('blog-details');
-// Route::get('/blog-details/{id}', [LandingPageController::class, 'ShowBlogDetails'])->name('blog-details');
+Route::get('/tatap_muka', [LandingPageController::class, 'tatap_muka'])->name('tatap_muka');
 Route::get('/tentang', [LandingPageController::class, 'ShowAboutUs'])->name('tentang');
 Route::get('/hubungi', [LandingPageController::class, 'ShowContactUs'])->name('hubungi');
 

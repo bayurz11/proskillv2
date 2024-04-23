@@ -134,7 +134,7 @@
                                 class="avatar-img rounded-circle">
                         </div>
                         <div class="user-text">
-                            <h6>{{ $user->name }}</h6>
+                            <h6>{{ $users->name }}</h6>
                             <p class="text-muted mb-0">{{ $user->role }}</p>
                         </div>
                     </div>

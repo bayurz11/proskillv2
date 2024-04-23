@@ -26,6 +26,13 @@ class LandingPageController extends Controller
         $links = ArtikelYt::all();
         return view('blog-grid', compact('userLoggedIn', 'articles', 'links'));
     }
+    public function tatap_muka()
+    {
+        $userLoggedIn = Auth::check();
+        $articles = Artikel::all();
+        $links = ArtikelYt::all();
+        return view('blog-grid', compact('userLoggedIn', 'articles', 'links'));
+    }
     // public function ShowBlogDetails()
     // {
     //     $userLoggedIn = Auth::check();
