@@ -42,7 +42,7 @@
                                     <img src="assets/img/user.png" alt="User Image">
                                 </a>
                                 <div class="profile-det-info">
-                                    <h3>Richard Wilson</h3>
+                                    <h3>{{ $user->name }}</h3>
                                     <div class="patient-details">
                                         <h5><i class="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
                                         <h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</h5>
@@ -1636,7 +1636,7 @@
         style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
-            <img src="assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
+            <img src="public/assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
