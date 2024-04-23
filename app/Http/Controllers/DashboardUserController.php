@@ -9,11 +9,32 @@ class DashboardUserController extends Controller
 {
     public function show()
     {
-        if (Auth::check()) {
+        // if (Auth::check()) {
 
-            $user = Auth::user();
-            return view('dashboard_siswa', compact('user'));
+        //     $user = Auth::user();
+        //     return view('dashboard_siswa', compact('user'));
+        // }
+        // return redirect('/login_email');
+        $user = Auth::user();
+        return view('dashboard_siswa', compact('user'));
+    }
+    public function login(Request $request)
+    {
+        // Validasi data login
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        // Coba melakukan autentikasi
+        if (Auth::attempt($credentials)) {
+            // Jika berhasil, redirect ke halaman dashboard atau ke halaman yang diinginkan
+            return redirect()->intended('/dashboard_siswa');
         }
-        return redirect('/login_email');
+
+        // Jika autentikasi gagal, kembali ke halaman login dengan pesan error
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
     }
 }

@@ -99,3 +99,4 @@ Route::put('/sertifikat_update/{id}', [SertifikatController::class, 'update'])->
 
 //Dashboard Siswa
 Route::get('/dashboard_siswa', [DashboardUserController::class, 'show'])->name('dashboard_siswa');
+Route::post('/login_siswa', [DashboardUserController::class, 'login'])->name('login_siswa');
