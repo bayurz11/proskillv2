@@ -14,6 +14,6 @@ class DashboardUserController extends Controller
             $user = Auth::user();
             return view('dashboard_siswa', compact('user'));
         }
-        return redirect('/show_login');
+        return redirect('/login_email');
     }
 }
