@@ -174,9 +174,12 @@
                                         </ul>
                                     </div>
                                     <div class="clinic-booking">
-                                        <a class="view-pro-btn" href="doctor-profile.html">View Profile</a>
-                                        <a class="apt-btn" href="booking.html">Book Appointment</a>
+                                        <a class="view-pro-btn" href="doctor-profile.html"
+                                            style="background-color: #028E83;">View Profile</a>
+                                        <a class="apt-btn" href="booking.html" style="background-color: #028E83;">Book
+                                            Appointment</a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
