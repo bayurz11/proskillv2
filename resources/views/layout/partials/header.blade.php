@@ -29,10 +29,6 @@
                         <a href="{{ url('/') }}"> <span
                                 {{ Request::is('/') ? 'style=color:##028E83;' : '' }}>Beranda</span></a>
                     </li>
-                    <li class="{{ Request::is('blog*') ? 'active' : '' }}" style="margin-right: 50px;">
-                        <a href="{{ url('/blog') }}"><span
-                                {{ Request::is('blog*') ? 'style=color:##028E83;' : '' }}>Artikel</span></a>
-                    </li>
                     <li class="{{ Request::is('tatap_muka*') ? 'active' : '' }}" style="margin-right: 50px;">
                         <a href="{{ url('/tatap_muka') }}"><span
                                 {{ Request::is('tatap_muka*') ? 'style=color:##028E83;' : '' }}>Kelas Tatap
@@ -42,6 +38,11 @@
                         <a href="{{ url('/Kelas_online') }}"><span
                                 {{ Request::is('Kelas_online*') ? 'style=color:##028E83;' : '' }}>Kelas
                                 Online</span></a>
+                    </li>
+
+                    <li class="{{ Request::is('blog*') ? 'active' : '' }}" style="margin-right: 50px;">
+                        <a href="{{ url('/blog') }}"><span
+                                {{ Request::is('blog*') ? 'style=color:##028E83;' : '' }}>Artikel</span></a>
                     </li>
                     <li class="has-submenu" style="margin-right: 50px;">
                         <a href="#">Lainnya <i class="fas fa-chevron-down"></i></a>
