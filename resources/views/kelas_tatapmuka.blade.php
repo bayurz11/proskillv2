@@ -115,10 +115,11 @@
                                         </a>
                                     </div>
                                     <div class="doc-info-cont">
-                                        <h4 class="doc-name"><a href="doctor-profile.html">Dr. Ruby Perrin</a></h4>
+                                        <h4 class="doc-name"><a href="doctor-profile.html">Fundamental Computer Skill</a>
+                                        </h4>
                                         <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS
                                         </p>
-                                        <h5 class="doc-department"><img src="assets/img/specialities/specialities-05.png"
+                                        <h5 class="doc-department"><img src="assets/img/Fundamental Computer Skill.png"
                                                 class="img-fluid" alt="Speciality">Dentist</h5>
                                         <div class="rating">
                                             <i class="fas fa-star filled"></i>
