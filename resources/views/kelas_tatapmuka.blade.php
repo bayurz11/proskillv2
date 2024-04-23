@@ -119,8 +119,9 @@
                                         </h4>
                                         <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS
                                         </p>
-                                        <h5 class="doc-department"><img src="assets/img/Fundamental Computer Skill.png"
-                                                class="img-fluid" alt="Speciality">Dentist</h5>
+                                        <h5 class="doc-department"><img
+                                                src="assets/img/kelas/Fundamental Computer Skill.png" class="img-fluid"
+                                                alt="Speciality">Dentist</h5>
                                         <div class="rating">
                                             <i class="fas fa-star filled"></i>
                                             <i class="fas fa-star filled"></i>
