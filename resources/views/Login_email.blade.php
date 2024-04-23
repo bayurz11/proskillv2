@@ -31,7 +31,8 @@
                             <form action="login-email-otp.html">
                                 <div class="mb-3">
                                     <label class="mb-2">E-mail</label>
-                                    <input type="text" class="form-control" placeholder="proskill@gmail.com" autofocus>
+                                    <input type="email" class="form-control" placeholder="proskill@gmail.com" autofocus
+                                        name="email" id="email">
                                 </div>
                                 <div class="mb-3">
                                     <div class="form-group-flex">
@@ -39,7 +40,8 @@
                                         <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
                                     </div>
                                     <div class="pass-group">
-                                        <input type="password" class="form-control pass-input" placeholder="*************">
+                                        <input type="password" class="form-control pass-input" placeholder="*************"
+                                            name="password" id="password">
                                         <span class="feather-eye-off toggle-password"></span>
                                     </div>
                                 </div>

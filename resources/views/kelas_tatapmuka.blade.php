@@ -69,7 +69,7 @@
                                 </div>
                                 <div>
                                     <label class="custom_check">
-                                        <input type="checkbox" name="select_specialist" checked>
+                                        <input type="checkbox" name="select_specialist">
                                         <span class="checkmark"></span> Intermediate
                                     </label>
                                 </div>
