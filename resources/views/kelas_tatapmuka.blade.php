@@ -174,7 +174,11 @@
                                         </ul>
                                     </div>
                                     <div class="clinic-booking">
-                                        <a class="view-pro-btn" href="doctor-profile.html">Lihat Detail Kelas</a>
+                                        <li class="login-in-fourteen">
+                                            <a href="#" class="btn reg-btn"><i class="feather-user me-2"></i>Lihat
+                                                Detail Kelas</a>
+                                        </li>
+
                                         <a class="apt-btn" href="booking.html" style="background-color: #028E83;">Book
                                             Appointment</a>
                                     </div>
