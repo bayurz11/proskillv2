@@ -31,7 +31,7 @@ class LandingPageController extends Controller
         $userLoggedIn = Auth::check();
         $articles = Artikel::all();
         $links = ArtikelYt::all();
-        return view('blog-grid', compact('userLoggedIn', 'articles', 'links'));
+        return view('kelas_tatapmuka', compact('userLoggedIn', 'articles', 'links'));
     }
     // public function ShowBlogDetails()
     // {
