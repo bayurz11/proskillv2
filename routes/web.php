@@ -1,20 +1,21 @@
 <?php
 
-use App\Http\Controllers\AboutUsController;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\KelasController;
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\ArtikelYtController;
 use App\Http\Controllers\AuthUserController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ArtikelYtController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\SertifikatController;
 use App\Http\Controllers\HomeSettingController;
-use App\Http\Controllers\KelasController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\ProfileSettingController;
-use App\Http\Controllers\SertifikatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,3 +96,6 @@ Route::get('/sertifikat_destroy/{id}', [SertifikatController::class, 'destroy'])
 Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('sertifikat_store');
 Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
 Route::put('/sertifikat_update/{id}', [SertifikatController::class, 'update'])->name('sertifikat_update');
+
+//Dashboard Siswa
+Route::get('/dashboard_siswa', [DashboardUserController::class, 'show'])->name('dashboard_siswa');
