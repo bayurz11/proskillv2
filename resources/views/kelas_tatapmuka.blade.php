@@ -39,58 +39,47 @@
                                 </div>
                             </div>
                             <div class="filter-widget">
-                                <h4>Gender</h4>
+                                <h4>Sort</h4>
                                 <div>
                                     <label class="custom_check">
                                         <input type="checkbox" name="gender_type" checked>
-                                        <span class="checkmark"></span> Male Doctor
+                                        <span class="checkmark"></span> Baru Rilis
                                     </label>
                                 </div>
                                 <div>
                                     <label class="custom_check">
                                         <input type="checkbox" name="gender_type">
-                                        <span class="checkmark"></span> Female Doctor
+                                        <span class="checkmark"></span> Terpopuler
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="gender_type">
+                                        <span class="checkmark"></span> Sedang Promo
                                     </label>
                                 </div>
                             </div>
                             <div class="filter-widget">
-                                <h4>Select Specialist</h4>
+                                <h4>Level</h4>
                                 <div>
                                     <label class="custom_check">
                                         <input type="checkbox" name="select_specialist" checked>
-                                        <span class="checkmark"></span> Urology
+                                        <span class="checkmark"></span> Beginner Friendly
                                     </label>
                                 </div>
                                 <div>
                                     <label class="custom_check">
                                         <input type="checkbox" name="select_specialist" checked>
-                                        <span class="checkmark"></span> Neurology
+                                        <span class="checkmark"></span> Intermediate
                                     </label>
                                 </div>
                                 <div>
                                     <label class="custom_check">
                                         <input type="checkbox" name="select_specialist">
-                                        <span class="checkmark"></span> Dentist
+                                        <span class="checkmark"></span> All Levels
                                     </label>
                                 </div>
-                                <div>
-                                    <label class="custom_check">
-                                        <input type="checkbox" name="select_specialist">
-                                        <span class="checkmark"></span> Orthopedic
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="custom_check">
-                                        <input type="checkbox" name="select_specialist">
-                                        <span class="checkmark"></span> Cardiologist
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="custom_check">
-                                        <input type="checkbox" name="select_specialist">
-                                        <span class="checkmark"></span> Cardiologist
-                                    </label>
-                                </div>
+
                             </div>
                             <div class="btn-search">
                                 <button type="button" class="btn w-100">Search</button>
