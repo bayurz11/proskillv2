@@ -68,10 +68,10 @@
                                     <li>
                                         <a href="dependent.html">
                                             <i class="fas fa-users"></i>
-                                            <span>Dependent</span>
+                                            <span>Kelas</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="chat.html">
                                             <i class="fas fa-comments"></i>
                                             <span>Message</span>
@@ -83,7 +83,7 @@
                                             <i class="fas fa-file-invoice-dollar"></i>
                                             <span>Accounts</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li>
                                         <a href="orders-list.html">
                                             <i class="fas fa-list-alt"></i>
@@ -91,7 +91,7 @@
                                             <small class="unread-msg">7</small>
                                         </a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="medical-records.html">
                                             <i class="fas fa-clipboard"></i>
                                             <span>Add Medical Records</span>
@@ -102,21 +102,21 @@
                                             <i class="fas fa-file-medical-alt"></i>
                                             <span>Medical Details</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li>
                                         <a href="profile-settings.html">
                                             <i class="fas fa-user-cog"></i>
                                             <span>Profile Settings</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a href="change-password.html">
                                             <i class="fas fa-lock"></i>
                                             <span>Change Password</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <!-- Tautan logout -->
-                                    {{-- <li>
+                                    <li>
                                         <a href="#"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             <i class="fas fa-sign-out-alt"></i>
@@ -124,10 +124,9 @@
                                         </a>
                                     </li>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                        style="display: none;">
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
                                         @csrf
-                                    </form> --}}
+                                    </form>
                                 </ul>
                             </nav>
                         </div>
