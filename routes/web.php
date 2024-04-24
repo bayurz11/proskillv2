@@ -39,7 +39,7 @@ Route::get('/login_email', [AuthUserController::class, 'show'])->name('login_ema
 
 
 Route::get('/tatap_muka', [LandingPageController::class, 'tatap_muka'])->name('tatap_muka');
-Route::get('/tatap_muka', [LandingPageController::class, 'detail_tatapmuka'])->name('tatap_muka');
+Route::get('/detail_tatapmuka', [LandingPageController::class, 'detail_tatapmuka'])->name('detail_tatapmuka');
 
 
 /*****************ADMIN ROUTES*******************/

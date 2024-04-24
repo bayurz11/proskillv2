@@ -193,7 +193,7 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 map-view">
                     <div class="row">
-                        <div class="col-lg-3  theiaStickySidebar">
+                        <div class="col-lg-3">
                             <div class="filter-contents">
                                 <div class="filter-header">
                                     <h4 class="filter-title">Filter</h4>
@@ -457,8 +457,8 @@
                                         <div class="doc-content">
                                             <div class="doc-pro-info">
                                                 <div class="doc-pro-name">
-                                                    <h4><a href="doctor-profile.html">Dr.John Doe</a><i
-                                                            class="fas fa-circle-check"></i></h4>
+                                                    <h4><a href="{{ route('detail_tatapmuka') }}">Fundamental Computer
+                                                            Skill</a><i class="fas fa-circle-check"></i></h4>
                                                     <p>Cardiology</p>
                                                 </div>
                                                 <div class="review-price">
