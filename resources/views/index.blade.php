@@ -503,7 +503,7 @@
                                             class="img-fluid">
                                         <div class="feedback-user-details">
                                             <h4>Jenifer Robinson</h4>
-                                            <h6>Texas, USA</h6>
+                                            <h6>TanjungPinang, Indonesia</h6>
                                             <div class="rating rating-fourteen">
                                                 <i class="fas fa-star filled"></i>
                                                 <i class="fas fa-star filled"></i>
@@ -514,8 +514,11 @@
                                         </div>
                                     </div>
 
-                                    <p>“Thank you! for giving excellent care of my doggies, the best pet care ever!
-                                        I recommend”
+                                    <p>“Sebelum mengambil kursus Fundamental Computer Skill, saya merasa canggung dan tidak
+                                        percaya diri dalam menggunakan teknologi modern. Namun, setelah menyelesaikan kursus
+                                        ini, saya merasa seperti membuka pintu menuju dunia baru. Saya sekarang dapat dengan
+                                        percaya diri menggunakan komputer, internet, dan aplikasi dengan lancar, membuka
+                                        peluang baru dalam karir dan kehidupan sehari-hari saya.”
                                     </p>
 
                                 </div>
