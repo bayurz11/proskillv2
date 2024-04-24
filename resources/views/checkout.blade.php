@@ -8,7 +8,7 @@
             <div class="row align-items-center inner-banner">
                 <div class="col-md-12 col-12 text-center">
                     <h2 class="breadcrumb-title" style="color: #028E83;">Checkout Kelas</h2>
-                    <h6 class="breadcrumb-title" style="color: #FE9900;">Bergabung dengan kami di kelas Premium</h6>
+                    <a class="breadcrumb-title" style="color: #FE9900;">Bergabung dengan kami di kelas Premium</a>
                     <nav aria-label="breadcrumb" class="page-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
@@ -35,85 +35,23 @@
 
                                 <!-- Personal Information -->
                                 <div class="info-widget">
-                                    <h4 class="card-title">Personal Information</h4>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="mb-3 card-label">
-                                                <label class="mb-2">First Name</label>
-                                                <input class="form-control" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="mb-3 card-label">
-                                                <label class="mb-2">Last Name</label>
-                                                <input class="form-control" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="mb-3 card-label">
-                                                <label class="mb-2">Email</label>
-                                                <input class="form-control" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="mb-3 card-label">
-                                                <label class="mb-2">Phone</label>
-                                                <input class="form-control" type="text">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="doctor-widget">
+                                                <div class="video-container">
+                                                    <iframe width="685" height="415"
+                                                        src="https://www.youtube.com/embed/TTimxxM9RbE" frameborder="0"
+                                                        allowfullscreen style="border-radius: 15px;"></iframe>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="exist-customer">Existing Customer? <a href="login.html">Click here to
-                                            login</a></div>
                                 </div>
                                 <!-- /Personal Information -->
 
                                 <div class="payment-widget">
                                     <h4 class="card-title">Payment Method</h4>
-
-                                    <!-- Credit Card Payment -->
-                                    <div class="payment-list">
-                                        <label class="payment-radio credit-card-option">
-                                            <input type="radio" name="radio" checked>
-                                            <span class="checkmark"></span>
-                                            Credit card
-                                        </label>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3 card-label">
-                                                    <label for="card_name">Name on Card</label>
-                                                    <input class="form-control" id="card_name" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3 card-label">
-                                                    <label for="card_number">Card Number</label>
-                                                    <input class="form-control" id="card_number"
-                                                        placeholder="1234 5678 9876 5432" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3 card-label">
-                                                    <label for="expiry_month">Expiry Month</label>
-                                                    <input class="form-control" id="expiry_month" placeholder="MM"
-                                                        type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3 card-label">
-                                                    <label for="expiry_year">Expiry Year</label>
-                                                    <input class="form-control" id="expiry_year" placeholder="YY"
-                                                        type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="mb-3 card-label">
-                                                    <label for="cvv">CVV</label>
-                                                    <input class="form-control" id="cvv" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Credit Card Payment -->
 
                                     <!-- Paypal Payment -->
                                     <div class="payment-list">
@@ -125,21 +63,7 @@
                                     </div>
                                     <!-- /Paypal Payment -->
 
-                                    <!-- Terms Accept -->
-                                    <div class="terms-accept">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" id="terms_accept">
-                                            <label for="terms_accept">I have read and accept <a
-                                                    href="terms-condition.html">Terms &amp; Conditions</a></label>
-                                        </div>
-                                    </div>
-                                    <!-- /Terms Accept -->
 
-                                    <!-- Submit Section -->
-                                    <div class="submit-section mt-4">
-                                        <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
-                                    </div>
-                                    <!-- /Submit Section -->
 
                                 </div>
                             </form>
@@ -200,6 +124,21 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <!-- Terms Accept -->
+                                    <div class="terms-accept">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" id="terms_accept">
+                                            <label for="terms_accept">I have read and accept <a
+                                                    href="terms-condition.html">Terms &amp; Conditions</a></label>
+                                        </div>
+                                    </div>
+                                    <!-- /Terms Accept -->
+
+                                    <!-- Submit Section -->
+                                    <div class="submit-section mt-4">
+                                        <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
+                                    </div>
+                                    <!-- /Submit Section -->
                                 </div>
                             </div>
                         </div>
@@ -239,8 +178,7 @@
         document.getElementById("searchInput").addEventListener("input", searchPosts);
     </script>
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
