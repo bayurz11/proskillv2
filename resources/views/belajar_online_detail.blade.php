@@ -28,37 +28,36 @@
         <div class="container">
 
             <!-- Doctor Widget -->
-            <div class="card">
-                <div class="card-body">
-                    <div class="doctor-widget">
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
-                                frameborder="0" allowfullscreen></iframe>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="doctor-widget">
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-
-                    <div class="doctor-widget">
-                        <div class="doc-info-right">
-                            {{-- <div class="clini-infos">
-                                <ul>
-                                    <li><i class="far fa-thumbs-up"></i> 99%</li>
-                                    <li><i class="far fa-comment"></i> 35 Feedback</li>
-                                    <li><i class="fas fa-map-marker-alt"></i> Newyork, USA</li>
-                                    <li><i class="far fa-money-bill-alt"></i> $100 per hour </li>
-                                </ul>
-                            </div> --}}
-
-                            <div class="clinic-booking">
-                                <a class="apt-btn" href="booking.html">Gabung Kelas</a>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="doctor-widget">
+                                    <div class="doc-info-right">
+                                        <div class="clinic-booking">
+                                            <a class="apt-btn" href="booking.html">Gabung Kelas</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- /Doctor Widget -->
 
             <!-- Doctor Details Tab -->
