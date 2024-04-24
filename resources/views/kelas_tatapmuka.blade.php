@@ -443,11 +443,7 @@
                                                         class="img-fluid" alt="Kelas">
                                                 </div>
                                             </a>
-                                            <div class="reviews-ratings">
-                                                <p>
-                                                    <span><i class="fas fa-star"></i> 4.5</span>
-                                                </p>
-                                            </div>
+
                                             <div class="favourite-btn">
                                                 <a href="javascript:void(0)" class="favourite-icon">
                                                     <i class="fas fa-heart"></i>
@@ -467,6 +463,11 @@
                                                 <div class="review-price">
                                                     <p>$1100.00<span>/hr</span></p>
                                                 </div>
+                                            </div>
+                                            <div class="reviews-ratings">
+                                                <p>
+                                                    <span><i class="fas fa-star"></i> 4.5</span>
+                                                </p>
                                             </div>
                                             {{-- <div class="doc-pro-location">
                                                 <p><i class="feather-map-pin"></i> <span>0.9</span> mi - New York, USA</p>
