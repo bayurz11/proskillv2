@@ -379,60 +379,7 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="doctor-filter-info">
-                                <div class="doctor-filter-inner">
-                                    <div>
-                                        <div class="doctors-found">
-                                            <p><span>100 Doctors found for:</span> Dentist in San francisco, California</p>
-                                        </div>
-                                        <div class="doctor-filter-availability">
-                                            <p>Availability</p>
-                                            <div class="status-toggle status-tog">
-                                                <input type="checkbox" id="status_6" class="check">
-                                                <label for="status_6" class="checktoggle">checkbox</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="doctor-filter-option">
-                                        <div class="doctor-filter-sort">
-                                            <p>Sort</p>
-                                            <div class="doctor-filter-select">
-                                                <select class="select">
-                                                    <option>A to Z</option>
-                                                    <option>B to Z</option>
-                                                    <option>C to Z</option>
-                                                    <option>D to Z</option>
-                                                    <option>E to Z</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="doctor-filter-sort">
-                                            <p class="filter-today d-flex align-items-center">
-                                                <i class="feather-calendar"></i> Today 10 Aug to 20 Aug
-                                            </p>
-                                        </div>
-                                        <div class="doctor-filter-sort">
-                                            <ul class="nav">
-                                                <li>
-                                                    <a href="javascript:void(0);" id="map-list">
-                                                        <i class="feather-map-pin"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="doctor-search-grid.html" class="active">
-                                                        <i class="feather-grid"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="search-2.html">
-                                                        <i class="feather-list"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="row">
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="doctor-profile-widget doc-grid">
@@ -517,8 +464,7 @@
         document.getElementById("searchInput").addEventListener("input", searchPosts);
     </script>
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
