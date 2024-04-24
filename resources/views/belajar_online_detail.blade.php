@@ -57,7 +57,7 @@
                                     <div class="doc-info-right">
                                         <div class="clinic-booking text-center">
                                             <!-- Mengubah ke text-center untuk menengahkan button -->
-                                            <a class="apt-btn" href="booking.html">Gabung Kelas</a>
+                                            <a class="apt-btn" href="{{ route('checkout') }}">Gabung Kelas</a>
                                         </div>
                                     </div>
                                 </div>
