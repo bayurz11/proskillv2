@@ -35,6 +35,8 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
                                 frameborder="0" allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="doctor-widget">
                         <div class="doc-info-right">
                             {{-- <div class="clini-infos">
                                 <ul>
