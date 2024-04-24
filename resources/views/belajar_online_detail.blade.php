@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row align-items-center inner-banner">
                 <div class="col-md-12 col-12 text-center">
-                    <h2 class="breadcrumb-title" style="color: #028E83;">Kelas Tatap Muka</h2>
+                    <h2 class="breadcrumb-title" style="color: #028E83;">Kelas Online</h2>
                     <h2 class="breadcrumb-title" style="color: #FE9900;">Fundamental Computer
                         Skill</h2>
                     <nav aria-label="breadcrumb" class="page-breadcrumb">
@@ -31,21 +31,9 @@
             <div class="card">
                 <div class="card-body">
                     <div class="doctor-widget">
-                        <div class="doc-info-left">
-                            <div class="doctor-img">
-                                <img src="public/assets/img/kelas/Fundamental Computer Skill.png" class="img-fluid"
-                                    alt="User Image">
-                            </div>
-                            <div class="doc-info-cont">
-                                <h4 class="doc-name">Fundamental Computer
-                                    Skill</h4>
-                                <p class="doc-speciality">BDS, MDS - Oral & Maxillofacial Surgery</p>
-
-                                <div class="clinic-services">
-                                    <span>Dental Fillings</span>
-                                    <span>Teeth Whitneing</span>
-                                </div>
-                            </div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
+                                frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="doc-info-right">
                             {{-- <div class="clini-infos">
