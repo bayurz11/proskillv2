@@ -8,6 +8,8 @@
             <div class="row align-items-center inner-banner">
                 <div class="col-md-12 col-12 text-center">
                     <h2 class="breadcrumb-title" style="color: #028E83;">Kelas Tatap Muka</h2>
+                    <h2 class="breadcrumb-title" style="color: #FE9900;">Fundamental Computer
+                        Skill</h2>
                     <nav aria-label="breadcrumb" class="page-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
