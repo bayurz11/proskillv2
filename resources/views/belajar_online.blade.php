@@ -377,7 +377,7 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="doctor-profile-widget doc-grid">
                                         <div class="doc-pro-img">
-                                            <a href="{{ route('detail_tatapmuka') }}">
+                                            <a href="{{ route('belajar_online_detail') }}">
                                                 <div class="doctor-profile-img">
                                                     <img src="public/assets/img/kelas/Fundamental Computer Skill.png"
                                                         class="img-fluid" alt="Kelas">
@@ -393,7 +393,7 @@
                                         <div class="doc-content">
                                             <div class="doc-pro-info">
                                                 <div class="doc-pro-name">
-                                                    <h4><a href="{{ route('detail_tatapmuka') }}"
+                                                    <h4><a href="{{ route('belajar_online_detail') }}"
                                                             title="Fundamental Computer Skill">Fundamental Computer
                                                             Skill</a></h4>
                                                     <p>Beginner</p>
