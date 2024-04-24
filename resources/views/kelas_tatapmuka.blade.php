@@ -247,13 +247,6 @@
                                                         <label class="custom_check d-inline-flex">
                                                             <input type="checkbox" name="availability">
                                                             <span class="checkmark"></span>
-                                                            Available Today
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label class="custom_check d-inline-flex">
-                                                            <input type="checkbox" name="availability">
-                                                            <span class="checkmark"></span>
                                                             Beginner Friendly
                                                         </label>
                                                     </li>
