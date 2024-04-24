@@ -20,7 +20,7 @@
     </div>
     <!-- /Breadcrumb -->
 
-    <!-- Page Content -->
+    {{-- <!-- Page Content -->
     <div class="content">
         <div class="container">
 
@@ -183,6 +183,337 @@
 
         </div>
 
+    </div>
+    <!-- /Page Content --> --}}
+    <!-- Page Content -->
+    <div class="doctor-content content">
+        <div class="container">
+
+            <!-- Doctor Search List -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 map-view">
+                    <div class="row">
+                        <div class="col-lg-3  theiaStickySidebar">
+                            <div class="filter-contents">
+                                <div class="filter-header">
+                                    <h4 class="filter-title">Filter</h4>
+                                </div>
+                                <div class="filter-details">
+
+                                    <!-- Filter Grid -->
+                                    <div class="filter-grid">
+                                        <h4>
+                                            <a href="#collapseone" data-bs-toggle="collapse">Sort</a>
+                                        </h4>
+                                        <div id="collapseone" class="collapse show">
+                                            <div class="filter-collapse">
+                                                <ul>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="gender">
+                                                            <span class="checkmark"></span>
+                                                            Baru Rilis
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="gender">
+                                                            <span class="checkmark"></span>
+                                                            Terpopuler
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="gender">
+                                                            <span class="checkmark"></span>
+                                                            Sedang Promo
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Filter Grid -->
+
+                                    <!-- Filter Grid -->
+                                    <div class="filter-grid">
+                                        <h4>
+                                            <a href="#collapsetwo" data-bs-toggle="collapse">Level</a>
+                                        </h4>
+                                        <div id="collapsetwo" class="collapse show">
+                                            <div class="filter-collapse">
+                                                <ul>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="availability">
+                                                            <span class="checkmark"></span>
+                                                            Available Today
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="availability">
+                                                            <span class="checkmark"></span>
+                                                            Beginner Friendly
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="availability">
+                                                            <span class="checkmark"></span>
+                                                            Intermediate
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check d-inline-flex">
+                                                            <input type="checkbox" name="availability">
+                                                            <span class="checkmark"></span>
+                                                            All Levels
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Filter Grid -->
+
+                                    {{-- <!-- Filter Grid -->
+                                    <div class="filter-grid">
+                                        <h4>
+                                            <a href="#collapseseven" data-bs-toggle="collapse">By Rating</a>
+                                        </h4>
+                                        <div id="collapseseven" class="collapse show">
+                                            <div class="filter-collapse">
+                                                <ul>
+                                                    <li>
+                                                        <label class="custom_check rating_custom_check d-inline-flex">
+                                                            <input type="checkbox" name="online">
+                                                            <span class="checkmark"></span>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <span class="rating-count">(40)</span>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check rating_custom_check d-inline-flex">
+                                                            <input type="checkbox" name="online">
+                                                            <span class="checkmark"></span>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <span class="rating-count">(35)</span>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check rating_custom_check d-inline-flex">
+                                                            <input type="checkbox" name="online">
+                                                            <span class="checkmark"></span>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <span class="rating-count">(20)</span>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check rating_custom_check d-inline-flex">
+                                                            <input type="checkbox" name="online">
+                                                            <span class="checkmark"></span>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <span class="rating-count">(10)</span>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="custom_check rating_custom_check d-inline-flex">
+                                                            <input type="checkbox" name="online">
+                                                            <span class="checkmark"></span>
+                                                            <div class="rating">
+                                                                <i class="fas fa-star filled"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <span class="rating-count">(05)</span>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Filter Grid --> --}}
+
+
+                                    <!-- Filter Btn -->
+                                    <div class="filter-btn apply-btn">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a href="javascript:void(0);" class="btn btn-primary">Apply</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="javascript:void(0);" class="btn btn-outline-primary">Reset</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Filter Btn -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="doctor-filter-info">
+                                <div class="doctor-filter-inner">
+                                    <div>
+                                        <div class="doctors-found">
+                                            <p><span>100 Doctors found for:</span> Dentist in San francisco, California</p>
+                                        </div>
+                                        <div class="doctor-filter-availability">
+                                            <p>Availability</p>
+                                            <div class="status-toggle status-tog">
+                                                <input type="checkbox" id="status_6" class="check">
+                                                <label for="status_6" class="checktoggle">checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="doctor-filter-option">
+                                        <div class="doctor-filter-sort">
+                                            <p>Sort</p>
+                                            <div class="doctor-filter-select">
+                                                <select class="select">
+                                                    <option>A to Z</option>
+                                                    <option>B to Z</option>
+                                                    <option>C to Z</option>
+                                                    <option>D to Z</option>
+                                                    <option>E to Z</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="doctor-filter-sort">
+                                            <p class="filter-today d-flex align-items-center">
+                                                <i class="feather-calendar"></i> Today 10 Aug to 20 Aug
+                                            </p>
+                                        </div>
+                                        <div class="doctor-filter-sort">
+                                            <ul class="nav">
+                                                <li>
+                                                    <a href="javascript:void(0);" id="map-list">
+                                                        <i class="feather-map-pin"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="doctor-search-grid.html" class="active">
+                                                        <i class="feather-grid"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="search-2.html">
+                                                        <i class="feather-list"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="doctor-profile-widget doc-grid">
+                                        <div class="doc-pro-img">
+                                            <a href="doctor-profile.html">
+                                                <div class="doctor-profile-img">
+                                                    <img src="assets/img/doctors/doctor-13.jpg" class="img-fluid"
+                                                        alt="John Doe">
+                                                </div>
+                                            </a>
+                                            <div class="reviews-ratings">
+                                                <p>
+                                                    <span><i class="fas fa-star"></i> 4.5</span>
+                                                </p>
+                                            </div>
+                                            <div class="favourite-btn">
+                                                <a href="javascript:void(0)" class="favourite-icon">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="doc-content">
+                                            <div class="doc-pro-info">
+                                                <div class="doc-pro-name">
+                                                    <h4><a href="doctor-profile.html">Dr.John Doe</a><i
+                                                            class="fas fa-circle-check"></i></h4>
+                                                    <p>Cardiology</p>
+                                                </div>
+                                                <div class="review-price">
+                                                    <p>$1100.00<span>/hr</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="doc-pro-location">
+                                                <p><i class="feather-map-pin"></i> <span>0.9</span> mi - New York, USA</p>
+                                                <p><i class="feather-award"></i> <span>15</span> Years of Experience</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="blog-pagination rev-page">
+                                        <nav>
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link page-prev" href="#" tabindex="-1"><i
+                                                            class="feather-chevrons-left me-1"></i> PREV</a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">...</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">10</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link page-next" href="#">NEXT <i
+                                                            class="feather-chevrons-right ms-1"></i></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-12 theiaStickySidebar map-right">
+                    <div id="map" class="map-listing"></div>
+                </div>
+            </div>
+            <!-- /Doctor Search List -->
+
+        </div>
     </div>
     <!-- /Page Content -->
     <script>
