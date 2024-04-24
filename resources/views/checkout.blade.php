@@ -114,7 +114,7 @@
                                     <!-- /Terms Accept -->
 
                                     <!-- Submit Section -->
-                                    <div class="submit-section mt-4">
+                                    <div class="submit-section mt-6">
                                         <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
                                     </div>
                                     <!-- /Submit Section -->
