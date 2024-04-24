@@ -76,130 +76,6 @@
     </section>
     <!-- /Home Banner -->
 
-
-    <!-- Choose us -->
-    <section class="choose-us-fourteen">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header-fourteen text-center">
-                        <div class="service-inner-fourteen justify-content-center">
-                            <div class="service-inner-fourteen-two">
-                                <h3>Mengapa Kami</h3>
-                            </div>
-                        </div>
-                        <h2 style="color: #FE9900;">Mengapa Memilih Kami</h2>
-                        <p>"ProSkill Akademia" membantu Anda menguasai teknologi komputer dengan cepat dan biaya terjangkau
-                            melalui pembelajaran praktis dan bimbingan langsung dari instruktur kompeten. Jangan menunda
-                            kesempatan Anda untuk menguasai teknologi komputer di era digital ini. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="choose-us-right-main">
-                        <img src="public/assets/img/bg/home-12-why-us.png" alt="image" class="img-fluid">
-
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="why-us-content">
-                        <div class="us-faq aos" data-aos="fade-up" data-aos-delay="200">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Fasilitas di ProSkill Akademia
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse shade show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <h6><i class="feather-check-circle"></i> Private 6 Siswa per kelas</h6>
-                                            <h6><i class="feather-check-circle"></i> Praktek 1 Laptop per Siswa</h6>
-                                            <h6><i class="feather-check-circle"></i> Kelas Full AC</h6>
-                                            <h6><i class="feather-check-circle"></i> Sertifikat</h6>
-                                            <h6><i class="feather-check-circle"></i> Garansi Pasti Bisa</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Program Kursus apa aja yang ada di ProSkill Akademia?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse shade"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <h6><i class="feather-check-circle"></i> Fundamental Computer Skill untuk SD,
-                                                SMP ,SMA</h6>
-                                            <h6><i class="feather-check-circle"></i> Mahir Aplikasi Office
-                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer </h6>
-                                            <h6><i class="feather-check-circle"></i> Digital Design
-                                                Menggunakan Canva dan Figma</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Brapa biaya Kursus di ProSkill Akademia?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse shade"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <h6><i class="feather-check-circle"></i> Fundamental Computer Skill untuk SD,
-                                                SMP ,SMA, dengan harga 240 setelah mendapatkan beasiswa 25% menjadi
-                                                180K/bulan dengan 8x
-                                                pertemua</h6>
-                                            <h6><i class="feather-check-circle"></i> Mahir Aplikasi Office
-                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer, dengan harga 260
-                                                setelah mendapatkan beasiswa 25% menjadi 195K/bulan dengan 8x pertemua</h6>
-                                            <h6><i class="feather-check-circle"></i> Digital Design
-                                                Menggunakan Canva dan Figma, dengan harga 260 setelah mendapatkan beasiswa
-                                                25% menjadi
-                                                195K/bulan dengan 8x pertemua</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            Kapan Jadwal Kelas Kursus di ProSkill Akademia?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse shade"
-                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <h6><i class="feather-check-circle"></i> Senin & Rabu : 08.45-10.15,
-                                                10.30-12.00, 13.00-14.30, 14.45-16.15</h6>
-                                            <h6><i class="feather-check-circle"></i> Selasa & Kamis : 08.45-10.15,
-                                                10.30-12.00, 13.00-14.30, 14.45-16.15</h6>
-                                            <h6><i class="feather-check-circle"></i> Jumat & Sabtu : 08.45-10.15,
-                                                10.30-12.00, 13.30-15.00</h6>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Choose us -->
     <!-- Our Class -->
     <div class="blog-section-fourteen our-doctor-twelve">
         <div class="floating-bg">
@@ -299,7 +175,130 @@
         </div>
     </div>
     <!-- /Our Class -->
+    <!-- Choose us -->
+    <section class="choose-us-fourteen">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header-fourteen text-center">
+                        <div class="service-inner-fourteen justify-content-center">
+                            <div class="service-inner-fourteen-two">
+                                <h3>Mengapa Kami</h3>
+                            </div>
+                        </div>
+                        <h2 style="color: #FE9900;">Mengapa Memilih Kami</h2>
+                        <p>"ProSkill Akademia" membantu Anda menguasai teknologi komputer dengan cepat dan biaya terjangkau
+                            melalui pembelajaran praktis dan bimbingan langsung dari instruktur kompeten. Jangan menunda
+                            kesempatan Anda untuk menguasai teknologi komputer di era digital ini. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
 
+                <div class="col-lg-6">
+                    <div class="choose-us-right-main">
+                        <img src="public/assets/img/bg/home-12-why-us.png" alt="image" class="img-fluid">
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="why-us-content">
+                        <div class="us-faq aos" data-aos="fade-up" data-aos-delay="200">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Fasilitas di ProSkill Akademia
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse shade show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h6><i class="feather-check-circle"></i> Private 6 Siswa per kelas</h6>
+                                            <h6><i class="feather-check-circle"></i> Praktek 1 Laptop per Siswa</h6>
+                                            <h6><i class="feather-check-circle"></i> Kelas Full AC</h6>
+                                            <h6><i class="feather-check-circle"></i> Sertifikat</h6>
+                                            <h6><i class="feather-check-circle"></i> Garansi Pasti Bisa</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Program Kursus apa aja yang ada di ProSkill Akademia?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse shade"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h6><i class="feather-check-circle"></i> Fundamental Computer Skill untuk SD,
+                                                SMP ,SMA</h6>
+                                            <h6><i class="feather-check-circle"></i> Mahir Aplikasi Office
+                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer </h6>
+                                            <h6><i class="feather-check-circle"></i> Digital Design
+                                                Menggunakan Canva dan Figma</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Brapa biaya Kursus di ProSkill Akademia?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse shade"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h6><i class="feather-check-circle"></i> Fundamental Computer Skill untuk SD,
+                                                SMP ,SMA, dengan harga 240 setelah mendapatkan beasiswa 25% menjadi
+                                                180K/bulan dengan 8x
+                                                pertemua</h6>
+                                            <h6><i class="feather-check-circle"></i> Mahir Aplikasi Office
+                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer, dengan harga 260
+                                                setelah mendapatkan beasiswa 25% menjadi 195K/bulan dengan 8x pertemua</h6>
+                                            <h6><i class="feather-check-circle"></i> Digital Design
+                                                Menggunakan Canva dan Figma, dengan harga 260 setelah mendapatkan beasiswa
+                                                25% menjadi
+                                                195K/bulan dengan 8x pertemua</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Kapan Jadwal Kelas Kursus di ProSkill Akademia?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse shade"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <h6><i class="feather-check-circle"></i> Senin & Rabu : 08.45-10.15,
+                                                10.30-12.00, 13.00-14.30, 14.45-16.15</h6>
+                                            <h6><i class="feather-check-circle"></i> Selasa & Kamis : 08.45-10.15,
+                                                10.30-12.00, 13.00-14.30, 14.45-16.15</h6>
+                                            <h6><i class="feather-check-circle"></i> Jumat & Sabtu : 08.45-10.15,
+                                                10.30-12.00, 13.30-15.00</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Choose us -->
     <!-- Pricing -->
     {{-- <section class="home-twelve-pricing">
         <div class="container">
