@@ -48,7 +48,7 @@
                             <div class="card-body">
                                 <ul>
                                     <li><a href="">Cara Membuat Foto Produk Melalui Beberapa Tools Ai</a></li>
-                                    <li><a href="">Judul 2</a></li>
+                                    <li><a href="">Cara Membuat Logo Maskot dengan Ai</a></li>
                                     <li><a href="">Judul 3</a></li>
                                     <li><a href="">Judul 4</a></li>
                                     <li><a href="">Judul 5</a></li>
