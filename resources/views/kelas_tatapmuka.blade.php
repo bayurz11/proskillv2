@@ -379,7 +379,7 @@
                                         <div class="doc-pro-img">
                                             <a href="{{ route('detail_tatapmuka') }}">
                                                 <div class="doctor-profile-img">
-                                                    <img src="assets/img/kelas/Fundamental Computer Skill.png"
+                                                    <img src="public/assets/img/kelas/Fundamental Computer Skill.png"
                                                         class="img-fluid" alt="Kelas">
                                                 </div>
                                             </a>
