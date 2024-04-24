@@ -54,6 +54,13 @@ class LandingPageController extends Controller
         $links = ArtikelYt::all();
         return view('belajar_online_detail', compact('userLoggedIn', 'articles', 'links'));
     }
+    public function checkout()
+    {
+        $userLoggedIn = Auth::check();
+        $articles = Artikel::all();
+        $links = ArtikelYt::all();
+        return view('checkout', compact('userLoggedIn', 'articles', 'links'));
+    }
     // public function ShowBlogDetails()
     // {
     //     $userLoggedIn = Auth::check();

@@ -40,9 +40,11 @@ Route::get('/login_email', [AuthUserController::class, 'show'])->name('login_ema
 //kelas Tatap Muka
 Route::get('/tatap_muka', [LandingPageController::class, 'tatap_muka'])->name('tatap_muka');
 Route::get('/detail_tatapmuka', [LandingPageController::class, 'detail_tatapmuka'])->name('detail_tatapmuka');
+
 //kelas Online
 Route::get('/belajar_online', [LandingPageController::class, 'belajar_online'])->name('belajar_online');
 Route::get('/belajar_online_detail', [LandingPageController::class, 'belajar_online_detail'])->name('belajar_online_detail');
+Route::get('/checkout', [LandingPageController::class, 'checkout'])->name('checkout');
 
 
 /*****************ADMIN ROUTES*******************/
