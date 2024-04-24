@@ -64,14 +64,15 @@
                     <div class="card booking-card">
                         <div>
                             <div class="payment-widget">
-                                <h4 class="card-title">Metode Pembayaran</h4>
+                                <div class="card-body">
+                                    <h4 class="card-title">Metode Pembayaran</h4>
 
-                                <!-- Paypal Payment -->
-                                <div class="payment-list">
-                                    <button type="button" class="btn btn-roundes btn-secondary">Otomatis</button>
+                                    <!-- Paypal Payment -->
+                                    <div class="payment-list">
+                                        <button type="button" class="btn btn-roundes btn-secondary">Otomatis</button>
+                                    </div>
+                                    <!-- /Paypal Payment -->
                                 </div>
-                                <!-- /Paypal Payment -->
-
                             </div>
                         </div>
 
