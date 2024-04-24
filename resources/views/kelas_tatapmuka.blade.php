@@ -186,8 +186,8 @@
     </div>
     <!-- /Page Content --> --}}
     <!-- Page Content -->
-    <div class="doctor-content content">
-        <div class="container">
+    <div class="content">
+        <div class="container">>
 
             <!-- Doctor Search List -->
             <div class="row">
