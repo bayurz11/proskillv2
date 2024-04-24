@@ -35,37 +35,21 @@
 
                                 <!-- Personal Information -->
                                 <div class="info-widget">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="doctor-widget">
-                                                <div class="video-container">
-                                                    <iframe width="685" height="415"
-                                                        src="https://www.youtube.com/embed/TTimxxM9RbE" frameborder="0"
-                                                        allowfullscreen style="border-radius: 15px;"></iframe>
-                                                </div>
-
+                                    <div class="card-body">
+                                        <div class="doctor-widget">
+                                            <div class="video-container">
+                                                <iframe width="685" height="415"
+                                                    src="https://www.youtube.com/embed/TTimxxM9RbE" frameborder="0"
+                                                    allowfullscreen style="border-radius: 15px;"></iframe>
                                             </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                                 <!-- /Personal Information -->
 
-                                <div class="payment-widget">
-                                    <h4 class="card-title">Payment Method</h4>
 
-                                    <!-- Paypal Payment -->
-                                    <div class="payment-list">
-                                        <label class="payment-radio paypal-option">
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                            Paypal
-                                        </label>
-                                    </div>
-                                    <!-- /Paypal Payment -->
-
-
-
-                                </div>
                             </form>
                             <!-- /Checkout Form -->
 
@@ -76,6 +60,24 @@
 
                 <div class="col-md-5 col-lg-4 ">
 
+                    <!-- Booking Summary -->
+                    <div class="card booking-card">
+                        <div class="payment-widget">
+                            <h4 class="card-title">Payment Method</h4>
+
+                            <!-- Paypal Payment -->
+                            <div class="payment-list">
+                                <label class="payment-radio paypal-option">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                    Paypal
+                                </label>
+                            </div>
+                            <!-- /Paypal Payment -->
+
+                        </div>
+                    </div>
+                    <!-- /Booking Summary -->
                     <!-- Booking Summary -->
                     <div class="card booking-card">
                         <div class="card-header">
@@ -124,6 +126,7 @@
                                             </li>
                                         </ul>
                                     </div>
+
                                     <!-- Terms Accept -->
                                     <div class="terms-accept">
                                         <div class="custom-checkbox">

@@ -32,16 +32,15 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="card">
-                            <div class="card-body">
-                                <div class="doctor-widget">
-                                    <div class="video-container">
-                                        <iframe width="685" height="415"
-                                            src="https://www.youtube.com/embed/TTimxxM9RbE" frameborder="0" allowfullscreen
-                                            style="border-radius: 15px;"></iframe>
-                                    </div>
 
+                            <div class="doctor-widget">
+                                <div class="video-container">
+                                    <iframe width="685" height="415" src="https://www.youtube.com/embed/TTimxxM9RbE"
+                                        frameborder="0" allowfullscreen style="border-radius: 15px;"></iframe>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                     <div class="col-md-5">
