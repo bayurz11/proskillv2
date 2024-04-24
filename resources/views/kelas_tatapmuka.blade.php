@@ -461,7 +461,7 @@
                                             </div>
                                             <div>
                                                 <div class="review-price">
-                                                    <p>$1100.00<span>/hr</span></p>
+                                                    <p>Rp 195.00</p>
                                                 </div>
                                             </div>
                                             <div class="reviews-ratings">
