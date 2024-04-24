@@ -47,14 +47,17 @@
                     <div class="col-md-5">
                         <div class="card">
                             <div class="card-body">
-                                <div>
-                                    <a href=""> Judul 1 </a>
-                                    <a href=""> Judul 2</a>
-                                    <a href=""> Judul 3 </a>
-                                </div>
+                                <ul>
+                                    <li><a href="">Judul 1</a></li>
+                                    <li><a href="">Judul 2</a></li>
+                                    <li><a href="">Judul 3</a></li>
+                                    <li><a href="">Judul 4</a></li>
+                                    <li><a href="">Judul 5</a></li>
+                                </ul>
                                 <div class="doctor-widget">
                                     <div class="doc-info-right">
-                                        <div class="clinic-booking">
+                                        <div class="clinic-booking text-center">
+                                            <!-- Mengubah ke text-center untuk menengahkan button -->
                                             <a class="apt-btn" href="booking.html">Gabung Kelas</a>
                                         </div>
                                     </div>
