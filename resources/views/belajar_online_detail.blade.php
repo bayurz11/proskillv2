@@ -36,6 +36,11 @@
                                 frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+
                     <div class="doctor-widget">
                         <div class="doc-info-right">
                             {{-- <div class="clini-infos">
