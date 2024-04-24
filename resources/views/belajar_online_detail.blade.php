@@ -35,8 +35,9 @@
                             <div class="card-body">
                                 <div class="doctor-widget">
                                     <div class="video-container">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
-                                            frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/watch?v=TTimxxM9RbE" frameborder="0"
+                                            allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
