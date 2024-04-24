@@ -437,10 +437,10 @@
                                 <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="doctor-profile-widget doc-grid">
                                         <div class="doc-pro-img">
-                                            <a href="doctor-profile.html">
+                                            <a href="{{ route('detail_tatapmuka') }}">
                                                 <div class="doctor-profile-img">
-                                                    <img src="assets/img/doctors/doctor-13.jpg" class="img-fluid"
-                                                        alt="John Doe">
+                                                    <img src="assets/img/kelas/Fundamental Computer Skill.png"
+                                                        class="img-fluid" alt="John Doe">
                                                 </div>
                                             </a>
                                             <div class="reviews-ratings">
@@ -459,51 +459,25 @@
                                                 <div class="doc-pro-name">
                                                     <h4><a href="{{ route('detail_tatapmuka') }}">Fundamental Computer
                                                             Skill</a><i class="fas fa-circle-check"></i></h4>
-                                                    <p>Cardiology</p>
+                                                    <p>Beginner</p>
                                                 </div>
+
+                                            </div>
+                                            <div>
                                                 <div class="review-price">
                                                     <p>$1100.00<span>/hr</span></p>
                                                 </div>
                                             </div>
-                                            <div class="doc-pro-location">
+                                            {{-- <div class="doc-pro-location">
                                                 <p><i class="feather-map-pin"></i> <span>0.9</span> mi - New York, USA</p>
                                                 <p><i class="feather-award"></i> <span>15</span> Years of Experience</p>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="blog-pagination rev-page">
-                                        <nav>
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link page-prev" href="#" tabindex="-1"><i
-                                                            class="feather-chevrons-left me-1"></i> PREV</a>
-                                                </li>
-                                                <li class="page-item active">
-                                                    <a class="page-link" href="#">1</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">2</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">...</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">10</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link page-next" href="#">NEXT <i
-                                                            class="feather-chevrons-right ms-1"></i></a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
