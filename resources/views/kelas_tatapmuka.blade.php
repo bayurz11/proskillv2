@@ -395,7 +395,7 @@
                                                 <div class="doc-pro-name">
                                                     <h4><a href="{{ route('detail_tatapmuka') }}"
                                                             title="Fundamental Computer Skill">Fundamental Computer
-                                                            Skill</a><i class="fas fa-circle-check"></i></h4>
+                                                            Skill</a></h4>
                                                     <p>Beginner</p>
                                                 </div>
                                             </div>
