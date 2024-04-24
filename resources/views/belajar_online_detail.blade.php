@@ -36,9 +36,10 @@
                                 <div class="doctor-widget">
                                     <div class="video-container">
                                         <iframe width="560" height="315"
-                                            src="https://www.youtube.com/watch?v=TTimxxM9RbE" frameborder="0"
+                                            src="https://www.youtube.com/embed/TTimxxM9RbE" frameborder="0"
                                             allowfullscreen></iframe>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
