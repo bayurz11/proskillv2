@@ -33,6 +33,13 @@ class LandingPageController extends Controller
         $links = ArtikelYt::all();
         return view('kelas_tatapmuka', compact('userLoggedIn', 'articles', 'links'));
     }
+    public function belajar_online()
+    {
+        $userLoggedIn = Auth::check();
+        $articles = Artikel::all();
+        $links = ArtikelYt::all();
+        return view('belajar_online', compact('userLoggedIn', 'articles', 'links'));
+    }
     public function detail_tatapmuka()
     {
         $userLoggedIn = Auth::check();

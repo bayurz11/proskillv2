@@ -34,9 +34,9 @@
                                 {{ Request::is('tatap_muka*') ? 'style=color:##028E83;' : '' }}>Kelas Tatap
                                 Muka</span></a>
                     </li>
-                    <li class="{{ Request::is('Kelas_online*') ? 'active' : '' }}" style="margin-right: 50px;">
-                        <a href="{{ url('/Kelas_online') }}"><span
-                                {{ Request::is('Kelas_online*') ? 'style=color:##028E83;' : '' }}>Kelas
+                    <li class="{{ Request::is('belajar_online*') ? 'active' : '' }}" style="margin-right: 50px;">
+                        <a href="{{ url('/belajar_online') }}"><span
+                                {{ Request::is('belajar_online*') ? 'style=color:##028E83;' : '' }}>Kelas
                                 Online</span></a>
                     </li>
 
