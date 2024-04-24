@@ -398,9 +398,8 @@
                                                             Skill</a><i class="fas fa-circle-check"></i></h4>
                                                     <p>Beginner</p>
                                                 </div>
-
-
                                             </div>
+
                                             <div>
                                                 <div class="review-price">
                                                     <p>Rp 195.00</p>
