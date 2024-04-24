@@ -62,96 +62,70 @@
 
                     <!-- Booking Summary -->
                     <div class="card booking-card">
-                        <div class="payment-widget">
-                            <h4 class="card-title">Payment Method</h4>
+                        <div>
+                            <div class="payment-widget">
+                                <h4 class="card-title">Metode Pembayaran</h4>
 
-                            <!-- Paypal Payment -->
-                            <div class="payment-list">
-                                <label class="payment-radio paypal-option">
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                    Paypal
-                                </label>
+                                <!-- Paypal Payment -->
+                                <div class="payment-list">
+                                    <button>Otomatis</button>
+                                </div>
+                                <!-- /Paypal Payment -->
+
                             </div>
-                            <!-- /Paypal Payment -->
-
                         </div>
+
                     </div>
                     <!-- /Booking Summary -->
+
                     <!-- Booking Summary -->
                     <div class="card booking-card">
                         <div class="card-header">
-                            <h4 class="card-title">Booking Summary</h4>
+                            <h4 class="card-title">Payment details</h4>
                         </div>
-                        <div class="card-body">
 
-                            <!-- Booking Doctor Info -->
-                            <div class="booking-doc-info">
-                                <a href="doctor-profile.html" class="booking-doc-img">
-                                    <img src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
-                                </a>
-                                <div class="booking-info">
-                                    <h4><a href="doctor-profile.html">Dr. Darren Elder</a></h4>
-                                    <div class="rating">
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star filled"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="d-inline-block average-rating">35</span>
-                                    </div>
-                                    <div class="clinic-details">
-                                        <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
+                        <div class="booking-summary">
+                            <div class="booking-item-wrap">
+                                >
+                                <ul class="booking-fee">
+                                    <li>Consulting Fee <span>$100</span></li>
+                                    <li>Booking Fee <span>$10</span></li>
+                                    <li>Video Call <span>$50</span></li>
+                                </ul>
+                                <div class="booking-total">
+                                    <ul class="booking-total-list">
+                                        <li>
+                                            <span>Total</span>
+                                            <span class="total-cost">$160</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Terms Accept -->
+                                <div class="terms-accept">
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" id="terms_accept">
+                                        <label for="terms_accept">I have read and accept <a
+                                                href="terms-condition.html">Terms &amp; Conditions</a></label>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Booking Doctor Info -->
+                                <!-- /Terms Accept -->
 
-                            <div class="booking-summary">
-                                <div class="booking-item-wrap">
-                                    <ul class="booking-date">
-                                        <li>Date :<span> 16 Nov 2023</span></li>
-                                        <li>Time :<span> 10:00 AM</span></li>
-                                    </ul>
-                                    <ul class="booking-fee">
-                                        <li>Consulting Fee <span>$100</span></li>
-                                        <li>Booking Fee <span>$10</span></li>
-                                        <li>Video Call <span>$50</span></li>
-                                    </ul>
-                                    <div class="booking-total">
-                                        <ul class="booking-total-list">
-                                            <li>
-                                                <span>Total</span>
-                                                <span class="total-cost">$160</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Terms Accept -->
-                                    <div class="terms-accept">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" id="terms_accept">
-                                            <label for="terms_accept">I have read and accept <a
-                                                    href="terms-condition.html">Terms &amp; Conditions</a></label>
-                                        </div>
-                                    </div>
-                                    <!-- /Terms Accept -->
-
-                                    <!-- Submit Section -->
-                                    <div class="submit-section mt-4">
-                                        <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
-                                    </div>
-                                    <!-- /Submit Section -->
+                                <!-- Submit Section -->
+                                <div class="submit-section mt-4">
+                                    <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
                                 </div>
+                                <!-- /Submit Section -->
                             </div>
                         </div>
                     </div>
-                    <!-- /Booking Summary -->
-
                 </div>
-            </div>
+                <!-- /Booking Summary -->
 
+            </div>
         </div>
+
+    </div>
 
     </div>
     <!-- /Page Content -->

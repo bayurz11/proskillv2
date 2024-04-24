@@ -31,8 +31,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <div class="card">
 
+                        <div class="card-body">
                             <div class="doctor-widget">
                                 <div class="video-container">
                                     <iframe width="685" height="415" src="https://www.youtube.com/embed/TTimxxM9RbE"
@@ -40,8 +40,8 @@
                                 </div>
 
                             </div>
-
                         </div>
+
                     </div>
                     <div class="col-md-5">
                         <div class="card">
