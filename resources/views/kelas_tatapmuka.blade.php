@@ -187,7 +187,7 @@
     <!-- /Page Content --> --}}
     <!-- Page Content -->
     <div class="content">
-        <div class="container">>
+        <div class="container">
 
             <!-- Doctor Search List -->
             <div class="row">
@@ -423,9 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-12 theiaStickySidebar map-right">
-                    <div id="map" class="map-listing"></div>
-                </div>
+
             </div>
             <!-- /Doctor Search List -->
 
