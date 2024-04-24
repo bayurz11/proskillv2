@@ -68,7 +68,7 @@
 
                                 <!-- Paypal Payment -->
                                 <div class="payment-list">
-                                    <button>Otomatis</button>
+                                    <button type="button" class="btn btn-roundes btn-secondary">Otomatis</button>
                                 </div>
                                 <!-- /Paypal Payment -->
 
@@ -87,7 +87,7 @@
 
                             <div class="booking-summary">
                                 <div class="booking-item-wrap">
-                                    >
+
                                     <ul class="booking-fee">
                                         <li>Consulting Fee <span>$100</span></li>
                                         <li>Booking Fee <span>$10</span></li>
