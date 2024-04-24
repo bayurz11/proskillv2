@@ -8,7 +8,6 @@
             <div class="row align-items-center inner-banner">
                 <div class="col-md-12 col-12 text-center">
                     <h2 class="breadcrumb-title" style="color: #028E83;">Checkout Kelas</h2>
-                    <a class="breadcrumb-title" style="color: #FE9900;">Bergabung dengan kami di kelas Premium</a>
                     <nav aria-label="breadcrumb" class="page-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
@@ -32,7 +31,6 @@
 
                             <!-- Checkout Form -->
                             <form action="booking-success.html">
-
                                 <!-- Personal Information -->
                                 <div class="info-widget">
                                     <div class="card-body">
@@ -45,11 +43,7 @@
 
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- /Personal Information -->
-
-
                             </form>
                             <!-- /Checkout Form -->
 
