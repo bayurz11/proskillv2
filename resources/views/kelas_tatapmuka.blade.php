@@ -440,7 +440,7 @@
                                             <a href="{{ route('detail_tatapmuka') }}">
                                                 <div class="doctor-profile-img">
                                                     <img src="assets/img/kelas/Fundamental Computer Skill.png"
-                                                        class="img-fluid" alt="John Doe">
+                                                        class="img-fluid" alt="Kelas">
                                                 </div>
                                             </a>
                                             <div class="reviews-ratings">
