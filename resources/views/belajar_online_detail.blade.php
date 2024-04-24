@@ -47,13 +47,13 @@
                     <div class="col-md-5">
                         <div class="card">
                             <div class="card-body">
+                                <div>
+                                    <a href=""> Judul 1 </a>
+                                    <a href=""> Judul 2</a>
+                                    <a href=""> Judul 3 </a>
+                                </div>
                                 <div class="doctor-widget">
                                     <div class="doc-info-right">
-                                        <div>
-                                            <a href=""> Judul 1 </a>
-                                            <a href=""> Judul 2</a>
-                                            <a href=""> Judul 3 </a>
-                                        </div>
                                         <div class="clinic-booking">
                                             <a class="apt-btn" href="booking.html">Gabung Kelas</a>
                                         </div>
