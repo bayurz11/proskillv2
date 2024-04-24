@@ -83,49 +83,50 @@
                         <div class="card-header">
                             <h4 class="card-title">Payment details</h4>
                         </div>
+                        <div class="card-body">
 
-                        <div class="booking-summary">
-                            <div class="booking-item-wrap">
-                                >
-                                <ul class="booking-fee">
-                                    <li>Consulting Fee <span>$100</span></li>
-                                    <li>Booking Fee <span>$10</span></li>
-                                    <li>Video Call <span>$50</span></li>
-                                </ul>
-                                <div class="booking-total">
-                                    <ul class="booking-total-list">
-                                        <li>
-                                            <span>Total</span>
-                                            <span class="total-cost">$160</span>
-                                        </li>
+                            <div class="booking-summary">
+                                <div class="booking-item-wrap">
+                                    >
+                                    <ul class="booking-fee">
+                                        <li>Consulting Fee <span>$100</span></li>
+                                        <li>Booking Fee <span>$10</span></li>
+                                        <li>Video Call <span>$50</span></li>
                                     </ul>
-                                </div>
-
-                                <!-- Terms Accept -->
-                                <div class="terms-accept">
-                                    <div class="custom-checkbox">
-                                        <input type="checkbox" id="terms_accept">
-                                        <label for="terms_accept">I have read and accept <a
-                                                href="terms-condition.html">Terms &amp; Conditions</a></label>
+                                    <div class="booking-total">
+                                        <ul class="booking-total-list">
+                                            <li>
+                                                <span>Total</span>
+                                                <span class="total-cost">$160</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <!-- /Terms Accept -->
 
-                                <!-- Submit Section -->
-                                <div class="submit-section mt-4">
-                                    <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
+                                    <!-- Terms Accept -->
+                                    <div class="terms-accept">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" id="terms_accept">
+                                            <label for="terms_accept">I have read and accept <a
+                                                    href="terms-condition.html">Terms &amp; Conditions</a></label>
+                                        </div>
+                                    </div>
+                                    <!-- /Terms Accept -->
+
+                                    <!-- Submit Section -->
+                                    <div class="submit-section mt-4">
+                                        <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
+                                    </div>
+                                    <!-- /Submit Section -->
                                 </div>
-                                <!-- /Submit Section -->
                             </div>
                         </div>
                     </div>
+                    <!-- /Booking Summary -->
+
                 </div>
-                <!-- /Booking Summary -->
-
             </div>
-        </div>
 
-    </div>
+        </div>
 
     </div>
     <!-- /Page Content -->
