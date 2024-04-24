@@ -49,24 +49,19 @@
                             <div class="card-body">
                                 <div class="doctor-widget">
                                     <div class="doc-info-right">
+                                        <div>
+                                            <a href=""> Judul 1 </a>
+                                            <a href=""> Judul 2</a>
+                                            <a href=""> Judul 3 </a>
+                                        </div>
                                         <div class="clinic-booking">
-                                            <a class="apt-btn" href="https://www.youtube.com/watch?v=VIDEO_ID_1"
-                                                target="_blank"><i class="fab fa-youtube"></i> Tonton Video 1</a>
-                                            <a class="apt-btn" href="https://www.youtube.com/watch?v=VIDEO_ID_2"
-                                                target="_blank"><i class="fab fa-youtube"></i> Tonton Video 2</a>
-                                            <a class="apt-btn" href="https://www.youtube.com/watch?v=VIDEO_ID_3"
-                                                target="_blank"><i class="fab fa-youtube"></i> Tonton Video 3</a>
-                                            <a class="apt-btn" href="https://www.youtube.com/watch?v=VIDEO_ID_4"
-                                                target="_blank"><i class="fab fa-youtube"></i> Tonton Video 4</a>
-                                            <a class="apt-btn" href="https://www.youtube.com/watch?v=VIDEO_ID_5"
-                                                target="_blank"><i class="fab fa-youtube"></i> Tonton Video 5</a>
+                                            <a class="apt-btn" href="booking.html">Gabung Kelas</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
