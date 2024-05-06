@@ -2,9 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\indexController;
 use App\Http\Controllers\LandingpageController;
 
-Route::get('/', [LandingpageController::class, 'index'])->name('/');
+Route::get('/', [indexController::class, 'index'])->name('/');
 
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
