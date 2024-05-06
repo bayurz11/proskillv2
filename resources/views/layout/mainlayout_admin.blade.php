@@ -15,16 +15,20 @@
     <meta property="og:image" content="assets/img/preview-banner.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://proskill.sch.id/">
-    @include('layout.partials.head_admin')
+    @include('layout.partials.admin.head_admin')
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets_admin/images/favicon.png" />
 </head>
 
 <body>
-    @include('layout.partials.header_admin')
-    @include('layout.partials.nav_admin')
-    @yield('content')
-    @include('layout.partials.footer_admin-scripts')
+    <div class="main-wrapper">
+        @include('layout.partials.admin.nav_admin')
+        <div class="page-wrapper">
+            @include('layout.partials.admin.header_admin')
+            @yield('content')
+            @include('layout.partials.admin.footer_admin-scripts')
+        </div>
+    </div>
 </body>
 
 </html>

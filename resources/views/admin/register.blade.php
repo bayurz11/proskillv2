@@ -1,96 +1,113 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="The responsive professional Doccure template offers many features, like scheduling appointments with  top doctors, clinics, and hospitals via voice, video call & chat.">
-    <meta name="keywords"
-        content="practo clone, doccure, doctor appointment, Practo clone html template, doctor booking template">
-    <meta name="author" content="Practo Clone HTML Template - Doctor Booking Template">
-    <meta property="og:url" content="https://doccure.dreamstechnologies.com/html/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Doctors Appointment HTML Website Templates | Doccure">
-    <meta property="og:description"
-        content="The responsive professional Doccure template offers many features, like scheduling appointments with  top doctors, clinics, and hospitals via voice, video call & chat.">
-    <meta property="og:image" content="assets_admin/img/preview-banner.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="https://doccure.dreamstechnologies.com/html/">
-    <meta property="twitter:url" content="https://doccure.dreamstechnologies.com/html/">
-    <meta name="twitter:title" content="Doctors Appointment HTML Website Templates | Doccure">
-    <meta name="twitter:description"
-        content="The responsive professional Doccure template offers many features, like scheduling appointments with  top doctors, clinics, and hospitals via voice, video call & chat.">
-    <meta name="twitter:image" content="assets_admin/img/preview-banner.jpg">
-    <title>Doccure - Register</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets_admin/img/favicon.png">
+    <title>ProSkill Akademia | Login Admin</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets_admin/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- End fonts -->
 
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="assets_admin/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets_admin/plugins/fontawesome/css/all.min.css">
+    <!-- core:css -->
+    <link rel="stylesheet" href="../../../assets_admin_admin/vendors/core/core.css">
+    <!-- endinject -->
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets_admin/css/custom.css">
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
 
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../assets_admin/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="../../../assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../assets_admin/css/demo1/style.css">
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="../../../assets_admin/images/favicon.png" />
 </head>
 
 <body>
+    <div class="main-wrapper">
+        <div class="page-wrapper full-page">
+            <div class="page-content d-flex align-items-center justify-content-center">
 
-    <!-- Main Wrapper -->
-    <div class="main-wrapper login-body">
-        <div class="login-wrapper">
-            <div class="container">
-                <div class="col-md-4 mx-auto text-center">
-                    <div class="card">
-                        <div class="card-body login-right">
-                            <div class="login-right-wrap">
-                                <h1>Register</h1>
-                                <p class="account-subtitle">Access to our dashboard</p>
-
-                                <!-- Form -->
-                                <form action="index.html">
-                                    <div class="mb-3">
-                                        <input class="form-control" type="text" placeholder="Nama">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input class="form-control" type="text" placeholder="Email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input class="form-control" type="text" placeholder="Password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <button class="btn btn-primary w-100" type="submit">Login</button>
-                                    </div>
-                                </form>
-                                <!-- /Form -->
-
-                                <div class="text-center forgotpass"><a href="forgot-password.html">Forgot Password?</a>
+                <div class="row w-100 mx-0 auth-page">
+                    <div class="col-md-8 col-xl-4 mx-auto text-center">
+                        <div class="card" style="width: 100%;">
+                            <div class="row">
+                                <div class="auth-form-wrapper px-4 py-5">
+                                    <a href="{{ route('/') }}" class="d-block mb-2">
+                                        <img src="../../../assets_admin/images/logo1.svg" alt="ProSkill Logo"
+                                            style="max-width: 200px;">
+                                    </a>
+                                    <h5 class="text-muted fw-normal mb-4">Create a free account.</h5>
+                                    <form class="forms-sample" method="POST" action="{{ route('regisProses') }}">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Username</label>
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                autocomplete="name" placeholder="name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                autocomplete="current-password" placeholder="Password">
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="authCheck">
+                                            <label class="form-check-label" for="authCheck">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <button type="submit"
+                                                class="btn btn-primary text-white me-2 mb-2 mb-md-0">Sign up</button>
+                                            <button type="button"
+                                                class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
+                                                <i class="btn-icon-prepend" data-feather="twitter"></i>
+                                                Sign up with Twitter
+                                            </button>
+                                        </div>
+                                        <a href="{{ route('login_admin') }}" class="d-block mt-3 text-muted">Already a
+                                            user? Sign in</a>
+                                    </form>
                                 </div>
 
-                                <div class="text-center dont-have">Don’t have an account? <a
-                                        href="{{ route('/show_login') }}">Register</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-    <!-- /Main Wrapper -->
+    </div>
+    </div>
 
-    <!-- jQuery -->
-    <script src="assets_admin/js/jquery-3.7.1.min.js"></script>
+    <!-- core:js -->
+    <script src="../../../assets/vendors/core/core.js"></script>
+    <!-- endinject -->
 
-    <!-- Bootstrap Core JS -->
-    <script src="assets_admin/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
 
-    <!-- Custom JS -->
-    <script src="assets_admin/js/script.js"></script>
+    <!-- inject:js -->
+    <script src="../../../assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="../../../assets/js/template.js"></script>
+    <!-- endinject -->
+
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
 
 </body>
 

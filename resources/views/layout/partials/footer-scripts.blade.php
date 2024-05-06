@@ -1,24 +1,22 @@
-<!-- jQuery -->
+<!--<< All JS Plugins >>-->
 <script src="public/assets/js/jquery-3.7.1.min.js"></script>
-
-<!-- Bootstrap Core JS -->
+<!--<< Viewport Js >>-->
+<script src="public/assets/js/viewport.jquery.js"></script>
+<!--<< Bootstrap Js >>-->
 <script src="public/assets/js/bootstrap.bundle.min.js"></script>
-
-<!-- Owl Carousel JS -->
-<script src="public/assets/js/owl.carousel.min.js"></script>
-
-<!-- Slick JS -->
-<script src="public/assets/js/slick.js"></script>
-
-<!-- BacktoTop JS -->
-<script src="public/assets/js/backToTop.js"></script>
-
-<!-- Datepicker JS -->
-<script src="public/assets/js/moment.min.js"></script>
-<script src="public/assets/js/bootstrap-datetimepicker.min.js"></script>
-
-<!-- Animation JS -->
-<script src="public/assets/js/aos.js"></script>
-
-<!-- Custom JS -->
-<script src="public/assets/js/script.js"></script>
+<!--<< Nice Select Js >>-->
+<script src="public/assets/js/jquery.nice-select.min.js"></script>
+<!--<< Waypoints Js >>-->
+<script src="public/assets/js/jquery.waypoints.js"></script>
+<!--<< Counterup Js >>-->
+<script src="public/assets/js/jquery.counterup.min.js"></script>
+<!--<< Swiper Slider Js >>-->
+<script src="public/assets/js/swiper-bundle.min.js"></script>
+<!--<< MeanMenu Js >>-->
+<script src="public/assets/js/jquery.meanmenu.min.js"></script>
+<!--<< Magnific Popup Js >>-->
+<script src="public/assets/js/jquery.magnific-popup.min.js"></script>
+<!--<< Wow Animation Js >>-->
+<script src="public/assets/js/wow.min.js"></script>
+<!--<< Main.js >>-->
+<script src="public/assets/js/main.js"></script>

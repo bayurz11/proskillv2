@@ -1,99 +1,115 @@
-<!-- Footer -->
-<footer class="footer footer-one footer-fourteen footer-twelve">
-    <div class="footer-top">
+<!--<< Footer Section Start >>-->
+<footer class="footer-section section-bg fix">
+    <div class="frame-shape style-2">
+        <img src="public/assets/img/frame-2.png" alt="shape-img">
+    </div>
+    <div class="frame-shape-3 float-bob-y">
+        <img src="public/assets/img/frame-3.png" alt="shape-img">
+    </div>
+    <div class="footer-widgets-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="footer-widget footer-about">
-                        <div class="footer-logo">
-                            <a href="{{ url('/') }}"><img src="public/assets/img/logo.png" alt="logo"></a>
+                <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <a href="index.html">
+                                <img src="public/assets/img/logo/logo.svg" alt="logo-img">
+                            </a>
                         </div>
-                        <div class="footer-about-content ">
-                            <p style=" text-align: justify;">"ProSkill Akademia" BERKOMITMEN membantu memudahkan Anda
-                                menguasai TEKNOLOGI KOMPUTER
-                                dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing
-                                langsung oleh INSTRUKTUR yang KOMPETEN.</p>
+                        <div class="footer-content style-two">
+                            <p>
+                                Phasellus ultricies aliquam volutpat ullamcorper laoreet neque.
+                            </p>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <a href="contact.html" class="theme-btn">contact Us<i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-widget footer-menu">
-                                <h2 class="footer-title">Menu</h2>
-                                <ul>
-                                    <li><a href="{{ url('/') }}">Home</a></li>
-                                    <li><a href="{{ url('/blog') }}">Artikel</a></li>
-                                    <li><a href="{{ url('/about_us') }}">Tentang Kami</a></li>
-                                    <li><a href="{{ url('/contact_us') }}">Hubungi Kami</a></li>
-                                    <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
-                                            target="_blank">Lihat Brosur</a></li>
-
-                                    {{-- <li><a href="javascript:void(0);">Consult</a></li> --}}
-                                </ul>
-                            </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-footer-widget">
+                        <div class="widget-head">
+                            <h3>Quick Links</h3>
                         </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-widget footer-menu">
-                                {{-- <h2 class="footer-title">Specialities</h2>
-                                <ul>
-                                    <li><a href="javascript:void(0);">Neurology</a></li>
-                                    <li><a href="javascript:void(0);">Cardiologist</a></li>
-                                    <li><a href="javascript:void(0);">Dentist</a></li>
-                                </ul> --}}
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-4">
-                            <div class="footer-widget footer-contact">
-                                <h2 class="footer-title">Hubungi Kami</h2>
-                                <div class="footer-contact-info">
-
-                                    <div class="footer-address">
-                                        <p><i class="feather-map-pin"></i> Jl. H. Ungar No.2C, Tj. Ayun Sakti, Kec.
-                                            Bukit Bestari, Kota Tanjung Pinang, Kepulauan Riau 29113</p>
-                                    </div>
-                                    <div class="footer-address">
-                                        <p><i class="feather-phone-call"></i> +62 8126 6187 125</p>
-                                    </div>
-                                    <div class="footer-address mb-0">
-                                        <p><i class="feather-mail"></i> admin@proskill.sch.id</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="list-area">
+                            <li>
+                                <a href="program-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Our Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="news-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Our Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    FAQ’S
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
-                <div class="col-lg-4 col-md-7">
-                    <div class="footer-widget">
-                        <h2 class="footer-title">Sosial Media</h2>
-                        <div class="subscribe-form">
-                            {{-- <form action="#">
-                                <input type="email" class="form-control" placeholder="Enter Email">
-                                <button type="submit" class="btn">Submit</button>
-                            </form> --}}
+                <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="single-footer-widget style-margin">
+                        <div class="widget-head">
+                            <h3>Categories</h3>
                         </div>
-                        <div class="social-icon">
-                            <ul>
-                                {{-- <li>
-                                    <a href="javascript:void(0);"><i class="fab fa-facebook"></i></a>
-                                </li> --}}
-                                <li>
-                                    <a href="https://www.instagram.com/proskillakademia?igsh=MTJzdjNteGNrMGVpOA== "
-                                        target="_blank"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@ProSkillAkademia" target="_blank"><i
-                                            class="fab fa-youtube"></i></a>
-                                </li>
-                                {{-- <li>
-                                    <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-                                </li> --}}
-                                <li>
-                                    <a href="https://www.linkedin.com/company/proskill-akademia/;" target="_blank"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul>
+                        <ul class="list-area">
+                            <li>
+                                <a href="program-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Music Learning
+                                </a>
+                            </li>
+                            <li>
+                                <a href="program-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Sports, Games
+                                </a>
+                            </li>
+                            <li>
+                                <a href="program-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Science Class
+                                </a>
+                            </li>
+                            <li>
+                                <a href="program-details.html">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    Drawing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="single-footer-widget style-margin">
+                        <div class="widget-head">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="footer-content">
+                            <p>Sign up to searing weekly newsletter to get the latest updates.</p>
+                            <div class="footer-input">
+                                <input type="email" id="email2" placeholder="Enter Email Address">
+                                <button class="newsletter-btn" type="submit">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,32 +117,35 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container">
-            <!-- Copyright -->
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="copyright-text">
-                            <p class="mb-0"> Copyright © 2024 ProSkill Akademia</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6">
-
-                        <!-- Copyright Menu -->
-                        <div class="copyright-menu">
-                            <ul class="policy-menu">
-                                {{-- <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-condition.html">Terms and Conditions</a></li> --}}
-                                <li><a href="{{ route('show_login') }} " target="_blank">Login Admin</a></li>
-                            </ul>
-                        </div>
-                        <!-- /Copyright Menu -->
-
-                    </div>
-                </div>
-            </div>
-            <!-- /Copyright -->
+        <div class="f-bottom-shape">
+            <img src="public/assets/img/footer-bottom.png" alt="shape-img">
         </div>
+        <div class="container">
+            <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
+                    © All Copyright 2024 by <a href="index.html">Kidsa</a>
+                </p>
+                <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                    <li>
+                        <a href="contact.html">
+                            Terms & Condition
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Admin Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" id="scrollUp" class="scroll-icon">
+            <i class="far fa-arrow-up"></i>
+        </a>
     </div>
 </footer>
-<!-- /Footer -->

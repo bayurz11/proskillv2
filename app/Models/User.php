@@ -3,12 +3,14 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Role;
+use App\Models\UserRoles;
 use App\Models\HomeSetting;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Support\Facades\Artisan;
 
 class User extends Authenticatable
 {
@@ -45,16 +47,13 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function homeSetting()
+    public function role()
     {
-        return $this->hasOne(HomeSetting::class);
+        return $this->belongsTo(Role::class);
     }
-    public function ProfileSetting()
+
+    public function userRole()
     {
-        return $this->hasOne(User_Profile::class);
-    }
-    public function artikelYt()
-    {
-        return $this->hasOne(Artisan::class);
+        return $this->hasOne(UserRoles::class);
     }
 }

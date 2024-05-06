@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User_Profile;
-use Illuminate\Support\Facades\Auth;
-use App\Http\Requests\StoreUser_ProfileRequest;
-use App\Http\Requests\UpdateUser_ProfileRequest;
+use App\Models\UserProfile;
+use App\Http\Requests\StoreUserProfileRequest;
+use App\Http\Requests\UpdateUserProfileRequest;
 
 class UserProfileController extends Controller
 {
@@ -14,21 +13,7 @@ class UserProfileController extends Controller
      */
     public function index()
     {
-        if (Auth::check()) {
-
-            $user = Auth::user();
-            return view('admin.profile_setting', compact('user'));
-        }
-        return redirect('/show_login');
-    }
-    public function UserSetting()
-    {
-        if (Auth::check()) {
-
-            $user = Auth::user();
-            return view('admin.user_setting', compact('user'));
-        }
-        return redirect('/show_login');
+        //
     }
 
     /**
@@ -42,7 +27,7 @@ class UserProfileController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreUser_ProfileRequest $request)
+    public function store(StoreUserProfileRequest $request)
     {
         //
     }
@@ -50,7 +35,7 @@ class UserProfileController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(User_Profile $user_Profile)
+    public function show(UserProfile $userProfile)
     {
         //
     }
@@ -58,7 +43,7 @@ class UserProfileController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(User_Profile $user_Profile)
+    public function edit(UserProfile $userProfile)
     {
         //
     }
@@ -66,7 +51,7 @@ class UserProfileController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateUser_ProfileRequest $request, User_Profile $user_Profile)
+    public function update(UpdateUserProfileRequest $request, UserProfile $userProfile)
     {
         //
     }
@@ -74,7 +59,7 @@ class UserProfileController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User_Profile $user_Profile)
+    public function destroy(UserProfile $userProfile)
     {
         //
     }

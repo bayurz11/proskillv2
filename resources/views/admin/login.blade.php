@@ -1,120 +1,127 @@
-<html lang="zxx">
+@if (session('success'))
+    <div id="success-message" class="alert alert-success" style="position: fixed; top: 70px; right: 20px; z-index: 1000;">
+        {{ session('success') }}
+    </div>
+@endif
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="ProSkill Akademia BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh INSTRUKTUR yang KOMPETEN.">
-    <meta name="keywords"
-        content="Proskill, Proskill Akademia, teknologi komputer, kursus komputer, proskill akademia, proskill, kursus komputer tanjungpinang">
-    <meta name="author" content="ProSkill Akademia">
-    <meta property="og:url" content="https://proskill.sch.id/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="ProSkill Akademia">
-    <meta property="og:description"
-        content="ProSkill Akademia BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh INSTRUKTUR yang KOMPETEN.">
-    <meta property="og:image" content="public/assets/img/favicon.png">
-    <meta name="google-site-verification" content="hCMbf-C99zBHv278k_biSK9VKVvC8tMprI1k7Dl7NkQ" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets_admin/img/favicon.png" type="image/x-icon">
-    <title>ProSkill Akademia | Login</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>ProSkill Akademia | Login Admin</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets_admin/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- End fonts -->
 
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="assets_admin/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets_admin/plugins/fontawesome/css/all.min.css">
+    <!-- core:css -->
+    <link rel="stylesheet" href="../../../assets_admin_admin/vendors/core/core.css">
+    <!-- endinject -->
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets_admin/css/custom.css">
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
 
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../../assets_admin/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="../../../assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <!-- endinject -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../assets_admin/css/demo1/style.css">
+    <!-- End layout styles -->
+
+    <link rel="shortcut icon" href="../../../assets_admin/images/favicon.png" />
 </head>
 
 <body>
+    <div class="main-wrapper">
+        <div class="page-wrapper full-page">
+            <div class="page-content d-flex align-items-center justify-content-center">
 
-    <!-- Main Wrapper -->
-    <div class="main-wrapper login-body">
-        <div class="login-wrapper">
-            <div class="container">
-                <div class="col-md-4 mx-auto text-center">
-                    <div class="card">
-                        <div class="card-body login-right">
-                            <div class="login-right-wrap">
-                                <img src="assets_admin/img/logo.png" alt="Logo" class="mb-2" width="200"
-                                    height="40">
-
-                                <h1 style="color: #028E83;">Login</h1>
-                                <p class="account-subtitle" style="color: #FE9900;">Access to our dashboard</p>
-
-                                <!-- Form -->
-                                <form action="{{ route('login') }}" method="POST">
-                                    @csrf
-                                    <div class="mb-3">
-                                        <input class="form-control" type="email" placeholder="Email" name="email"
-                                            id="email">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input class="form-control" type="password" placeholder="Password"
-                                            name="password" id="password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <button class="btn btn-primary w-100" type="submit"
-                                            style="background-color: #028E83;">Login</button>
-                                    </div>
-
-                                </form>
-
-                                <!-- /Form -->
-
-                                <div class="text-center forgotpass"><a href="{{ route('password.request') }}"
-                                        style="color: #028E83;">Forgot Password?</a>
-                                </div>
-
-                                <div class="login-or">
-                                    <span class="or-line"></span>
-                                    <span class="span-or">or</span>
-                                </div>
-
-                                <!-- Social Login -->
-                                <div class="social-login-btn">
-                                    <a href="{{ route('google.redirect') }}" class="btn w-100"
-                                        style="background-color: #ffffff; color: #9b9a9a; border: 1px solid #9b9a9a; display: inline-block; padding: 10px; text-align: center; text-decoration: none; cursor: pointer; transition: background-color 0.3s;"
-                                        onmouseover="this.style.backgroundColor='#028E83';"
-                                        onmouseout="this.style.backgroundColor='#ffffff';">
-                                        <img src="assets/img/icons/google-icon.svg" alt="google-icon"
-                                            style="vertical-align: middle; margin-right: 5px;">
-                                        Log in with Google
+                <div class="row w-100 mx-0 auth-page">
+                    <div class="col-md-8 col-xl-4 mx-auto text-center">
+                        <div class="card" style="width: 100%;">
+                            <div class="row">
+                                <div class="auth-form-wrapper px-4 py-5">
+                                    <a href="{{ route('/') }}" class="d-block mb-2">
+                                        <img src="../../../assets_admin/images/logo1.svg" alt="ProSkill Logo"
+                                            style="max-width: 200px;">
                                     </a>
+
+
+                                    <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
+                                    <form class="forms-sample" method="POST" action="{{ route('loginProses') }}">
+                                        @csrf
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password" name="password"
+                                                autocomplete="current-password" placeholder="Password">
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input type="checkbox" class="form-check-input" id="authCheck">
+                                            <label class="form-check-label" for="authCheck">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <button type="submit"
+                                                class="btn btn-primary text-white me-2 mb-2 mb-md-0">Masuk</button>
+                                            <button type="button"
+                                                class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
+                                                <i class="btn-icon-prepend" data-feather="twitter"></i>
+                                                Sign up with Twitter
+                                            </button>
+                                        </div>
+                                        <a href="{{ route('register_admin') }}" class="d-block mt-3 text-muted">Already
+                                            a
+                                            user? Sign in</a>
+                                    </form>
                                 </div>
-
-                                <!-- /Social Login -->
-                                {{-- <div class="text-center dont-have">Don’t have an account? <a
-                                        href="{{ route('/show_register') }}">Register</a></div> --}}
-
                             </div>
-
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- /Main Wrapper -->
+    <!-- core:js -->
+    <script src="../../../assets_admin/vendors/core/core.js"></script>
+    <!-- endinject -->
 
-    <!-- jQuery -->
-    <script src="assets_admin/js/jquery-3.7.1.min.js"></script>
+    <!-- Plugin js for this page -->
+    <script src="../../../assets_admin/vendors/sweetalert2/sweetalert2.min.js"></script>
+    <!-- End plugin js for this page -->
 
-    <!-- Bootstrap Core JS -->
-    <script src="assets_admin/js/bootstrap.bundle.min.js"></script>
+    <!-- inject:js -->
+    <script src="../../../assets_admin/vendors/feather-icons/feather.min.js"></script>
+    <script src="../../../assets_admin/js/template.js"></script>
+    <!-- endinject -->
 
-    <!-- Custom JS -->
-    <script src="assets_admin/js/script.js"></script>
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+    <script>
+        // Ambil elemen pesan keberhasilan
+        var successMessage = document.getElementById('success-message');
 
+        // Tampilkan pesan keberhasilan
+        if (successMessage) {
+            // Tunggu 3 detik kemudian hilangkan pesan
+            setTimeout(function() {
+                successMessage.style.display = 'none';
+            }, 1000);
+        }
+    </script>
 </body>
 
 </html>

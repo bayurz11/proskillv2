@@ -1,7 +1,11 @@
-<html lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
 
 <head>
+    <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="ProSkill Akademia BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh INSTRUKTUR yang KOMPETEN.">
@@ -15,28 +19,33 @@
         content="ProSkill Akademia BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh INSTRUKTUR yang KOMPETEN.">
     <meta property="og:image" content="public/assets/img/favicon.png">
     <meta name="google-site-verification" content="hCMbf-C99zBHv278k_biSK9VKVvC8tMprI1k7Dl7NkQ" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
+    <!-- ======== Page title ============ -->
     <title>@yield('title')</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="public/assets/img/favicon.png" type="image/x-icon">
-
     @include('layout.partials.head')
-    <!-- Main Wrapper -->
-    <div class="main-wrapper home-twelve">
 
-
-        @include('layout.partials.header')
-        @yield('content')
-        @include('layout.partials.footer')
-        @component('components.cursor')
-        @endcomponent
-        <!-- /Main Wrapper -->
-        @component('components.modalpopup')
-        @endcomponent
-        @include('layout.partials.footer-scripts')
-    </div>
 </head>
+
+<body>
+
+    <!-- Preloader Start -->
+    {{-- @include('layout.partials.PreloaderStart') --}}
+
+    <!-- Offcanvas Area Start -->
+    @include('layout.partials.OffcanvasAreaStart')
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Top Section Start -->
+    @include('layout.partials.HeaderTopSectionStart')
+
+    <!-- Header Section Start -->
+    @include('layout.partials.HeaderSectionStart')
+
+    @yield('content')
+    <!--<< Footer Section Start >>-->
+    @include('layout.partials.footer')
+
+    @include('layout.partials.footer-scripts')
+
+</body>
 
 </html>
