@@ -8,20 +8,20 @@
 <!-- End fonts -->
 
 <!-- core:css -->
-<link rel="stylesheet" href="../assets_admin/vendors/core/core.css">
+<link rel="stylesheet" href="public/assets_admin/vendors/core/core.css">
 <!-- endinject -->
 
 <!-- Plugin css for this page -->
-<link rel="stylesheet" href="../assets_admin/vendors/flatpickr/flatpickr.min.css">
+<link rel="stylesheet" href="public/assets_admin/vendors/flatpickr/flatpickr.min.css">
 <!-- End plugin css for this page -->
 
 <!-- inject:css -->
-<link rel="stylesheet" href="../assets_admin/fonts/feather-font/css/iconfont.css">
-<link rel="stylesheet" href="../assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="public/assets_admin/fonts/feather-font/css/iconfont.css">
+<link rel="stylesheet" href="public/assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
 <!-- endinject -->
 
 <!-- Layout styles -->
-<link rel="stylesheet" href="../assets_admin/css/demo1/style.css">
+<link rel="stylesheet" href="public/assets_admin/css/demo1/style.css">
 <!-- End layout styles -->
 
-<link rel="shortcut icon" href="../assets_admin/images/favicon.png" />
+<link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />

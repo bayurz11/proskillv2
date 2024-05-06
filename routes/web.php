@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\indexController;
-use App\Http\Controllers\LandingpageController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 

@@ -17,7 +17,7 @@
     <meta property="twitter:url" content="https://proskill.sch.id/">
     @include('layout.partials.admin.head_admin')
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets_admin/images/favicon.png" />
+    <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
 </head>
 
 <body>
