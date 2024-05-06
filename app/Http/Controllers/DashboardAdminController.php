@@ -12,8 +12,13 @@ class DashboardAdminController extends Controller
 {
     public function show()
     {
+        if (!auth()->check()) {
+            return redirect()->route('login_admin');
+        }
+
         return view('admin.index');
     }
+
     public function showloginadmin()
     {
         return view('admin.login');
