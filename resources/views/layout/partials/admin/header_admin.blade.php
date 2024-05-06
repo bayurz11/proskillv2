@@ -266,14 +266,15 @@
                                 <span>Switch User</span>
                             </a>
                         </li>
-                        <form method="POST" action="{{ route('logout_admin') }}" class="dropdown-item py-2">
-                            @csrf
-                            <button type="submit" class="text-body btn btn-link ms-0">
-                                <i class="me-2 icon-md" data-feather="log-out"></i>
-                                <span>Log Out</span>
-                            </button>
-                        </form>
-
+                        <li class="dropdown-item py-2">
+                            <form method="POST" action="{{ route('logout_admin') }}" class="dropdown-item py-2">
+                                @csrf
+                                <button type="submit" class="text-body btn btn-link ms-0">
+                                    <i class="me-2 icon-md" data-feather="log-out"></i>
+                                    <span>Log Out</span>
+                                </button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </li>
