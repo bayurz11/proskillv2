@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LandingpageController;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\LandingpageController;
 
 Route::get('/', [LandingpageController::class, 'index'])->name('/');
 
