@@ -13,22 +13,22 @@
     <!-- End fonts -->
 
     <!-- core:css -->
-    <link rel="stylesheet" href="../../../assets_admin_admin/vendors/core/core.css">
+    <link rel="stylesheet" href="public/assets_admin_admin/vendors/core/core.css">
     <!-- endinject -->
 
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="../../../assets_admin/fonts/feather-font/css/iconfont.css">
-    <link rel="stylesheet" href="../../../assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="public/assets_admin/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="public/assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
     <!-- endinject -->
 
     <!-- Layout styles -->
-    <link rel="stylesheet" href="../../../assets_admin/css/demo1/style.css">
+    <link rel="stylesheet" href="public/assets_admin/css/demo1/style.css">
     <!-- End layout styles -->
 
-    <link rel="shortcut icon" href="../../../assets_admin/images/favicon.png" />
+    <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                             <div class="row">
                                 <div class="auth-form-wrapper px-4 py-5">
                                     <a href="{{ route('/') }}" class="d-block mb-2">
-                                        <img src="../../../assets_admin/images/logo1.svg" alt="ProSkill Logo"
+                                        <img src="public/assets_admin/images/logo1.svg" alt="ProSkill Logo"
                                             style="max-width: 200px;">
                                     </a>
                                     <h5 class="text-muted fw-normal mb-4">Create a free account.</h5>

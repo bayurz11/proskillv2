@@ -18,22 +18,22 @@
     <!-- End fonts -->
 
     <!-- core:css -->
-    <link rel="stylesheet" href="../../../assets_admin_admin/vendors/core/core.css">
+    <link rel="stylesheet" href="public/assets_admin/vendors/core/core.css">
     <!-- endinject -->
 
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
 
     <!-- inject:css -->
-    <link rel="stylesheet" href="../../../assets_admin/fonts/feather-font/css/iconfont.css">
-    <link rel="stylesheet" href="../../../assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="public/assets_admin/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="public/assets_admin/vendors/flag-icon-css/css/flag-icon.min.css">
     <!-- endinject -->
 
     <!-- Layout styles -->
-    <link rel="stylesheet" href="../../../assets_admin/css/demo1/style.css">
+    <link rel="stylesheet" href="public/assets_admin/css/demo1/style.css">
     <!-- End layout styles -->
 
-    <link rel="shortcut icon" href="../../../assets_admin/images/favicon.png" />
+    <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                             <div class="row">
                                 <div class="auth-form-wrapper px-4 py-5">
                                     <a href="{{ route('/') }}" class="d-block mb-2">
-                                        <img src="../../../assets_admin/images/logo1.svg" alt="ProSkill Logo"
+                                        <img src="public/assets_admin/images/logo1.svg" alt="ProSkill Logo"
                                             style="max-width: 200px;">
                                     </a>
 
@@ -96,16 +96,16 @@
     </div>
 
     <!-- core:js -->
-    <script src="../../../assets_admin/vendors/core/core.js"></script>
+    <script src="public/assets_admin/vendors/core/core.js"></script>
     <!-- endinject -->
 
     <!-- Plugin js for this page -->
-    <script src="../../../assets_admin/vendors/sweetalert2/sweetalert2.min.js"></script>
+    <script src="public/assets_admin/vendors/sweetalert2/sweetalert2.min.js"></script>
     <!-- End plugin js for this page -->
 
     <!-- inject:js -->
-    <script src="../../../assets_admin/vendors/feather-icons/feather.min.js"></script>
-    <script src="../../../assets_admin/js/template.js"></script>
+    <script src="public/assets_admin/vendors/feather-icons/feather.min.js"></script>
+    <script src="public/assets_admin/js/template.js"></script>
     <!-- endinject -->
 
     <!-- Custom js for this page -->
