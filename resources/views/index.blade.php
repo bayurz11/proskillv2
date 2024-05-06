@@ -27,7 +27,7 @@
                                 <div class="col-lg-8">
                                     <div class="hero-content">
                                         <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">Selamat
-                                            Datang di </h5>
+                                            Datang di Proskill</h5>
                                         <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
                                             Membangun Masa Depan <br> <span>Dengan
                                                 Teknologi</span>
