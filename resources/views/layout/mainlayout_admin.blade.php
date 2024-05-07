@@ -18,24 +18,43 @@
     @include('layout.partials.admin.head_admin')
     <!-- Favicon -->
     <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
-    @if (session('success'))
-        <div id="success-message" class="alert alert-success"
-            style="position: fixed; top: 150px; right: 20px; z-index: 1000;" role="alert">
-            {{ session('success') }}
-        </div>
-    @endif
-
     <script>
-        // Ambil elemen pesan keberhasilan
-        var successMessage = document.getElementById('success-message');
+        function showMessage(message) {
+            var div = document.createElement('div');
+            div.style.position = 'fixed';
+            div.style.top = '20px';
+            div.style.right = '20px';
+            div.style.backgroundColor = 'green';
+            div.style.color = '#fff';
+            div.style.padding = '20px';
+            div.style.borderRadius = '5px';
+            div.style.zIndex = '9999';
+            div.style.transition = 'opacity 0.5s ease-in-out';
 
-        // Tampilkan pesan keberhasilan
-        if (successMessage) {
-            // Tunggu 3 detik kemudian hilangkan pesan
+            // Buat elemen span untuk ikon
+            var icon = document.createElement('em');
+            icon.className = 'icon ni ni-check-thick';
+            icon.style.marginRight = '10px';
+            div.appendChild(icon);
+
+            // Buat elemen span untuk pesan
+            var span = document.createElement('span');
+            span.textContent = message;
+            div.appendChild(span);
+
+            document.body.appendChild(div);
+
             setTimeout(function() {
-                successMessage.style.display = 'none';
-            }, 2000);
+                div.style.opacity = '0';
+                setTimeout(function() {
+                    document.body.removeChild(div);
+                }, 500);
+            }, 4000);
         }
+
+        @if (session('success'))
+            showMessage('{{ session('success') }}');
+        @endif
     </script>
 </head>
 
