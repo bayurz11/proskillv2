@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
     @if (session('success'))
         <div id="success-message" class="alert alert-success"
-            style="position: fixed; top: 100px; right: 20px; z-index: 1000;" role="alert">
+            style="position: fixed; top: 130px; right: 20px; z-index: 1000;" role="alert">
             {{ session('success') }}
         </div>
     @endif
