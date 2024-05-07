@@ -416,6 +416,11 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
+                                        Aplikasi berbasis internet & AI
+                                        (ChatGPT,Bing)
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
                                         Assessment
                                     </li>
                                 </ul>
@@ -455,142 +460,19 @@
                                     <li>
                                         <i class="fa-solid fa-check"></i>
                                         Assessment
-                                    </li><br>
+                                    </li><br><br>
                                     <li>
 
                                     </li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">
-                                    Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
+                                <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
+                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                        class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="yearly" class="tab-pane fade" role="tabpanel">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items">
-                                <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img">
-                                </div>
-                                <div class="pricing-header">
-                                    <h4>Basic Plan</h4>
-                                    <h2>$39 <span>/monthly</span></h2>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum porttitor sem
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum lacinia quisque
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Fusce sagittis est fringilla auctor
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ligula enim varius lacus et luctus
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pellentesque non massa sed elit
-                                    </li>
-                                </ul>
-                                <a href="contact.html" class="theme-btn">
-                                    Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items active">
-                                <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element-2.png" alt="shape-img">
-                                </div>
-                                <div class="pricing-header">
-                                    <h4>Premium Plan</h4>
-                                    <h2>$49 <span>/monthly</span></h2>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum porttitor sem
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum lacinia quisque
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Fusce sagittis est fringilla auctor
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ligula enim varius lacus et luctus
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pellentesque non massa sed elit
-                                    </li>
-                                </ul>
-                                <a href="contact.html" class="theme-btn">
-                                    Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items">
-                                <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img">
-                                </div>
-                                <div class="pricing-header">
-                                    <h4>Advanced</h4>
-                                    <h2>$99 <span>/monthly</span></h2>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum porttitor sem
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Condimentum lacinia quisque
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Fusce sagittis est fringilla auctor
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ligula enim varius lacus et luctus
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pellentesque non massa sed elit
-                                    </li>
-                                </ul>
-                                <a href="contact.html" class="theme-btn">
-                                    Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
