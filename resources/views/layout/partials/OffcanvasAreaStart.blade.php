@@ -27,7 +27,7 @@
                             <div class="offcanvas__contact-text">
                                 <a target="_blank"
                                     href="https://www.google.com/maps/place/ProSkill+Akademia/@0.900628,104.4628587,17z/data=!3m1!4b1!4m6!3m5!1s0x31d9729a2556642d:0xaa63e717cb0e87b9!8m2!3d0.900628!4d104.4628587!16s%2Fg%2F11j4flvqxy?entry=ttu">
-                                    H. Ungar No.2C, Kota Tanjung Pinang, Kepulauan Riau</a>
+                                    Jl. H. Ungar No.2C, Kota Tanjung Pinang, Kepulauan Riau</a>
                             </div>
                         </li>
                         <li class="d-flex align-items-center">
