@@ -1,8 +1,6 @@
 <!--<< Footer Section Start >>-->
 <footer class="footer-section section-bg fix">
-    <div class="frame-shape style-2">
-        <img src="public/assets/img/frame-2.png" alt="shape-img">
-    </div>
+
     <div class="frame-shape-3 float-bob-y">
         <img src="public/assets/img/frame-3.png" alt="shape-img">
     </div>
