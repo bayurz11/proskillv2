@@ -369,7 +369,7 @@
                                     <li>
                                         <i class="fa-solid fa-check"></i>
                                         aplikasi berbasis internet & AI
-                                        (Canva, chat GPT,Bing/img creator)
+                                        (ChatGPT,Bing)
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
