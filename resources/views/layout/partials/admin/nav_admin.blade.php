@@ -47,13 +47,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false"
-                    aria-controls="emails">
+                <a class="nav-link" data-bs-toggle="collapse" href="#kelas" role="button" aria-expanded="false"
+                    aria-controls="kelas">
                     <i class="link-icon" data-feather="settings"></i>
                     <span class="link-title">Kelas</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="emails">
+                <div class="collapse" id="kelas">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
                             <a href="pages/email/inbox.html" class="nav-link">Kelas Tatap Muka</a>
