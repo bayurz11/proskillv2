@@ -336,7 +336,7 @@
                             <div class="pricing-items">
                                 <div class="icon bg-cover"
                                     style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon 2-22"></i>
+                                    <i class="icon 2-icon 2-22"></i>
                                 </div>
                                 <div class="element-shape">
                                     <img src="public/assets/img/pricing/element.png" alt="shape-img">
