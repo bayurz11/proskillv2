@@ -628,8 +628,9 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="wow fadeInUp">testimonials</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Parents' words are the key <br> to happy kids</h2>
+                <span class="wow fadeInUp">Kesan siswa ke ProSkill</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Pengalaman mereka bukan sekadar cerita. <br> Dengarkan suara
+                    siswa kami tentang perjalanan mereka bersama kami.</h2>
             </div>
             <div class="swiper testimonial-slider">
                 <div class="swiper-wrapper">
