@@ -84,7 +84,7 @@
                                     </a>
 
 
-                                    <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
+                                    <h5 class="text-muted fw-normal mb-4">Selamat datang! Masuk ke akun Anda.</h5>
                                     <form class="forms-sample" method="POST" action="{{ route('loginProses') }}">
                                         @csrf
 
