@@ -20,10 +20,11 @@
     <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
     @if (session('success'))
         <div id="success-message" class="alert alert-success"
-            style="position: fixed; top: 70px; right: 20px; z-index: 1000;">
+            style="position: fixed; top: 70px; right: 20px; z-index: 1000;" role="alert">
             {{ session('success') }}
         </div>
     @endif
+
     <script>
         // Ambil elemen pesan keberhasilan
         var successMessage = document.getElementById('success-message');
