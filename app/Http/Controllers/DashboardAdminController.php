@@ -12,8 +12,10 @@ class DashboardAdminController extends Controller
 {
     public function show()
     {
+
         if (!auth()->check()) {
-            return redirect()->route('login_admin');
+            $user = Auth::user();
+            return redirect()->route('login_admin', compact('user'));
         }
 
         return view('admin.index');
