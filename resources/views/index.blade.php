@@ -343,7 +343,7 @@
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Fundamental
-                                        Computer Skill</h4>
+                                        Computer Skill</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
                                     <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
 
@@ -386,8 +386,9 @@
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4>
-                                    <h2 style="color: #FE9900;"><sup>IDR</sup> 195K / <del>260K</del></h2>
-                                    <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
+                                    <br>
+                                    <h2 style="color: #ffffff;"><sup>IDR</sup> 195K / <del>260K</del></h2>
+                                    <span style="display: block; text-align: center; color: #ffffff;">(Beasiswa 25%)</span>
                                 </div>
                                 <ul class="pricing-list">
                                     <li>
@@ -426,7 +427,7 @@
                                     <img src="public/assets/img/pricing/element.png" alt="shape-img">
                                 </div>
                                 <div class="pricing-header">
-                                    <h4>Digital Design <br> Menggunakan Canva dan Figma</h4>
+                                    <h4>Digital Design Menggunakan <br> Canva dan Figma</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 195K / <del>260</del></h2>
                                     <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
                                 </div>
