@@ -363,12 +363,12 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek Ms Powerpoint <br>& Google Presentation
+                                        Praktek Ms Powerpoint & Google Presentation
                                         Dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek aplikasi berbasis internet <br>& AI
+                                        Praktek aplikasi berbasis internet & AI
                                         (Canva, chat GPT,Bing/img creator)
                                     </li>
                                 </ul>
