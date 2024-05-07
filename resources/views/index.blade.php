@@ -368,8 +368,12 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        aplikasi berbasis internet & AI
+                                        Aplikasi berbasis internet & AI
                                         (ChatGPT,Bing)
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Assessment
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
@@ -395,28 +399,29 @@
                                 <ul class="pricing-list">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Condimentum porttitor sem
+                                        Word & Google Docs Lanjut
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Condimentum lacinia quisque
+                                        Excel & Google Sheet
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Fusce sagittis est fringilla auctor
+                                        Power Point & Google
+                                        Presentation
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Ligula enim varius lacus et luctus
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pellentesque non massa sed elit
+                                        Google Drive & Google forms
                                     </li>
                                 </ul>
-                                <a href="contact.html" class="theme-btn">
-                                    Choose Plan <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Assessment
+                                </li>
+                                <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
+                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                        class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
@@ -436,23 +441,22 @@
                                 <ul class="pricing-list">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Condimentum porttitor sem
+                                        Dasar-dasar Desain Grafis
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Condimentum lacinia quisque
+                                        Praktek Canva
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Fusce sagittis est fringilla auctor
+                                        Praktek Figma
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Ligula enim varius lacus et luctus
-                                    </li>
+                                        Assessment
+                                    </li><br>
                                     <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pellentesque non massa sed elit
+
                                     </li>
                                 </ul>
                                 <a href="contact.html" class="theme-btn">
