@@ -71,15 +71,15 @@
                     <span class="link-title">Calendar</span>
                 </a>
             </li>
-            <li class="nav-item nav-category">Components</li>
+            <li class="nav-item nav-category">Inventaris</li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false"
-                    aria-controls="uiComponents">
+                <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button" aria-expanded="false"
+                    aria-controls="Inventaris">
                     <i class="link-icon" data-feather="feather"></i>
                     <span class="link-title">UI Kit</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="uiComponents">
+                <div class="collapse" id="Inventaris">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
                             <a href="pages/ui-components/accordion.html" class="nav-link">Accordion</a>
