@@ -1,8 +1,40 @@
 @if (session('success'))
-    <div id="success-message" class="alert alert-success" style="position: fixed; top: 70px; right: 20px; z-index: 1000;">
+    <div id="success-message" class="alert alert-success" style="position: fixed; top: 150px; right: 20px; z-index: 1000;"
+        role="alert">
         {{ session('success') }}
     </div>
 @endif
+
+@if (session('error'))
+    <div id="error-message" class="alert alert-danger" style="position: fixed; top: 150px; right: 20px; z-index: 1000;"
+        role="alert">
+        {{ session('error') }}
+    </div>
+@endif
+
+<script>
+    // Ambil elemen pesan keberhasilan
+    var successMessage = document.getElementById('success-message');
+    // Ambil elemen pesan kesalahan
+    var errorMessage = document.getElementById('error-message');
+
+    // Tampilkan pesan keberhasilan
+    if (successMessage) {
+        // Tunggu 3 detik kemudian hilangkan pesan
+        setTimeout(function() {
+            successMessage.style.display = 'none';
+        }, 2000);
+    }
+
+    // Tampilkan pesan kesalahan
+    if (errorMessage) {
+        // Tunggu 3 detik kemudian hilangkan pesan
+        setTimeout(function() {
+            errorMessage.style.display = 'none';
+        }, 2000);
+    }
+</script>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -108,19 +140,6 @@
     <script src="public/assets_admin/js/template.js"></script>
     <!-- endinject -->
 
-    <!-- Custom js for this page -->
-    <!-- End custom js for this page -->
-    <script>
-        // Ambil elemen pesan keberhasilan
-        var successMessage = document.getElementById('success-message');
-
-        // Tampilkan pesan keberhasilan
-        if (successMessage) {
-            // Tunggu 3 detik kemudian hilangkan pesan
-            setTimeout(function() {
-                successMessage.style.display = 'none';
-            }, 1000);
-        }
     </script>
 </body>
 
