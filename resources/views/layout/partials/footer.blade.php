@@ -18,47 +18,55 @@
                         </div>
                         <div class="footer-content style-two">
                             <p>
-                                Phasellus ultricies aliquam volutpat ullamcorper laoreet neque.
+                                "ProSkill Akademia" BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER
+                                dengan CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing
+                                langsung oleh INSTRUKTUR yang KOMPETEN.
                             </p>
                             <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/proskillakademia?igsh=MTJzdjNteGNrMGVpOA== "
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/proskill-akademia/;" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.youtube.com/channel/UCNw50VFi4Rdmv1WpKlWGHUQ" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
                             </div>
-                            <a href="contact.html" class="theme-btn">contact Us<i
-                                    class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
+                                data-animation="fadeInUp" data-delay="1.7s" class="theme-btn hover-white"
+                                target="_blank">
+                                Mulai Konsultasi
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <h3>Quick Links</h3>
+                            <h3>Menu</h3>
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="program-details.html">
+                                <a href="{{ route('/') }}">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    Our Services
+                                    Beranda
                                 </a>
                             </li>
                             <li>
                                 <a href="news-details.html">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    Our Blogs
+                                    Kelas Tatap Muka
                                 </a>
                             </li>
                             <li>
                                 <a href="faq.html">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    FAQ’S
+                                    Kelas Online
                                 </a>
                             </li>
                             <li>
                                 <a href="contact.html">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    Contact Us
+                                    Tentang Kami
                                 </a>
                             </li>
                         </ul>
@@ -67,52 +75,26 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                     <div class="single-footer-widget style-margin">
                         <div class="widget-head">
-                            <h3>Categories</h3>
+                            <h3>Lainnya</h3>
                         </div>
                         <ul class="list-area">
                             <li>
                                 <a href="program-details.html">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    Music Learning
+                                    Download Browsur
                                 </a>
                             </li>
                             <li>
-                                <a href="program-details.html">
+                                <a href="">
                                     <i class="fa-solid fa-chevron-right"></i>
-                                    Sports, Games
+                                    Login
                                 </a>
                             </li>
-                            <li>
-                                <a href="program-details.html">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    Science Class
-                                </a>
-                            </li>
-                            <li>
-                                <a href="program-details.html">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    Drawing
-                                </a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="single-footer-widget style-margin">
-                        <div class="widget-head">
-                            <h3>Newsletter</h3>
-                        </div>
-                        <div class="footer-content">
-                            <p>Sign up to searing weekly newsletter to get the latest updates.</p>
-                            <div class="footer-input">
-                                <input type="email" id="email2" placeholder="Enter Email Address">
-                                <button class="newsletter-btn" type="submit">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -123,21 +105,17 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Kidsa</a>
+                    © All Copyright 2024 by <a href="index.html">Proskill Akademia</a>
                 </p>
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                    <li>
-                        <a href="contact.html">
-                            Terms & Condition
-                        </a>
-                    </li>
+
                     <li>
                         <a href="contact.html">
                             Privacy Policy
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ route('login_admin') }}">
                             Admin Login
                         </a>
                     </li>
