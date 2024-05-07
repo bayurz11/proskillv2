@@ -762,8 +762,8 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="wow fadeInUp">Our Blogs</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Explore blogs and news</h2>
+                <span class="wow fadeInUp">Artikel</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Berita dan Tips Singkat tentang Komputer</h2>
             </div>
             <div class="news-wrapper">
                 <div class="row align-items-center">
