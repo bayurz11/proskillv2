@@ -1,10 +1,6 @@
 @section('title', 'ProSkill Akademia | Dashboard Admin')
 <?php $page = 'login_user'; ?>
-@if (session('success'))
-    <div id="success-message" class="alert alert-success" style="position: fixed; top: 70px; right: 20px; z-index: 1000;">
-        {{ session('success') }}
-    </div>
-@endif
+
 @extends('layout.mainlayout_admin')
 @section('content')
 
@@ -532,17 +528,6 @@
 
     </div>
 
-    <script>
-        // Ambil elemen pesan keberhasilan
-        var successMessage = document.getElementById('success-message');
 
-        // Tampilkan pesan keberhasilan
-        if (successMessage) {
-            // Tunggu 3 detik kemudian hilangkan pesan
-            setTimeout(function() {
-                successMessage.style.display = 'none';
-            }, 2000);
-        }
-    </script>
 
 @endsection
