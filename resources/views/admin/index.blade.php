@@ -532,19 +532,6 @@
 
     </div>
 
-    <div class="popup" id="popup"
-        style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: #fff; padding: 10px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); display: none; z-index: 9999;">
-        <div style="position: absolute; top: 5px; right: 5px; cursor: pointer;"
-            onclick="document.getElementById('popup').style.display = 'none';">×</div>
-        <p>Butuh bantuan? <a href="https://wa.me/+6281266187125" target="_blank">Hubungi kami via WhatsApp!</a></p>
-    </div>
-
-    <script>
-        // Automatically show the popup after 5 seconds (adjust as needed)
-        setTimeout(function() {
-            document.getElementById("popup").style.display = "block";
-        }, 5000);
-    </script>
     <script>
         // Ambil elemen pesan keberhasilan
         var successMessage = document.getElementById('success-message');
