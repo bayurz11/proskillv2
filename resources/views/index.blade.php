@@ -414,11 +414,12 @@
                                         <i class="fa-solid fa-check"></i>
                                         Google Drive & Google forms
                                     </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Assessment
+                                    </li>
                                 </ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    Assessment
-                                </li>
+
                                 <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
                                     class="theme-btn" target="_blank">Hubungi kami<i
                                         class="fa-solid fa-arrow-right-long"></i></a>
