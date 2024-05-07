@@ -42,8 +42,8 @@
             </li>
             <li class="nav-item">
                 <a href="pages/apps/chat.html" class="nav-link">
-                    <i class="link-icon" data-feather="message-square"></i>
-                    <span class="link-title">Chat</span>
+                    <i class="link-icon" data-feather="book"></i>
+                    <span class="link-title">Artikel</span>
                 </a>
             </li>
             <li class="nav-item">
