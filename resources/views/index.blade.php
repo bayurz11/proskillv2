@@ -343,7 +343,7 @@
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Fundamental
-                                        Computer Skill</h4><br>
+                                        Computer<br> Skill</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
                                     <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
 
