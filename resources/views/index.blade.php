@@ -355,26 +355,26 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek Ms Word & Google Docs Dasar
+                                        Ms Word & Google Docs Dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek Ms Excel & Google Sheet Dasar
+                                        Ms Excel & Google Sheet Dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek Ms Powerpoint & Google Presentation
+                                        Ms Powerpoint & Google Presentation
                                         Dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Praktek aplikasi berbasis internet & AI
+                                        aplikasi berbasis internet & AI
                                         (Canva, chat GPT,Bing/img creator)
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
-                                    style="background-color: ##028E83; border-color: ##028E83;" class="btn"
-                                    target="_blank">Hubungi kami</a>
+                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                        class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
