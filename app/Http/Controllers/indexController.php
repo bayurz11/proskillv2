@@ -16,4 +16,9 @@ class indexController extends Controller
 
         return view('artikel');
     }
+    public function showKelasOffline()
+    {
+
+        return view('kelasTatapMuka');
+    }
 }

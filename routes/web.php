@@ -6,6 +6,7 @@ use App\Http\Controllers\indexController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/artikel', [indexController::class, 'showArtikel'])->name('artikel');
+Route::get('/Kelastatapmuka', [indexController::class, 'showKelasOffline'])->name('Kelastatapmuka');
 
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
