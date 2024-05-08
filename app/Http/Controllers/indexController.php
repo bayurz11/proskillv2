@@ -11,4 +11,9 @@ class indexController extends Controller
 
         return view('index');
     }
+    public function showArtikel()
+    {
+
+        return view('artikel');
+    }
 }
