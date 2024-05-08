@@ -24,10 +24,10 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Blog List</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Artikel</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
-                        <a href="index.html">
+                        <a href="{{ route('/') }}">
                             Home
                         </a>
                     </li>
@@ -35,7 +35,7 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Blog List
+                        Artikel
                     </li>
                 </ul>
             </div>
