@@ -22,9 +22,6 @@
                         <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
                             <img src="public/assets/img/hero/star-2.png" alt="shape-img">
                         </div>
-                        <div class="frame-shape">
-                            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
-                        </div>
                         <div class="container">
                             <div class="row g-4 align-items-center">
                                 <div class="col-lg-8">
@@ -76,9 +73,6 @@
                         <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
                             <img src="public/assets/img/hero/star-2.png" alt="shape-img">
                         </div>
-                        <div class="frame-shape">
-                            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
-                        </div>
                         <div class="container">
                             <div class="row g-4 align-items-center">
                                 <div class="col-lg-8">
@@ -129,9 +123,6 @@
                         </div>
                         <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
                             <img src="public/assets/img/hero/star-2.png" alt="shape-img">
-                        </div>
-                        <div class="frame-shape">
-                            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
                         </div>
                         <div class="container">
                             <div class="row g-4 align-items-center">
