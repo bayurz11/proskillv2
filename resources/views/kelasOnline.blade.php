@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Kelas Tatap Muka</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Kelas Online</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
@@ -35,7 +35,7 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Kelas Tatap Muka
+                        Kelas Online
                     </li>
                 </ul>
             </div>
