@@ -19,16 +19,21 @@
                                     </li>
 
                                     <li class="{{ Request::is('kelas*') ? 'active' : '' }}">
-                                        <a href="#">
+                                        <a href="#" style="{{ Request::is('kelas*') ? 'color:#FE9900;' : '' }}">
                                             Kelas
                                             <i class="fas fa-angle-down"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li><a href="#">Kelas Tatap Muka</a></li>
-                                            <li><a href="#">Kelas Online</a></li>
+                                            <li class="{{ Request::is('Kelastatapmuka') ? 'active' : '' }}">
+                                                <a href="{{ url('Kelastatapmuka') }}">Kelas Tatap Muka</a>
+                                            </li>
+                                            <li class="{{ Request::is('kelasOnline') ? 'active' : '' }}">
+                                                <a href="{{ url('kelasOnline') }}">Kelas Online</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li class="{{ Request::is('artikel') ? 'active' : '' }}">
+
+                                    <li class="{{ Request::is('artikel*') ? 'active' : '' }}">
                                         <a href="{{ url('artikel') }}"><span
                                                 {{ Request::is('artikel') ? 'style=color:#FE9900;' : '' }}>Artikel</span></a>
                                     </li>
