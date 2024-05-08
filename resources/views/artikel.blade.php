@@ -3,24 +3,24 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
         <div class="line-shape">
-            <img src="assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
         </div>
         <div class="frame-shape">
-            <img src="assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -50,7 +50,7 @@
                     <div class="news-standard-wrapper">
                         <div class="news-standard-items">
                             <div class="news-thumb">
-                                <img src="assets/img/news/post-1.jpg" alt="img">
+                                <img src="public/assets/img/news/post-1.jpg" alt="img">
                                 <div class="post">
                                     <span>Activities</span>
                                 </div>
@@ -83,7 +83,7 @@
                         </div>
                         <div class="news-standard-items">
                             <div class="news-thumb">
-                                <img src="assets/img/news/post-2.jpg" alt="img">
+                                <img src="public/assets/img/news/post-2.jpg" alt="img">
                                 <div class="post">
                                     <span>Activities</span>
                                 </div>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="news-standard-items">
                             <div class="news-thumb">
-                                <img src="assets/img/news/post-3.jpg" alt="img">
+                                <img src="public/assets/img/news/post-3.jpg" alt="img">
                                 <div class="post">
                                     <span>Activities</span>
                                 </div>
@@ -196,7 +196,7 @@
                             <div class="recent-post-area">
                                 <div class="recent-items">
                                     <div class="recent-thumb">
-                                        <img src="assets/img/news/pp3.jpg" alt="img">
+                                        <img src="public/assets/img/news/pp3.jpg" alt="img">
                                     </div>
                                     <div class="recent-content">
                                         <ul>
@@ -215,7 +215,7 @@
                                 </div>
                                 <div class="recent-items">
                                     <div class="recent-thumb">
-                                        <img src="assets/img/news/pp4.jpg" alt="img">
+                                        <img src="public/assets/img/news/pp4.jpg" alt="img">
                                     </div>
                                     <div class="recent-content">
                                         <ul>
@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="recent-items">
                                     <div class="recent-thumb">
-                                        <img src="assets/img/news/pp5.jpg" alt="img">
+                                        <img src="public/assets/img/news/pp5.jpg" alt="img">
                                     </div>
                                     <div class="recent-content">
                                         <ul>
@@ -278,7 +278,7 @@
         style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
-            <img src="public/assets/img/Whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
+            <img src="public/public/assets/img/Whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
