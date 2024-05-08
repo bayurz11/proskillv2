@@ -90,20 +90,13 @@
             </li>
             <li class="nav-item nav-category">Keuangan</li>
             <li class="nav-item">
-                <a href="pages/apps/calendar.html" class="nav-link">
-                    <i class="link-icon" data-feather="dollar-sign"></i>
-                    <span class="link-title">Keuangan</span>
-                </a>
-            </li>
-            <li class="nav-item nav-category">Kesiswaan</li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#sertifikat" role="button"
-                    aria-expanded="false" aria-controls="sertifikat">
+                <a class="nav-link" data-bs-toggle="collapse" href="#Keuangan" role="button" aria-expanded="false"
+                    aria-controls="Keuangan">
                     <i class="link-icon" data-feather="anchor"></i>
-                    <span class="link-title">Siswa</span>
+                    <span class="link-title">Keuangan</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="sertifikat">
+                <div class="collapse" id="Keuangan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
                             <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>
@@ -120,170 +113,30 @@
                     </ul>
                 </div>
             </li>
+            <li class="nav-item nav-category">Kesiswaan</li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false"
-                    aria-controls="forms">
-                    <i class="link-icon" data-feather="inbox"></i>
-                    <span class="link-title">Forms</span>
+                <a class="nav-link" data-bs-toggle="collapse" href="#Kesiswaan" role="button"
+                    aria-expanded="false" aria-controls="Kesiswaan">
+                    <i class="link-icon" data-feather="anchor"></i>
+                    <span class="link-title">Siswa</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="forms">
+                <div class="collapse" id="Kesiswaan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/forms/basic-elements.html" class="nav-link">Basic Elements</a>
+                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/forms/advanced-elements.html" class="nav-link">Advanced
-                                Elements</a>
+                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/forms/editors.html" class="nav-link">Editors</a>
+                            <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/forms/wizard.html" class="nav-link">Wizard</a>
+                            <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#charts" role="button" aria-expanded="false"
-                    aria-controls="charts">
-                    <i class="link-icon" data-feather="pie-chart"></i>
-                    <span class="link-title">Charts</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="charts">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/charts/apex.html" class="nav-link">Apex</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">ChartJs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">Flot</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/peity.html" class="nav-link">Peity</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/charts/sparkline.html" class="nav-link">Sparkline</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#tables" role="button" aria-expanded="false"
-                    aria-controls="tables">
-                    <i class="link-icon" data-feather="layout"></i>
-                    <span class="link-title">Table</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="tables">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/tables/basic-table.html" class="nav-link">Basic Tables</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/tables/data-table.html" class="nav-link">Data Table</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false"
-                    aria-controls="icons">
-                    <i class="link-icon" data-feather="smile"></i>
-                    <span class="link-title">Icons</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="icons">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/icons/feather-icons.html" class="nav-link">Feather Icons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/icons/flag-icons.html" class="nav-link">Flag Icons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/icons/mdi-icons.html" class="nav-link">Mdi Icons</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item nav-category">Pages</li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" role="button"
-                    aria-expanded="false" aria-controls="general-pages">
-                    <i class="link-icon" data-feather="book"></i>
-                    <span class="link-title">Special pages</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="general-pages">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/general/blank-page.html" class="nav-link">Blank page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/general/faq.html" class="nav-link">Faq</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/general/invoice.html" class="nav-link">Invoice</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/general/profile.html" class="nav-link">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/general/pricing.html" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/general/timeline.html" class="nav-link">Timeline</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#authPages" role="button"
-                    aria-expanded="false" aria-controls="authPages">
-                    <i class="link-icon" data-feather="unlock"></i>
-                    <span class="link-title">Authentication</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="authPages">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/auth/login.html" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/auth/register.html" class="nav-link">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#errorPages" role="button"
-                    aria-expanded="false" aria-controls="errorPages">
-                    <i class="link-icon" data-feather="cloud-off"></i>
-                    <span class="link-title">Error</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="errorPages">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/error/404.html" class="nav-link">404</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/error/500.html" class="nav-link">500</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item nav-category">Docs</li>
-            <li class="nav-item">
-                <a href="https://www.nobleui.com/html/documentation/docs.html" target="_blank" class="nav-link">
-                    <i class="link-icon" data-feather="hash"></i>
-                    <span class="link-title">Documentation</span>
-                </a>
             </li>
         </ul>
     </div>
