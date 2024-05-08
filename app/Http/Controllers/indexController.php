@@ -21,4 +21,9 @@ class indexController extends Controller
 
         return view('kelasTatapMuka');
     }
+    public function showkelasOnline()
+    {
+
+        return view('kelasOnline');
+    }
 }
