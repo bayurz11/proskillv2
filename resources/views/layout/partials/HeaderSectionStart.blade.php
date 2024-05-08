@@ -29,7 +29,7 @@
                                         </ul>
                                     </li>
                                     <li class="{{ Request::is('artikel') ? 'active' : '' }}">
-                                        <a href="#">Artikel</a>
+                                        <a href="{{ url('artikel') }}">Artikel</a>
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#">
