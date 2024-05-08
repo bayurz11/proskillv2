@@ -29,7 +29,8 @@
                                         </ul>
                                     </li>
                                     <li class="{{ Request::is('artikel') ? 'active' : '' }}">
-                                        <a href="{{ url('artikel') }}">Artikel</a>
+                                        <a href="{{ url('artikel') }}"><span
+                                                {{ Request::is('/') ? 'style=color:#FE9900;' : '' }}>Artikel</span></a>
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#">
