@@ -477,7 +477,6 @@
         </div>
     </section>
 
-
     <!-- FAQ Start -->
     <section class="cta-section-2 section-padding fix bg-cover"
         style="background-image: url('public/assets/img/cta/cta-bg-2.png');">

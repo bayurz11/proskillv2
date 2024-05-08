@@ -52,7 +52,7 @@
                                 <i class="far fa-phone"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a href="tel:+6281266187125">+6281266187125</a>
+                                <a href="tel:+6281266187125">+628 1266 1871 25</a>
                             </div>
                         </li>
                     </ul>

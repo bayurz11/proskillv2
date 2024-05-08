@@ -58,7 +58,7 @@
                         <div class="content">
                             <span>Hubungi kami sekarang</span>
                             <h5>
-                                <a href="tel:+6281266187125">+62 8126 6187 125</a>
+                                <a href="tel:+6281266187125">+628 1266 1871 25</a>
                             </h5>
                         </div>
                     </div>
