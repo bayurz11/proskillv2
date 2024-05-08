@@ -19,7 +19,8 @@
                                     </li>
 
                                     <li class="{{ Request::is('kelas*') ? 'active' : '' }}">
-                                        <a href="#" style="{{ Request::is('kelas*') ? 'color:#FE9900;' : '' }}">
+                                        <a href="#"
+                                            style="{{ Request::is('Kelastatapmuka', 'kelasOnline') ? 'color:#FE9900;' : '' }}">
                                             Kelas
                                             <i class="fas fa-angle-down"></i>
                                         </a>
@@ -32,6 +33,7 @@
                                             </li>
                                         </ul>
                                     </li>
+
 
                                     <li class="{{ Request::is('artikel*') ? 'active' : '' }}">
                                         <a href="{{ url('artikel') }}"><span
