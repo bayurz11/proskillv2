@@ -24,24 +24,42 @@
                         <div class="modal-body">
 
                             <div class="mb-3">
-                                <label for="exampleInputText1" class="form-label">Text Input</label>
+                                <label for="exampleInputText1" class="form-label">Judul Artikel</label>
                                 <input type="text" class="form-control" id="exampleInputText1" value="Amiah Burton"
                                     placeholder="Enter Name">
                             </div>
-
                             <div class="mb-3">
-                                <label for="exampleInputEmail3" class="form-label">Email Input</label>
-                                <input type="email" class="form-control" id="exampleInputEmail3"
-                                    value="amiahburton@gmail.com" placeholder="Enter Email">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="formFile">File upload</label>
+                                <label class="form-label" for="formFile">Gambar Banner Artikel</label>
                                 <input class="form-control" type="file" id="formFile">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Isi Artikel</label>
                                 <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
                             </div>
+                            <div class="mb-3">
+                                <label for="kategori" class="form-label">Kategori Artikel</label>
+                                <input type="text" class="form-control" id="kategori" placeholder="kategori">
+                            </div>
+                            <div class="mb-3">
+                                <label for="kategori" class="form-label">Tanggal Ditulis</label>
+                                <input type="text" class="form-control" id="kategori" placeholder="kategori" readonly>
+                            </div>
+
+                            <script>
+                                // Fungsi untuk mengambil tanggal dan waktu saat ini
+                                function setRealTimeDate() {
+                                    var today = new Date();
+                                    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+                                    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                                    var dateTime = date + ' ' + time;
+                                    document.getElementById('kategori').value = dateTime;
+                                }
+
+                                // Panggil fungsi setRealTimeDate saat halaman dimuat
+                                window.onload = function() {
+                                    setRealTimeDate();
+                                };
+                            </script>
 
                         </div>
                         <div class="modal-footer">
