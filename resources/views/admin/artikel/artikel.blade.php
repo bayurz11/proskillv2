@@ -15,7 +15,8 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Tambah Artikel</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -30,39 +31,70 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Gambar Banner Artikel</label>
-                                <input class="form-control" type="file" id="formFile">
+                                <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                             </div>
+                            <img id="preview" src="#" alt="Preview Gambar"
+                                style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Isi Artikel</label>
                                 <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="kategori" class="form-label">Kategori Artikel</label>
-                                <input type="text" class="form-control" id="kategori" placeholder="kategori">
+                                <input type="text" class="form-control" id="category_id" name="category_id">
+                                <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
                             </div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    var input = document.querySelector('input[name=category_id]');
+
+                                    new Tagify(input, {
+                                        whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
+                                        dropdown: {
+                                            enabled: 1,
+                                            maxItems: 5
+                                        }
+                                    });
+                                });
+                            </script>
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" readonly>
                             </div>
 
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                             <script>
-                                // Fungsi untuk mengambil tanggal saat ini
-                                function setRealTimeDate() {
-                                    var today = new Date();
-                                    var options = {
-                                        weekday: 'long',
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric'
-                                    };
-                                    var date = today.toLocaleDateString('id-ID', options);
-                                    document.getElementById('tgl').value = date;
-                                }
+                                $(document).ready(function() {
+                                    $("#gambar").change(function() {
+                                        readURL(this);
+                                    });
+                                    var currentDate = new Date();
+                                    var day = currentDate.getDate();
+                                    var month = currentDate.getMonth();
+                                    var year = currentDate.getFullYear();
+                                    var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+                                        "September", "Oktober", "November", "Desember"
+                                    ];
+                                    day = day < 10 ? '0' + day : day;
+                                    var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+                                    $('#tgl').val(formattedDate);
+                                });
 
-                                // Panggil fungsi setRealTimeDate saat halaman dimuat
-                                window.onload = function() {
-                                    setRealTimeDate();
-                                };
+                                function readURL(input) {
+                                    if (input.files && input.files[0]) {
+                                        var reader = new FileReader();
+
+                                        reader.onload = function(e) {
+                                            $('#preview').attr('src', e.target.result).show();
+                                        };
+
+                                        reader.readAsDataURL(input.files[0]);
+                                    }
+                                }
                             </script>
 
                         </div>
