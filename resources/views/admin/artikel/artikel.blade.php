@@ -38,13 +38,10 @@
                                 <label class="form-label" for="formFile">File upload</label>
                                 <input class="form-control" type="file" id="formFile">
                             </div>
-
-                            <div class="card-body">
-                                <h4 class="card-title">EasyMDE</h4>
-
+                            <div class="mb-3">
+                                <label class="form-label" for="formFile">Isi Artikel</label>
                                 <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
                             </div>
-
 
                         </div>
                         <div class="modal-footer">
