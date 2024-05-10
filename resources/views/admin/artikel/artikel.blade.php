@@ -24,15 +24,6 @@
                             <div class="col-md-12 grid-margin stretch-card">
                                 <div class="card">
                                     <div class="card-body">
-                                        <textarea class="form-control" name="tinymce" id="tinymceExample" rows="10"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 grid-margin stretch-card">
-                                <div class="card">
-                                    <div class="card-body">
                                         <h4 class="card-title">EasyMDE</h4>
                                         <p class="text-muted mb-3">Read the <a href="https://easy-markdown-editor.tk/"
                                                 target="_blank"> Official EasyMDE Documentation </a>for a full list of

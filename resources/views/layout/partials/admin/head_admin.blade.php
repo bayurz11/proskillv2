@@ -29,3 +29,7 @@
 <!-- Plugin css for this page -->
 <link rel="stylesheet" href="public/assets_admin/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
 <!-- End plugin css for this page -->
+
+<!-- Plugin css for this page -->
+<link rel="stylesheet" href="public/assets_admin/vendors/easymde/easymde.min.css">
+<!-- End plugin css for this page -->

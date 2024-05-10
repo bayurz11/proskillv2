@@ -27,7 +27,5 @@
 <!-- End custom js for this page -->
 
 <!-- Plugin js for this page -->
-<script src="public/assets_admin/vendors/tinymce/tinymce.min.js"></script>
 <script src="public/assets_admin/vendors/easymde/easymde.min.js"></script>
-<script src="public/assets_admin/js/tinymce.js"></script>
 <script src="public/assets_admin/js/easymde.js"></script>
