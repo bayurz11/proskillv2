@@ -46,13 +46,11 @@
                             </div>
 
                             <script>
-                                // Fungsi untuk mengambil tanggal dan waktu saat ini
+                                // Fungsi untuk mengambil tanggal saat ini
                                 function setRealTimeDate() {
                                     var today = new Date();
-                                    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-                                    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                                    var dateTime = date + ' ' + time;
-                                    document.getElementById('tgl').value = dateTime;
+                                    var date = today.toDateString(); // Mengambil hanya tanggal
+                                    document.getElementById('tgl').value = date;
                                 }
 
                                 // Panggil fungsi setRealTimeDate saat halaman dimuat
