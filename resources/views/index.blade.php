@@ -199,116 +199,6 @@
         </div>
     </div>
 
-    <!-- Clases Section Start -->
-    <section class="clases-section section-padding bg-cover"
-        style="background-image: url('public/assets/img/clases-bg.jpg');">
-        <div class="clases-shape">
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="text-white wow fadeInUp">Kelas kami</span>
-                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Bergabunglah dengan Kami dan
-                    <br> Temukan Potensi Anda!
-                </h2>
-            </div>
-            <div class="array-button">
-                <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
-                <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-            </div>
-            <div class="swiper clases-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
-                            </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
-                            </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
-                            </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Pricing Section Start -->
     <section class="pricing-section section-bg section-padding">
         <div class="tree-shape float-bob-x">
@@ -476,6 +366,118 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Clases Section Start -->
+    <section class="clases-section section-padding bg-cover"
+        style="background-image: url('public/assets/img/clases-bg.jpg');">
+        <div class="clases-shape">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="text-white wow fadeInUp">Kelas kami</span>
+                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Bergabunglah dengan Kami dan
+                    <br> Temukan Potensi Anda!
+                </h2>
+            </div>
+            <div class="array-button">
+                <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
+                <button class="array-next"><i class="fal fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper clases-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="public/assets/img/classes/01.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">Fundamental Computer Skill</a>
+                                </h4>
+                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>tingkat</span> <br>
+                                        Dasar
+                                    </li>
+                                    <li>
+                                        <span>Jadwal</span> <br>
+                                        Fleksibe
+                                    </li>
+                                    <li>
+                                        <span>waktu</span> <br>
+                                        8 Pertemuan
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="public/assets/img/classes/01.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">Fundamental Computer Skill</a>
+                                </h4>
+                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>tingkat</span> <br>
+                                        Dasar
+                                    </li>
+                                    <li>
+                                        <span>Jadwal</span> <br>
+                                        Fleksibe
+                                    </li>
+                                    <li>
+                                        <span>waktu</span> <br>
+                                        8 Pertemuan
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="public/assets/img/classes/01.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">Fundamental Computer Skill</a>
+                                </h4>
+                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>tingkat</span> <br>
+                                        Dasar
+                                    </li>
+                                    <li>
+                                        <span>Jadwal</span> <br>
+                                        Fleksibe
+                                    </li>
+                                    <li>
+                                        <span>waktu</span> <br>
+                                        8 Pertemuan
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- FAQ Start -->
     <section class="cta-section-2 section-padding fix bg-cover"
