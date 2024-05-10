@@ -25,19 +25,19 @@
                         <div class="modal-body">
 
                             <div class="mb-3">
-                                <label for="exampleInputText1" class="form-label">Judul Artikel</label>
-                                <input type="text" class="form-control" id="exampleInputText1" value="Amiah Burton"
-                                    placeholder="Enter Name">
+                                <label for="title" class="form-label">Judul Artikel</label>
+                                <input type="text" class="form-control" id="title"
+                                    placeholder="Masukkan Judul Artikel">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Gambar Banner Artikel</label>
-                                <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                                <input type="file" accept="image/*" class="form-control" id="banner" name="banner">
                             </div>
-                            <img id="preview" src="#" alt="Preview Gambar"
+                            <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Isi Artikel</label>
-                                <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
+                                <textarea class="form-control" name="isi" id="isi" rows="8"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="kategori" class="form-label">Kategori Artikel</label>
@@ -63,13 +63,14 @@
                             </script>
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl" readonly>
+                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                                    readonly>
                             </div>
 
                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                             <script>
                                 $(document).ready(function() {
-                                    $("#gambar").change(function() {
+                                    $("#banner").change(function() {
                                         readURL(this);
                                     });
                                     var currentDate = new Date();
