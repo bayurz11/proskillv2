@@ -8,8 +8,8 @@
 <!-- End plugin js for this page -->
 
 <!-- Plugin js for this page -->
-<script src="../../../assets/vendors/datatables.net/jquery.dataTables.js"></script>
-<script src="../../../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
+<script src="public/assets_admin/vendors/datatables.net/jquery.dataTables.js"></script>
+<script src="public/assets_admin/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
 <!-- End plugin js for this page -->
 
 
