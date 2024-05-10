@@ -113,9 +113,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Tabel Artikel</h6>
-                        <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0">
-                            <i class="btn-icon-prepend" data-feather="plus-circle" ata-bs-toggle="modal"
-                                data-bs-target="#exampleModal"></i>
+                        <button type="button" class="btn btn-outline-primary btn-icon-text me-2 mb-2 mb-md-0"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="btn-icon-prepend" data-feather="plus-circle"></i>
                             Tambah Artikel
                         </button>
 
