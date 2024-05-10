@@ -49,7 +49,13 @@
                                 // Fungsi untuk mengambil tanggal saat ini
                                 function setRealTimeDate() {
                                     var today = new Date();
-                                    var date = today.toDateString(); // Mengambil hanya tanggal
+                                    var options = {
+                                        weekday: 'long',
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric'
+                                    };
+                                    var date = today.toLocaleDateString('id-ID', options);
                                     document.getElementById('tgl').value = date;
                                 }
 
