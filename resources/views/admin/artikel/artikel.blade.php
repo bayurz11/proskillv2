@@ -20,7 +20,15 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <textarea class="form-control" name="tinymce" id="tinymceExample" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
