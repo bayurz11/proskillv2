@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\indexController;
@@ -18,4 +19,5 @@ Route::post('/logout_admin', [DashboardAdminController::class, 'logout'])->name(
 
 
 Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashboard');
+Route::get('/artikel', [ArtikelController::class, 'show'])->name('artikel');
 //**************END DADHBOARD ADMIN **************//
