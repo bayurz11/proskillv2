@@ -25,3 +25,7 @@
 <!-- End layout styles -->
 
 <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
+
+<!-- Plugin css for this page -->
+<link rel="stylesheet" href="public/assets_admin/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
+<!-- End plugin css for this page -->
