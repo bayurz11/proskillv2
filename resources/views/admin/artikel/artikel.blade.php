@@ -15,22 +15,43 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
-                    </div>
-                    <div class="modal-body">
+                    <form>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah Artikel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="mb-3">
+                                <label for="exampleInputText1" class="form-label">Text Input</label>
+                                <input type="text" class="form-control" id="exampleInputText1" value="Amiah Burton"
+                                    placeholder="Enter Name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail3" class="form-label">Email Input</label>
+                                <input type="email" class="form-control" id="exampleInputEmail3"
+                                    value="amiahburton@gmail.com" placeholder="Enter Email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="formFile">File upload</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">EasyMDE</h4>
+
+                                <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
+                            </div>
 
 
-                        <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
-
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
