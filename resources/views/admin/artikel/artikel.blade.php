@@ -29,6 +29,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">EasyMDE</h4>
+                                        <p class="text-muted mb-3">Read the <a href="https://easy-markdown-editor.tk/"
+                                                target="_blank"> Official EasyMDE Documentation </a>for a full list of
+                                            instructions and other options.</p>
+                                        <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
