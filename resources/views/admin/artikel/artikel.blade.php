@@ -11,8 +11,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Data Table</li>
             </ol>
         </nav>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <form action="#" method="POST" enctype="multipart/form-data">
@@ -26,21 +25,21 @@
 
                             <div class="mb-3">
                                 <label for="title" class="form-label">Judul Artikel</label>
-                                <input type="text" class="form-control" id="title"
+                                <input type="text" class="form-control" id="title" name="title"
                                     placeholder="Masukkan Judul Artikel">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="formFile">Gambar Banner Artikel</label>
+                                <label class="form-label" for="banner">Gambar Banner Artikel</label>
                                 <input type="file" accept="image/*" class="form-control" id="banner" name="banner">
                             </div>
                             <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
-                                <label class="form-label" for="formFile">Isi Artikel</label>
-                                <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
+                                <label class="form-label" for="easyMdeExample">Isi Artikel</label>
+                                <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="kategori" class="form-label">Kategori Artikel</label>
+                                <label for="category_id" class="form-label">Kategori Artikel</label>
                                 <input type="text" class="form-control" id="category_id" name="category_id">
                                 <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
                             </div>
@@ -101,12 +100,13 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
