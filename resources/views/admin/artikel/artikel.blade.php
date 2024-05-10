@@ -114,7 +114,8 @@
                     <div class="card-body">
                         <h6 class="card-title">Tabel Artikel</h6>
                         <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="mdi mdi-bookmark-plus"></i>
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="link-icon"
+                                data-feather="settings"></i>
                             Tambah Artikel
                         </button>
                         <p class="text-muted mb-3">Jumlah Artikel :</p>
