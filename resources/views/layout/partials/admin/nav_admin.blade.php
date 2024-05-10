@@ -49,7 +49,7 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#kelas" role="button" aria-expanded="false"
                     aria-controls="kelas">
-                    <i class="link-icon" data-feather="settings"></i>
+                    <i class="link-icon" data-feather="home"></i>
                     <span class="link-title">Kelas</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
@@ -75,7 +75,7 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button" aria-expanded="false"
                     aria-controls="Inventaris">
-                    <i class="link-icon" data-feather="feather"></i>
+                    <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">Barang</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
@@ -92,7 +92,7 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Keuangan" role="button" aria-expanded="false"
                     aria-controls="Keuangan">
-                    <i class="link-icon" data-feather="anchor"></i>
+                    <i class="link-icon" data-feather="dollar-sign"></i>
                     <span class="link-title">Keuangan</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
@@ -117,7 +117,7 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Kesiswaan" role="button"
                     aria-expanded="false" aria-controls="Kesiswaan">
-                    <i class="link-icon" data-feather="anchor"></i>
+                    <i class="link-icon" data-feather="users"></i>
                     <span class="link-title">Siswa</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
