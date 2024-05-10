@@ -36,9 +36,9 @@
                     <div class="card-body">
                         <h6 class="card-title">Data Table</h6>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Launch demo modal
+                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Tambah Artikel
                         </button>
                         <p class="text-muted mb-3">Read the <a href="https://datatables.net/" target="_blank"> Official
                                 DataTables Documentation </a>for a full list of instructions and other options.</p>
