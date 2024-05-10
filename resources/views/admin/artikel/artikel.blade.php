@@ -10,11 +10,12 @@
                 <li class="breadcrumb-item"><a href="#">Tables</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Data Table</li>
             </ol>
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Tambah Artikel
+            </button>
         </nav>
-        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Tambah Artikel
-        </button>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
