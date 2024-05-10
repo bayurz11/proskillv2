@@ -37,7 +37,7 @@
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
                                 <label class="form-label" for="formFile">Isi Artikel</label>
-                                <textarea class="form-control" name="isi" id="isi" rows="8"></textarea>
+                                <textarea class="form-control" name="tinymce" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="kategori" class="form-label">Kategori Artikel</label>
