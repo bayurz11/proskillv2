@@ -41,8 +41,8 @@
                                 <input type="text" class="form-control" id="kategori" placeholder="kategori">
                             </div>
                             <div class="mb-3">
-                                <label for="kategori" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="kategori" placeholder="kategori" readonly>
+                                <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                                <input type="text" class="form-control" id="tgl" placeholder="tgl" readonly>
                             </div>
 
                             <script>
@@ -52,7 +52,7 @@
                                     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
                                     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
                                     var dateTime = date + ' ' + time;
-                                    document.getElementById('kategori').value = dateTime;
+                                    document.getElementById('tgl').value = dateTime;
                                 }
 
                                 // Panggil fungsi setRealTimeDate saat halaman dimuat
