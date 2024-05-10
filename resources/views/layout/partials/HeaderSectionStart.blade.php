@@ -35,19 +35,25 @@
                                     </li>
 
 
+                                    <li class="{{ Request::is('event*') ? 'active' : '' }}">
+                                        <a href="{{ url('event') }}"><span
+                                                {{ Request::is('event') ? 'style=color:#FE9900;' : '' }}>Event</span></a>
+                                    </li>
+
                                     <li class="{{ Request::is('artikel*') ? 'active' : '' }}">
                                         <a href="{{ url('artikel') }}"><span
                                                 {{ Request::is('artikel') ? 'style=color:#FE9900;' : '' }}>Artikel</span></a>
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#">
-                                            Lainnya
+                                            Profil
                                             <i class="fas fa-angle-down"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
-                                                    target="_blank">Download Browsur</a></li>
                                             <li><a href="#">Tentang Kami</a></li>
+                                            <li><a href="#">Contoh sertifikat </a></li>
+                                            <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
+                                                    target="_blank">Brosur</a></li>
                                             <li><a href="#">Hubungi Kami</a></li>
                                         </ul>
                                     </li>
