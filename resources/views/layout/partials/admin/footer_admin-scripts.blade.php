@@ -12,6 +12,10 @@
 <script src="public/assets_admin/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
 <!-- End plugin js for this page -->
 
+<!-- Custom js for this page -->
+<script src="public/assets_admin/js/data-table.js"></script>
+<!-- End custom js for this page -->
+
 
 <!-- inject:js -->
 <script src="public/assets_admin/vendors/feather-icons/feather.min.js"></script>
