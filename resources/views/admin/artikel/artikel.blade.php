@@ -10,37 +10,13 @@
                 <li class="breadcrumb-item"><a href="#">Tables</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Data Table</li>
             </ol>
-            <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                Tambah Artikel
-            </button>
         </nav>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Data Table</h6>
-                        <!-- Button trigger modal -->
-
                         <p class="text-muted mb-3">Read the <a href="https://datatables.net/" target="_blank"> Official
                                 DataTables Documentation </a>for a full list of instructions and other options.</p>
                         <div class="table-responsive">
@@ -241,7 +217,6 @@
         </div>
 
     </div>
-
 
 
 @endsection
