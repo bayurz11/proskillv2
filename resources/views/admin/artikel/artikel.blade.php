@@ -11,7 +11,10 @@
                 <li class="breadcrumb-item active" aria-current="page">Data Table</li>
             </ol>
         </nav>
-
+        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Tambah Artikel
+        </button>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -36,10 +39,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Data Table</h6>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Tambah Artikel
-                        </button>
+
                         <p class="text-muted mb-3">Read the <a href="https://datatables.net/" target="_blank"> Official
                                 DataTables Documentation </a>for a full list of instructions and other options.</p>
                         <div class="table-responsive">
