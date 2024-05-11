@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
+use App\Http\Controllers\KelasOnlineController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showArtikel'])->name('event');
@@ -19,9 +20,19 @@ Route::get('/register_admin', [DashboardAdminController::class, 'showregisteradm
 Route::post('/regisProses', [DashboardAdminController::class, 'register'])->name('regisProses');
 Route::post('/logout_admin', [DashboardAdminController::class, 'logout'])->name('logout_admin');
 
-
+//---Dashboard---//
 Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashboard');
+//---end dashboard---//
+
+//---Hero Section---//
 Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name('HeroSectionSetting');
 Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
+//---end Hero Section---//
+
+//---Kelas Online---//
+Route::get('/KelasOnlineSetting', [KelasOnlineController::class, 'show'])->name('KelasOnlineSetting');
+
+//---Artikel---//
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
+//---end Artikel---//
 //**************END DADHBOARD ADMIN **************//
