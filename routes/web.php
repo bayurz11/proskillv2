@@ -31,6 +31,7 @@ Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name(
 
 //---Kelas Online---//
 Route::get('/KelasOnlineSetting', [KelasOnlineController::class, 'show'])->name('KelasOnlineSetting');
+Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name('KelasOnlineStore');
 
 //---Artikel---//
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');

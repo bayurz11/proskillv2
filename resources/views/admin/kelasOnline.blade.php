@@ -14,23 +14,23 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="{{ route('HeroSectionStore') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('KelasOnlineStore') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah Hero</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah kelas Online</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="btn-close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="tagline" class="form-label">Tagline</label>
-                                <input type="text" class="form-control" id="tagline" name="tagline"
-                                    placeholder="Masukkan tagline Anda">
+                                <label for="kelas" class="form-label">Nama Kelas</label>
+                                <input type="text" class="form-control" id="kelas" name="kelas"
+                                    placeholder="Masukkan nama kelas Anda">
                             </div>
                             <div class="mb-3">
-                                <label for="promosi" class="form-label">Promosi</label>
-                                <input type="text" class="form-control" id="promosi" name="promosi"
-                                    placeholder="Masukkan promosi Anda">
+                                <label for="level" class="form-label">Level kelas</label>
+                                <input type="text" class="form-control" id="level" name="level"
+                                    placeholder="Pilih Level Kelas anda">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="gambar">Gambar Slider</label>
