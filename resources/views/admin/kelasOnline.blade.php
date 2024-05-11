@@ -110,18 +110,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{-- @foreach ($heroSections as $heroSection)
+                                    @foreach ($kelasOnline as $kelasonline)
                                         <tr>
-                                            <td>{{ $heroSection->tagline }}</td>
-                                            <td>{{ $heroSection->promosi }}</td>
-                                            <td><img src="{{ asset('public/uploads/' . $heroSection->banner) }}"
+                                            <td>{{ $kelasonline->kelas }}</td>
+                                            <td>{{ $kelasonline->level }}</td>
+                                            <td><img src="{{ asset('public/uploads/' . $kelasonline->banner) }}"
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
-                                            <td>{{ $heroSection->tgl }}</td>
+                                            <td>{{ $kelasonline->tgl }}</td>
                                             <td>
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
                                             </td>
                                         </tr>
-                                    @endforeach --}}
+                                    @endforeach
                             </table>
                         </div>
                     </div>

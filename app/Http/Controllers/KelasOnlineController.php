@@ -59,12 +59,13 @@ class KelasOnlineController extends Controller
     public function show(KelasOnline $kelasOnline)
     {
         $user = Auth::user();
+        $kelasOnline = KelasOnline::all();
 
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.kelasOnline', compact('user'));
+        return view('admin.kelasOnline', compact('user', 'kelasOnline'));
     }
 
     /**
