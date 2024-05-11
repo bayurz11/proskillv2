@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HeroSection;
+use App\Models\KelasOnline;
 use Illuminate\Http\Request;
 
 class indexController extends Controller
@@ -10,7 +11,8 @@ class indexController extends Controller
     public function index()
     {
         $heroSections = HeroSection::all();
-        return view('index', compact('heroSections'));
+        $kelasOnline = KelasOnline::all();
+        return view('index', compact('heroSections', 'kelasOnline'));
     }
     public function showArtikel()
     {

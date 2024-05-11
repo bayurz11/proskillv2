@@ -289,91 +289,36 @@
             <div class="swiper clases-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
+                        @foreach ($kelasOnline as $kelasonline)
+                            <div class="clases-items">
+                                <div class="clases-bg"></div>
+                                <div class="clases-image">
+                                    <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
+                                </div>
+                                <div class="clases-content">
+                                    <h4>
+                                        <a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
+                                    </h4>
+                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                    <ul class="clases-schedule">
+                                        <li>
+                                            <span>Level</span> <br>
+                                            {{ $kelasonline->level }}
+                                        </li>
+                                        <li>
+                                            <span>Jadwal</span> <br>
+                                            Fleksibe
+                                        </li>
+                                        <li>
+                                            <span>waktu</span> <br>
+                                            8 Pertemuan
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="https://ecourse.profithunter.club/courses/canva-mobile-class/ "
-                                        target="_blank">Canva Mobile
-                                        Class</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>Level</span> <br>
-                                        Beginner
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
-                    <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
-                            </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="clases-items">
-                            <div class="clases-bg"></div>
-                            <div class="clases-image">
-                                <img src="public/assets/img/classes/01.png" alt="img">
-                            </div>
-                            <div class="clases-content">
-                                <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
-                                </h4>
-                                <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                <ul class="clases-schedule">
-                                    <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
-                                    </li>
-                                    <li>
-                                        <span>Jadwal</span> <br>
-                                        Fleksibe
-                                    </li>
-                                    <li>
-                                        <span>waktu</span> <br>
-                                        8 Pertemuan
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
