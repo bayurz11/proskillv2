@@ -110,7 +110,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($heroSections as $heroSection)
+                                    {{-- @foreach ($heroSections as $heroSection)
                                         <tr>
                                             <td>{{ $heroSection->tagline }}</td>
                                             <td>{{ $heroSection->promosi }}</td>
@@ -121,7 +121,7 @@
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
                                             </td>
                                         </tr>
-                                    @endforeach
+                                    @endforeach --}}
                             </table>
                         </div>
                     </div>
