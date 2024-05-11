@@ -29,7 +29,7 @@
                 <div class="collapse" id="emails">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/email/inbox.html" class="nav-link">Inbox</a>
+                            <a href="{{ route('HeroSectionSetting') }}" class="nav-link">Hero Section Setting</a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/email/read.html" class="nav-link">Read</a>
