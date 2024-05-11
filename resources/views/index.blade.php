@@ -8,7 +8,7 @@
                 @foreach ($heroSections as $heroSection)
                     <div class="swiper-slide">
                         <div class="slider-image bg-cover"
-                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}'); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);">
+                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}');">
                             <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
                                 <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
                             </div>
@@ -28,16 +28,13 @@
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
                                         <div class="hero-content">
-                                            <h5 data-animation="fadeInUp" data-delay="1.3s"
-                                                style="color: #FE9900; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.3);">
+                                            <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #FE9900; );">
                                                 Selamat
                                                 Datang di Proskill</h5>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s"
-                                                style="color: #028E83; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.3);">
+                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83; );">
                                                 {{ $heroSection->tagline }}</span>
                                             </h1>
-                                            <p data-animation="fadeInUp" data-delay="1.7s"
-                                                style=" color: #FE9900; text-shadow: 2px 2px 4px rgba(239, 239, 239, 0.3);">
+                                            <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #FE9900;);">
                                                 {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
