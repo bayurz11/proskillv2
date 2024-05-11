@@ -27,13 +27,16 @@
                             <div class="container">
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
-                                        <div class="hero-content" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
-                                            <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">Selamat
+                                        <div class="hero-content">
+                                            <h5 data-animation="fadeInUp" data-delay="1.3s"
+                                                style="color: #FE9900; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Selamat
                                                 Datang di Proskill</h5>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
+                                            <h1 data-animation="fadeInUp" data-delay="1.5s"
+                                                style="color: #028E83; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
                                                 {{ $heroSection->tagline }}</span>
                                             </h1>
-                                            <p data-animation="fadeInUp" data-delay="1.7s">
+                                            <p data-animation="fadeInUp" data-delay="1.7s"
+                                                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
                                                 {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
