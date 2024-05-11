@@ -319,66 +319,10 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div class="clases-items">
-                                <div class="clases-bg"></div>
-                                <div class="clases-image">
-                                    <img src="public/assets/img/classes/01.png" alt="img">
-                                </div>
-                                <div class="clases-content">
-                                    <h4>
-                                        <a href="program-details.html">Fundamental Computer Skill</a>
-                                    </h4>
-                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                    <ul class="clases-schedule">
-                                        <li>
-                                            <span>tingkat</span> <br>
-                                            Dasar
-                                        </li>
-                                        <li>
-                                            <span>Jadwal</span> <br>
-                                            Fleksibe
-                                        </li>
-                                        <li>
-                                            <span>waktu</span> <br>
-                                            8 Pertemuan
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="clases-items">
-                                <div class="clases-bg"></div>
-                                <div class="clases-image">
-                                    <img src="public/assets/img/classes/01.png" alt="img">
-                                </div>
-                                <div class="clases-content">
-                                    <h4>
-                                        <a href="program-details.html">Fundamental Computer Skill</a>
-                                    </h4>
-                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                    <ul class="clases-schedule">
-                                        <li>
-                                            <span>tingkat</span> <br>
-                                            Dasar
-                                        </li>
-                                        <li>
-                                            <span>Jadwal</span> <br>
-                                            Fleksibe
-                                        </li>
-                                        <li>
-                                            <span>waktu</span> <br>
-                                            8 Pertemuan
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 @endforeach
             </div>
+        </div>
         </div>
     </section>
 
