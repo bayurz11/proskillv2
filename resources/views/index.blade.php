@@ -286,8 +286,8 @@
                 <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
                 <button class="array-next"><i class="fal fa-arrow-right"></i></button>
             </div>
-            @foreach ($kelasOnline as $kelasonline)
-                <div class="swiper clases-slider">
+            <div class="swiper clases-slider">
+                @foreach ($kelasOnline as $kelasonline)
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
 
@@ -317,12 +317,68 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="swiper-slide">
+                            <div class="clases-items">
+                                <div class="clases-bg"></div>
+                                <div class="clases-image">
+                                    <img src="public/assets/img/classes/01.png" alt="img">
+                                </div>
+                                <div class="clases-content">
+                                    <h4>
+                                        <a href="program-details.html">Fundamental Computer Skill</a>
+                                    </h4>
+                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                    <ul class="clases-schedule">
+                                        <li>
+                                            <span>tingkat</span> <br>
+                                            Dasar
+                                        </li>
+                                        <li>
+                                            <span>Jadwal</span> <br>
+                                            Fleksibe
+                                        </li>
+                                        <li>
+                                            <span>waktu</span> <br>
+                                            8 Pertemuan
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clases-items">
+                                <div class="clases-bg"></div>
+                                <div class="clases-image">
+                                    <img src="public/assets/img/classes/01.png" alt="img">
+                                </div>
+                                <div class="clases-content">
+                                    <h4>
+                                        <a href="program-details.html">Fundamental Computer Skill</a>
+                                    </h4>
+                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                    <ul class="clases-schedule">
+                                        <li>
+                                            <span>tingkat</span> <br>
+                                            Dasar
+                                        </li>
+                                        <li>
+                                            <span>Jadwal</span> <br>
+                                            Fleksibe
+                                        </li>
+                                        <li>
+                                            <span>waktu</span> <br>
+                                            8 Pertemuan
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </section>
 
