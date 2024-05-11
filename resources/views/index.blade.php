@@ -29,15 +29,15 @@
                                     <div class="col-lg-8">
                                         <div class="hero-content">
                                             <h5 data-animation="fadeInUp" data-delay="1.3s"
-                                                style="color: #FE9900; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.4);">
+                                                style="color: #FE9900; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.3);">
                                                 Selamat
                                                 Datang di Proskill</h5>
                                             <h1 data-animation="fadeInUp" data-delay="1.5s"
-                                                style="color: #028E83; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.4);">
+                                                style="color: #028E83; text-shadow: 2px 4px 8px rgba(239, 239, 239, 0.3);">
                                                 {{ $heroSection->tagline }}</span>
                                             </h1>
                                             <p data-animation="fadeInUp" data-delay="1.7s"
-                                                style="text-shadow: 2px 2px 4px rgba(239, 239, 239, 0.4);">
+                                                style=" color: #FE9900; text-shadow: 2px 2px 4px rgba(239, 239, 239, 0.3);">
                                                 {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
