@@ -46,10 +46,10 @@ class KelasOnlineController extends Controller
             $hero->user_id = $userId;
             $hero->save();
 
-            return redirect()->route('HeroSectionSetting')->with('success', 'Hero Section berhasil disimpan.');
+            return redirect()->route('KelasOnlineSetting')->with('success', 'Hero Section berhasil disimpan.');
         } else {
             // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
-            return redirect()->route('HeroSectionSetting')->with('error', 'Pilih gambar terlebih dahulu.');
+            return redirect()->route('KelasOnlineSetting')->with('error', 'Pilih gambar terlebih dahulu.');
         }
     }
 
