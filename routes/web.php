@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
@@ -20,5 +21,6 @@ Route::post('/logout_admin', [DashboardAdminController::class, 'logout'])->name(
 
 
 Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashboard');
+Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name('HeroSectionSetting');
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
 //**************END DADHBOARD ADMIN **************//
