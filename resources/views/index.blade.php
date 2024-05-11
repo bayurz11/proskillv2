@@ -8,7 +8,7 @@
                 @foreach ($heroSections as $heroSection)
                     <div class="swiper-slide">
                         <div class="slider-image bg-cover"
-                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}');">
+                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}'); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);">
                             <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
                                 <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
                             </div>
