@@ -33,6 +33,11 @@
                                     placeholder="Pilih Level Kelas anda">
                             </div>
                             <div class="mb-3">
+                                <label for="link" class="form-label">Link</label>
+                                <input type="text" class="form-control" id="link" name="link"
+                                    placeholder="Masukkan link anda">
+                            </div>
+                            <div class="mb-3">
                                 <label class="form-label" for="gambar">Gambar Slider</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                             </div>
@@ -105,6 +110,7 @@
                                         <th>Tagline</th>
                                         <th>promosi</th>
                                         <th>banner</th>
+                                        <th>link</th>
                                         <th>Tanggal Rilis</th>
                                         <th>Action</th>
                                     </tr>
@@ -116,6 +122,7 @@
                                             <td>{{ $kelasonline->level }}</td>
                                             <td><img src="{{ asset('public/uploads/' . $kelasonline->banner) }}"
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
+                                            <td>{{ $kelasonline->link }}</td>
                                             <td>{{ $kelasonline->tgl }}</td>
                                             <td>
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->

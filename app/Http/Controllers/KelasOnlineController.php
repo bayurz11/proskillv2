@@ -42,6 +42,7 @@ class KelasOnlineController extends Controller
             $hero->banner = $gambarName;
             $hero->kelas = $request->kelas;
             $hero->level = $request->level;
+            $hero->link = $request->link;
             $hero->tgl = $request->tgl;
             $hero->user_id = $userId;
             $hero->save();
