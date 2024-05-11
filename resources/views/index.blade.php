@@ -27,7 +27,7 @@
                             <div class="container">
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
-                                        <div class="hero-content" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                        <div class="hero-content" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
                                             <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">Selamat
                                                 Datang di Proskill</h5>
                                             <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
