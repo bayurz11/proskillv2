@@ -21,7 +21,7 @@
                             <div class="bee-shape" data-animation="fadeInUp" data-delay="2.5s">
                                 <img src="public/assets/img/hero/bee-2.png" alt="shape-img">
                             </div>
-                            <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
+                            <div class="star-shape" data-animation="fadeInUp" data-delay="3.4s">
                                 <img src="public/assets/img/hero/star-2.png" alt="shape-img">
                             </div>
                             <div class="container">
