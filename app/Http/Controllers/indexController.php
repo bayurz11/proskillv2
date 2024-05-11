@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HeroSection;
 use Illuminate\Http\Request;
 
 class indexController extends Controller
 {
     public function index()
     {
-
-        return view('index');
+        $heroSections = HeroSection::all();
+        return view('index', compact('heroSections'));
     }
     public function showArtikel()
     {
