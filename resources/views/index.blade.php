@@ -277,7 +277,7 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="text-white wow fadeInUp">Kelas kami</span>
+                <span class="text-white wow fadeInUp">Kelas online Kami</span>
                 <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Bergabunglah dengan Kami dan
                     <br> Temukan Potensi Anda!
                 </h2>
@@ -296,13 +296,14 @@
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="program-details.html">Fundamental Computer Skill</a>
+                                    <a href="https://ecourse.profithunter.club/courses/canva-mobile-class/">Canva Mobile
+                                        Class</a>
                                 </h4>
                                 <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
                                 <ul class="clases-schedule">
                                     <li>
-                                        <span>tingkat</span> <br>
-                                        Dasar
+                                        <span>Level</span> <br>
+                                        Beginner
                                     </li>
                                     <li>
                                         <span>Jadwal</span> <br>
