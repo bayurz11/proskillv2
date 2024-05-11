@@ -296,7 +296,8 @@
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="https://ecourse.profithunter.club/courses/canva-mobile-class/">Canva Mobile
+                                    <a href="https://ecourse.profithunter.club/courses/canva-mobile-class/ "
+                                        target="_blank">Canva Mobile
                                         Class</a>
                                 </h4>
                                 <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
