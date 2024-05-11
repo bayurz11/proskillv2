@@ -110,15 +110,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                    </tr>
-
-                                </tbody>
+                                    @foreach ($heroSections as $heroSection)
+                                        <tr>
+                                            <td>{{ $heroSection->tagline }}</td>
+                                            <td>{{ $heroSection->promosi }}</td>
+                                            <td><img src="{{ asset('uploads/' . $heroSection->banner) }}" alt="Banner"
+                                                    style="max-width: 100px;"></td>
+                                            <td>{{ $heroSection->tgl }}</td>
+                                            <td>
+                                                <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
+                                            </td>
+                                        </tr>
+                                    @endforeach
                             </table>
                         </div>
                     </div>
