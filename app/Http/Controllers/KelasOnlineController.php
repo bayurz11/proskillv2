@@ -44,7 +44,7 @@ class KelasOnlineController extends Controller
             return redirect()->route('login_admin');
         }
 
-        return view('admin.kelasonline.kelasOnline', compact('user'));
+        return view('admin.kelasOnline', compact('user'));
     }
 
     /**
