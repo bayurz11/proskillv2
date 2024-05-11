@@ -22,7 +22,6 @@
                                 aria-label="btn-close"></button>
                         </div>
                         <div class="modal-body">
-
                             <div class="mb-3">
                                 <label for="tagline" class="form-label">Tagline</label>
                                 <input type="text" class="form-control" id="tagline" name="tagline"
@@ -39,44 +38,11 @@
                             </div>
                             <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
-
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
                                     readonly>
                             </div>
-
-                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                            <script>
-                                $(document).ready(function() {
-                                    $("#banner").change(function() {
-                                        readURL(this);
-                                    });
-                                    var currentDate = new Date();
-                                    var day = currentDate.getDate();
-                                    var month = currentDate.getMonth();
-                                    var year = currentDate.getFullYear();
-                                    var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
-                                        "September", "Oktober", "November", "Desember"
-                                    ];
-                                    day = day < 10 ? '0' + day : day;
-                                    var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
-                                    $('#tgl').val(formattedDate);
-                                });
-
-                                function readURL(input) {
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-
-                                        reader.onload = function(e) {
-                                            $('#preview').attr('src', e.target.result).show();
-                                        };
-
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -86,6 +52,38 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#banner").change(function() {
+                    readURL(this);
+                });
+                var currentDate = new Date();
+                var day = currentDate.getDate();
+                var month = currentDate.getMonth();
+                var year = currentDate.getFullYear();
+                var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+                    "September", "Oktober", "November", "Desember"
+                ];
+                day = day < 10 ? '0' + day : day;
+                var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+                $('#tgl').val(formattedDate);
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#preview').attr('src', e.target.result).show();
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+
 
 
         <div class="row">
