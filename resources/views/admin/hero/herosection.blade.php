@@ -92,23 +92,22 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Tabel Artikel</h6>
+                        <h6 class="card-title">Hero Section</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
                                 data-feather="plus-circle"></i>
-                            Tambah Artikel
+                            Hero Section
                         </button>
-                        <p class="text-muted mb-3">Jumlah Artikel :</p>
+                        <p class="text-muted mb-3">Jumlah Hero Section :</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
-                                        <th>Penulis Artikel</th>
-                                        <th>Judul Artikel</th>
-                                        <th>isi Artikel</th>
+                                        <th>Tagline</th>
+                                        <th>promosi</th>
+                                        <th>banner</th>
                                         <th>Tanggal Rilis</th>
-                                        <th>Tag Kategori</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -119,7 +118,6 @@
                                         <td>Edinburgh</td>
                                         <td>61</td>
                                         <td>2011/04/25</td>
-                                        <td>$320,800</td>
                                     </tr>
 
                                 </tbody>
