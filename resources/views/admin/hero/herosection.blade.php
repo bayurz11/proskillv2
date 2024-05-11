@@ -114,8 +114,8 @@
                                         <tr>
                                             <td>{{ $heroSection->tagline }}</td>
                                             <td>{{ $heroSection->promosi }}</td>
-                                            <td><img src="{{ asset('uploads/' . $heroSection->banner) }}" alt="Banner"
-                                                    style="max-width: 100px;"></td>
+                                            <td><img src="{{ asset('public/uploads/' . $heroSection->banner) }}"
+                                                    alt="Banner" style="max-width: 100px;"></td>
                                             <td>{{ $heroSection->tgl }}</td>
                                             <td>
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
