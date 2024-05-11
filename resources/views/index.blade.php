@@ -6,7 +6,7 @@
         <div class="swiper hero-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slider-image bg-cover" style="background-image: url('public/assets/img/hero/slider-1.png');">
+                    <div class="slider-image bg-cover" style="background-image: url('public/assets/img/hero/slider_1.jpg');">
                         <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
                             <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
                         </div>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="slider-image bg-cover"
-                        style="background-image: url('public/assets/img/hero/slider-3.png');">
+                        style="background-image: url('public/assets/img/hero/slider_3.jpg');">
                         <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
                             <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
                         </div>
