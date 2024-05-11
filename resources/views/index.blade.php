@@ -286,10 +286,11 @@
                 <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
                 <button class="array-next"><i class="fal fa-arrow-right"></i></button>
             </div>
-            <div class="swiper clases-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        @foreach ($kelasOnline as $kelasonline)
+            @foreach ($kelasOnline as $kelasonline)
+                <div class="swiper clases-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
                             <div class="clases-items">
                                 <div class="clases-bg"></div>
                                 <div class="clases-image">
@@ -316,12 +317,12 @@
                                     </ul>
                                 </div>
                             </div>
-                        @endforeach
+
+                        </div>
+
                     </div>
-
-
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
