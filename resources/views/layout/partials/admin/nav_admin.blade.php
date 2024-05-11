@@ -32,7 +32,7 @@
                             <a href="{{ route('HeroSectionSetting') }}" class="nav-link">Hero Section Setting</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/email/read.html" class="nav-link">Read</a>
+                            <a href="{{ route('KelasOnlineSetting') }}" class="nav-link">Kelas Online Setting</a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/email/compose.html" class="nav-link">Compose</a>
