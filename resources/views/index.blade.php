@@ -31,115 +31,10 @@
                                             <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">Selamat
                                                 Datang di Proskill</h5>
                                             <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
-                                                Membangun Masa Depan <br> <span>Dengan
-                                                    Teknologi</span>
+                                                {{ $heroSection->tagline }}</span>
                                             </h1>
                                             <p data-animation="fadeInUp" data-delay="1.7s">
-                                                Suspendisse eget lectus vitae elit malesuada lacinia Vestibulum <br>
-                                                scelerisque, ligula sit amet consequat
-                                            </p>
-                                            <div class="hero-button">
-                                                <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
-                                                    data-animation="fadeInUp" data-delay="1.7s"
-                                                    class="theme-btn hover-white" target="_blank">
-                                                    Mulai Konsultasi
-                                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                                </a>
-                                                {{-- <a href="contact.html" data-animation="fadeInUp" data-delay="1.7s"
-                                                class="theme-btn transparent-2">
-                                                Get In Touch
-                                                <i class="fa-solid fa-arrow-right-long"></i>
-                                            </a> --}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image bg-cover"
-                            style="background-image: url('public/assets/img/hero/slider_2.jpg');">
-                            <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
-                                <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
-                            </div>
-                            <div class="doll-shape" data-animation="fadeInLeft" data-delay="2.3s">
-                                <img src="public/assets/img/hero/doll.png" alt="shape-img">
-                            </div>
-                            <div class="bus-shape" data-animation="fadeInLeft" data-delay="2.4s">
-                                <img src="public/assets/img/hero/bus.png" alt="shape-img">
-                            </div>
-                            <div class="bee-shape" data-animation="fadeInUp" data-delay="2.5s">
-                                <img src="public/assets/img/hero/bee-2.png" alt="shape-img">
-                            </div>
-                            <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
-                                <img src="public/assets/img/hero/star-2.png" alt="shape-img">
-                            </div>
-                            <div class="container">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-lg-8">
-                                        <div class="hero-content">
-                                            <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">Selamat
-                                                Datang di Proskill</h5>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
-                                                Membangun Masa Depan <br> <span>Dengan
-                                                    Teknologi</span>
-                                            </h1>
-                                            <p data-animation="fadeInUp" data-delay="1.7s">
-                                                Suspendisse eget lectus vitae elit malesuada lacinia Vestibulum <br>
-                                                scelerisque, ligula sit amet consequat
-                                            </p>
-                                            <div class="hero-button">
-                                                <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
-                                                    data-animation="fadeInUp" data-delay="1.7s"
-                                                    class="theme-btn hover-white" target="_blank">
-                                                    Mulai Konsultasi
-                                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                                </a>
-                                                {{-- <a href="contact.html" data-animation="fadeInUp" data-delay="1.7s"
-                                                class="theme-btn transparent-2">
-                                                Get In Touch
-                                                <i class="fa-solid fa-arrow-right-long"></i>
-                                            </a> --}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slider-image bg-cover"
-                            style="background-image: url('public/assets/img/hero/slider_3.jpg');">
-                            <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
-                                <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
-                            </div>
-                            <div class="doll-shape" data-animation="fadeInLeft" data-delay="2.3s">
-                                <img src="public/assets/img/hero/doll.png" alt="shape-img">
-                            </div>
-                            <div class="bus-shape" data-animation="fadeInLeft" data-delay="2.4s">
-                                <img src="public/assets/img/hero/bus.png" alt="shape-img">
-                            </div>
-                            <div class="bee-shape" data-animation="fadeInUp" data-delay="2.5s">
-                                <img src="public/assets/img/hero/bee-2.png" alt="shape-img">
-                            </div>
-                            <div class="star-shape" data-animation="fadeInUp" data-delay="2.4s">
-                                <img src="public/assets/img/hero/star-2.png" alt="shape-img">
-                            </div>
-                            <div class="container">
-                                <div class="row g-4 align-items-center">
-                                    <div class="col-lg-8">
-                                        <div class="hero-content">
-                                            <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #028E83;">
-                                                Selamat
-                                                Datang di Proskill</h5>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83;">
-                                                Membangun Masa Depan <br> <span>Dengan
-                                                    Teknologi</span>
-                                            </h1>
-                                            <p data-animation="fadeInUp" data-delay="1.7s">
-                                                Suspendisse eget lectus vitae elit malesuada lacinia Vestibulum <br>
-                                                scelerisque, ligula sit amet consequat
+                                                {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
                                                 <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
@@ -190,8 +85,8 @@
                                     alt="img"></span><span class="text-slider">Word</span>
                             <span class="text-slider"><img src="public/assets/img/Google Drive.svg"
                                     alt="img"></span><span class="text-slider text-color">Google Drive</span>
-                            <span class="text-slider"><img src="public/assets/img/ChatGPT.svg"
-                                    alt="img"></span><span class="text-slider">ChatGPT</span>
+                            <span class="text-slider"><img src="public/assets/img/ChatGPT.svg" alt="img"></span><span
+                                class="text-slider">ChatGPT</span>
                             <span class="text-slider"><img src="public/assets/img/Canva.svg" alt="img"></span><span
                                 class="text-slider">Canva</span>
                             <span class="text-slider"><img src="public/assets/img/Edge.svg" alt="img"></span><span
