@@ -31,12 +31,12 @@ class HeroSectionController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'tagline' => 'required|string|max:255',
-            'promosi' => 'required|string|max:255',
-            'tgl' => 'required|string',
-        ]);
+        // $request->validate([
+        //     'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        //     'tagline' => 'required|string|max:255',
+        //     'promosi' => 'required|string|max:255',
+        //     'tgl' => 'required|string',
+        // ]);
 
         $gambarName = time() . '.' . $request->gambar->extension();
         $request->gambar->move(public_path('uploads'), $gambarName);
