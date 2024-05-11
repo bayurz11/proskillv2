@@ -290,7 +290,6 @@
                 @foreach ($kelasOnline as $kelasonline)
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-
                             <div class="clases-items">
                                 <div class="clases-bg"></div>
                                 <div class="clases-image">
@@ -318,9 +317,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 @endforeach
+
             </div>
         </div>
         </div>
