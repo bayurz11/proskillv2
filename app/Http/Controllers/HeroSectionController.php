@@ -32,7 +32,7 @@ class HeroSectionController extends Controller
     public function store(Request $request)
     {
         // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
-        if ($request->hasFile('banner')) {
+        if ($request->hasFile('gambar')) {
             $gambarName = time() . '.' . $request->gambar->extension();
             $request->gambar->move(public_path('uploads'), $gambarName);
 

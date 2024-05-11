@@ -33,8 +33,8 @@
                                     placeholder="Masukkan promosi Anda">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="banner">Gambar Slider</label>
-                                <input type="file" accept="image/*" class="form-control" id="banner" name="banner">
+                                <label class="form-label" for="gambar">Gambar Slider</label>
+                                <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                             </div>
                             <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
@@ -56,7 +56,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function() {
-                $("#banner").change(function() {
+                $("#gambar").change(function() {
                     readURL(this);
                 });
                 var currentDate = new Date();
