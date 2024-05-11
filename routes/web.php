@@ -22,6 +22,6 @@ Route::post('/logout_admin', [DashboardAdminController::class, 'logout'])->name(
 
 Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashboard');
 Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name('HeroSectionSetting');
-Route::get('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
+Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
 //**************END DADHBOARD ADMIN **************//
