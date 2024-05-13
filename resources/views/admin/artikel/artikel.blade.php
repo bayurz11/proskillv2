@@ -141,10 +141,47 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td> {!! nl2br(substr($article->content, 0, 50)) !!} @if (strlen($article->content) > 50)
+                                            <!-- Tambahkan id ke elemen td -->
+                                            <td id="articleContent">{{ nl2br(substr($article->content, 0, 40)) }}
+                                                @if (strlen($article->content) > 40)
                                                     ...
                                                 @endif
                                             </td>
+
+                                            <!-- Tambahkan gaya CSS -->
+                                            <style>
+                                                /* Menampilkan konten penuh saat dihover */
+                                                #articleContent:hover {
+                                                    white-space: pre-line;
+                                                    /* Memastikan format baris baru dipertahankan */
+                                                    overflow: visible;
+                                                    /* Menghilangkan pembatas overflow */
+                                                    background-color: #fff;
+                                                    /* Menonaktifkan elipsis dan menghindari efek melingkar */
+                                                    position: relative;
+                                                    z-index: 1;
+                                                }
+                                            </style>
+
+                                            <!-- Tambahkan skrip JavaScript -->
+                                            <script>
+                                                // Memberikan fungsi untuk menambahkan elipsis saat tidak dihover
+                                                document.addEventListener('DOMContentLoaded', function() {
+                                                    var articleContent = document.getElementById('articleContent');
+                                                    var originalContent = articleContent.innerHTML;
+
+                                                    articleContent.addEventListener('mouseenter', function() {
+                                                        // Saat dihover, konten akan tetap sama
+                                                        this.innerHTML = originalContent;
+                                                    });
+
+                                                    articleContent.addEventListener('mouseleave', function() {
+                                                        // Saat tidak dihover, potong konten dan tambahkan elipsis
+                                                        this.innerHTML = originalContent.substr(0, 40) + (originalContent.length > 40 ? '...' : '');
+                                                    });
+                                                });
+                                            </script>
+
 
                                             <td>{{ $article->tgl }}</td>
                                             <td>
