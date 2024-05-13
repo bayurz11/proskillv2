@@ -47,10 +47,10 @@ class ArtikelController extends Controller
             $artikel->user_id = $userId;
             $artikel->save();
 
-            return redirect()->route('KelasOnlineSetting')->with('success', 'artikel  berhasil dibuat.');
+            return redirect()->route('artikel_setting')->with('success', 'artikel  berhasil dibuat.');
         } else {
             // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
-            return redirect()->route('KelasOnlineSetting')->with('error', 'Pilih gambar terlebih dahulu.');
+            return redirect()->route('artikel_setting')->with('error', 'Pilih gambar terlebih dahulu.');
         }
     }
 
