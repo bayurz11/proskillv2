@@ -140,14 +140,13 @@
                                     @foreach ($artikel as $key => $article)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
+                                            <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td>
-                                                <img src="{{ asset('uploads/' . $article->banner) }}" alt="Gambar"
-                                                    style="max-width: 100px;">
-                                            </td>
+                                            <td>{{ $article->content }}</td>
+                                            <td>{{ $article->tgl }}</td>
                                             <td>
                                                 @php
-                                                    $tags = json_decode($article->category_id, true);
+                                                    $tags = json_decode($article->category, true);
                                                 @endphp
 
                                                 @if (is_array($tags))
@@ -159,9 +158,7 @@
                                                     @endforeach
                                                 @endif
                                             </td>
-                                            <td>{{ $article->user->name }}</td>
 
-                                            <td>{{ $article->tgl }}</td>
                                             {{-- <td>
                                                     <div class="actions">
                                                         <a class="btn btn-sm bg-success-light" data-bs-toggle="modal"
