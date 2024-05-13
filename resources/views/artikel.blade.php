@@ -122,7 +122,8 @@
 
                                     <div class="recent-items">
                                         <div class="recent-thumb">
-                                            <img src="public/assets/img/news/pp5.jpg" alt="img">
+                                            <img src="{{ asset('public/uploads/' . $article->banner) }}"
+                                                style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <div class="recent-content">
                                             <ul>
