@@ -164,11 +164,10 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapusArtikel({{ $item->id }})"
+                                                <button onclick="hapusArtikel({{ $artikel->first()->id }})"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
-
 
                                                 <script>
                                                     function hapusArtikel(id) {
@@ -187,6 +186,7 @@
                                                         }
                                                     }
                                                 </script>
+
 
 
                                             </td>
