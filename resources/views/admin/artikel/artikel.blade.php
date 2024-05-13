@@ -142,7 +142,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td>{{ $article->content }}</td>
+                                            <td>{{ str_limit($article->content, 20) }}</td>
                                             <td>{{ $article->tgl }}</td>
                                             <td>
                                                 @php
@@ -164,7 +164,7 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapusArtikel({{ $artikel->first()->id }})"
+                                                <button onclick="hapusArtikel('{{ $artikel->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
@@ -179,15 +179,19 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Refresh halaman atau lakukan operasi lain sesuai kebutuhan
+                                                                    // Lakukan operasi lanjutan jika perlu
+                                                                    // Kemudian refresh halaman
                                                                     window.location.reload();
+                                                                } else {
+                                                                    // Tangani kesalahan jika ada
+                                                                    console.error('Gagal menghapus artikel');
                                                                 }
+                                                            }).catch(error => {
+                                                                console.error('Terjadi kesalahan:', error);
                                                             });
                                                         }
                                                     }
                                                 </script>
-
-
 
                                             </td>
                                         </tr>
