@@ -121,7 +121,7 @@
                                 <div class="recent-items">
                                     @foreach ($artikel as $article)
                                         <div class="recent-thumb">
-                                            <img src="{{ asset('public/uploads/' . $article->banner) }}" alt="img">
+                                            <img src="public/assets/img/news/pp3.jpg" alt="img">
                                         </div>
                                     @endforeach
                                     <div class="recent-items">
