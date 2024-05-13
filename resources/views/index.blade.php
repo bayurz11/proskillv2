@@ -667,7 +667,8 @@
                         @foreach ($artikel as $article)
                             <div class="news-right-items style-2">
                                 <div class="news-thumb">
-                                    <img src="public/assets/img/news/02.jpg" alt="img">
+                                    <img src="{{ asset('public/uploads/' . $article->banner) }}"
+                                        style="width: 230px; height: 236px;">
                                 </div>
                                 <div class="news-content">
                                     <ul>
