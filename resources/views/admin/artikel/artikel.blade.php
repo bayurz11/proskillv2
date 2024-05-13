@@ -42,8 +42,8 @@
                                 <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="category_id" class="form-label">Kategori Artikel</label>
-                                <input type="text" class="form-control" id="category_id" name="category_id">
+                                <label for="category" class="form-label">Kategori Artikel</label>
+                                <input type="text" class="form-control" id="category" name="category">
                                 <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
                             </div>
 
@@ -52,7 +52,7 @@
 
                             <script>
                                 document.addEventListener("DOMContentLoaded", function() {
-                                    var input = document.querySelector('input[name=category_id]');
+                                    var input = document.querySelector('input[name=category]');
 
                                     new Tagify(input, {
                                         whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
