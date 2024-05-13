@@ -167,122 +167,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="main-sidebar">
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Search</h3>
-                                </div>
-                                <div class="search-widget">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search here">
-                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Categories</h3>
-                                </div>
-                                <div class="news-widget-categories">
-                                    <ul>
-                                        <li><a href="news-details.html">Teachers</a> <span>(5)</span></li>
-                                        <li><a href="news-details.html">Indoor Games</a> <span>(3)</span></li>
-                                        <li class="active"><a href="news-details.html">Education</a><span>(6)</span></li>
-                                        <li><a href="news-details.html">Canteen</a> <span>(2)</span></li>
-                                        <li><a href="news-details.html">Classes</a> <span>(4)</span></li>
-                                        <li><a href="news-details.html">Examination</a> <span>(7)</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Recent Post</h3>
-                                </div>
-                                <div class="recent-post-area">
-                                    <div class="recent-items">
-                                        <div class="recent-thumb">
-                                            <img src="public/assets/img/news/pp3.jpg" alt="img">
-                                        </div>
-                                        <div class="recent-content">
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-calendar-days"></i>
-                                                    18 Dec, 2024
-                                                </li>
-                                            </ul>
-                                            <h6>
-                                                <a href="news-details.html">
-                                                    That Jerk Form Finance <br>
-                                                    Really Me
-                                                </a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="recent-items">
-                                        <div class="recent-thumb">
-                                            <img src="public/assets/img/news/pp4.jpg" alt="img">
-                                        </div>
-                                        <div class="recent-content">
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-calendar-days"></i>
-                                                    18 Dec, 2024
-                                                </li>
-                                            </ul>
-                                            <h6>
-                                                <a href="news-details.html">
-                                                    How to keep Chidden Safe <br>
-                                                    Online In Simple
-                                                </a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="recent-items">
-                                        <div class="recent-thumb">
-                                            <img src="public/assets/img/news/pp5.jpg" alt="img">
-                                        </div>
-                                        <div class="recent-content">
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-calendar-days"></i>
-                                                    18 Dec, 2024
-                                                </li>
-                                            </ul>
-                                            <h6>
-                                                <a href="news-details.html">
-                                                    Form Without Content <br>
-                                                    Style Without
-                                                </a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Tags</h3>
-                                </div>
-                                <div class="news-widget-categories">
-                                    <div class="tagcloud">
-                                        <a href="news-standard.html">Time-Table</a>
-                                        <a href="news-details.html">Children</a>
-                                        <a href="news-details.html">Examination</a>
-                                        <a href="news-details.html">Class</a>
-                                        <a href="news-details.html">Sports</a>
-                                        <a href="news-details.html">Canteen</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             @endforeach
         </div>
     </section>
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
