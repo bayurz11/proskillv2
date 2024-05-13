@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use App\Models\HeroSection;
 use App\Models\KelasOnline;
 use Illuminate\Http\Request;
@@ -16,8 +17,8 @@ class indexController extends Controller
     }
     public function showArtikel()
     {
-
-        return view('artikel');
+        $artikel = Artikel::all();
+        return view('artikel', compact('artikel'));
     }
     public function showKelasOffline()
     {

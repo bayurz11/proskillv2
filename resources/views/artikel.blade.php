@@ -45,232 +45,239 @@
     <!-- News Standard Section Start -->
     <section class="news-standard fix section-padding">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-lg-8">
-                    <div class="news-standard-wrapper">
-                        <div class="news-standard-items">
-                            <div class="news-thumb">
-                                <img src="public/assets/img/news/post-1.jpg" alt="img">
-                                <div class="post">
-                                    <span>Activities</span>
+            @foreach ($artikel as $article)
+                <div class="row g-4">
+                    <div class="col-12 col-lg-8">
+                        <div class="news-standard-wrapper">
+                            <div class="news-standard-items">
+                                <div class="news-thumb">
+                                    <img src="public/assets/img/news/post-1.jpg" alt="img">
+                                    <div class="post">
+                                        <span>Activities</span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            Feb 10, 2024
+                                        </li>
+                                        <li>
+                                            <i class="far fa-user"></i>
+                                            By admin
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        <a href="news-details.html">That jerk form finance really me</a>
+                                    </h3>
+                                    <p>
+                                        Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
+                                        malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
+                                        mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam
+                                        et,
+                                        venenatis.
+                                    </p>
+                                    <a href="news-details.html" class="theme-btn mt-4">
+                                        Read More
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="news-content">
+                            <div class="news-standard-items">
+                                <div class="news-thumb">
+                                    <img src="public/assets/img/news/post-2.jpg" alt="img">
+                                    <div class="post">
+                                        <span>Activities</span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            Feb 10, 2024
+                                        </li>
+                                        <li>
+                                            <i class="far fa-user"></i>
+                                            By admin
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        <a href="news-details.html">How to Keep Children Safe Online In Simple..</a>
+                                    </h3>
+                                    <p>
+                                        Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
+                                        malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
+                                        mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam
+                                        et,
+                                        venenatis.
+                                    </p>
+                                    <a href="news-details.html" class="theme-btn mt-4">
+                                        Read More
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news-standard-items">
+                                <div class="news-thumb">
+                                    <img src="public/assets/img/news/post-3.jpg" alt="img">
+                                    <div class="post">
+                                        <span>Activities</span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            Feb 10, 2024
+                                        </li>
+                                        <li>
+                                            <i class="far fa-user"></i>
+                                            By admin
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        <a href="news-details.html">From without content
+                                            style without </a>
+                                    </h3>
+                                    <p>
+                                        Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
+                                        malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
+                                        mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam
+                                        et,
+                                        venenatis.
+                                    </p>
+                                    <a href="news-details.html" class="theme-btn mt-4">
+                                        Read More
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page-nav-wrap pt-5 text-center">
                                 <ul>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i>
-                                        Feb 10, 2024
+                                    <li><a class="page-numbers" href="#"><i
+                                                class="fa-solid fa-arrow-left-long"></i></a>
                                     </li>
-                                    <li>
-                                        <i class="far fa-user"></i>
-                                        By admin
+                                    <li><a class="page-numbers" href="#">01</a></li>
+                                    <li><a class="page-numbers" href="#">02</a></li>
+                                    <li><a class="page-numbers" href="#">03</a></li>
+                                    <li><a class="page-numbers" href="#"><i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
                                     </li>
                                 </ul>
-                                <h3>
-                                    <a href="news-details.html">That jerk form finance really me</a>
-                                </h3>
-                                <p>
-                                    Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
-                                    malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
-                                    mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam et,
-                                    venenatis.
-                                </p>
-                                <a href="news-details.html" class="theme-btn mt-4">
-                                    Read More
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="news-standard-items">
-                            <div class="news-thumb">
-                                <img src="public/assets/img/news/post-2.jpg" alt="img">
-                                <div class="post">
-                                    <span>Activities</span>
-                                </div>
-                            </div>
-                            <div class="news-content">
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i>
-                                        Feb 10, 2024
-                                    </li>
-                                    <li>
-                                        <i class="far fa-user"></i>
-                                        By admin
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="news-details.html">How to Keep Children Safe Online In Simple..</a>
-                                </h3>
-                                <p>
-                                    Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
-                                    malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
-                                    mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam et,
-                                    venenatis.
-                                </p>
-                                <a href="news-details.html" class="theme-btn mt-4">
-                                    Read More
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="news-standard-items">
-                            <div class="news-thumb">
-                                <img src="public/assets/img/news/post-3.jpg" alt="img">
-                                <div class="post">
-                                    <span>Activities</span>
-                                </div>
-                            </div>
-                            <div class="news-content">
-                                <ul>
-                                    <li>
-                                        <i class="fas fa-calendar-alt"></i>
-                                        Feb 10, 2024
-                                    </li>
-                                    <li>
-                                        <i class="far fa-user"></i>
-                                        By admin
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="news-details.html">From without content
-                                        style without </a>
-                                </h3>
-                                <p>
-                                    Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
-                                    malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
-                                    mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam et,
-                                    venenatis.
-                                </p>
-                                <a href="news-details.html" class="theme-btn mt-4">
-                                    Read More
-                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="page-nav-wrap pt-5 text-center">
-                            <ul>
-                                <li><a class="page-numbers" href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
-                                </li>
-                                <li><a class="page-numbers" href="#">01</a></li>
-                                <li><a class="page-numbers" href="#">02</a></li>
-                                <li><a class="page-numbers" href="#">03</a></li>
-                                <li><a class="page-numbers" href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="main-sidebar">
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Search</h3>
-                            </div>
-                            <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" placeholder="Search here">
-                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Categories</h3>
-                            </div>
-                            <div class="news-widget-categories">
-                                <ul>
-                                    <li><a href="news-details.html">Teachers</a> <span>(5)</span></li>
-                                    <li><a href="news-details.html">Indoor Games</a> <span>(3)</span></li>
-                                    <li class="active"><a href="news-details.html">Education</a><span>(6)</span></li>
-                                    <li><a href="news-details.html">Canteen</a> <span>(2)</span></li>
-                                    <li><a href="news-details.html">Classes</a> <span>(4)</span></li>
-                                    <li><a href="news-details.html">Examination</a> <span>(7)</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Recent Post</h3>
-                            </div>
-                            <div class="recent-post-area">
-                                <div class="recent-items">
-                                    <div class="recent-thumb">
-                                        <img src="public/assets/img/news/pp3.jpg" alt="img">
-                                    </div>
-                                    <div class="recent-content">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-solid fa-calendar-days"></i>
-                                                18 Dec, 2024
-                                            </li>
-                                        </ul>
-                                        <h6>
-                                            <a href="news-details.html">
-                                                That Jerk Form Finance <br>
-                                                Really Me
-                                            </a>
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="recent-items">
-                                    <div class="recent-thumb">
-                                        <img src="public/assets/img/news/pp4.jpg" alt="img">
-                                    </div>
-                                    <div class="recent-content">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-solid fa-calendar-days"></i>
-                                                18 Dec, 2024
-                                            </li>
-                                        </ul>
-                                        <h6>
-                                            <a href="news-details.html">
-                                                How to keep Chidden Safe <br>
-                                                Online In Simple
-                                            </a>
-                                        </h6>
-                                    </div>
-                                </div>
-                                <div class="recent-items">
-                                    <div class="recent-thumb">
-                                        <img src="public/assets/img/news/pp5.jpg" alt="img">
-                                    </div>
-                                    <div class="recent-content">
-                                        <ul>
-                                            <li>
-                                                <i class="fa-solid fa-calendar-days"></i>
-                                                18 Dec, 2024
-                                            </li>
-                                        </ul>
-                                        <h6>
-                                            <a href="news-details.html">
-                                                Form Without Content <br>
-                                                Style Without
-                                            </a>
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Tags</h3>
-                            </div>
-                            <div class="news-widget-categories">
-                                <div class="tagcloud">
-                                    <a href="news-standard.html">Time-Table</a>
-                                    <a href="news-details.html">Children</a>
-                                    <a href="news-details.html">Examination</a>
-                                    <a href="news-details.html">Class</a>
-                                    <a href="news-details.html">Sports</a>
-                                    <a href="news-details.html">Canteen</a>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="main-sidebar">
+                            <div class="single-sidebar-widget">
+                                <div class="wid-title">
+                                    <h3>Search</h3>
+                                </div>
+                                <div class="search-widget">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search here">
+                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-widget">
+                                <div class="wid-title">
+                                    <h3>Categories</h3>
+                                </div>
+                                <div class="news-widget-categories">
+                                    <ul>
+                                        <li><a href="news-details.html">Teachers</a> <span>(5)</span></li>
+                                        <li><a href="news-details.html">Indoor Games</a> <span>(3)</span></li>
+                                        <li class="active"><a href="news-details.html">Education</a><span>(6)</span></li>
+                                        <li><a href="news-details.html">Canteen</a> <span>(2)</span></li>
+                                        <li><a href="news-details.html">Classes</a> <span>(4)</span></li>
+                                        <li><a href="news-details.html">Examination</a> <span>(7)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-widget">
+                                <div class="wid-title">
+                                    <h3>Recent Post</h3>
+                                </div>
+                                <div class="recent-post-area">
+                                    <div class="recent-items">
+                                        <div class="recent-thumb">
+                                            <img src="public/assets/img/news/pp3.jpg" alt="img">
+                                        </div>
+                                        <div class="recent-content">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    18 Dec, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    That Jerk Form Finance <br>
+                                                    Really Me
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-items">
+                                        <div class="recent-thumb">
+                                            <img src="public/assets/img/news/pp4.jpg" alt="img">
+                                        </div>
+                                        <div class="recent-content">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    18 Dec, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    How to keep Chidden Safe <br>
+                                                    Online In Simple
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-items">
+                                        <div class="recent-thumb">
+                                            <img src="public/assets/img/news/pp5.jpg" alt="img">
+                                        </div>
+                                        <div class="recent-content">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    18 Dec, 2024
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="news-details.html">
+                                                    Form Without Content <br>
+                                                    Style Without
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-widget">
+                                <div class="wid-title">
+                                    <h3>Tags</h3>
+                                </div>
+                                <div class="news-widget-categories">
+                                    <div class="tagcloud">
+                                        <a href="news-standard.html">Time-Table</a>
+                                        <a href="news-details.html">Children</a>
+                                        <a href="news-details.html">Examination</a>
+                                        <a href="news-details.html">Class</a>
+                                        <a href="news-details.html">Sports</a>
+                                        <a href="news-details.html">Canteen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <!-- Whatsapp popup -->
