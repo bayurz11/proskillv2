@@ -89,8 +89,19 @@ class ArtikelController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Artikel $artikel)
+    public function destroy($id)
     {
-        //
+        // Temukan artikel berdasarkan ID
+        $artikel = Artikel::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$artikel) {
+            return redirect()->route('artikel_setting')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $artikel->delete();
+
+        return redirect()->route('artikel_setting')->with('success', 'Artikel berhasil dihapus');
     }
 }
