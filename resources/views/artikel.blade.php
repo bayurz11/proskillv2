@@ -53,29 +53,34 @@
                                 <div class="news-thumb">
                                     <img src="public/assets/img/news/post-1.jpg" alt="img">
                                     <div class="post">
-                                        <span>Activities</span>
+                                        @php
+                                            $tags = json_decode($article->category, true);
+                                        @endphp
+
+                                        @if (is_array($tags))
+                                            @foreach ($tags as $tag)
+                                                <span>{{ $tag['value'] }}</span>
+                                            @endforeach
+                                        @endif
+
                                     </div>
                                 </div>
                                 <div class="news-content">
                                     <ul>
                                         <li>
                                             <i class="fas fa-calendar-alt"></i>
-                                            Feb 10, 2024
+                                            {{ $article->tgl }}
                                         </li>
                                         <li>
                                             <i class="far fa-user"></i>
-                                            By admin
+                                            {{ $article->user->name }}
                                         </li>
                                     </ul>
                                     <h3>
-                                        <a href="news-details.html">That jerk form finance really me</a>
+                                        <a href="news-details.html">{{ $article->title }}</a>
                                     </h3>
                                     <p>
-                                        Pellentesque egestas rutrum nibh facilisis ultrices. Phasellus in magna ut orci
-                                        malesuada the sollicitudin. Aenean faucibus scelerisque convallis. Quisque interdum
-                                        mauris id nunc molestie tincidunt erat gravida. Nullam dui libero, mollis ac quam
-                                        et,
-                                        venenatis.
+                                        {!! nl2br(substr($article->content, 0, 40)) !!}
                                     </p>
                                     <a href="news-details.html" class="theme-btn mt-4">
                                         Read More
@@ -109,21 +114,6 @@
                                         <input type="text" placeholder="Search here">
                                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                     </form>
-                                </div>
-                            </div>
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Categories</h3>
-                                </div>
-                                <div class="news-widget-categories">
-                                    <ul>
-                                        <li><a href="news-details.html">Teachers</a> <span>(5)</span></li>
-                                        <li><a href="news-details.html">Indoor Games</a> <span>(3)</span></li>
-                                        <li class="active"><a href="news-details.html">Education</a><span>(6)</span></li>
-                                        <li><a href="news-details.html">Canteen</a> <span>(2)</span></li>
-                                        <li><a href="news-details.html">Classes</a> <span>(4)</span></li>
-                                        <li><a href="news-details.html">Examination</a> <span>(7)</span></li>
-                                    </ul>
                                 </div>
                             </div>
                             <div class="single-sidebar-widget">
