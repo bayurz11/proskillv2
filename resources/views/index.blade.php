@@ -578,8 +578,7 @@
                                 </li>
                             </ul>
                             <h3>
-                                <a href="event-details.html">Desain poster on the spot tingkat (SD-SMP & SMA
-                                    -Mahasiswa)</a>
+                                <a href="event-details.html">Desain poster on the spot tingkat (SD-SMP & SMA)</a>
                             </h3>
                             <div class="event-author">
                                 <a href="event-details.html" class="theme-btn">Lihat Detail <i
