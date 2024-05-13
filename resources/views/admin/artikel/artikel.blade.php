@@ -166,7 +166,7 @@
                                                 <button type="button" class="btn btn-danger btn-icon">
                                                     <i
                                                         data-feather="
-                                                    trash-2"></i>
+                                                    trash"></i>
                                                 </button>
                                             </td>
                                         </tr>
