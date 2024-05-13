@@ -179,11 +179,10 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Lakukan operasi lanjutan jika perlu
-                                                                    // Kemudian refresh halaman
+                                                                    // Jika penghapusan berhasil, refresh halaman
                                                                     window.location.reload();
                                                                 } else {
-                                                                    // Tangani kesalahan jika ada
+                                                                    // Tangani kesalahan jika terjadi
                                                                     console.error('Gagal menghapus artikel');
                                                                 }
                                                             }).catch(error => {
@@ -192,6 +191,7 @@
                                                         }
                                                     }
                                                 </script>
+
 
 
 
