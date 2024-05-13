@@ -117,13 +117,9 @@
                             <div class="wid-title">
                                 <h3>Recent Post</h3>
                             </div>
-                            <div class="recent-post-area">
-                                <div class="recent-items">
-                                    @foreach ($artikel as $article)
-                                        <div class="recent-thumb">
-                                            <img src="public/assets/img/news/pp3.jpg" alt="img">
-                                        </div>
-                                    @endforeach
+                            @foreach ($artikel as $article)
+                                <div class="recent-post-area">
+
                                     <div class="recent-items">
                                         <div class="recent-thumb">
                                             <img src="public/assets/img/news/pp5.jpg" alt="img">
@@ -144,27 +140,28 @@
                                         </div>
                                     </div>
                                 </div>
+                            @endforeach
+                        </div>
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h3>Tags</h3>
                             </div>
-                            <div class="single-sidebar-widget">
-                                <div class="wid-title">
-                                    <h3>Tags</h3>
-                                </div>
-                                <div class="news-widget-categories">
-                                    <div class="tagcloud">
-                                        <a href="news-standard.html">Time-Table</a>
-                                        <a href="news-details.html">Children</a>
-                                        <a href="news-details.html">Examination</a>
-                                        <a href="news-details.html">Class</a>
-                                        <a href="news-details.html">Sports</a>
-                                        <a href="news-details.html">Canteen</a>
-                                    </div>
+                            <div class="news-widget-categories">
+                                <div class="tagcloud">
+                                    <a href="news-standard.html">Time-Table</a>
+                                    <a href="news-details.html">Children</a>
+                                    <a href="news-details.html">Examination</a>
+                                    <a href="news-details.html">Class</a>
+                                    <a href="news-details.html">Sports</a>
+                                    <a href="news-details.html">Canteen</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
     </section>
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
