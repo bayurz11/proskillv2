@@ -128,13 +128,12 @@
                                             <ul>
                                                 <li>
                                                     <i class="fa-solid fa-calendar-days"></i>
-                                                    18 Dec, 2024
+                                                    {{ $article->tgl }}
                                                 </li>
                                             </ul>
                                             <h6>
                                                 <a href="news-details.html">
-                                                    Form Without Content <br>
-                                                    Style Without
+                                                    {{ $article->title }}
                                                 </a>
                                             </h6>
                                         </div>
