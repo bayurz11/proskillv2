@@ -142,7 +142,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td>{!! nl2br(substr($article->content, 0, 250)) !!}....</td>
+                                            <td>{{ $article->content }}</td>
                                             <td>{{ $article->tgl }}</td>
                                             <td>
                                                 @php
@@ -192,6 +192,7 @@
                                                         }
                                                     }
                                                 </script>
+
 
                                             </td>
                                         </tr>
