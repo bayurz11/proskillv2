@@ -59,7 +59,8 @@
                     <div class="blog-post-details">
                         <div class="single-blog-post">
                             @foreach ($artikel as $article)
-                                <img src="{{ asset('public/uploads/' . $article->banner) }}">
+                                <div class="post-featured-thumb bg-cover"
+                                    style="background-image: url('assets/img/news/post-4.jpg');"></div>
                                 <div class="post-content">
                                     <ul class="post-list d-flex align-items-center">
                                         <li>
