@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Artikel</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Detail Artikel</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
@@ -35,7 +35,15 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Artikel
+                        <a href="{{ route('artikel') }}">
+                            Artikel
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Artikel Detail
                     </li>
                 </ul>
             </div>
