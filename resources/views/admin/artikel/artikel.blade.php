@@ -160,12 +160,14 @@
                                             </td>
 
                                             <td>
-                                                <button type="button" class="btn btn-primary btn-icon">
-                                                    <i data-feather="check-square"></i>
+                                                <button type="button" class="btn btn-primary btn-icon" title="Edit">
+                                                    <i data-feather="edit"></i>
                                                 </button>
-                                                <button type="button" class="btn btn-danger btn-icon">
-                                                    <i data-feather="trash"></i>
+
+                                                <button type="button" class="btn btn-danger btn-icon" title="Hapus">
+                                                    <i data-feather="trash-2"></i>
                                                 </button>
+
                                             </td>
                                         </tr>
                                     @endforeach
