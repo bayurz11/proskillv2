@@ -54,9 +54,12 @@
                                 <div class="news-thumb">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}">
                                     <div class="post">
-
-                                        <span>{{ $article->category }}</span>
-
+                                        <span> <?php
+                                        $category = json_decode($article->category);
+                                        foreach ($category as $item) {
+                                            echo $item->value . ' ';
+                                        }
+                                        ?></span>
 
                                     </div>
                                 </div>
