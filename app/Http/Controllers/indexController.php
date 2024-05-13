@@ -21,6 +21,11 @@ class indexController extends Controller
         $artikel = Artikel::all();
         return view('artikel', compact('artikel'));
     }
+    public function artikeldetail()
+    {
+        $artikel = Artikel::all();
+        return view('artikelDetail', compact('artikel'));
+    }
     public function showKelasOffline()
     {
 
