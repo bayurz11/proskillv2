@@ -142,7 +142,9 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td>{{ str_limit($article->content, 100) }}</td>
+                                            {!! nl2br(substr($article->content, 0, 250)) !!} @if (strlen($article->content) > 250)
+                                                ...
+                                            @endif
 
                                             <td>{{ $article->tgl }}</td>
                                             <td>
