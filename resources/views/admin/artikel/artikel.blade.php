@@ -160,45 +160,12 @@
                                             </td>
 
                                             <td>
-                                                <div class="actions">
-                                                    <a class="btn btn-sm bg-success-light" data-bs-toggle="modal"
-                                                        href="#edit_specialities_details">
-                                                        <i class="fe fe-pencil"></i> Edit
-                                                    </a>
-                                                    <a href="#" class="btn btn-sm bg-danger-light delete-article"
-                                                        data-id="{{ $article->id }}">
-                                                        <i class="fe fe-trash"></i> Delete
-                                                    </a>
-
-                                                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                                    <script>
-                                                        $(document).ready(function() {
-                                                            $('.delete-article').click(function(e) {
-                                                                e.preventDefault();
-                                                                var articleId = $(this).data('id');
-                                                                if (confirm('Apakah Anda yakin ingin menghapus artikel ini?')) {
-                                                                    $.ajax({
-                                                                        type: 'POST',
-                                                                        url: "{{ route('artikel_destroy', ['id' => ':id']) }}".replace(':id',
-                                                                            articleId),
-                                                                        data: {
-                                                                            '_token': '{{ csrf_token() }}',
-                                                                            '_method': 'DELETE'
-                                                                        },
-                                                                        success: function(response) {
-                                                                            location.reload();
-                                                                        },
-                                                                        error: function(xhr, status, error) {
-                                                                            console.error(error);
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        });
-                                                    </script>
-
-
-                                                </div>
+                                                <button type="button" class="btn btn-primary btn-icon">
+                                                    <i data-feather="check-square"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-danger btn-icon">
+                                                    <i data-feather="box"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                     @endforeach
