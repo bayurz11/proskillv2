@@ -52,18 +52,9 @@
                             <div class="news-standard-items">
                                 <div class="news-thumb">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}">
-                                    <div class="post">
-                                        @php
-                                            $tags = json_decode($article->category, true);
-                                        @endphp
 
-                                        @if (is_array($tags))
-                                            @foreach ($tags as $tag)
-                                                <span>{{ $tag['value'] }}</span>
-                                            @endforeach
-                                        @endif
+                                    <span>{{ $tag['value'] }}</span>
 
-                                    </div>
                                 </div>
                                 <div class="news-content">
                                     <ul>
