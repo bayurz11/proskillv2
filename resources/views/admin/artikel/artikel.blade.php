@@ -164,16 +164,31 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <form action="{{ route('artikel_destroy', $artikel->id) }}" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-icon"
-                                                        title="Hapus">
-                                                        <i data-feather="trash-2"></i>
-                                                    </button>
-                                                </form>
-                                            </td>
+                                                <button onclick="hapusArtikel({{ $artikel->id }})"
+                                                    class="btn btn-danger btn-icon" title="Hapus">
+                                                    <i data-feather="trash-2"></i>
+                                                </button>
 
+                                                <script>
+                                                    function hapusArtikel(id) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus artikel ini?')) {
+                                                            fetch(`/artikel_destroy/${id}`, {
+                                                                method: 'DELETE',
+                                                                headers: {
+                                                                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                                                                }
+                                                            }).then(response => {
+                                                                if (response.ok) {
+                                                                    // Refresh halaman atau lakukan operasi lain sesuai kebutuhan
+                                                                    window.location.reload();
+                                                                }
+                                                            });
+                                                        }
+                                                    }
+                                                </script>
+
+
+                                            </td>
                                         </tr>
                                     @endforeach
 
