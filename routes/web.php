@@ -37,5 +37,6 @@ Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name(
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
 Route::post('/artikel_store', [ArtikelController::class, 'store'])->name('artikel_store');
 Route::delete('/artikel_destroy/{id}', [ArtikelController::class, 'destroy'])->name('artikel_destroy');
+
 //---end Artikel---//
 //**************END DADHBOARD ADMIN **************//
