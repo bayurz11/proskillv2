@@ -164,14 +164,17 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <form action="{{ route('artikel_destroy', $artikel->id) }}" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-icon"
-                                                        title="Hapus">
-                                                        <i data-feather="trash-2"></i>
-                                                    </button>
-                                                </form>
+                                                @foreach ($artikel as $item)
+                                                    <form action="{{ route('artikel_destroy', $item->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger btn-icon"
+                                                            title="Hapus">
+                                                            <i data-feather="trash-2"></i>
+                                                        </button>
+                                                    </form>
+                                                @endforeach
+
 
                                             </td>
                                         </tr>
