@@ -51,7 +51,7 @@
                         <div class="news-standard-wrapper">
                             <div class="news-standard-items">
                                 <div class="news-thumb">
-                                    <img src="public/assets/img/news/post-1.jpg" alt="img">
+                                    <img src="{{ asset('public/uploads/' . $article->banner) }}">
                                     <div class="post">
                                         @php
                                             $tags = json_decode($article->category, true);
@@ -80,7 +80,7 @@
                                         <a href="news-details.html">{{ $article->title }}</a>
                                     </h3>
                                     <p>
-                                        {!! nl2br(substr($article->content, 0, 40)) !!}
+                                        {!! nl2br(substr($article->content, 0, 250)) !!}
                                     </p>
                                     <a href="news-details.html" class="theme-btn mt-4">
                                         Read More
