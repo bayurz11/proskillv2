@@ -53,7 +53,7 @@
                                 <div class="news-thumb">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}">
 
-                                    <span>{{ $tag['value'] }}</span>
+                                    <span>Tags</span>
 
                                 </div>
                                 <div class="news-content">
