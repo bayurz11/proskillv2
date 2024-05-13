@@ -31,31 +31,27 @@ class ArtikelController extends Controller
      */
     public function store(Request $request)
     {
-        // Validasi data yang diterima dari form
-        $request->validate([
-            'title' => 'required|string|max:255',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Sesuaikan dengan kebutuhan Anda
-            'content' => 'required|string',
-            'category_id' => 'required|array', // Jika menggunakan Tagify, pastikan ini sesuai
-            'tgl' => 'required|date_format:d F Y', // Sesuaikan dengan format tanggal yang diharapkan
-        ]);
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
 
-        // Simpan gambar yang diunggah
-        $gambarPath = $request->file('gambar')->store('public/artikel');
+            $userId = Auth::id();
 
-        // Buat artikel baru
-        $artikel = new Artikel();
-        $artikel->title = $request->title;
-        $artikel->gambar = $gambarPath;
-        $artikel->content = $request->content;
-        $artikel->tgl = $request->tgl;
-        // Anda mungkin perlu logika tambahan untuk menyimpan kategori atau tag
+            $artikel = new Artikel();
+            $artikel->banner = $gambarName;
+            $artikel->title = $request->title;
+            $artikel->content = $request->content;
+            $artikel->tgl = $request->tgl;
+            $artikel->category = $request->category;
+            $artikel->user_id = $userId;
+            $artikel->save();
 
-        // Simpan artikel
-        $artikel->save();
-
-        // Redirect atau response sesuai kebutuhan Anda
-        return redirect()->back()->with('success', 'Artikel berhasil disimpan!');
+            return redirect()->route('KelasOnlineSetting')->with('success', 'artikel  berhasil dibuat.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('KelasOnlineSetting')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
     }
 
     /**
