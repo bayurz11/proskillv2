@@ -4,7 +4,6 @@
 
 
     <div class="page-content">
-
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
@@ -142,9 +141,10 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            {!! nl2br(substr($article->content, 0, 250)) !!} @if (strlen($article->content) > 250)
-                                                ...
-                                            @endif
+                                            <td> {!! nl2br(substr($article->content, 0, 250)) !!} @if (strlen($article->content) > 250)
+                                                    ...
+                                                @endif
+                                            </td>
 
                                             <td>{{ $article->tgl }}</td>
                                             <td>
