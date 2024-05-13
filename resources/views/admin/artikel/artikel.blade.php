@@ -164,9 +164,7 @@
                                                     <i data-feather="check-square"></i>
                                                 </button>
                                                 <button type="button" class="btn btn-danger btn-icon">
-                                                    <i
-                                                        data-feather="
-                                                    trash"></i>
+                                                    <i data-feather="box"></i>
                                                 </button>
                                             </td>
                                         </tr>
