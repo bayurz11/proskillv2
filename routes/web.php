@@ -35,6 +35,6 @@ Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name(
 
 //---Artikel---//
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
-Route::get('/artikel_store', [ArtikelController::class, 'store'])->name('artikel_store');
+Route::post('/artikel_store', [ArtikelController::class, 'store'])->name('artikel_store');
 //---end Artikel---//
 //**************END DADHBOARD ADMIN **************//
