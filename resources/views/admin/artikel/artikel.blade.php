@@ -141,7 +141,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td> {!! nl2br(substr($article->content, 0, 250)) !!} @if (strlen($article->content) > 250)
+                                            <td> {!! nl2br(substr($article->content, 0, 50)) !!} @if (strlen($article->content) > 50)
                                                     ...
                                                 @endif
                                             </td>
