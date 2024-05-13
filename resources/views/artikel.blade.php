@@ -147,17 +147,17 @@
                                 <h3>Tags</h3>
                             </div>
                             <div class="news-widget-categories">
-                                @foreach ($artikel as $article)
-                                    <div class="tagcloud">
+
+                                <div class="tagcloud">
+                                    @foreach ($artikel as $article)
                                         <a href="news-standard.html"><?php
                                         $category = json_decode($article->category);
                                         foreach ($category as $item) {
                                             echo $item->value . ' ';
                                         }
                                         ?></a>
-
-                                    </div>
-                                @endforeach
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
