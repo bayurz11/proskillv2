@@ -142,8 +142,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $article->user->name }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td>{{ Illuminate\Support\Str::words($article->content, 20, '...') }}</td>
-
+                                            <td>{{ $article->content }}</td>
                                             <td>{{ $article->tgl }}</td>
                                             <td>
                                                 @php
