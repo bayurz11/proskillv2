@@ -666,9 +666,9 @@
                     <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                         @foreach ($artikel as $article)
                             <div class="news-right-items style-2">
-                                <div class="news-thumb">
+                                <div class="news-thumb" style="width: 230px; height: 236px; overflow: hidden;">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}"
-                                        style="width: 230px; height: 236px;">
+                                        style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div class="news-content">
                                     <ul>
@@ -696,17 +696,15 @@
                                     </ul>
                                     <h3>
                                         <a href="news-details.html">
-                                            That jerk Form Finance <br>
-                                            really threw me
+                                            <a href="news-details.html">
+                                                {{ $article->title }}
+                                            </a>
                                         </a>
                                     </h3>
                                     <div class="post-items">
-                                        <div class="thumb">
-                                            <img src="public/assets/img/news/author.png" alt="img">
-                                        </div>
+
                                         <div class="content">
-                                            <span>By Admin</span>
-                                            <h6>Dianne Russell</h6>
+                                            <h6>{{ $article->user->name }}</h6>
                                         </div>
                                     </div>
                                 </div>
