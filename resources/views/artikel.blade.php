@@ -52,9 +52,12 @@
                             <div class="news-standard-items">
                                 <div class="news-thumb">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}">
+                                    <div class="post">
 
-                                    <span>Tags</span>
+                                        <span>tags</span>
 
+
+                                    </div>
                                 </div>
                                 <div class="news-content">
                                     <ul>
