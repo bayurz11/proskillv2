@@ -127,6 +127,7 @@
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>Penulis Artikel</th>
                                         <th>Judul Artikel</th>
                                         <th>isi Artikel</th>
@@ -136,14 +137,74 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
+                                    @foreach ($artikel as $key => $article)
+                                        <tr>
+                                            <td>{{ $key + 1 }}</td>
+                                            <td>{{ $article->title }}</td>
+                                            <td>
+                                                <img src="{{ asset('uploads/' . $article->banner) }}" alt="Gambar"
+                                                    style="max-width: 100px;">
+                                            </td>
+                                            <td>
+                                                @php
+                                                    $tags = json_decode($article->category_id, true);
+                                                @endphp
+
+                                                @if (is_array($tags))
+                                                    @foreach ($tags as $tag)
+                                                        <span class="badge"
+                                                            style="background-color: #028E83; color: white; font-size: 12px;">
+                                                            {{ $tag['value'] }}
+                                                        </span>
+                                                    @endforeach
+                                                @endif
+                                            </td>
+                                            <td>{{ $article->user->name }}</td>
+
+                                            <td>{{ $article->tgl }}</td>
+                                            {{-- <td>
+                                                    <div class="actions">
+                                                        <a class="btn btn-sm bg-success-light" data-bs-toggle="modal"
+                                                            href="#edit_specialities_details">
+                                                            <i class="fe fe-pencil"></i> Edit
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light delete-article"
+                                                            data-id="{{ $article->id }}">
+                                                            <i class="fe fe-trash"></i> Delete
+                                                        </a>
+
+                                                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                                        <script>
+                                                            $(document).ready(function() {
+                                                                $('.delete-article').click(function(e) {
+                                                                    e.preventDefault();
+                                                                    var articleId = $(this).data('id');
+                                                                    if (confirm('Apakah Anda yakin ingin menghapus artikel ini?')) {
+                                                                        $.ajax({
+                                                                            type: 'POST',
+                                                                            url: "{{ route('artikel_destroy', ['id' => ':id']) }}".replace(':id',
+                                                                                articleId),
+                                                                            data: {
+                                                                                '_token': '{{ csrf_token() }}',
+                                                                                '_method': 'DELETE'
+                                                                            },
+                                                                            success: function(response) {
+                                                                                location.reload();
+                                                                            },
+                                                                            error: function(xhr, status, error) {
+                                                                                console.error(error);
+                                                                            }
+                                                                        });
+                                                                    }
+                                                                });
+                                                            });
+                                                        </script>
+
+
+                                                    </div>
+                                                </td> --}}
+                                        </tr>
+                                    @endforeach
 
                                 </tbody>
                             </table>
