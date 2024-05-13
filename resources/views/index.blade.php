@@ -598,9 +598,6 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                     <div class="event-box-items">
                         <div class="event-image">
@@ -650,8 +647,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
