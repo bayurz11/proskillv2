@@ -14,7 +14,7 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('artikel_store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Tambah Artikel</h5>
@@ -29,11 +29,14 @@
                                     placeholder="Masukkan Judul Artikel">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="banner">Gambar Banner Artikel</label>
-                                <input type="file" accept="image/*" class="form-control" id="banner" name="banner">
+                                <label for="gambar" class="form-label">Benner/Gambar</label>
+                                <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                                <small class="text-secondary">Note : Unggah gambar untuk Artikel yang akan
+                                    ditulis</small>
                             </div>
-                            <img id="preview" src="#" alt="Preview banner"
+                            <img id="preview" src="#" alt="Preview Gambar"
                                 style="max-width: 100%; max-height: 200px; display: none;">
+
                             <div class="mb-3">
                                 <label class="form-label" for="easyMdeExample">Isi Artikel</label>
                                 <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
@@ -69,7 +72,7 @@
                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                             <script>
                                 $(document).ready(function() {
-                                    $("#banner").change(function() {
+                                    $("#gambar").change(function() {
                                         readURL(this);
                                     });
                                     var currentDate = new Date();
