@@ -54,7 +54,7 @@
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}">
                                     <div class="post">
 
-                                        <span>tags</span>
+                                        <span>{{ $article->category }}</span>
 
 
                                     </div>
