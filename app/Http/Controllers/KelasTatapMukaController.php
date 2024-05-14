@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreKelasTatapMukaRequest;
@@ -28,9 +29,33 @@ class KelasTatapMukaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreKelasTatapMukaRequest $request)
+    public function store(Request $request)
     {
-        //
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
+
+            $userId = Auth::id();
+
+            $kelasOffline = new KelasTatapMuka();
+            $kelasOffline->banner = $gambarName;
+            $kelasOffline->kelas = $request->kelas;
+            $kelasOffline->lvl = $request->lvl;
+            $kelasOffline->durasi = $request->durasi;
+            $kelasOffline->jumlah_siswa = $request->jumlah_siswa;
+            $kelasOffline->sertifikat = $request->sertifikat;
+            $kelasOffline->price = $request->price;
+            $kelasOffline->deskripsi = $request->deskripsi;
+            $kelasOffline->tgl = $request->tgl;
+            $kelasOffline->user_id = $userId;
+            $kelasOffline->save();
+
+            return redirect()->route('KelasOfflineSetting')->with('success', 'kelasOffline  berhasil disimpan.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('KelasOfflineSetting')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
     }
 
     /**

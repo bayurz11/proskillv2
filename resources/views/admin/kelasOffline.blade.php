@@ -34,8 +34,8 @@
                             <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
-                                <label for="level" class="form-label">Level kelas</label>
-                                <input type="text" class="form-control" id="level" name="level"
+                                <label for="lvl" class="form-label">Level kelas</label>
+                                <input type="text" class="form-control" id="lvl" name="lvl"
                                     placeholder="masukkan Level Kelas anda">
                             </div>
                             <div class="mb-3">
