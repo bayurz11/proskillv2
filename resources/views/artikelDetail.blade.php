@@ -61,7 +61,9 @@
                     <div class="blog-post-details">
                         <div class="single-blog-post">
                             <div class="post-featured-thumb bg-cover"
-                                style="background-image: url('{{ asset('public/uploads/' . $artikel->banner) }}');"></div>
+                                style="background-image: url('{{ asset('public/uploads/' . $artikel->banner) }}');"><img
+                                    src="{{ asset('public/uploads/' . $artikel->banner) }}"
+                                    style="width: 770px; height: 460px;"></div>
                             <div class="post-content">
                                 <ul class="post-list d-flex align-items-center">
                                     <li>
@@ -83,8 +85,7 @@
                                     </li>
                                 </ul>
                                 <h3>{{ $artikel->title }} </h3>
-                                <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
-                                    style="width: 770px; height: 460px;">
+
 
                                 <p class="mb-3">
                                     Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
