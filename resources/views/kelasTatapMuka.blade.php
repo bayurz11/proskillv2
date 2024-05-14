@@ -57,7 +57,7 @@
                                 <h4>
                                     <a href="program-details.html">{{ $Offline->kelas }}</a>
                                 </h4>
-                                <p>{{ $Offline->kelas }} </p>
+                                <p>{{ $Offline->deskripsi }} </p>
                                 <ul class="clases-schedule">
                                     <li>
                                         <span>Level</span> <br>
