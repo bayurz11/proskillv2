@@ -118,19 +118,18 @@
                                 <h3>Search</h3>
                             </div>
                             <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" placeholder="Search here">
+                                <form id="searchForm" action="#" method="GET">
+                                    <input id="searchInput" type="text" placeholder="Search here">
                                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
                             </div>
                         </div>
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
-                                <h3>Recent Post</h3>
+                                <h3>Postingan Terbaru</h3>
                             </div>
                             @foreach ($articel as $artikel)
                                 <div class="recent-post-area">
-
                                     <div class="recent-items">
                                         <div class="recent-thumb">
                                             <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
@@ -158,7 +157,6 @@
                                 <h3>Tags</h3>
                             </div>
                             <div class="news-widget-categories">
-
                                 <div class="tagcloud">
                                     @foreach ($articel as $artikel)
                                         <a href="news-standard.html"><?php
@@ -173,6 +171,23 @@
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    document.getElementById('searchForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent the form from submitting
+                        var searchText = document.getElementById('searchInput').value.toLowerCase();
+                        var items = document.querySelectorAll('.recent-content h6 a, .tagcloud a');
+                        items.forEach(function(item) {
+                            var text = item.textContent.toLowerCase();
+                            if (text.includes(searchText)) {
+                                item.style.color = 'red'; // You can change the style here
+                            } else {
+                                item.style.color = ''; // Reset style
+                            }
+                        });
+                    });
+                </script>
+
             </div>
 
         </div>
