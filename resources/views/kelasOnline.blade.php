@@ -45,9 +45,10 @@
     <!-- Clases Section Start -->
     <section class="clases-section section-padding">
         <div class="container">
-            @foreach ($kelasOnline as $kelasonline)
-                <div class="row g-4">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+
+            <div class="row g-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    @foreach ($kelasOnline as $kelasonline)
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
@@ -74,9 +75,10 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-            @endforeach
+            </div>
+
         </div>
     </section>
     <!-- Whatsapp popup -->
