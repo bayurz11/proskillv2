@@ -121,7 +121,8 @@
                             <ul class="details-list">
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/08.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/08.svg') }}" alt="img"
+                                            class="me-2">
                                         Age
                                     </span>
                                     3-5 year
