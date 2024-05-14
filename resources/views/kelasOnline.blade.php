@@ -52,7 +52,7 @@
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
-                                <img src="assets/img/classes/01.png" alt="img">
+                                <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
                             </div>
                             <div class="clases-content">
                                 <h4>
