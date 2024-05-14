@@ -51,8 +51,180 @@
         </div>
     </div>
 
+    <!--<< Program Details Section Start >>-->
+    <section class="program-details-section fix section-padding">
+        <div class="container">
+            <div class="program-details-wrapper">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <div class="program-details-items">
+                            <div class="details-image">
+                                <img src="assets/img/program/details-1.jpg" alt="img">
+                            </div>
+                            <div class="details-content">
+                                <div class="post">
+                                    <span>{{ $offline->kelas }}</span>
+                                </div>
+                                <h2 class="mb-0">Drawing Classes</h2>
+                                <div class="details-author-area">
+                                    <div class="author-items">
+                                        <img src="assets/img/program/author.png" alt="img">
+                                        <p>Savannah Nguyen</p>
+                                    </div>
+                                    <ul class="class-list">
+                                        <li>
+                                            <i class="fa-regular fa-circle-play me-2"></i>
+                                            30 Classes
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star me-2"></i>
+                                            3.4 (36 Review)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h2>Descriptions</h2>
+                                <p class="mb-3">
+                                    Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of
+                                    magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in
+                                    reprehenderit.
+                                </p>
+                                <p class="mb-4">
+                                    The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In
+                                    hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero
+                                    faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed
+                                    the is sodales augue consequat.
+                                </p>
+                                <h2>Requirements for The Classes</h2>
+                                <p>
+                                    Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
+                                    convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
+                                    lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
+                                </p>
+                                <ul class="list-items">
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Ut viverra bibendum lorem, at tempus nibh mattis
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        quis nostrud exercitation ullamco laboris nisi
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Duis aute irure and dolor in reprehenderit.
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        ante rutrum sed the is sodales augue consequat.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="details-list-area">
+                            <h3>Classes includes:</h3>
+                            <ul class="details-list">
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/08.svg" alt="img" class="me-2">
+                                        Age
+                                    </span>
+                                    3-5 year
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/09.svg" alt="img" class="me-2">
+                                        Duration:
+                                    </span>
+                                    9:00-11:00
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/10.svg" alt="img" class="me-2">
+                                        Lessons:
+                                    </span>
+                                    15
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/11.svg" alt="img" class="me-2">
+                                        Students:
+                                    </span>
+                                    50
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/14.svg" alt="img" class="me-2">
+                                        Certifications:
+                                    </span>
+                                    Yes
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="assets/img/program/icon/13.svg" alt="img" class="me-2">
+                                        Language
+                                    </span>
+                                    English
+                                </li>
+                            </ul>
+                            <a href="program-details.html" class="theme-btn w-100 border-style mb-3">
+                                This course Free $49.00
+                            </a>
+                            <a href="program-details.html" class="theme-btn w-100">
+                                Enroll Your Kid <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                            <div class="social-icon d-flex align-items-center">
+                                <span>Share: </span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="program-author-items">
+                            <div class="thumb">
+                                <img src="assets/img/program/p-author.jpg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2>Savannah Nguyen</h2>
+                                <span>Children Diet</span>
+                                <p>
+                                    Adipiscing elit. Mauris viverra nisl quis mollis laoreet. Ut eget lacus a felis accumsan
+                                    pharetra in dignissim enim. In amet odio mollis urna aliquet volutpat. Sed bibendum nisl
+                                    vehicula imperdiet imperdiet, augue massa fringilla.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Experience: 10 Years
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-user"></i>
+                                        188 Students
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star color-star"></i>
+                                        454 (36 Review)
+                                    </li>
+                                </ul>
+                                <div class="social-icon d-flex align-items-center">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- News Standard Section Start -->
+    {{-- <!-- News Standard Section Start -->
     <section class="news-standard fix section-padding">
         <div class="container">
 
@@ -191,9 +363,10 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
