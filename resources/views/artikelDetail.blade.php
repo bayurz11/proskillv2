@@ -83,7 +83,7 @@
                                     </li>
                                 </ul>
                                 <h3>{{ $artikel->title }} </h3>
-                                <img src="{{ asset('public/uploads/' . $article->banner) }}">
+                                <img src="{{ asset('public/uploads/' . $artikel->banner) }}">
                                 <p class="mb-3">
                                     Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                     of
