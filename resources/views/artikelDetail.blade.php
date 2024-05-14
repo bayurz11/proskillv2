@@ -88,7 +88,11 @@
                                 </ul>
                                 <h3>{{ $artikel->title }} </h3>
 
-
+                                @foreach (explode('<p>', $artikel->content) as $paragraph)
+                                    @if (!empty($paragraph))
+                                        <p>{!! $paragraph !!}</p>
+                                    @endif
+                                @endforeach
                                 <p class="mb-3">
                                     {!! $artikel->content !!}
                                 </p>
