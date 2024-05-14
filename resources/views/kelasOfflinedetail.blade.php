@@ -123,50 +123,36 @@
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/08.svg') }}" alt="img"
                                             class="me-2">
-                                        Age
+                                        Level
                                     </span>
-                                    3-5 year
+                                    {{ $klsoffline->lvl }}
                                 </li>
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/09.svg') }}" alt="img"
                                             class="me-2">
-                                        Duration:
+                                        Durasi
                                     </span>
-                                    9:00-11:00
+                                    {{ $klsoffline->durasi }}
                                 </li>
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/10.svg') }}" alt="img"
-                                            class="me-2">
-                                        Lessons:
-                                    </span>
-                                    15
-                                </li>
+
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/11.svg') }}" alt="img"
                                             class="me-2">
-                                        Students:
+                                        Jumlah Siswa Dalam 1 Kelas
                                     </span>
-                                    50
+                                    {{ $klsoffline->jumlah_siswa }}
                                 </li>
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/14.svg') }}" alt="img"
                                             class="me-2">
-                                        Certifications:
+                                        Sertifikat
                                     </span>
-                                    Yes
+                                    {{ $klsoffline->sertifikat }}
                                 </li>
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/13.svg') }}" alt="img"
-                                            class="me-2">
-                                        Language
-                                    </span>
-                                    English
-                                </li>
+
                             </ul>
                             <a href="program-details.html" class="theme-btn w-100 border-style mb-3">
                                 Harga Kelas {{ $klsoffline->pice }}
@@ -364,8 +350,7 @@
         </div>
     </section> --}}
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
