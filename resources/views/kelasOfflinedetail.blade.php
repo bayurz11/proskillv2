@@ -71,9 +71,9 @@
                                         <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
                                             style="width: 770px; height: 411px;">
 
-                                        <p>Savannah Nguyen</p>
+                                        <p>{{ $klsoffline->instruktur }}</p>
                                     </div>
-                                    <ul class="class-list">
+                                    {{-- <ul class="class-list">
                                         <li>
                                             <i class="fa-regular fa-circle-play me-2"></i>
                                             30 Classes
@@ -82,20 +82,17 @@
                                             <i class="fas fa-star me-2"></i>
                                             3.4 (36 Review)
                                         </li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
-                                <h2>Descriptions</h2>
+                                <h2>Deskripsi Kelas</h2>
                                 <p class="mb-3">
-                                    Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of
-                                    magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in
-                                    reprehenderit.
+                                    {{ $klsoffline->deskripsi }}
                                 </p>
-                                <p class="mb-4">
-                                    The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In
-                                    hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero
-                                    faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed
-                                    the is sodales augue consequat.
+
+                                The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In
+                                hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero
+                                faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed
+                                the is sodales augue consequat.
                                 </p>
                                 <h2>Requirements for The Classes</h2>
                                 <p>
