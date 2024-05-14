@@ -16,6 +16,7 @@ class indexController extends Controller
         $artikel = Artikel::latest()->take(2)->get();
         return view('index', compact('heroSections', 'kelasOnline', 'artikel'));
     }
+
     public function showArtikel()
     {
         $artikel = Artikel::all();
