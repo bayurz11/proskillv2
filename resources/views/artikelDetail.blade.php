@@ -144,7 +144,7 @@
                                                 </li>
                                             </ul>
                                             <h6>
-                                                <a href="news-details.html">
+                                                <a href="{{ route('artikel_detail', ['id' => $artikel->id]) }}">
                                                     {{ $artikel->title }}
                                                 </a>
                                             </h6>

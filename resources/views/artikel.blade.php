@@ -81,7 +81,7 @@
                                         {!! nl2br(substr($article->content, 0, 250)) !!}
                                     </p>
                                     <a href="{{ route('artikel_detail', ['id' => $article->id]) }}" class="theme-btn mt-4">
-                                        Read More
+                                        Baca selengkapnya
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
                                 </div>
@@ -133,7 +133,7 @@
                                                 </li>
                                             </ul>
                                             <h6>
-                                                <a href="news-details.html">
+                                                <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
                                                     {{ $article->title }}
                                                 </a>
                                             </h6>
