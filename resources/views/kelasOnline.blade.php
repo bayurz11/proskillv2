@@ -43,7 +43,6 @@
     </div>
 
     <!-- Clases Section Start -->
-
     <section class="clases-section section-padding">
         <div class="container">
             <div class="row g-4">
@@ -51,7 +50,6 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
 
                         <div class="clases-items mt-0">
-
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
                                 <img src="assets/img/classes/01.png" alt="img">
@@ -77,13 +75,11 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 @endforeach
             </div>
         </div>
     </section>
-
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
