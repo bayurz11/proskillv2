@@ -62,11 +62,12 @@ class ArtikelController extends Controller
 
         $user = Auth::user();
         $artikel = Artikel::all();
+        $count = $artikel->count();
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.artikel.artikel', compact('user', 'artikel'));
+        return view('admin.artikel.artikel', compact('user', 'artikel', 'count'));
     }
 
 

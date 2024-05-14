@@ -107,6 +107,7 @@
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
+                                        <th>No</th>
                                         <th>Tagline</th>
                                         <th>promosi</th>
                                         <th>banner</th>
@@ -116,8 +117,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($kelasOffline as $kelasOffline)
+                                    @foreach ($kelasOffline as $key => $kelasOffline)
                                         <tr>
+                                            <td>{{ $key + 1 }}</td>
                                             <td>{{ $kelasOffline->kelas }}</td>
                                             <td>{{ $kelasOffline->level }}</td>
                                             <td><img src="{{ asset('public/uploads/' . $kelasOffline->banner) }}"

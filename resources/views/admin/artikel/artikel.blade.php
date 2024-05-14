@@ -121,7 +121,7 @@
                                 data-feather="plus-circle"></i>
                             Tambah Artikel
                         </button>
-                        <p class="text-muted mb-3">Jumlah Artikel :</p>
+                        <p class="text-muted mb-3">Jumlah Artikel : {{ $artikel->count() }}</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
