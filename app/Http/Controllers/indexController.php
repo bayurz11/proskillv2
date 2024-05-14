@@ -37,8 +37,8 @@ class indexController extends Controller
     public function KelasOfflinedetail($id)
     {
         $kelasOffline = KelasTatapMuka::all();
-        $offline = KelasTatapMuka::find($id);
-        return view('kelasOfflinedetail', compact('kelasOffline', 'offline'));
+        $klsoffline = KelasTatapMuka::find($id);
+        return view('kelasOfflinedetail', compact('kelasOffline', 'klsoffline'));
     }
     public function showkelasOnline()
     {

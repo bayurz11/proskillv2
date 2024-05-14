@@ -63,7 +63,7 @@
                             </div>
                             <div class="details-content">
                                 <div class="post">
-                                    <span>{{ $offline->kelas }}</span>
+                                    <span>{{ $klsoffline->kelas }}</span>
                                 </div>
                                 <h2 class="mb-0">Drawing Classes</h2>
                                 <div class="details-author-area">
