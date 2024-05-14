@@ -3,24 +3,25 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover"
+        style="background-image: url('{{ asset('public/assets/img/breadcrumb.png') }}');">
         <div class="line-shape">
-            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/line.png') }}" alt="shape-img">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/doll.png') }}" alt="shape-img">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
         </div>
         <div class="frame-shape">
-            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/frame.png') }}" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -49,6 +50,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- News Standard Section Start -->
     <section class="news-standard fix section-padding">
