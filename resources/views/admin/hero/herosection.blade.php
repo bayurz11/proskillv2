@@ -97,7 +97,7 @@
                                 data-feather="plus-circle"></i>
                             Hero Section
                         </button>
-                        <p class="text-muted mb-3">Jumlah Hero Section :</p>
+                        <p class="text-muted mb-3">Jumlah Hero Section : {{ $heroSections->count() }} </p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>

@@ -61,12 +61,12 @@ class HeroSectionController extends Controller
     {
         $user = Auth::user();
         $heroSections = HeroSection::all();
-
+        $count = $heroSections->count();
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.hero.herosection', compact('user', 'heroSections'));
+        return view('admin.hero.herosection', compact('user', 'heroSections', 'count'));
     }
     /**
      * Show the form for editing the specified resource.
