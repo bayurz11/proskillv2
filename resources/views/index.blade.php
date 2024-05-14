@@ -702,7 +702,7 @@
                                     </ul>
                                     <h3>
                                         <a href="news-details.html">
-                                            <a href="news-details.html">
+                                            <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
                                                 {{ $article->title }}
                                             </a>
                                         </a>
