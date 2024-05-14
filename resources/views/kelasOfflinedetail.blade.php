@@ -62,13 +62,13 @@
                                 <img src="assets/img/program/details-1.jpg" alt="img">
                             </div>
                             <div class="details-content">
-                                <div class="post">
-                                    <span>{{ $klsoffline->kelas }}</span>
-                                </div>
-                                <h2 class="mb-0">Drawing Classes</h2>
+                                {{-- <div class="post">
+                                    <span>Kindergarten</span>
+                                </div> --}}
+                                <h2 class="mb-0">{{ $klsoffline->kelas }}</h2>
                                 <div class="details-author-area">
                                     <div class="author-items">
-                                        <img src="assets/img/program/author.png" alt="img">
+                                        <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
                                         <p>Savannah Nguyen</p>
                                     </div>
                                     <ul class="class-list">
