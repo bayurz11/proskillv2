@@ -35,6 +35,9 @@
                             <a href="{{ route('KelasOnlineSetting') }}" class="nav-link">Kelas Online Setting</a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('KelasOfflineSetting') }}" class="nav-link">Kelas Tatap Muka Setting</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="pages/email/compose.html" class="nav-link">Compose</a>
                         </li>
                     </ul>
