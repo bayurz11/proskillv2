@@ -87,13 +87,7 @@
                                 <h2>Deskripsi Kelas</h2>
                                 <p class="mb-3">
                                     {{ $klsoffline->deskripsi }}
-                                </p>
 
-                                The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In
-                                hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero
-                                faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed
-                                the is sodales augue consequat.
-                                </p>
                                 <h2>Requirements for The Classes</h2>
                                 <p>
                                     Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
@@ -127,49 +121,49 @@
                             <ul class="details-list">
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/08.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/08.svg" alt="img" class="me-2">
                                         Age
                                     </span>
                                     3-5 year
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/09.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/09.svg" alt="img" class="me-2">
                                         Duration:
                                     </span>
                                     9:00-11:00
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/10.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/10.svg" alt="img" class="me-2">
                                         Lessons:
                                     </span>
                                     15
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/11.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/11.svg" alt="img" class="me-2">
                                         Students:
                                     </span>
                                     50
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/14.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/14.svg" alt="img" class="me-2">
                                         Certifications:
                                     </span>
                                     Yes
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/program/icon/13.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/program/icon/13.svg" alt="img" class="me-2">
                                         Language
                                     </span>
                                     English
                                 </li>
                             </ul>
                             <a href="program-details.html" class="theme-btn w-100 border-style mb-3">
-                                This course Free $49.00
+                                Harga Kelas {{ $klsoffline->pice }}
                             </a>
                             <a href="program-details.html" class="theme-btn w-100">
                                 Enroll Your Kid <i class="fa-solid fa-arrow-right-long"></i>
