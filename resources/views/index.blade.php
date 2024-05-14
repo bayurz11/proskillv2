@@ -287,46 +287,43 @@
                 <button class="array-next"><i class="fal fa-arrow-right"></i></button>
             </div>
             <div class="swiper clases-slider">
-                <div class="swiper-wrapper">
-                    @foreach ($kelasOnline as $kelasonline)
-                        @if ($kelasonline->id == $id)
-                            <!-- Ganti $id dengan ID yang Anda inginkan -->
-                            <div class="swiper-slide">
-                                <div class="clases-items">
-                                    <div class="clases-bg"></div>
-                                    <div class="clases-image">
-                                        <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
-                                    </div>
-                                    <div class="clases-content">
-                                        <h4>
-                                            <a href="{{ $kelasonline->link }}"
-                                                target="_blank">{{ $kelasonline->kelas }}</a>
-                                        </h4>
-                                        <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
-                                        <ul class="clases-schedule">
-                                            <li>
-                                                <span>Level</span> <br>
-                                                {{ $kelasonline->level }}
-                                            </li>
-                                            <li>
-                                                <span>Jadwal</span> <br>
-                                                Fleksibe
-                                            </li>
-                                            <li>
-                                                <span>waktu</span> <br>
-                                                8 Pertemuan
-                                            </li>
-                                        </ul>
-                                    </div>
+                @foreach ($kelasOnline as $kelasonline)
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clases-items">
+                                <div class="clases-bg"></div>
+                                <div class="clases-image">
+                                    <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
+                                </div>
+                                <div class="clases-content">
+                                    <h4>
+                                        <a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
+                                    </h4>
+                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+                                    <ul class="clases-schedule">
+                                        <li>
+                                            <span>Level</span> <br>
+                                            {{ $kelasonline->level }}
+                                        </li>
+                                        <li>
+                                            <span>Jadwal</span> <br>
+                                            Fleksibe
+                                        </li>
+                                        <li>
+                                            <span>waktu</span> <br>
+                                            8 Pertemuan
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        @endif
-                    @endforeach
-                </div>
+                        </div>
+                    </div>
+                @endforeach
+
             </div>
         </div>
+        </div>
     </section>
-
 
 
     <!-- FAQ Start -->
