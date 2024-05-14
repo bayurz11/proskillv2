@@ -42,7 +42,7 @@ class indexController extends Controller
     }
     public function showkelasOnline()
     {
-
-        return view('kelasOnline');
+        $kelasOnline = KelasOnline::all();
+        return view('kelasOnline', compact('kelasOnline'));
     }
 }
