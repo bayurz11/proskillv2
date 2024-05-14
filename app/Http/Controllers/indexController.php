@@ -21,10 +21,11 @@ class indexController extends Controller
         $artikel = Artikel::all();
         return view('artikel', compact('artikel'));
     }
-    public function artikeldetail()
+    public function artikeldetail($id)
     {
+        $article = Artikel::find($id);
         $artikel = Artikel::all();
-        return view('artikelDetail', compact('artikel'));
+        return view('artikelDetail', compact('artikel', 'article'));
     }
     public function showKelasOffline()
     {
