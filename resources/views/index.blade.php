@@ -663,8 +663,9 @@
             </div>
             <div class="news-wrapper">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                        @foreach ($artikel as $article)
+                    @foreach ($artikel as $article)
+                        <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+
                             <div class="news-right-items style-2">
                                 <div class="news-thumb" style="width: 230px; height: 236px; overflow: hidden;">
                                     <img src="{{ asset('public/uploads/' . $article->banner) }}"
@@ -715,8 +716,8 @@
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
-                    </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
