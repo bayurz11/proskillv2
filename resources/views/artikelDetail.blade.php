@@ -62,6 +62,7 @@
                         <div class="single-blog-post">
                             <div class="post-featured-thumb bg-cover"
                                 style="background-image: url('{{ asset('public/uploads/' . $artikel->banner) }}');">
+                                {{ asset('public/uploads/' . $artikel->banner) }}
                             </div>
                             <div class="post-content">
                                 <ul class="post-list d-flex align-items-center">
