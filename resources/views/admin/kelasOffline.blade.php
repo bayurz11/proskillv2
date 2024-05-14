@@ -63,11 +63,16 @@
                                 <input type="text" class="form-control" id="deskripsi" name="deskripsi"
                                     placeholder="Masukkan deskripsi kesal anda">
                             </div>
+                            <div class="mb-3">
+                                <label for="instruktur" class="form-label">Instruktur</label>
+                                <input type="text" class="form-control" id="instruktur" name="instruktur"
+                                    placeholder="Masukkan instruktur kesal anda">
+                            </div>
 
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                                    readonly>
+                                <input type="text" class="form-control" id="tgl" placeholder="tgl"
+                                    name="tgl" readonly>
                             </div>
                         </div>
                         <div class="modal-footer">

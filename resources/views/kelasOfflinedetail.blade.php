@@ -68,7 +68,9 @@
                                 <h2 class="mb-0">{{ $klsoffline->kelas }}</h2>
                                 <div class="details-author-area">
                                     <div class="author-items">
-                                        <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
+                                        <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
+                                            style="width: 770px; height: 411px;">
+
                                         <p>Savannah Nguyen</p>
                                     </div>
                                     <ul class="class-list">
