@@ -87,20 +87,20 @@
                                     </li>
                                 </ul>
                                 <h3>{{ $artikel->title }} </h3>
-                                <?php
-                                // Fungsi callback untuk mengganti atribut lebar dan tinggi gambar
-                                function replaceImageSize($matches) {
-                                    $src = $matches[1];
-                                    return str_replace($src, $src . '" width="770" height="460', $matches[0]);
-                                }
-                            
-                                // Mengganti atribut lebar dan tinggi gambar dalam konten artikel
-                                $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $artikel->content);
-                                ?>
-
-                                <p class="mb-3">
-                                    {!! $content_with_resized_images !!}
+                                <p class="mb-3" align="justify">
+                                    <?php
+                                        // Fungsi callback untuk mengganti atribut lebar dan tinggi gambar
+                                        function replaceImageSize($matches) {
+                                            $src = $matches[1];
+                                            return str_replace($src, $src . '" width="770" height="460', $matches[0]);
+                                        }
+                                    
+                                        // Mengganti atribut lebar dan tinggi gambar dalam konten artikel
+                                        $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $artikel->content);
+                                    echo $content_with_resized_images;
+                                    ?>
                                 </p>
+
 
 
                             </div>
