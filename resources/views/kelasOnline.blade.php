@@ -56,7 +56,7 @@
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="program-details.html">English Classes</a>
+                                    <a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
                                 </h4>
                                 <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
                                 <ul class="clases-schedule">
