@@ -55,7 +55,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="price" class="form-label">Price</label>
-                                <input type="number" class="form-control" id="price" name="price"
+                                <input type="number" class="form-control" id="price" name="price" min="0"
                                     placeholder="Masukkan price kesal anda">
                             </div>
                             <div class="mb-3">
