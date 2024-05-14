@@ -155,7 +155,7 @@
 
                             </ul>
                             <a href="program-details.html" class="theme-btn w-100 border-style mb-3">
-                                Harga Kelas {{ $klsoffline->pice }}
+                                Harga Kelas {{ $klsoffline->price }}
                             </a>
                             <a href="program-details.html" class="theme-btn w-100">
                                 Enroll Your Kid <i class="fa-solid fa-arrow-right-long"></i>
