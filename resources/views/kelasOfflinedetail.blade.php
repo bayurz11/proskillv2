@@ -59,7 +59,9 @@
                     <div class="col-lg-8">
                         <div class="program-details-items">
                             <div class="details-image">
-                                <img src="assets/img/program/details-1.jpg" alt="img">
+                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
+                                    style="width: 770px; height: 411px;">
+
                             </div>
                             <div class="details-content">
                                 {{-- <div class="post">
@@ -68,9 +70,6 @@
                                 <h2 class="mb-0">{{ $klsoffline->kelas }}</h2>
                                 <div class="details-author-area">
                                     <div class="author-items">
-                                        <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
-                                            style="width: 770px; height: 411px;">
-
                                         <p>{{ $klsoffline->instruktur }}</p>
                                     </div>
                                     {{-- <ul class="class-list">
@@ -129,35 +128,40 @@
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/09.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/09.svg') }}" alt="img"
+                                            class="me-2">
                                         Duration:
                                     </span>
                                     9:00-11:00
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/10.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/10.svg') }}" alt="img"
+                                            class="me-2">
                                         Lessons:
                                     </span>
                                     15
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/11.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/11.svg') }}" alt="img"
+                                            class="me-2">
                                         Students:
                                     </span>
                                     50
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/14.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/14.svg') }}" alt="img"
+                                            class="me-2">
                                         Certifications:
                                     </span>
                                     Yes
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="public/assets/img/program/icon/13.svg" alt="img" class="me-2">
+                                        <img src="{{ asset('public/assets/img/program/icon/13.svg') }}" alt="img"
+                                            class="me-2">
                                         Language
                                     </span>
                                     English
