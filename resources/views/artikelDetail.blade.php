@@ -65,16 +65,16 @@
                                 <ul class="post-list d-flex align-items-center">
                                     <li>
                                         <i class="fa-regular fa-user"></i>
-                                        {{ $article->user->name }}
+                                        {{ $artikel->user->name }}
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-calendar-days"></i>
-                                        {{ $article->tgl }}
+                                        {{ $artikel->tgl }}
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-tag"></i>
                                         <?php
-                                        $category = json_decode($article->category);
+                                        $category = json_decode($artikel->category);
                                         foreach ($category as $item) {
                                             echo $item->value . ' ';
                                         }
