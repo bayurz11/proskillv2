@@ -2,7 +2,7 @@
 <footer class="footer-section section-bg fix">
 
     <div class="frame-shape-3 float-bob-y">
-        <img src="public/assets/img/frame-3.png" alt="shape-img">
+        <img src="{{ asset('public/assets/img/frame-3.png') }}" alt="shape-img">
     </div>
     <div class="footer-widgets-wrapper">
         <div class="container">
@@ -11,7 +11,7 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="index.html">
-                                <img src="public/assets/img/logo/logo.svg" alt="logo-img">
+                                <img src="{{ asset('public/assets/img/logo/logo.svg') }}" alt="logo-img">
                             </a>
                         </div>
                         <div class="footer-content style-two">
@@ -98,7 +98,7 @@
     </div>
     <div class="footer-bottom">
         <div class="f-bottom-shape">
-            <img src="public/assets/img/footer-bottom.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/footer-bottom.png') }}" alt="shape-img">
         </div>
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
