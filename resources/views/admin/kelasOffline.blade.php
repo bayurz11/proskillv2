@@ -102,7 +102,7 @@
                                 data-feather="plus-circle"></i>
                             Kelas Tatap Muka
                         </button>
-                        <p class="text-muted mb-3">Jumlah Kelas Online :</p>
+                        <p class="text-muted mb-3">Jumlah Kelas Online : {{ $kelasOffline->count() }}</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>

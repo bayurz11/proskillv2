@@ -40,12 +40,12 @@ class KelasTatapMukaController extends Controller
     {
         $user = Auth::user();
         $kelasOffline = KelasTatapMuka::all();
-
+        $count = $kelasOffline->count();
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.kelasOffline', compact('user', 'kelasOffline'));
+        return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count'));
     }
 
     /**
