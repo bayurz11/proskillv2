@@ -55,7 +55,8 @@
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="program-details.html">{{ $Offline->kelas }}</a>
+                                    <a
+                                        href="{{ route('Kelastatapmuka_detail', ['id' => $Offline->id]) }}">{{ $Offline->kelas }}</a>
                                 </h4>
                                 <p>{{ $Offline->deskripsi }} </p>
                                 <ul class="clases-schedule">
