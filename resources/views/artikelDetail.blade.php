@@ -133,8 +133,8 @@
 
                                     <div class="recent-items">
                                         <div class="recent-thumb">
-                                            {{-- <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
-                                                style="width: 78px; height: 79px; object-fit: cover;"> --}}
+                                            <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
+                                                style="width: 78px; height: 79px; object-fit: cover;">
                                         </div>
                                         <div class="recent-content">
                                             <ul>
