@@ -13,6 +13,7 @@ Route::get('/event', [indexController::class, 'showArtikel'])->name('event');
 Route::get('/artikel', [indexController::class, 'showArtikel'])->name('artikel');
 Route::get('/artikel_detail/{id}', [indexController::class, 'artikeldetail'])->name('artikel_detail');
 Route::get('/Kelastatapmuka', [indexController::class, 'showKelasOffline'])->name('Kelastatapmuka');
+Route::get('/Kelastatapmuka_detail/{id}', [indexController::class, 'KelasOfflinedetail'])->name('Kelastatapmuka_detail');
 Route::get('/kelasOnline', [indexController::class, 'showkelasOnline'])->name('kelasOnline');
 
 //**************DADHBOARD ADMIN **************//
