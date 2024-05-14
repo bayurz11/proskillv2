@@ -61,15 +61,15 @@
                                 <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
                                 <ul class="clases-schedule">
                                     <li>
-                                        <span>age</span> <br>
-                                        3-5 years
+                                        <span>Level</span> <br>
+                                        {{ $kelasonline->level }}
                                     </li>
                                     <li>
-                                        <span>weekly</span> <br>
+                                        <span>Durasi</span> <br>
                                         5 Days
                                     </li>
                                     <li>
-                                        <span>time</span> <br>
+                                        <span>Waktu</span> <br>
                                         4.30 Hors
                                     </li>
                                 </ul>
