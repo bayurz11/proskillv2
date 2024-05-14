@@ -107,8 +107,8 @@
                                 <h3>Search</h3>
                             </div>
                             <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" placeholder="Search here">
+                                <form id="searchForm" action="#" method="GET">
+                                    <input id="searchInput" type="text" placeholder="Search here">
                                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
                             </div>
@@ -163,7 +163,21 @@
                     </div>
                 </div>
             </div>
-
+            <script>
+                document.getElementById('searchForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting
+                    var searchText = document.getElementById('searchInput').value.toLowerCase();
+                    var items = document.querySelectorAll('.recent-content h6 a, .tagcloud a');
+                    items.forEach(function(item) {
+                        var text = item.textContent.toLowerCase();
+                        if (text.includes(searchText)) {
+                            item.style.color = 'red'; // You can change the style here
+                        } else {
+                            item.style.color = ''; // Reset style
+                        }
+                    });
+                });
+            </script>
         </div>
     </section>
     <!-- Whatsapp popup -->
