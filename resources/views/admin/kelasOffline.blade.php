@@ -28,21 +28,42 @@
                                     placeholder="Masukkan nama kelas Anda">
                             </div>
                             <div class="mb-3">
-                                <label for="level" class="form-label">Level kelas</label>
-                                <input type="text" class="form-control" id="level" name="level"
-                                    placeholder="Pilih Level Kelas anda">
-                            </div>
-                            <div class="mb-3">
-                                <label for="link" class="form-label">Link</label>
-                                <input type="text" class="form-control" id="link" name="link"
-                                    placeholder="Masukkan link anda">
-                            </div>
-                            <div class="mb-3">
                                 <label class="form-label" for="gambar">Gambar Slider</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                             </div>
                             <img id="preview" src="#" alt="Preview banner"
                                 style="max-width: 100%; max-height: 200px; display: none;">
+                            <div class="mb-3">
+                                <label for="level" class="form-label">Level kelas</label>
+                                <input type="text" class="form-control" id="level" name="level"
+                                    placeholder="masukkan Level Kelas anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="durasi" class="form-label">Durasi Kelas</label>
+                                <input type="text" class="form-control" id="durasi" name="durasi"
+                                    placeholder="Masukkan durasi kelas anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="jumlah_siswa" class="form-label">Jumlah Siswa</label>
+                                <input type="text" class="form-control" id="jumlah_siswa" name="jumlah_siswa"
+                                    placeholder="Masukkan jumlahsiswa kelas anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sertifikat" class="form-label">Sertifikat</label>
+                                <input type="text" class="form-control" id="sertifikat" name="sertifikat"
+                                    placeholder="Apakah Mendapatkan Sertifikat?">
+                            </div>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="price" name="price"
+                                    placeholder="Masukkan price kesal anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="deskripsi" class="form-label">Deskripsi</label>
+                                <input type="text" class="form-control" id="deskripsi" name="deskripsi"
+                                    placeholder="Masukkan deskripsi kesal anda">
+                            </div>
+
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
