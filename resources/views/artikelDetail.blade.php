@@ -182,24 +182,24 @@
                             <div class="wid-title">
                                 <h3>Recent Post</h3>
                             </div>
-                            @foreach ($artikel as $article)
+                            @foreach ($articel as $artikel)
                                 <div class="recent-post-area">
 
                                     <div class="recent-items">
                                         <div class="recent-thumb">
-                                            <img src="{{ asset('public/uploads/' . $article->banner) }}"
+                                            <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
                                                 style="width: 78px; height: 79px; object-fit: cover;">
                                         </div>
                                         <div class="recent-content">
                                             <ul>
                                                 <li>
                                                     <i class="fa-solid fa-calendar-days"></i>
-                                                    {{ $article->tgl }}
+                                                    {{ $artikel->tgl }}
                                                 </li>
                                             </ul>
                                             <h6>
                                                 <a href="news-details.html">
-                                                    {{ $article->title }}
+                                                    {{ $artikel->title }}
                                                 </a>
                                             </h6>
                                         </div>
@@ -214,9 +214,9 @@
                             <div class="news-widget-categories">
 
                                 <div class="tagcloud">
-                                    @foreach ($artikel as $article)
+                                    @foreach ($articel as $artikel)
                                         <a href="news-standard.html"><?php
-                                        $category = json_decode($article->category);
+                                        $category = json_decode($artikel->category);
                                         foreach ($category as $item) {
                                             echo $item->value . ' ';
                                         }
