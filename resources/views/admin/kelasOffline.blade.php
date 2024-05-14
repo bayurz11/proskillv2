@@ -14,7 +14,7 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="{{ route('KelasOnlineStore') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('kelasOfflineStore') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Tambah kelas Tatap Muka</h5>
@@ -116,14 +116,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($kelasOnline as $kelasonline)
+                                    @foreach ($kelasOffline as $kelasOffline)
                                         <tr>
-                                            <td>{{ $kelasonline->kelas }}</td>
-                                            <td>{{ $kelasonline->level }}</td>
-                                            <td><img src="{{ asset('public/uploads/' . $kelasonline->banner) }}"
+                                            <td>{{ $kelasOffline->kelas }}</td>
+                                            <td>{{ $kelasOffline->level }}</td>
+                                            <td><img src="{{ asset('public/uploads/' . $kelasOffline->banner) }}"
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
-                                            <td>{{ $kelasonline->link }}</td>
-                                            <td>{{ $kelasonline->tgl }}</td>
+                                            <td>{{ $kelasOffline->link }}</td>
+                                            <td>{{ $kelasOffline->tgl }}</td>
                                             <td>
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
                                             </td>
