@@ -142,11 +142,11 @@
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $kelasOffline->kelas }}</td>
-                                            <td>{{ $kelasOffline->level }}</td>
                                             <td><img src="{{ asset('public/uploads/' . $kelasOffline->banner) }}"
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
-                                            <td>{{ $kelasOffline->link }}</td>
-                                            <td>{{ $kelasOffline->tgl }}</td>
+                                            <td>{{ $kelasOffline->lvl }}</td>
+                                            <td>{{ $kelasOffline->durasi }}</td>
+                                            <td>{{ $kelasOffline->durasi }}</td>
                                             <td>
                                                 <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
                                             </td>
