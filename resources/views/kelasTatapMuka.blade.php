@@ -57,19 +57,19 @@
                                 <h4>
                                     <a href="program-details.html">{{ $Offline->kelas }}</a>
                                 </h4>
-                                <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
+                                <p>{{ $Offline->kelas }} </p>
                                 <ul class="clases-schedule">
                                     <li>
-                                        <span>age</span> <br>
-                                        3-5 years
+                                        <span>Level</span> <br>
+                                        {{ $Offline->lvl }}
                                     </li>
                                     <li>
-                                        <span>weekly</span> <br>
-                                        5 Days
+                                        <span>Durasi</span> <br>
+                                        {{ $Offline->durasi }}
                                     </li>
                                     <li>
-                                        <span>time</span> <br>
-                                        4.30 Hors
+                                        <span>Harga</span> <br>
+                                        Rp.{{ $Offline->price }}
                                     </li>
                                 </ul>
                             </div>
