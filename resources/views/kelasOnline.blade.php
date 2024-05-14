@@ -45,31 +45,30 @@
     <!-- Clases Section Start -->
     <section class="clases-section section-padding">
         <div class="container">
-
             <div class="row g-4">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                     @foreach ($kelasOnline as $kelasonline)
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
-                                <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
+                                <img src="assets/img/classes/01.png" alt="img">
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}
+                                    <a href="program-details.html">English Classes</a>
                                 </h4>
                                 <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
                                 <ul class="clases-schedule">
                                     <li>
-                                        <span>Level</span> <br>
-                                        {{ $kelasonline->level }}
+                                        <span>age</span> <br>
+                                        3-5 years
                                     </li>
                                     <li>
-                                        <span>Jadwal</span> <br>
+                                        <span>weekly</span> <br>
                                         5 Days
                                     </li>
                                     <li>
-                                        <span>Waktu</span> <br>
+                                        <span>time</span> <br>
                                         4.30 Hors
                                     </li>
                                 </ul>
@@ -78,7 +77,6 @@
                     @endforeach
                 </div>
             </div>
-
         </div>
     </section>
     <!-- Whatsapp popup -->
