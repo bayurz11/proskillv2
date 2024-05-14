@@ -267,7 +267,7 @@
         </div>
     </section>
 
-    <!-- Clases Section Start -->
+    {{-- <!-- Clases Section Start -->
     <section class="clases-section section-padding bg-cover"
         style="background-image: url('public/assets/img/clases-bg.jpg');">
         <div class="clases-shape">
@@ -309,7 +309,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <section class="clases-section section-padding bg-cover" style="background-image: url('assets/img/clases-bg.jpg');">
         <div class="clases-shape">
             <div class="wave"></div>
