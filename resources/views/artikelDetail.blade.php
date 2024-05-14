@@ -94,12 +94,20 @@
                                             $src = $matches[1];
                                             return str_replace($src, $src . '" width="770" height="460', $matches[0]);
                                         }
-                                    
-                                        // Mengganti atribut lebar dan tinggi gambar dalam konten artikel
-                                        $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $artikel->content);
+                                        
+                                        // Memisahkan konten menjadi paragraf-paragraf
+                                        $paragraphs = explode('</p>', $artikel->content);
+                                        
+                                        // Mengganti atribut lebar dan tinggi gambar dalam setiap paragraf
+                                        foreach ($paragraphs as $paragraph) {
+                                            echo '<p align="justify">';
+                                            $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $paragraph);
                                     echo $content_with_resized_images;
-                                    ?>
+                                    echo '</p>';
+                                }
+                                ?>
                                 </p>
+
 
 
 
