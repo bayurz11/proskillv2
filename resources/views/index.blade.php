@@ -311,7 +311,111 @@
         </div>
     </section>
 
-
+    <section class="clases-section section-padding bg-cover" style="background-image: url('assets/img/clases-bg.jpg');">
+        <div class="clases-shape">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="text-white wow fadeInUp">Our Classes</span>
+                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">We meet kids at their level <br> regardless of
+                    their age</h2>
+            </div>
+            <div class="array-button">
+                <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
+                <button class="array-next"><i class="fal fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper clases-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="assets/img/classes/01.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">English Classes</a>
+                                </h4>
+                                <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>age</span> <br>
+                                        3-5 years
+                                    </li>
+                                    <li>
+                                        <span>weekly</span> <br>
+                                        5 Days
+                                    </li>
+                                    <li>
+                                        <span>time</span> <br>
+                                        4.30 Hors
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="assets/img/classes/02.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">Tutoring Individual</a>
+                                </h4>
+                                <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>age</span> <br>
+                                        3-5 years
+                                    </li>
+                                    <li>
+                                        <span>weekly</span> <br>
+                                        5 Days
+                                    </li>
+                                    <li>
+                                        <span>time</span> <br>
+                                        4.30 Hors
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="clases-items">
+                            <div class="clases-bg"></div>
+                            <div class="clases-image">
+                                <img src="assets/img/classes/03.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">Tutoring Online</a>
+                                </h4>
+                                <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>age</span> <br>
+                                        3-5 years
+                                    </li>
+                                    <li>
+                                        <span>weekly</span> <br>
+                                        5 Days
+                                    </li>
+                                    <li>
+                                        <span>time</span> <br>
+                                        4.30 Hors
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ Start -->
     <section class="cta-section-2 section-padding fix bg-cover"
