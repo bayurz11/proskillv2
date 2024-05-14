@@ -108,11 +108,11 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Tagline</th>
-                                        <th>promosi</th>
-                                        <th>banner</th>
-                                        <th>link</th>
-                                        <th>Tanggal Rilis</th>
+                                        <th>Kelas</th>
+                                        <th>Banner Kelas</th>
+                                        <th>level</th>
+                                        <th>durasi</th>
+                                        <th>Jumlah Siswa</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
