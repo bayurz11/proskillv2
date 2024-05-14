@@ -51,7 +51,8 @@
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
-                                <img src="assets/img/classes/01.png" alt="img">
+                                <img src="{{ asset('public/uploads/' . $Offline->banner) }}" alt="img"
+                                    style="width: 770px; height: 411px;">
                             </div>
                             <div class="clases-content">
                                 <h4>
