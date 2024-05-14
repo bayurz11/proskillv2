@@ -8,7 +8,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Kelas Online Setting</li>
+                <li class="breadcrumb-item active" aria-current="page">Kelas Tatap Muka Setting</li>
             </ol>
         </nav>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -17,7 +17,7 @@
                     <form action="{{ route('KelasOnlineStore') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah kelas Online</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah kelas Tatap Muka</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="btn-close"></button>
                         </div>
@@ -95,14 +95,14 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Kelas Online</h6>
+                        <h6 class="card-title">Kelas Tatap Muka</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
                                 data-feather="plus-circle"></i>
-                            Kelas online
+                            Kelas Tatap Muka
                         </button>
-                        <p class="text-muted mb-3">Jumlah Kelas Online : {{ $kelasOnline->count() }}</p>
+                        <p class="text-muted mb-3">Jumlah Kelas Online :</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>

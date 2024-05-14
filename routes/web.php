@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\KelasOnlineController;
+use App\Http\Controllers\KelasTatapMukaController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showArtikel'])->name('event');
@@ -33,6 +34,11 @@ Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name(
 //---Kelas Online---//
 Route::get('/KelasOnlineSetting', [KelasOnlineController::class, 'show'])->name('KelasOnlineSetting');
 Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name('KelasOnlineStore');
+
+//---Kelas Tatap Muka---//
+Route::get('/KelasOfflineSetting', [KelasTatapMukaController::class, 'show'])->name('KelasOfflineSetting');
+Route::post('/KelasOfflineStore', [KelasTatapMukaController::class, 'store'])->name('KelasOfflineStore');
+//---end Kelas Tatap Muka---//
 
 //---Artikel---//
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');

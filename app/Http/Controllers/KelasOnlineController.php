@@ -61,12 +61,12 @@ class KelasOnlineController extends Controller
     {
         $user = Auth::user();
         $kelasOnline = KelasOnline::all();
-
+        $count = $kelasOnline->count();
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.kelasOnline', compact('user', 'kelasOnline'));
+        return view('admin.kelasOnline', compact('user', 'kelasOnline', 'count'));
     }
 
     /**
