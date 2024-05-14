@@ -84,9 +84,14 @@
                                 <h3>{{ $artikel->title }} </h3>
 
                                 <p class="mb-3">
-                                    {{ $artikel->content }}
+                                    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    of
+                                    magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in
+                                    reprehenderit.
                                 </p>
-                                {{-- <p class="mb-3">
+                                <p class="mb-3">
                                     The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu
                                     In
                                     hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus
@@ -127,7 +132,7 @@
                                     maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
                                     Quisque
                                     sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros.
-                                </p> --}}
+                                </p>
                                 <div class="row g-4">
                                     <div class="col-lg-6">
                                         <div class="details-image">
