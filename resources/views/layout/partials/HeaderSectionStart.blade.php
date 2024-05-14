@@ -6,7 +6,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="{{ route('/') }}" class="header-logo">
-                            <img src="public/assets/img/logo/logo.svg" alt="logo-img">
+                            <img src="{{ asset('public/assets/img/logo/logo.svg') }}" alt="logo-img">
                         </a>
                     </div>
                     <div class="mean__menu-wrapper">
