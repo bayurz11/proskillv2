@@ -59,8 +59,7 @@
                     <div class="col-lg-8">
                         <div class="program-details-items">
                             <div class="details-image">
-                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
-                                    style="width: 770px; height: 411px;">
+                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
 
                             </div>
                             <div class="details-content">
