@@ -311,6 +311,28 @@
         </div>
     </section>
 
+    <script>
+        var swiper = new Swiper('.clases-slider', {
+            direction: 'rtl', // Set direction to right to left
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.array-next',
+                prevEl: '.array-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>
+
+
 
 
     <!-- FAQ Start -->
