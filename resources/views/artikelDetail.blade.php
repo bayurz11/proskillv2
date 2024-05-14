@@ -84,7 +84,7 @@
                                 <h3>{{ $artikel->title }} </h3>
 
                                 <p class="mb-3">
-                                    {{ $artikel->conten }}
+                                    {{ $artikel->content }}
                                 </p>
                                 {{-- <p class="mb-3">
                                     The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu
