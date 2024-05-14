@@ -313,22 +313,16 @@
 
     <script>
         var swiper = new Swiper('.clases-slider', {
-            direction: 'rtl', // Set direction to right to left
-            loop: true,
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
+            loop: true, // Set to loop
+            autoplay: {
+                delay: 5000, // Delay between slides in milliseconds
+            },
             navigation: {
                 nextEl: '.array-next',
                 prevEl: '.array-prev',
             },
-            breakpoints: {
-                991: {
-                    slidesPerView: 2,
-                },
-                767: {
-                    slidesPerView: 1,
-                }
-            }
         });
     </script>
 
