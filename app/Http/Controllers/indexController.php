@@ -13,7 +13,7 @@ class indexController extends Controller
     {
         $heroSections = HeroSection::all();
         $kelasOnline = KelasOnline::all();
-        $artikel = Artikel::all();
+        $artikel = Artikel::latest()->take(2)->get();
         return view('index', compact('heroSections', 'kelasOnline', 'artikel'));
     }
     public function showArtikel()

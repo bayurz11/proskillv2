@@ -663,7 +663,7 @@
             </div>
             <div class="news-wrapper">
                 <div class="row align-items-center">
-                    @foreach ($artikel->latest()->take(2) as $article)
+                    @foreach ($artikel as $article)
                         <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
 
                             <div class="news-right-items style-2">
