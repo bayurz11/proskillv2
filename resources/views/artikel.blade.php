@@ -80,7 +80,7 @@
                                     <p>
                                         {!! nl2br(substr($article->content, 0, 250)) !!}
                                     </p>
-                                    <a href="news-details.html" class="theme-btn mt-4">
+                                    <a href="{{ route('artikel_detail', ['id' => $article->id]) }}" class="theme-btn mt-4">
                                         Read More
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
