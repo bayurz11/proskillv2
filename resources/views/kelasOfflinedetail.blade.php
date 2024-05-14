@@ -155,10 +155,11 @@
 
                             </ul>
                             <a href="program-details.html" class="theme-btn w-100 border-style mb-3">
-                                Harga Kelas {{ $klsoffline->price }}
+                                Harga Kelas Rp.{{ $klsoffline->price }}
                             </a>
-                            <a href="program-details.html" class="theme-btn w-100">
-                                Enroll Your Kid <i class="fa-solid fa-arrow-right-long"></i>
+                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
+                                class="theme-btn w-100">
+                                Daftar Ke Whatsapp kami <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
                             <div class="social-icon d-flex align-items-center">
                                 <span>Share: </span>
