@@ -47,32 +47,34 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="clases-items mt-0">
-                        <div class="clases-bg style-2"></div>
-                        <div class="clases-image">
-                            <img src="assets/img/classes/01.png" alt="img">
+                    @foreach ($kelasOffline as $Offline)
+                        <div class="clases-items mt-0">
+                            <div class="clases-bg style-2"></div>
+                            <div class="clases-image">
+                                <img src="assets/img/classes/01.png" alt="img">
+                            </div>
+                            <div class="clases-content">
+                                <h4>
+                                    <a href="program-details.html">{{ $Offline->kelas }}</a>
+                                </h4>
+                                <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
+                                <ul class="clases-schedule">
+                                    <li>
+                                        <span>age</span> <br>
+                                        3-5 years
+                                    </li>
+                                    <li>
+                                        <span>weekly</span> <br>
+                                        5 Days
+                                    </li>
+                                    <li>
+                                        <span>time</span> <br>
+                                        4.30 Hors
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="clases-content">
-                            <h4>
-                                <a href="program-details.html">English Classes</a>
-                            </h4>
-                            <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
-                            <ul class="clases-schedule">
-                                <li>
-                                    <span>age</span> <br>
-                                    3-5 years
-                                </li>
-                                <li>
-                                    <span>weekly</span> <br>
-                                    5 Days
-                                </li>
-                                <li>
-                                    <span>time</span> <br>
-                                    4.30 Hors
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
             </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Artikel;
 use App\Models\HeroSection;
 use App\Models\KelasOnline;
+use App\Models\KelasTatapMuka;
 use Illuminate\Http\Request;
 
 class indexController extends Controller
@@ -30,8 +31,8 @@ class indexController extends Controller
     }
     public function showKelasOffline()
     {
-
-        return view('kelasTatapMuka');
+        $kelasOffline = KelasTatapMuka::all();
+        return view('kelasTatapMuka', compact('kelasOffline'));
     }
     public function showkelasOnline()
     {
