@@ -90,7 +90,7 @@
 
 
                                 <p class="mb-3">
-                                    {!! $article->content !!}
+                                    {!! $artikel->content !!}
                                 </p>
 
                             </div>
