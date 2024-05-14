@@ -161,50 +161,10 @@
                                 class="theme-btn w-100">
                                 Daftar Ke Whatsapp kami <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
-                            <div class="social-icon d-flex align-items-center">
-                                <span>Share: </span>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="program-author-items">
-                            <div class="thumb">
-                                <img src="assets/img/program/p-author.jpg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h2>Savannah Nguyen</h2>
-                                <span>Children Diet</span>
-                                <p>
-                                    Adipiscing elit. Mauris viverra nisl quis mollis laoreet. Ut eget lacus a felis accumsan
-                                    pharetra in dignissim enim. In amet odio mollis urna aliquet volutpat. Sed bibendum nisl
-                                    vehicula imperdiet imperdiet, augue massa fringilla.
-                                </p>
-                                <ul>
-                                    <li>
-                                        Experience: 10 Years
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-user"></i>
-                                        188 Students
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-star color-star"></i>
-                                        454 (36 Review)
-                                    </li>
-                                </ul>
-                                <div class="social-icon d-flex align-items-center">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
