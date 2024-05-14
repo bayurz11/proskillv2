@@ -51,24 +51,24 @@
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
-                                <img src="assets/img/classes/01.png" alt="img">
+                                <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
                             </div>
                             <div class="clases-content">
                                 <h4>
-                                    <a href="program-details.html">English Classes</a>
+                                    <a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}
                                 </h4>
                                 <p>Nulla a auctor leo. Vestibulum viverra mattis arcu <br> nec viverra. Vivamus </p>
                                 <ul class="clases-schedule">
                                     <li>
-                                        <span>age</span> <br>
-                                        3-5 years
+                                        <span>Level</span> <br>
+                                        {{ $kelasonline->level }}
                                     </li>
                                     <li>
-                                        <span>weekly</span> <br>
+                                        <span>Jadwal</span> <br>
                                         5 Days
                                     </li>
                                     <li>
-                                        <span>time</span> <br>
+                                        <span>Waktu</span> <br>
                                         4.30 Hors
                                     </li>
                                 </ul>
