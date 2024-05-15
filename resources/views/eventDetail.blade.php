@@ -60,7 +60,7 @@
                     <div class="col-lg-8">
                         <div class="event-details-items">
                             <div class="details-image">
-                                <img src="assets/img/event/event-details-1.jpg" alt="img">
+                                <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="img">
                             </div>
                             <div class="event-details-content">
                                 <div class="post-items">
