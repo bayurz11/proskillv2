@@ -87,8 +87,19 @@ class AboutUsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(AboutUs $aboutUs)
+    public function destroy($id)
     {
-        //
+        // Temukan artikel berdasarkan ID
+        $aboutUs = AboutUs::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$aboutUs) {
+            return redirect()->route('about_us_setting')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $aboutUs->delete();
+
+        return redirect()->route('about_us_setting')->with('success', 'Artikel berhasil dihapus');
     }
 }
