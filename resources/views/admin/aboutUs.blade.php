@@ -34,6 +34,11 @@
 
 
                             <div class="mb-3">
+                                <label for="pimpinan" class="form-label">Nama Pimpinan</label>
+                                <input type="text" class="form-control" id="pimpinan" name="pimpinan">
+                            </div>
+
+                            <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
                                     readonly>
