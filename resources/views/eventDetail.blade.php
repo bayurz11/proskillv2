@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="details-list-area">
-                            <h3>Event Information:</h3>
+                            <h3>Informasi Event</h3>
                             <ul class="details-list">
                                 <li>
                                     <span>
@@ -179,21 +179,15 @@
 
                             </ul>
                             <a href="event-details.html" class="theme-btn w-100">
-                                Get Tickets Now <i class="fa-solid fa-arrow-right-long"></i>
+                                Daftar Sekarang <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
-                            <div class="social-icon d-flex align-items-center">
-                                <span>Share: </span>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                            </div>
+
                         </div>
-                        <div class="map-items">
+                        {{-- <div class="map-items">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd"
                                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -201,8 +195,7 @@
     </section>
 
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
