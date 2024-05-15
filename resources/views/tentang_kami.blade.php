@@ -267,76 +267,131 @@
         </div>
     </section>
 
-    <!-- Instagram Banner Section Start -->
-    <div class="instagram-banner fix section-padding pt-0">
-        <div class="instagram-wrapper">
-            <h3 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h3>
-            <div class="swiper instagram-banner-slider">
+    <!-- Izin Section Start -->
+    <section class="team-section-3 fix  section-padding pt-1 mt-60">
+        <div class="tree-shape float-bob-x">
+            <img src="assets/img/tree-shape.png" alt="shape-img">
+        </div>
+        <div class="right-shape">
+            <img src="assets/img/testi-r-shape.png" alt="shape-img">
+        </div>
+        <div class="bee-shape float-bob-y">
+            <img src="assets/img/testi-bee-shape.png" alt="shape-img">
+        </div>
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title mt-60">
+                    <span class="wow fadeInUp">Our Experts</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Expert Instructors</h2>
+                </div>
+                <div class="array-button wow fadeInUp" data-wow-delay=".5s">
+                    <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
+                    <button class="array-next"><i class="fal fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="swiper team-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/01.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <img src="assets/img/team/team-shape.png" alt="img">
+                                </div>
+                                <img src="assets/img/team/01.jpg" alt="team-img">
+                                <div class="social-profile">
+                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>
+                                    <a href="team-details.html">Brooklyn Simmons</a>
+                                </h3>
+                                <p>Instructors</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/02.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <img src="assets/img/team/team-shape.png" alt="img">
+                                </div>
+                                <img src="assets/img/team/02.jpg" alt="team-img">
+                                <div class="social-profile">
+                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>
+                                    <a href="team-details.html">Leslie Alexander</a>
+                                </h3>
+                                <p>Instructors</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/03.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <img src="assets/img/team/team-shape.png" alt="img">
+                                </div>
+                                <img src="assets/img/team/03.jpg" alt="team-img">
+                                <div class="social-profile">
+                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h3>
+                                    <a href="team-details.html">Ronald Richards</a>
+                                </h3>
+                                <p>Instructors</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/04.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <img src="assets/img/team/team-shape.png" alt="img">
+                                </div>
+                                <img src="assets/img/team/04.jpg" alt="team-img">
+                                <div class="social-profile">
+                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/05.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="instagram-banner-items">
-                            <div class="banner-image">
-                                <img src="public/assets/img/instagram/06.jpg" alt="insta-img">
-                                <a href="index.html" class="icon">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+                            <div class="team-content">
+                                <h3>
+                                    <a href="team-details.html">Kristin Watson</a>
+                                </h3>
+                                <p>Instructors</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
 
 
     <!-- Whatsapp popup -->
