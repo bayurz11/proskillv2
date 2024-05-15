@@ -58,4 +58,6 @@ Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name(
 
 //---about us---//
 Route::get('/about_us_setting', [AboutUsController::class, 'show'])->name('about_us_setting');
+Route::post('/about_us_store', [AboutUsController::class, 'store'])->name('about_us_store');
+Route::delete('/about_us_destroy/{id}', [AboutUsController::class, 'destroy'])->name('about_us_destroy');
 //**************END DADHBOARD ADMIN **************//

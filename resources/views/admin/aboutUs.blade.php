@@ -10,27 +10,27 @@
                 <li class="breadcrumb-item active" aria-current="page">About Us</li>
             </ol>
         </nav>
-        {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="{{ route('event_store') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('about_us_store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah Event</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Tambah aboutUs</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="btn-close"></button>
                         </div>
                         <div class="modal-body">
 
                             <div class="mb-3">
-                                <label for="name_event" class="form-label">Judul event</label>
-                                <input type="text" class="form-control" id="name_event" name="name_event"
-                                    placeholder="Masukkan Nama event">
+                                <label for="name_aboutUs" class="form-label">Judul aboutUs</label>
+                                <input type="text" class="form-control" id="name_aboutUs" name="name_aboutUs"
+                                    placeholder="Masukkan Nama aboutUs">
                             </div>
                             <div class="mb-3">
                                 <label for="gambar" class="form-label">Benner/Gambar</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                                <small class="text-secondary">Note : Unggah gambar untuk event yang akan
+                                <small class="text-secondary">Note : Unggah gambar untuk aboutUs yang akan
                                     ditulis</small>
                             </div>
                             <img id="preview" src="#" alt="Preview Gambar"
@@ -41,7 +41,7 @@
                                 <textarea class="form-control" name="deskripsi" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="lokasi" class="form-label">Lokasi Event</label>
+                                <label for="lokasi" class="form-label">Lokasi aboutUs</label>
                                 <input type="text" class="form-control" id="lokasi" name="lokasi">
                             </div>
                             <div class="mb-3">
@@ -49,19 +49,19 @@
                                 <input type="text" class="form-control" id="mulai" name="mulai">
                             </div>
                             <div class="mb-3">
-                                <label for="durasi" class="form-label">Durasi Event</label>
+                                <label for="durasi" class="form-label">Durasi aboutUs</label>
                                 <input type="text" class="form-control" id="durasi" name="durasi">
                             </div>
                             <div class="mb-3">
-                                <label for="tlp" class="form-label">Kontak Event</label>
+                                <label for="tlp" class="form-label">Kontak aboutUs</label>
                                 <input type="text" class="form-control" id="tlp" name="tlp">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email Event</label>
+                                <label for="email" class="form-label">Email aboutUs</label>
                                 <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="syarat" class="form-label">Syarat Event</label>
+                                <label for="syarat" class="form-label">Syarat aboutUs</label>
                                 <input type="text" class="form-control" id="syarat" name="syarat">
                                 <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
                             </div>
@@ -70,7 +70,7 @@
                             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
 
                             <script>
-                                document.addEventListener("DOMContentLoaded", function() {
+                                document.addaboutUsListener("DOMContentLoaded", function() {
                                     var input = document.querySelector('input[name=syarat]');
 
                                     new Tagify(input, {
@@ -136,32 +136,32 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Event</h6>
+                        <h6 class="card-title">aboutUs</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
                                 data-feather="plus-circle"></i>
-                            Tambah Event
+                            Tambah aboutUs
                         </button>
-                        <p class="text-muted mb-3">Jumlah Event : {{ $event->count() }}</p>
+                        <p class="text-muted mb-3">Jumlah aboutUs : {{ $aboutUs->count() }}</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama event</th>
+                                        <th>Nama aboutUs</th>
                                         <th>Lokasi</th>
-                                        <th>Mulai Event</th>
+                                        <th>Mulai aboutUs</th>
                                         <th>Durasi</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($event as $key => $even)
+                                    @foreach ($aboutUs as $key => $even)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $even->lokasi }}</td>
-                                            <td>{{ $even->name_event }}</td>
+                                            <td>{{ $even->name_aboutUs }}</td>
                                             <td>{{ $even->mulai }}</td>
                                             <td>{{ $even->durasi }}</td>
                                             <td>
@@ -169,15 +169,15 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapusevent('{{ $even->id }}')"
+                                                <button onclick="hapusaboutUs('{{ $even->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
 
                                                 <script>
-                                                    function hapusevent(id) {
-                                                        if (confirm('Apakah Anda yakin ingin menghapus event ini?')) {
-                                                            fetch(`/event_destroy/${id}`, {
+                                                    function hapusaboutUs(id) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus aboutUs ini?')) {
+                                                            fetch(`/about_us_destroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
                                                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'
@@ -188,7 +188,7 @@
                                                                     window.location.reload();
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
-                                                                    console.error('Gagal menghapus event');
+                                                                    console.error('Gagal menghapus aboutUs');
                                                                 }
                                                             }).catch(error => {
                                                                 console.error('Terjadi kesalahan:', error);
@@ -206,7 +206,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
     </div>
 
