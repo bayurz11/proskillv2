@@ -3,24 +3,24 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/public/assets/img/breadcrumb.png');">
         <div class="line-shape">
-            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
         </div>
         <div class="frame-shape">
-            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -45,25 +45,25 @@
     <!-- About Activities Section Start -->
     <section class="about-activities-section-2 style-2 section-padding">
         <div class="zebra-shape float-bob-y">
-            <img src="assets/img/about/zebra.png" alt="shape-img">
+            <img src="public/assets/img/about/zebra.png" alt="shape-img">
         </div>
         <div class="bottom-shape">
-            <img src="assets/img/section-top-shape-2.png" alt="shape-img">
+            <img src="public/assets/img/section-top-shape-2.png" alt="shape-img">
         </div>
         <div class="sun-shape">
-            <img src="assets/img/client/shape-2.png" alt="shape-img">
+            <img src="public/assets/img/client/shape-2.png" alt="shape-img">
         </div>
         <div class="container">
             <div class="about-activities-wrapper style-2">
                 <div class="row g-4">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="activities-image-items">
-                            <img src="assets/img/about/04.png" alt="img">
+                            <img src="public/assets/img/about/04.png" alt="img">
                             <div class="radius-shape">
-                                <img src="assets/img/about/radius-shape.png" alt="shape-img">
+                                <img src="public/assets/img/about/radius-shape.png" alt="shape-img">
                             </div>
                             <div class="circle-shape">
-                                <img src="assets/img/about/circle.png" alt="shape-img">
+                                <img src="public/assets/img/about/circle.png" alt="shape-img">
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                             </div>
                             <div class="about-author">
                                 <div class="author-image wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="assets/img/about/author.png" alt="author-img">
+                                    <img src="public/assets/img/about/author.png" alt="author-img">
                                     <div class="content">
                                         <h6>Ronald Richards</h6>
                                         <p>Co, Founder</p>
@@ -133,10 +133,10 @@
     <!-- Feature Value Section Start -->
     <section class="feature-value-section fix section-padding section-bg-2">
         <div class="shape-1">
-            <img src="assets/img/value/shape-1.png" alt="shape-img">
+            <img src="public/assets/img/value/shape-1.png" alt="shape-img">
         </div>
         <div class="shape-2 float-bob-x">
-            <img src="assets/img/value/shape-2.png" alt="shape-img">
+            <img src="public/assets/img/value/shape-2.png" alt="shape-img">
         </div>
         <div class="container">
             <div class="section-title text-center">
@@ -171,9 +171,9 @@
                 <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                     <div class="feature-value-items">
                         <div class="feature-value-image">
-                            <img src="assets/img/cta/cta-2.png" alt="img">
+                            <img src="public/assets/img/cta/cta-2.png" alt="img">
                             <div class="value-shape">
-                                <img src="assets/img/cta/cta-shape-2.png" alt="shape-img">
+                                <img src="public/assets/img/cta/cta-shape-2.png" alt="shape-img">
                             </div>
                         </div>
                     </div>
@@ -209,10 +209,10 @@
     <!-- Counter Section Start -->
     <section class="counter-section fix">
         <div class="line-shape">
-            <img src="assets/img/counter/line-shape.png" alt="shape-img">
+            <img src="public/assets/img/counter/line-shape.png" alt="shape-img">
         </div>
         <div class="box-shape float-bob-x">
-            <img src="assets/img/counter/box-shape.png" alt="shape-img">
+            <img src="public/assets/img/counter/box-shape.png" alt="shape-img">
         </div>
         <div class="counter-bg"></div>
         <div class="container">
@@ -221,7 +221,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('assets/img/counter/icon-1.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-1.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">25</span>+</h2>
@@ -232,7 +232,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('assets/img/counter/icon-2.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-2.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,500</span>+</h2>
@@ -243,7 +243,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('assets/img/counter/icon-3.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-3.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">100</span>+</h2>
@@ -254,7 +254,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="counter-items border-none">
                             <div class="icon">
-                                <img src="{{ asset('assets/img/counter/icon-4.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-4.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,561</span>+</h2>
@@ -276,7 +276,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/01.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/01.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -286,7 +286,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/02.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/02.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -296,7 +296,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/03.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/03.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -306,7 +306,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/04.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/04.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -316,7 +316,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/05.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/05.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -326,7 +326,7 @@
                     <div class="swiper-slide">
                         <div class="instagram-banner-items">
                             <div class="banner-image">
-                                <img src="assets/img/instagram/06.jpg" alt="insta-img">
+                                <img src="public/assets/img/instagram/06.jpg" alt="insta-img">
                                 <a href="index.html" class="icon">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
@@ -344,7 +344,7 @@
         style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
-            <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
+            <img src="public/public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
                 style="width: 50px; height: auto;">
         </a>
         <div id="popup-message"
