@@ -54,11 +54,12 @@
                                 <div class="event-image">
                                     <img src="assets/img/event/01.jpg" alt="event-img">
                                     <div class="event-shape">
-                                        <img src="assets/img/event/shape.png" alt="shape-img">
+                                        <img src="{{ asset('public/uploads/' . $events->banner) }}">
                                     </div>
                                     <ul class="post-date">
                                         <li>
-                                            <img src="assets/img/event/calender.svg" alt="img" class="me-2">
+                                            <img src="{{ assets('public/assets/img/event/calender.svg') }}" alt="img"
+                                                class="me-2">
                                             {{ $events->tgl }}
                                         </li>
                                     </ul>
