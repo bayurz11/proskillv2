@@ -38,13 +38,10 @@
                                 <input type="text" class="form-control" id="pimpinan" name="pimpinan">
                             </div>
                             <div class="mb-3">
-                                <div class="mb-3">
-                                    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-                                    <textarea id="isi" style="height: 800px; width: 100%; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
-                                    <input type="hidden" id="isi_input" name="isi">
-
-                                </div>
-
+                                <label for="pimpinan" class="form-label">Visi</label>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                                <textarea id="isi" style="height: 800px; width: 100%; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="isi_input" name="isi">
                                 <script>
                                     ClassicEditor
                                         .create(document.querySelector('#isi'))
