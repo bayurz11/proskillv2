@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\Event;
 use App\Models\HeroSection;
 use App\Models\KelasOnline;
 use App\Models\KelasTatapMuka;
@@ -25,8 +26,8 @@ class indexController extends Controller
     }
     public function showEvent()
     {
-        $artikel = Artikel::all();
-        return view('event', compact('artikel'));
+        $event = Event::all();
+        return view('event', compact('event'));
     }
     public function artikeldetail($id)
     {
