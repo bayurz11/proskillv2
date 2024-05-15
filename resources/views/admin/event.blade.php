@@ -23,9 +23,9 @@
                         <div class="modal-body">
 
                             <div class="mb-3">
-                                <label for="title" class="form-label">Judul event</label>
-                                <input type="text" class="form-control" id="title" name="title"
-                                    placeholder="Masukkan Judul event">
+                                <label for="name_event" class="form-label">Judul event</label>
+                                <input type="text" class="form-control" id="name_event" name="name_event"
+                                    placeholder="Masukkan Nama event">
                             </div>
                             <div class="mb-3">
                                 <label for="gambar" class="form-label">Benner/Gambar</label>
@@ -37,12 +37,32 @@
                                 style="max-width: 100%; max-height: 200px; display: none;">
 
                             <div class="mb-3">
-                                <label class="form-label" for="easyMdeExample">Isi event</label>
-                                <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
+                                <label class="form-label" for="easyMdeExample">Deskripsi</label>
+                                <textarea class="form-control" name="deskripsi" id="easyMdeExample" rows="10"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="category" class="form-label">Kategori event</label>
-                                <input type="text" class="form-control" id="category" name="category">
+                                <label for="lokasi" class="form-label">Lokasi Event</label>
+                                <input type="text" class="form-control" id="lokasi" name="lokasi">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mulai" class="form-label">Mulai tanggal</label>
+                                <input type="text" class="form-control" id="mulai" name="mulai">
+                            </div>
+                            <div class="mb-3">
+                                <label for="durasi" class="form-label">Durasi Event</label>
+                                <input type="text" class="form-control" id="durasi" name="durasi">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tlp" class="form-label">Kontak Event</label>
+                                <input type="text" class="form-control" id="tlp" name="tlp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Event</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="syarat" class="form-label">Syarat Event</label>
+                                <input type="text" class="form-control" id="syarat" name="syarat">
                                 <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
                             </div>
 
@@ -51,7 +71,7 @@
 
                             <script>
                                 document.addEventListener("DOMContentLoaded", function() {
-                                    var input = document.querySelector('input[name=category]');
+                                    var input = document.querySelector('input[name=syarat]');
 
                                     new Tagify(input, {
                                         whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
@@ -62,10 +82,12 @@
                                     });
                                 });
                             </script>
+
+
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                                    readonly>
+                                <input type="text" class="form-control" id="tgl" placeholder="tgl"
+                                    name="tgl" readonly>
                             </div>
 
                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -149,7 +171,7 @@
                                             <td>{{ $even->tgl }}</td>
                                             <td>
                                                 @php
-                                                    $tags = json_decode($even->category, true);
+                                                    $tags = json_decode($even->syarat, true);
                                                 @endphp
 
                                                 @if (is_array($tags))

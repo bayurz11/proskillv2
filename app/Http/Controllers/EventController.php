@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
@@ -28,9 +29,34 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreEventRequest $request)
+    public function store(Request $request)
     {
-        //
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
+
+            $userId = Auth::id();
+
+            $even = new Event();
+            $even->banner = $gambarName;
+            $even->name_event = $request->name_event;
+            $even->tgl = $request->tgl;
+            $even->user_id = $userId;
+            $even->lokasi = $request->lokasi;
+            $even->mulai = $request->mulai;
+            $even->durasi = $request->durasi;
+            $even->tlp = $request->tlp;
+            $even->email = $request->email;
+            $even->deskripsi = $request->deskripsi;
+            $even->syarat = $request->syarat;
+            $even->save();
+
+            return redirect()->route('event_setting')->with('success', 'even  berhasil dibuat.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('event_setting')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
     }
 
     /**
