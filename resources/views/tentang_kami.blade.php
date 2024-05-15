@@ -70,25 +70,24 @@
                     <div class="col-lg-6">
                         <div class="activities-content">
                             <div class="section-title">
-                                <span class="wow fadeInUp">About Us</span>
+                                <span class="wow fadeInUp">Visi</span>
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    Learn to play, converse <br>
-                                    with confidence.
+                                    ProSkill Akademia
                                 </h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                Luctus. Curabitur nibh justo imperdiet non ex non tempus faucibus urna Aliquam at elit vitae
-                                dui sagittis maximus eget vitae diam In fermentum
+                                "Menjadi Lembaga Pendidikan Berkualitas Skala Nasional di Bidang Teknologi Informasi dan
+                                Komunikasi"
                             </p>
                             <div class="row g-4 mt-4">
                                 <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                     <div class="icon-items">
                                         <div class="icon">
-                                            <i class="icon-icon-12"></i>
+                                            <i class="icon-icon-13"></i>
                                         </div>
                                         <div class="content">
-                                            <h5>Sport Program</h5>
-                                            <p>Aliquam erat volutpat <br> nullam imperdiet</p>
+                                            <h5>NPSN</h5>
+                                            <p>K9999032</p>
                                         </div>
                                     </div>
                                 </div>
@@ -140,8 +139,8 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="wow fadeInUp">Visi</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">ProSkill Akademia</h2>
+                <span class="wow fadeInUp">Our values</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">The best playschool <br> for your kid</h2>
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-6">
