@@ -37,7 +37,28 @@
                                 <label for="pimpinan" class="form-label">Nama Pimpinan</label>
                                 <input type="text" class="form-control" id="pimpinan" name="pimpinan">
                             </div>
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                                    <textarea id="isi" style="height: 800px; width: 100%; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
+                                    <input type="hidden" id="isi_input" name="isi">
 
+                                </div>
+
+                                <script>
+                                    ClassicEditor
+                                        .create(document.querySelector('#isi'))
+                                        .then(editor => {
+                                            editor.model.document.on('change:data', () => {
+                                                const isi_input = document.querySelector('#isi_input');
+                                                isi_input.value = editor.getData();
+                                            });
+                                        })
+                                        .catch(error => {
+                                            console.error(error);
+                                        });
+                                </script>
+                            </div>
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
