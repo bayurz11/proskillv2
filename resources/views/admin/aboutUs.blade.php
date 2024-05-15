@@ -40,15 +40,35 @@
                             <div class="mb-3">
                                 <label for="pimpinan" class="form-label">Visi</label>
                                 <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-                                <textarea id="isi" style="height: 800px; width: 200px; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
-                                <input type="hidden" id="isi_input" name="isi">
+                                <textarea id="visi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
+                                <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="visi_input" name="visi">
                                 <script>
                                     ClassicEditor
-                                        .create(document.querySelector('#isi'))
+                                        .create(document.querySelector('#visi'))
                                         .then(editor => {
                                             editor.model.document.on('change:data', () => {
-                                                const isi_input = document.querySelector('#isi_input');
-                                                isi_input.value = editor.getData();
+                                                const visi_input = document.querySelector('#visi_input');
+                                                visi_input.value = editor.getData();
+                                            });
+                                        })
+                                        .catch(error => {
+                                            console.error(error);
+                                        });
+                                </script>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pimpinan" class="form-label">Misi</label>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                                <textarea id="misi" style="height: 800px; width: 200px; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="misi_input" name="misi">
+                                <script>
+                                    ClassicEditor
+                                        .create(document.querySelector('#misi'))
+                                        .then(editor => {
+                                            editor.model.document.on('change:data', () => {
+                                                const misi_input = document.querySelector('#misi_input');
+                                                misi_input.value = editor.getData();
                                             });
                                         })
                                         .catch(error => {
