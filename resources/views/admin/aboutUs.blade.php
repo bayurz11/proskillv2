@@ -40,7 +40,7 @@
                             <div class="mb-3">
                                 <label for="pimpinan" class="form-label">Visi</label>
                                 <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-                                <textarea id="isi" style="height: 800px; width: 100%; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <textarea id="isi" style="height: 800px; width: 200px; font-size: 18px;"></textarea> <!-- Menggunakan <textarea> untuk CKEditor -->
                                 <input type="hidden" id="isi_input" name="isi">
                                 <script>
                                     ClassicEditor
