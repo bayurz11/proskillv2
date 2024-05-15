@@ -157,7 +157,7 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapus('{{ $even->id }}')"
+                                                <button onclick="hapus('{{ $kelasOffline->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
