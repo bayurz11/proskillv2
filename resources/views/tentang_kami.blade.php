@@ -81,7 +81,7 @@
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
                                 @foreach (explode("\n", $about->misi) as $paragraph)
                                     <p style="text-align:justify;">
-                                        {{ $paragraph }}
+                                        {!! nl2br($paragraph) !!}
                                     </p>
                                 @endforeach
                             </p>
