@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\KelasOnlineController;
@@ -45,6 +46,8 @@ Route::post('/KelasOfflineStore', [KelasTatapMukaController::class, 'store'])->n
 Route::get('/artikel_setting', [ArtikelController::class, 'show'])->name('artikel_setting');
 Route::post('/artikel_store', [ArtikelController::class, 'store'])->name('artikel_store');
 Route::delete('/artikel_destroy/{id}', [ArtikelController::class, 'destroy'])->name('artikel_destroy');
-
 //---end Artikel---//
+
+//---Event---//
+Route::get('/event_setting', [EventController::class, 'show'])->name('event_setting');
 //**************END DADHBOARD ADMIN **************//
