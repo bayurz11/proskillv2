@@ -242,6 +242,7 @@
                                 <h3>
                                     <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032">NPSN</a>
                                 </h3>
+                                <p>K9999032</p>
                             </div>
                         </div>
                     </div>
