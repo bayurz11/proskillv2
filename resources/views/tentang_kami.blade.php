@@ -295,9 +295,9 @@
                         <div class="team-items">
                             <div class="team-image">
                                 <div class="shape-img">
-                                    <img src="assets/img/team/team-shape.png" alt="img">
+                                    <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img">
                                 </div>
-                                <img src="assets/img/team/01.jpg" alt="team-img">
+                                <img src="{{ asset('public/assets/img/team/01.jpg') }}" alt="team-img">
                                 <div class="social-profile">
                                     <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                     <ul>
@@ -315,78 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    <img src="assets/img/team/team-shape.png" alt="img">
-                                </div>
-                                <img src="assets/img/team/02.jpg" alt="team-img">
-                                <div class="social-profile">
-                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>
-                                    <a href="team-details.html">Leslie Alexander</a>
-                                </h3>
-                                <p>Instructors</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    <img src="assets/img/team/team-shape.png" alt="img">
-                                </div>
-                                <img src="assets/img/team/03.jpg" alt="team-img">
-                                <div class="social-profile">
-                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>
-                                    <a href="team-details.html">Ronald Richards</a>
-                                </h3>
-                                <p>Instructors</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    <img src="assets/img/team/team-shape.png" alt="img">
-                                </div>
-                                <img src="assets/img/team/04.jpg" alt="team-img">
-                                <div class="social-profile">
-                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3>
-                                    <a href="team-details.html">Kristin Watson</a>
-                                </h3>
-                                <p>Instructors</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
