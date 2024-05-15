@@ -153,7 +153,37 @@
                                             <td>{{ $kelasOffline->durasi }}</td>
                                             <td>{{ $kelasOffline->durasi }}</td>
                                             <td>
-                                                <!-- Tambahkan tombol untuk mengedit atau menghapus data -->
+                                                <button type="button" class="btn btn-primary btn-icon" title="Edit">
+                                                    <i data-feather="edit"></i>
+                                                </button>
+
+                                                <button onclick="hapus('{{ $even->id }}')"
+                                                    class="btn btn-danger btn-icon" title="Hapus">
+                                                    <i data-feather="trash-2"></i>
+                                                </button>
+
+                                                <script>
+                                                    function hapus(id) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus Kelas ini?')) {
+                                                            fetch(`/KelasOfflineDestroy/${id}`, {
+                                                                method: 'DELETE',
+                                                                headers: {
+                                                                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                                                                }
+                                                            }).then(response => {
+                                                                if (response.ok) {
+                                                                    // Jika penghapusan berhasil, refresh halaman
+                                                                    window.location.reload();
+                                                                } else {
+                                                                    // Tangani kesalahan jika terjadi
+                                                                    console.error('Gagal menghapus Kelas Tatap Muka');
+                                                                }
+                                                            }).catch(error => {
+                                                                console.error('Terjadi kesalahan:', error);
+                                                            });
+                                                        }
+                                                    }
+                                                </script>
                                             </td>
                                         </tr>
                                     @endforeach

@@ -92,8 +92,19 @@ class KelasTatapMukaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(KelasTatapMuka $kelasTatapMuka)
+    public function destroy($id)
     {
-        //
+        // Temukan kelasOffline berdasarkan ID
+        $kelasOffline = KelasTatapMuka::find($id);
+
+        // Periksa apakah kelasOffline ditemukan
+        if (!$kelasOffline) {
+            return redirect()->route('KelasOfflineSetting')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        // Hapus kelasOffline
+        $kelasOffline->delete();
+
+        return redirect()->route('KelasOfflineSetting')->with('success', 'Artikel berhasil dihapus');
     }
 }

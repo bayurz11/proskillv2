@@ -43,6 +43,7 @@ Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name(
 //---Kelas Tatap Muka---//
 Route::get('/KelasOfflineSetting', [KelasTatapMukaController::class, 'show'])->name('KelasOfflineSetting');
 Route::post('/KelasOfflineStore', [KelasTatapMukaController::class, 'store'])->name('KelasOfflineStore');
+Route::delete('/KelasOfflineDestroy/{id}', [KelasTatapMukaController::class, 'destroy'])->name('KelasOfflineDestroy');
 //---end Kelas Tatap Muka---//
 
 //---Artikel---//
