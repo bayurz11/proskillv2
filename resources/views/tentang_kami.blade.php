@@ -140,8 +140,8 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="wow fadeInUp">Our values</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">The best playschool <br> for your kid</h2>
+                <span class="wow fadeInUp">Visi</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">ProSkill Akademia</h2>
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-6">
