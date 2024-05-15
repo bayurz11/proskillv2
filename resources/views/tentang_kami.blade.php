@@ -117,17 +117,17 @@
                                         <p> Pimpinan ProSkill Akademia</p>
                                     </div>
                                 </div>
-                                <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
+                                {{-- <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
                                     <div class="icon">
                                         <i class="fa-solid fa-phone"></i>
                                     </div>
-                                    {{-- <div class="content">
+                                    <div class="content">
                                         <span>Call Us Now</span>
                                         <h5>
                                             <a href="tel:+2085550112">+208-555-0112</a>
                                         </h5>
-                                    </div> --}}
-                                </div>
+                                    </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
