@@ -32,12 +32,6 @@
                             <a href="{{ route('HeroSectionSetting') }}" class="nav-link">Hero Section Setting</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('KelasOnlineSetting') }}" class="nav-link">Kelas Online Setting</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('KelasOfflineSetting') }}" class="nav-link">Kelas Tatap Muka Setting</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="pages/email/compose.html" class="nav-link">Compose</a>
                         </li>
                     </ul>
@@ -59,10 +53,10 @@
                 <div class="collapse" id="kelas">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/email/inbox.html" class="nav-link">Kelas Tatap Muka</a>
+                            <a href="{{ route('KelasOfflineSetting') }}" class="nav-link">Kelas Tatap Muka</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/email/read.html" class="nav-link">Kelas Online</a>
+                            <a href="{{ route('KelasOnlineSetting') }}" class="nav-link">Kelas Online</a>
                         </li>
 
                     </ul>
