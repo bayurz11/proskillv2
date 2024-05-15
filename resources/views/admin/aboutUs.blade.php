@@ -22,11 +22,7 @@
                         </div>
                         <div class="modal-body">
 
-                            <div class="mb-3">
-                                <label for="name_aboutUs" class="form-label">Judul aboutUs</label>
-                                <input type="text" class="form-control" id="name_aboutUs" name="name_aboutUs"
-                                    placeholder="Masukkan Nama aboutUs">
-                            </div>
+
                             <div class="mb-3">
                                 <label for="gambar" class="form-label">Benner/Gambar</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
@@ -36,58 +32,11 @@
                             <img id="preview" src="#" alt="Preview Gambar"
                                 style="max-width: 100%; max-height: 200px; display: none;">
 
-                            <div class="mb-3">
-                                <label class="form-label" for="easyMdeExample">Deskripsi</label>
-                                <textarea class="form-control" name="deskripsi" id="easyMdeExample" rows="10"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="lokasi" class="form-label">Lokasi aboutUs</label>
-                                <input type="text" class="form-control" id="lokasi" name="lokasi">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mulai" class="form-label">Mulai tanggal</label>
-                                <input type="text" class="form-control" id="mulai" name="mulai">
-                            </div>
-                            <div class="mb-3">
-                                <label for="durasi" class="form-label">Durasi aboutUs</label>
-                                <input type="text" class="form-control" id="durasi" name="durasi">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tlp" class="form-label">Kontak aboutUs</label>
-                                <input type="text" class="form-control" id="tlp" name="tlp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email aboutUs</label>
-                                <input type="email" class="form-control" id="email" name="email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="syarat" class="form-label">Syarat aboutUs</label>
-                                <input type="text" class="form-control" id="syarat" name="syarat">
-                                <small class="text-secondary">Note : Isi Dengan Kategori atau Tags</small>
-                            </div>
-
-                            <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
-                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
-
-                            <script>
-                                document.addaboutUsListener("DOMContentLoaded", function() {
-                                    var input = document.querySelector('input[name=syarat]');
-
-                                    new Tagify(input, {
-                                        whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
-                                        dropdown: {
-                                            enabled: 1,
-                                            maxItems: 5
-                                        }
-                                    });
-                                });
-                            </script>
-
 
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl"
-                                    name="tgl" readonly>
+                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                                    readonly>
                             </div>
 
                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -149,10 +98,9 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama aboutUs</th>
-                                        <th>Lokasi</th>
-                                        <th>Mulai aboutUs</th>
-                                        <th>Durasi</th>
+                                        <th>Visi</th>
+                                        <th>Misi</th>
+                                        <th>pimpinan</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -162,7 +110,6 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $even->lokasi }}</td>
                                             <td>{{ $even->name_aboutUs }}</td>
-                                            <td>{{ $even->mulai }}</td>
                                             <td>{{ $even->durasi }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
