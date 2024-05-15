@@ -86,35 +86,34 @@
                                 <h3>{{ $artikel->title }} </h3>
                                 <p class="mb-3" align="justify">
                                     <?php
-// Fungsi callback untuk mengganti atribut lebar dan tinggi gambar
-function replaceImageSize($matches) {
-    $src = $matches[1];
-    // Mendapatkan ukuran gambar sesuai dengan jenis perangkat
-    $width = 770; // Lebar default untuk desktop
-    $height = 460; // Tinggi default untuk desktop
+                                    // Fungsi callback untuk mengganti atribut lebar dan tinggi gambar
+                                    function replaceImageSize($matches) {
+                                    $src = $matches[1];
+                                     // Mendapatkan ukuran gambar sesuai dengan jenis perangkat
+                                    $width = 770; // Lebar default untuk desktop
+                                    $height = 460; // Tinggi default untuk desktop
 
-    // Mendeteksi apakah pengguna mengakses dari perangkat ponsel
-    if( preg_match('/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i', $_SERVER['HTTP_USER_AGENT']) ) {
-        $width = 300; // Lebar untuk ponsel
-        $height = 200; // Tinggi untuk ponsel
-    }
+                                // Mendeteksi apakah pengguna mengakses dari perangkat ponsel
+                                if( preg_match('/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i', $_SERVER['HTTP_USER_AGENT']) ) {
+                                    $width = 300; // Lebar untuk ponsel
+                                    $height = 200; // Tinggi untuk ponsel
+                                     }   
 
-    // Mengganti atribut lebar dan tinggi gambar
-    return str_replace($src, $src . '" width="' . $width . '" height="' . $height, $matches[0]);
-}
+                                        // Mengganti atribut lebar dan tinggi gambar
+                                    return str_replace($src, $src . '" width="' . $width . '" height="' . $height, $matches[0]);
+                                    }
 
-// Memisahkan konten menjadi paragraf-paragraf
-$paragraphs = explode('</p>', $artikel->content);
+                                    // Memisahkan konten menjadi paragraf-paragraf
+                                    $paragraphs = explode('</p>', $artikel->content);
 
-// Mengganti atribut lebar dan tinggi gambar dalam setiap paragraf
-foreach ($paragraphs as $paragraph) {
-    echo '<p align="justify">';
-    $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $paragraph);
+                                    // Mengganti atribut lebar dan tinggi gambar dalam setiap paragraf
+                                    foreach ($paragraphs as $paragraph) {
+                                    echo '<p align="justify">';
+                                    $content_with_resized_images = preg_replace_callback('/<img.*?src=["\'](.*?)["\'].*?>/', 'replaceImageSize', $paragraph);
                                     echo $content_with_resized_images;
                                     echo '</p>';
                                 }
                                 ?>
-
                                 </p>
 
                             </div>
