@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AboutUs;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreAboutUsRequest;
 use App\Http\Requests\UpdateAboutUsRequest;
 
@@ -37,7 +38,14 @@ class AboutUsController extends Controller
      */
     public function show(AboutUs $aboutUs)
     {
-        //
+        $user = Auth::user();
+        $aboutUs = AboutUs::all();
+        $count = $aboutUs->count();
+        if (!$user) {
+            return redirect()->route('login_admin');
+        }
+
+        return view('admin.aboutUs', compact('user', 'aboutUs', 'count'));
     }
 
     /**
@@ -45,7 +53,6 @@ class AboutUsController extends Controller
      */
     public function edit(AboutUs $aboutUs)
     {
-        //
     }
 
     /**

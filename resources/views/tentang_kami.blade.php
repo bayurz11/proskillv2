@@ -240,7 +240,8 @@
                             </div>
                             <div class="team-content">
                                 <h3>
-                                    <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032">NPSN</a>
+                                    <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032"
+                                        target="_blank">NPSN</a>
                                 </h3>
                                 <p>K9999032</p>
                             </div>

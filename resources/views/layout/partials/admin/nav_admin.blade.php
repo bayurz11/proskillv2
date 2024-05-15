@@ -68,6 +68,24 @@
                     <span class="link-title">Event</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false"
+                    aria-controls="emails">
+                    <i class="link-icon" data-feather="settings"></i>
+                    <span class="link-title">Tentang Kami</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="emails">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ route('about_us_setting') }}" class="nav-link">Visi & Misi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/email/compose.html" class="nav-link">Izin</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav-item nav-category">Inventaris</li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button" aria-expanded="false"

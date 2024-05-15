@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
@@ -54,4 +55,7 @@ Route::delete('/artikel_destroy/{id}', [ArtikelController::class, 'destroy'])->n
 Route::get('/event_setting', [EventController::class, 'show'])->name('event_setting');
 Route::post('/event_store', [EventController::class, 'store'])->name('event_store');
 Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name('event_destroy');
+
+//---about us---//
+Route::get('/about_us_setting', [AboutUsController::class, 'show'])->name('about_us_setting');
 //**************END DADHBOARD ADMIN **************//
