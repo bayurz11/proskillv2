@@ -48,6 +48,7 @@ class KelasTatapMukaController extends Controller
             $kelasOffline->price = $request->price;
             $kelasOffline->deskripsi = $request->deskripsi;
             $kelasOffline->tgl = $request->tgl;
+            $kelasOffline->instruktur = $request->instruktur;
             $kelasOffline->user_id = $userId;
             $kelasOffline->save();
 
