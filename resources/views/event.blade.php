@@ -52,7 +52,7 @@
                         @foreach ($event as $events)
                             <div class="event-box-items mt-0 box-shadow style-bottom">
                                 <div class="event-image">
-                                    <img src="assets/img/event/01.jpg" alt="event-img">
+                                    <img src="{{ asset('public/uploads/' . $events->banner) }}">
                                     <div class="event-shape">
                                         <img src="{{ asset('public/uploads/' . $events->banner) }}">
                                     </div>
