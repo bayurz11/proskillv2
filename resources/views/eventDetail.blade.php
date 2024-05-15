@@ -129,24 +129,7 @@
                                     reprehenderit.
                                 </p>
                             </div>
-                            <div class="about-author">
-                                <div class="about-button">
-                                    <a href="contact.html" class="theme-btn">
-                                        Register Yourself <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                                <div class="author-icon">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span>Call Us Now</span>
-                                        <h5>
-                                            <a href="tel:+2085550112">+208-555-0112</a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -157,48 +140,43 @@
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/01.svg ') }}" alt="img"
                                             class="me-2">
-                                        Start Date:
+                                        Mulai Event
                                     </span>
-                                    October 20, 2024
+                                    {{ $events->mulai }}
                                 </li>
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/02.svg') }}" alt="img"
                                             class="me-2">
-                                        Duration:
+                                        Durasi
                                     </span>
-                                    09:00am - 05:00pm
+                                    {{ $events->durasi }}
                                 </li>
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/03.svg') }}" alt="img"
                                             class="me-2">
-                                        Location:
+                                        Lokasi
                                     </span>
-                                    6391 Elgin St. Celina, USA
+                                    {{ $events->lokasi }}
                                 </li>
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/04.svg') }}" alt="img"
                                             class="me-2">
-                                        Phone:
+                                        Telepon
                                     </span>
-                                    319-555-1225
+                                    {{ $events->tlp }}
                                 </li>
                                 <li>
                                     <span>
-                                        <img src="assets/img/event/icon/05.svg" alt="img" class="me-2">
-                                        Email:
+                                        <img src="{{ asset('public/assets/img/event/icon/05.svg') }}" alt="img"
+                                            class="me-2">
+                                        Email
                                     </span>
-                                    Info@gmail.com
+                                    {{ $events->email }}
                                 </li>
-                                <li>
-                                    <span>
-                                        <img src="assets/img/event/icon/06.svg" alt="img" class="me-2">
-                                        Language
-                                    </span>
-                                    English
-                                </li>
+
                             </ul>
                             <a href="event-details.html" class="theme-btn w-100">
                                 Get Tickets Now <i class="fa-solid fa-arrow-right-long"></i>
