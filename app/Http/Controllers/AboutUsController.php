@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AboutUs;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreAboutUsRequest;
 use App\Http\Requests\UpdateAboutUsRequest;
@@ -28,9 +29,29 @@ class AboutUsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreAboutUsRequest $request)
+    public function store(Request $request)
     {
-        //
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
+
+            $userId = Auth::id();
+
+            $aboutUs = new AboutUs();
+            $aboutUs->banner = $gambarName;
+            $aboutUs->tgl = $request->tgl;
+            $aboutUs->user_id = $userId;
+            $aboutUs->visi = $request->visi;
+            $aboutUs->misi = $request->misi;
+            $aboutUs->pimpinan = $request->pimpinan;
+            $aboutUs->save();
+
+            return redirect()->route('about_us_setting')->with('success', 'aboutUs  berhasil dibuat.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('about_us_setting')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
     }
 
     /**

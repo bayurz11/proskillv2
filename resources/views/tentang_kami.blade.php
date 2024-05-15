@@ -111,7 +111,7 @@
                             </div>
                             <div class="about-author">
                                 <div class="author-image wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="public/assets/img/about/author.png" alt="author-img">
+
                                     <div class="content">
                                         <h6>Beni Oktopiansah,ST</h6>
                                         <p> Pimpinan ProSkill Akademia</p>
