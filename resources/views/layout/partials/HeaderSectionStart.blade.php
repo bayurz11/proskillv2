@@ -50,7 +50,7 @@
                                             <i class="fas fa-angle-down"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li><a href="#">Tentang Kami</a></li>
+                                            <li><a href="{{ route('tentangkami') }}">Tentang Kami</a></li>
                                             <li><a href="#">Contoh sertifikat </a></li>
                                             <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
                                                     target="_blank">Brosur</a></li>
