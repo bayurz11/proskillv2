@@ -62,9 +62,7 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="activities-image-items">
                             <img src="{{ asset('public/uploads/' . $about->banner) }}">
-                            <div class="radius-shape">
-                                <img src="public/assets/img/about/radius-shape.png" alt="shape-img">
-                            </div>
+
                             <div class="circle-shape">
                                 <img src="public/assets/img/about/circle.png" alt="shape-img">
                             </div>
