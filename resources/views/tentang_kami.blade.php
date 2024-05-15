@@ -3,7 +3,7 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
         <div class="line-shape">
             <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
         </div>
