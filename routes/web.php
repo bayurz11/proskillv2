@@ -9,7 +9,7 @@ use App\Http\Controllers\KelasOnlineController;
 use App\Http\Controllers\KelasTatapMukaController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
-Route::get('/event', [indexController::class, 'showArtikel'])->name('event');
+Route::get('/event', [indexController::class, 'showEvent'])->name('event');
 Route::get('/artikel', [indexController::class, 'showArtikel'])->name('artikel');
 Route::get('/artikel_detail/{id}', [indexController::class, 'artikeldetail'])->name('artikel_detail');
 Route::get('/Kelastatapmuka', [indexController::class, 'showKelasOffline'])->name('Kelastatapmuka');

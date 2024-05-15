@@ -23,6 +23,11 @@ class indexController extends Controller
         $artikel = Artikel::all();
         return view('artikel', compact('artikel'));
     }
+    public function showEvent()
+    {
+        $artikel = Artikel::all();
+        return view('event', compact('artikel'));
+    }
     public function artikeldetail($id)
     {
         $articel = Artikel::all();
