@@ -221,7 +221,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="assets/img/counter/icon-1.svg" alt="img">
+                                <img src="{{ asset('assets/img/counter/icon-1.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">25</span>+</h2>
@@ -232,7 +232,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="assets/img/counter/icon-2.svg" alt="img">
+                                <img src="{{ asset('assets/img/counter/icon-2.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,500</span>+</h2>
@@ -243,7 +243,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="assets/img/counter/icon-3.svg" alt="img">
+                                <img src="{{ asset('assets/img/counter/icon-3.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">100</span>+</h2>
@@ -254,7 +254,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="counter-items border-none">
                             <div class="icon">
-                                <img src="assets/img/counter/icon-4.svg" alt="img">
+                                <img src="{{ asset('assets/img/counter/icon-4.svg') }}" alt="img">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,561</span>+</h2>
@@ -266,6 +266,7 @@
             </div>
         </div>
     </section>
+
     <!-- Instagram Banner Section Start -->
     <div class="instagram-banner fix section-padding pt-0">
         <div class="instagram-wrapper">
