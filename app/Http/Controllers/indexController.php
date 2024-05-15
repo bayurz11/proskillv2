@@ -60,6 +60,7 @@ class indexController extends Controller
     }
     public function showaboutUs()
     {
+
         $aboutUs = AboutUs::all();
         return view('tentang_kami', compact('aboutUs'));
     }

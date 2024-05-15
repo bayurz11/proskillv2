@@ -72,8 +72,7 @@
                             <div class="section-title">
                                 <span class="wow fadeInUp">Visi ProSkill Akademia</span>
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    "Menjadi Lembaga Pendidikan Berkualitas Skala Nasional di Bidang Teknologi Informasi dan
-                                    Komunikasi"
+                                    {!! nl2br(substr($aboutUs->visi, 0, 100)) !!}
                                 </h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
