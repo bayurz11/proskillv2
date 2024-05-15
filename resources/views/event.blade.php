@@ -76,25 +76,16 @@
                                                     d="M7.9998 3.5293C6.35539 3.5293 5.01758 4.86708 5.01758 6.51148C5.01758 8.15589 6.35539 9.49367 7.9998 9.49367C9.6442 9.49367 10.982 8.15589 10.982 6.51148C10.982 4.86708 9.6442 3.5293 7.9998 3.5293ZM7.9998 8.55639C6.8722 8.55639 5.95483 7.63902 5.95483 6.51145C5.95483 5.38389 6.8722 4.46652 7.9998 4.46652C9.12739 4.46652 10.0447 5.38389 10.0447 6.51145C10.0447 7.63902 9.12739 8.55639 7.9998 8.55639Z"
                                                     fill="#F39F5F" />
                                             </svg>
-                                            <span>6391 Elgin St. Celina, USA</span>
+                                            <span>{{ $events->lokasi }}</span>
                                         </li>
                                     </ul>
                                     <h3>
                                         <a href="event-details.html"> {{ $events->name_event }}</a>
                                     </h3>
                                     <div class="event-author">
-                                        <a href="event-details.html" class="theme-btn">Get Ticket <i
+                                        <a href="event-details.html" class="theme-btn">Detail Event <i
                                                 class="fa-solid fa-arrow-right-long"></i></a>
-                                        <div class="author-ratting">
-                                            <span>(10 Review)</span>
-                                            <div class="star">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star color-1"></i>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
