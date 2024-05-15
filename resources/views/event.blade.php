@@ -48,9 +48,9 @@
         <div class="container">
             <div class="swiper event-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="event-box-items mt-0 box-shadow style-bottom">
-                            @foreach ($event as $events)
+                    @foreach ($event as $events)
+                        <div class="swiper-slide">
+                            <div class="event-box-items mt-0 box-shadow style-bottom">
                                 <div class="event-image">
                                     <img src="{{ asset('public/uploads/' . $events->banner) }}">
                                     <div class="event-shape">
@@ -89,9 +89,9 @@
 
                                     </div>
                                 </div>
-                            @endforeach
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
 
                 </div>
                 <div class="swiper-dot text-center mb-55">
