@@ -70,14 +70,20 @@
                     <div class="col-lg-6">
                         <div class="activities-content">
                             <div class="section-title">
-                                <span class="wow fadeInUp">Visi</span>
+                                <span class="wow fadeInUp">Visi ProSkill Akademia</span>
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    ProSkill Akademia
+                                    "Menjadi Lembaga Pendidikan Berkualitas Skala Nasional di Bidang Teknologi Informasi dan
+                                    Komunikasi"
                                 </h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                "Menjadi Lembaga Pendidikan Berkualitas Skala Nasional di Bidang Teknologi Informasi dan
-                                Komunikasi"
+                                "ProSkill Akademia" BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan
+                                CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh
+                                INSTRUKTUR yang KOMPETEN.
+
+                                Jika SAAT INI Anda BERKESEMPATAN menguasai TEKNOLOGI KOMPUTER, Kenapa anda harus menundaNYA?
+                                Anda tentu tidak mau, KEMAJUAN ERA DIGITAL menyurutkan SEMANGAT BELAJAR, KARIR & BISNIS
+                                ANDA, KELUARGA TERCINTA & PUTRA - PUTRI ANDA!!!
                             </p>
                             <div class="row g-4 mt-4">
                                 <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
