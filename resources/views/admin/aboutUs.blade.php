@@ -148,18 +148,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($aboutUs as $key => $even)
+                                    @foreach ($aboutUs as $key => $about)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $even->lokasi }}</td>
-                                            <td>{{ $even->name_aboutUs }}</td>
-                                            <td>{{ $even->durasi }}</td>
+                                            <td>{{ $about->visi }}</td>
+                                            <td>{{ $about->misi }}</td>
+                                            <td>{{ $about->pimpinan }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapusaboutUs('{{ $even->id }}')"
+                                                <button onclick="hapusaboutUs('{{ $about->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
