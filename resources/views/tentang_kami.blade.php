@@ -240,9 +240,8 @@
                             </div>
                             <div class="team-content">
                                 <h3>
-                                    <a href="team-details.html">Brooklyn Simmons</a>
+                                    <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032">NPSN</a>
                                 </h3>
-                                <p>Instructors</p>
                             </div>
                         </div>
                     </div>
