@@ -149,11 +149,10 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Penulis event</th>
-                                        <th>Judul event</th>
-                                        <th>isi event</th>
-                                        <th>Tanggal Rilis</th>
-                                        <th>Tag Kategori</th>
+                                        <th>Nama event</th>
+                                        <th>Lokasi</th>
+                                        <th>Mulai Event</th>
+                                        <th>Durasi</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -161,29 +160,10 @@
                                     @foreach ($event as $key => $even)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $even->user->name }}</td>
-                                            <td>{{ $even->title }}</td>
-                                            <td> {!! nl2br(substr($even->content, 0, 40)) !!} @if (strlen($even->content) > 40)
-                                                    ...
-                                                @endif
-                                            </td>
-
-                                            <td>{{ $even->tgl }}</td>
-                                            <td>
-                                                @php
-                                                    $tags = json_decode($even->syarat, true);
-                                                @endphp
-
-                                                @if (is_array($tags))
-                                                    @foreach ($tags as $tag)
-                                                        <span class="badge"
-                                                            style="background-color: #028E83; color: white; font-size: 12px;">
-                                                            {{ $tag['value'] }}
-                                                        </span>
-                                                    @endforeach
-                                                @endif
-                                            </td>
-
+                                            <td>{{ $even->lokasi }}</td>
+                                            <td>{{ $even->name_event }}</td>
+                                            <td>{{ $even->mulai }}</td>
+                                            <td>{{ $even->durasi }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
                                                     <i data-feather="edit"></i>
