@@ -19,11 +19,7 @@ class indexController extends Controller
         return view('index', compact('heroSections', 'kelasOnline', 'artikel'));
     }
 
-    public function showArtikel()
-    {
-        $artikel = Artikel::all();
-        return view('artikel', compact('artikel'));
-    }
+
     public function showEvent()
     {
         $event = Event::all();
@@ -34,6 +30,11 @@ class indexController extends Controller
         $event = Event::all();
         $events = Event::find($id);
         return view('eventDetail', compact('event', 'events'));
+    }
+    public function showArtikel()
+    {
+        $artikel = Artikel::all();
+        return view('artikel', compact('artikel'));
     }
     public function artikeldetail($id)
     {

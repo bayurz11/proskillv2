@@ -80,11 +80,12 @@
                                         </li>
                                     </ul>
                                     <h3>
-                                        <a href="event-details.html"> {{ $events->name_event }}</a>
+                                        <a href="{{ route('event_detail', ['id' => $events->id]) }}">
+                                            {{ $events->name_event }}</a>
                                     </h3>
                                     <div class="event-author">
-                                        <a href="event-details.html" class="theme-btn">Detail Event <i
-                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                        <a href="{{ route('event_detail', ['id' => $events->id]) }}"
+                                            class="theme-btn">Detail Event <i class="fa-solid fa-arrow-right-long"></i></a>
 
                                     </div>
                                 </div>
