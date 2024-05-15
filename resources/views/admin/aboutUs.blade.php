@@ -151,11 +151,11 @@
                                     @foreach ($aboutUs as $key => $about)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td> {!! nl2br(substr($about->visi, 0, 40)) !!} @if (strlen($about->visi) > 40)
+                                            <td> {!! nl2br(substr($about->visi, 0, 20)) !!} @if (strlen($about->visi) > 40)
                                                     ...
                                                 @endif
                                             </td>
-                                            <td> {!! nl2br(substr($about->misi, 0, 40)) !!} @if (strlen($about->misi) > 40)
+                                            <td> {!! nl2br(substr($about->misi, 0, 20)) !!} @if (strlen($about->misi) > 40)
                                                     ...
                                                 @endif
                                             </td>
