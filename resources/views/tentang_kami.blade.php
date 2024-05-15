@@ -270,13 +270,13 @@
     <!-- Izin Section Start -->
     <section class="team-section-3 fix  section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
-            <img src="assets/img/tree-shape.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/tree-shape.png') }}" alt="shape-img">
         </div>
         <div class="right-shape">
-            <img src="assets/img/testi-r-shape.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/testi-r-shape.png') }}" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-y">
-            <img src="assets/img/testi-bee-shape.png" alt="shape-img">
+            <img src="{{ asset('public/assets/img/testi-bee-shape.png') }}" alt="shape-img">
         </div>
         <div class="container">
             <div class="section-title-area">
