@@ -93,8 +93,19 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Event $event)
+    public function destroy(Event $event, $id)
     {
-        //
+        // Temukan artikel berdasarkan ID
+        $event = Event::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$event) {
+            return redirect()->route('event_setting')->with('error', 'Artikel tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $event->delete();
+
+        return redirect()->route('event_setting')->with('success', 'Artikel berhasil dihapus');
     }
 }

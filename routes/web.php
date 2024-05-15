@@ -52,4 +52,5 @@ Route::delete('/artikel_destroy/{id}', [ArtikelController::class, 'destroy'])->n
 //---Event---//
 Route::get('/event_setting', [EventController::class, 'show'])->name('event_setting');
 Route::post('/event_store', [EventController::class, 'store'])->name('event_store');
+Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name('event_destroy');
 //**************END DADHBOARD ADMIN **************//
