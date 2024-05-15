@@ -79,13 +79,11 @@
                                 </h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                "ProSkill Akademia" BERKOMITMEN membantu memudahkan Anda menguasai TEKNOLOGI KOMPUTER dengan
-                                CEPAT dan BIAYA TERJANGKAU. Pembelajaran dengan metode PRAKTEK dan dibimbing langsung oleh
-                                INSTRUKTUR yang KOMPETEN.
-
-                                Jika SAAT INI Anda BERKESEMPATAN menguasai TEKNOLOGI KOMPUTER, Kenapa anda harus menundaNYA?
-                                Anda tentu tidak mau, KEMAJUAN ERA DIGITAL menyurutkan SEMANGAT BELAJAR, KARIR & BISNIS
-                                ANDA, KELUARGA TERCINTA & PUTRA - PUTRI ANDA!!!
+                                @foreach (explode("\n", $about->misi) as $paragraph)
+                                    <p style="text-align:justify;">
+                                        {{ $paragraph }}
+                                    </p>
+                                @endforeach
                             </p>
                             <div class="row g-4 mt-4">
                                 <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
