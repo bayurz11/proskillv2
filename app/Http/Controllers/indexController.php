@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Event;
 use App\Models\HeroSection;
@@ -18,7 +19,6 @@ class indexController extends Controller
         $artikel = Artikel::latest()->take(2)->get();
         return view('index', compact('heroSections', 'kelasOnline', 'artikel'));
     }
-
 
     public function showEvent()
     {
@@ -57,5 +57,10 @@ class indexController extends Controller
     {
         $kelasOnline = KelasOnline::all();
         return view('kelasOnline', compact('kelasOnline'));
+    }
+    public function showaboutUs()
+    {
+        $aboutUs = AboutUs::all();
+        return view('tentang_kami', compact('aboutUs'));
     }
 }
