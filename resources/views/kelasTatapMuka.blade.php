@@ -45,8 +45,8 @@
     <!-- Clases Section Start -->
     <section class="clases-section section-padding">
         <div class="container">
-            @foreach ($kelasOffline as $Offline)
-                <div class="row g-4">
+            <div class="row g-4">
+                @foreach ($kelasOffline as $Offline)
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
@@ -76,9 +76,8 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </section>
     <!-- Whatsapp popup -->
