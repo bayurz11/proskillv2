@@ -59,7 +59,7 @@
                                     <ul class="post-date">
                                         <li>
                                             <img src="assets/img/event/calender.svg" alt="img" class="me-2">
-                                            Jan 16, 2024
+                                            {{ $events->tgl }}
                                         </li>
                                     </ul>
                                 </div>
@@ -79,7 +79,7 @@
                                         </li>
                                     </ul>
                                     <h3>
-                                        <a href="event-details.html">Last Day of School end of Year Picnic</a>
+                                        <a href="event-details.html"> {{ $events->name_event }}</a>
                                     </h3>
                                     <div class="event-author">
                                         <a href="event-details.html" class="theme-btn">Get Ticket <i
