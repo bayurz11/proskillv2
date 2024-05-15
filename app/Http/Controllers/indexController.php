@@ -29,6 +29,12 @@ class indexController extends Controller
         $event = Event::all();
         return view('event', compact('event'));
     }
+    public function Eventdetail($id)
+    {
+        $event = Event::all();
+        $events = Event::find($id);
+        return view('eventDetail', compact('event', 'events'));
+    }
     public function artikeldetail($id)
     {
         $articel = Artikel::all();
