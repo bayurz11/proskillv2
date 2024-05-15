@@ -66,26 +66,18 @@
                                 <div class="post-items">
                                     <span class="post-date">
                                         <i class="fa-regular fa-calendar-days"></i>
-                                        October 20, 2024
+                                        {{ $events->tgl }}
                                     </span>
-                                    <span class="post-time">
-                                        <i class="fa-regular fa-calendar-days"></i>
-                                        October 20, 2024
-                                    </span>
+
                                 </div>
-                                <h2>Let’s spend summer together with your teachers</h2>
+                                <h2>{{ $events->name_event }}</h2>
                                 <p class="mb-3">
                                     Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of
                                     magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco
                                     laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in
                                     reprehenderit.
                                 </p>
-                                <p class="mb-4">
-                                    The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In
-                                    hac augu ehabitasse the is platea augue thelorem turpoi dictumst. In lacus libero
-                                    faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed
-                                    the is sodales augue consequat.
-                                </p>
+
                                 <h2>Requirements for the event</h2>
                                 <p class="mb-4">
                                     Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
