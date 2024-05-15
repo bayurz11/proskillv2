@@ -97,7 +97,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                {{-- <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                     <div class="icon-items">
                                         <div class="icon">
                                             <i class="icon-icon-13"></i>
@@ -107,26 +107,26 @@
                                             <p>Ut vehiculadictumst <br> maecenas ante.</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="about-author">
                                 <div class="author-image wow fadeInUp" data-wow-delay=".3s">
                                     <img src="public/assets/img/about/author.png" alt="author-img">
                                     <div class="content">
-                                        <h6>Ronald Richards</h6>
-                                        <p>Co, Founder</p>
+                                        <h6>Beni Oktopiansah,ST</h6>
+                                        <p> Pimpinan ProSkill Akademia</p>
                                     </div>
                                 </div>
                                 <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
                                     <div class="icon">
                                         <i class="fa-solid fa-phone"></i>
                                     </div>
-                                    <div class="content">
+                                    {{-- <div class="content">
                                         <span>Call Us Now</span>
                                         <h5>
                                             <a href="tel:+2085550112">+208-555-0112</a>
                                         </h5>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
