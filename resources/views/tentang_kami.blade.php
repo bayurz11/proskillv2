@@ -130,8 +130,217 @@
             </div>
         </div>
     </section>
+    <!-- Feature Value Section Start -->
+    <section class="feature-value-section fix section-padding section-bg-2">
+        <div class="shape-1">
+            <img src="assets/img/value/shape-1.png" alt="shape-img">
+        </div>
+        <div class="shape-2 float-bob-x">
+            <img src="assets/img/value/shape-2.png" alt="shape-img">
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="wow fadeInUp">Our values</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">The best playschool <br> for your kid</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="feature-value-items">
+                        <div class="value-icon-items wow fadeInUp" data-wow-delay=".3s">
+                            <div class="icon">
+                                <i class="icon-icon-2"></i>
+                            </div>
+                            <div class="content">
+                                <h5>Teacher Training and Progress </h5>
+                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
+                                    pulvinar.</p>
+                            </div>
+                        </div>
+                        <div class="value-icon-items wow fadeInUp" data-wow-delay=".5s">
+                            <div class="icon color-2">
+                                <i class="icon-icon-15"></i>
+                            </div>
+                            <div class="content">
+                                <h5>Nanny Selection 24/7</h5>
+                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
+                                    pulvinar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="feature-value-items">
+                        <div class="feature-value-image">
+                            <img src="assets/img/cta/cta-2.png" alt="img">
+                            <div class="value-shape">
+                                <img src="assets/img/cta/cta-shape-2.png" alt="shape-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="feature-value-items">
+                        <div class="value-icon-items style-2 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="content">
+                                <h5>Advanced Placement Courses</h5>
+                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
+                                    pulvinar.</p>
+                            </div>
+                            <div class="icon color-3">
+                                <i class="icon-icon-16"></i>
+                            </div>
+                        </div>
+                        <div class="value-icon-items style-2 wow fadeInUp" data-wow-delay=".5s">
+                            <div class="content">
+                                <h5>Self-contained gifted programs​</h5>
+                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
+                                    pulvinar.</p>
+                            </div>
+                            <div class="icon color-2 color-4">
+                                <i class="icon-icon-8"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section Start -->
+    <section class="counter-section fix">
+        <div class="line-shape">
+            <img src="assets/img/counter/line-shape.png" alt="shape-img">
+        </div>
+        <div class="box-shape float-bob-x">
+            <img src="assets/img/counter/box-shape.png" alt="shape-img">
+        </div>
+        <div class="counter-bg"></div>
+        <div class="container">
+            <div class="counter-wrapper">
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="counter-items">
+                            <div class="icon">
+                                <img src="assets/img/counter/icon-1.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">25</span>+</h2>
+                                <p>Year of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="counter-items">
+                            <div class="icon">
+                                <img src="assets/img/counter/icon-2.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">6,500</span>+</h2>
+                                <p>Class Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="counter-items">
+                            <div class="icon">
+                                <img src="assets/img/counter/icon-3.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">100</span>+</h2>
+                                <p>Experts Instructors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="counter-items border-none">
+                            <div class="icon">
+                                <img src="assets/img/counter/icon-4.svg" alt="img">
+                            </div>
+                            <div class="content">
+                                <h2><span class="count">6,561</span>+</h2>
+                                <p>Students Enroll</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instagram Banner Section Start -->
+    <div class="instagram-banner fix section-padding pt-0">
+        <div class="instagram-wrapper">
+            <h3 class="text-center wow fadeInUp" data-wow-delay=".3s">Follow Instagram</h3>
+            <div class="swiper instagram-banner-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/01.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/02.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/03.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/04.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/05.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="instagram-banner-items">
+                            <div class="banner-image">
+                                <img src="assets/img/instagram/06.jpg" alt="insta-img">
+                                <a href="index.html" class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
