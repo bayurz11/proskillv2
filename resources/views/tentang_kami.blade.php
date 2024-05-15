@@ -135,81 +135,7 @@
             </div>
         </div>
     </section>
-    <!-- Feature Value Section Start -->
-    <section class="feature-value-section fix section-padding section-bg-2">
-        <div class="shape-1">
-            <img src="public/assets/img/value/shape-1.png" alt="shape-img">
-        </div>
-        <div class="shape-2 float-bob-x">
-            <img src="public/assets/img/value/shape-2.png" alt="shape-img">
-        </div>
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp">Our values</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">The best playschool <br> for your kid</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-6">
-                    <div class="feature-value-items">
-                        <div class="value-icon-items wow fadeInUp" data-wow-delay=".3s">
-                            <div class="icon">
-                                <i class="icon-icon-2"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Teacher Training and Progress </h5>
-                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
-                                    pulvinar.</p>
-                            </div>
-                        </div>
-                        <div class="value-icon-items wow fadeInUp" data-wow-delay=".5s">
-                            <div class="icon color-2">
-                                <i class="icon-icon-15"></i>
-                            </div>
-                            <div class="content">
-                                <h5>Nanny Selection 24/7</h5>
-                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
-                                    pulvinar.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="feature-value-items">
-                        <div class="feature-value-image">
-                            <img src="public/assets/img/cta/cta-2.png" alt="img">
-                            <div class="value-shape">
-                                <img src="public/assets/img/cta/cta-shape-2.png" alt="shape-img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6">
-                    <div class="feature-value-items">
-                        <div class="value-icon-items style-2 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="content">
-                                <h5>Advanced Placement Courses</h5>
-                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
-                                    pulvinar.</p>
-                            </div>
-                            <div class="icon color-3">
-                                <i class="icon-icon-16"></i>
-                            </div>
-                        </div>
-                        <div class="value-icon-items style-2 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="content">
-                                <h5>Self-contained gifted programs​</h5>
-                                <p>Adipiscing elit Praesent luctus laoreet iaculis Curabitur rutrum lectus augue, ut
-                                    pulvinar.</p>
-                            </div>
-                            <div class="icon color-2 color-4">
-                                <i class="icon-icon-8"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Counter Section Start -->
     <section class="counter-section fix">
@@ -286,8 +212,8 @@
         <div class="container">
             <div class="section-title-area">
                 <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Our Experts</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Expert Instructors</h2>
+                    <span class="wow fadeInUp">Izin Organisasi</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Lembaga kami telah diberi izin organisasi</h2>
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
                     <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
