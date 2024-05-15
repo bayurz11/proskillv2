@@ -163,7 +163,7 @@
                             <ul class="details-list">
                                 <li>
                                     <span>
-                                        <img src="{{ aset('public/assets/img/event/icon/01.svg ') }}" alt="img"
+                                        <img src="{{ asset('public/assets/img/event/icon/01.svg ') }}" alt="img"
                                             class="me-2">
                                         Start Date:
                                     </span>
