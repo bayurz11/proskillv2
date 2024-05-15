@@ -58,7 +58,7 @@
                                     </div>
                                     <ul class="post-date">
                                         <li>
-                                            <img src="{{ assets('public/assets/img/event/calender.svg') }}" alt="img"
+                                            <img src="{{ asset('public/assets/img/event/calender.svg') }}" alt="img"
                                                 class="me-2">
                                             {{ $events->tgl }}
                                         </li>
