@@ -151,8 +151,14 @@
                                     @foreach ($aboutUs as $key => $about)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $about->visi }}</td>
-                                            <td>{{ $about->misi }}</td>
+                                            <td> {!! nl2br(substr($about->visi, 0, 40)) !!} @if (strlen($about->visi) > 40)
+                                                    ...
+                                                @endif
+                                            </td>
+                                            <td> {!! nl2br(substr($about->misi, 0, 40)) !!} @if (strlen($about->misi) > 40)
+                                                    ...
+                                                @endif
+                                            </td>
                                             <td>{{ $about->pimpinan }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
