@@ -5,22 +5,22 @@
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/public/assets/img/breadcrumb.png');">
         <div class="line-shape">
-            <img src="public/public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
         </div>
         <div class="frame-shape">
-            <img src="public/public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
         </div>
         <div class="container">
             <div class="page-heading">
