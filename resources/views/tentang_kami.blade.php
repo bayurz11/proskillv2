@@ -68,11 +68,14 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        @php
+                            $about = $aboutUs->sortByDesc('created_at')->first();
+                        @endphp
                         <div class="activities-content">
                             <div class="section-title">
                                 <span class="wow fadeInUp">Visi ProSkill Akademia</span>
                                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    {!! nl2br($aboutUs->visi) !!}
+                                    {!! nl2br($about->visi) !!}
                                 </h2>
                             </div>
                             <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
