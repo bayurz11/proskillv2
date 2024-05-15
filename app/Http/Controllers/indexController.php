@@ -16,8 +16,9 @@ class indexController extends Controller
     {
         $heroSections = HeroSection::all();
         $kelasOnline = KelasOnline::all();
+        $event = Event::all();
         $artikel = Artikel::latest()->take(2)->get();
-        return view('index', compact('heroSections', 'kelasOnline', 'artikel'));
+        return view('index', compact('heroSections', 'kelasOnline', 'artikel', 'event'));
     }
 
     public function showEvent()
