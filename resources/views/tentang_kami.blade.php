@@ -56,9 +56,12 @@
         <div class="container">
             <div class="about-activities-wrapper style-2">
                 <div class="row g-4">
+                    @php
+                        $about = $aboutUs->sortByDesc('created_at')->first();
+                    @endphp
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="activities-image-items">
-                            <img src="public/assets/img/about/04.png" alt="img">
+                            <img src="{{ asset('public/uploads/' . $about->banner) }}">
                             <div class="radius-shape">
                                 <img src="public/assets/img/about/radius-shape.png" alt="shape-img">
                             </div>
@@ -68,9 +71,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        @php
-                            $about = $aboutUs->sortByDesc('created_at')->first();
-                        @endphp
+
                         <div class="activities-content">
                             <div class="section-title">
                                 <span class="wow fadeInUp">Visi ProSkill Akademia</span>
