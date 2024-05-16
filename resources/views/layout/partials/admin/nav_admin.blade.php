@@ -81,7 +81,7 @@
                             <a href="{{ route('about_us_setting') }}" class="nav-link">Visi & Misi</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/email/compose.html" class="nav-link">Izin</a>
+                            <a href="{{ route('izin_setting') }}" class="nav-link">Izin</a>
                         </li>
                     </ul>
                 </div>
