@@ -514,21 +514,23 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
-                        <div class="testimonial-items">
+                        <div class="testimonial-items style-3">
                             <div class="icon">
-                                <img src="public/assets/img/quote.png" alt="img">
+                                <img src="public/assets/img/quote-3.png" alt="img">
                             </div>
-                            <div class="testimonial-bg"></div>
+                            <div class="testimonial-bg bg-3"></div>
                             <div class="testimonial-content">
                                 <p>
                                     Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
                                     Class aptent taciti sociosqu ad litora
                                 </p>
-                                <h6>Rhanky Alif Zaffani</h6>
+                                <h6> Rhanky Alif Zaffani</h6>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="swiper-dot text-center pt-5">
                     <div class="dot"></div>
