@@ -61,4 +61,9 @@ Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name(
 Route::get('/about_us_setting', [AboutUsController::class, 'show'])->name('about_us_setting');
 Route::post('/about_us_store', [AboutUsController::class, 'store'])->name('about_us_store');
 Route::delete('/about_us_destroy/{id}', [AboutUsController::class, 'destroy'])->name('about_us_destroy');
+
+//izin
+Route::get('/izin_setting', [AboutUsController::class, 'showizin'])->name('izin_setting');
+Route::post('/izin_store', [AboutUsController::class, 'storeizin'])->name('izin_store');
+Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->name('izin_destroy');
 //**************END DADHBOARD ADMIN **************//

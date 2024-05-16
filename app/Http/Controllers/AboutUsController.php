@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Izin;
 use App\Models\AboutUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -101,5 +102,17 @@ class AboutUsController extends Controller
         $aboutUs->delete();
 
         return redirect()->route('about_us_setting')->with('success', 'Artikel berhasil dihapus');
+    }
+
+    public function showizin()
+    {
+        $user = Auth::user();
+        $izin = Izin::all();
+        $count = $izin->count();
+        if (!$user) {
+            return redirect()->route('login_admin');
+        }
+
+        return view('admin.izin', compact('user', 'izin', 'count'));
     }
 }
