@@ -66,7 +66,7 @@
                                     <div class="content">
                                         <p>Telepon</p>
                                         <h3>
-                                            <a href="tel:+6281266187125">+6281266187125</a>
+                                            <a href="tel:+6281266187125">+628-1266-1871-25</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -135,15 +135,16 @@
                                 <div class="row g-4">
                                     <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
                                         <div class="form-clt">
-                                            <span>Your name*</span>
-                                            <input type="text" name="name" id="name" placeholder="Your Name">
+                                            <span>Nama Anda*</span>
+                                            <input type="text" name="name" id="name"
+                                                placeholder="Masukkan Nama Anda">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                         <div class="form-clt">
-                                            <span>Write Message*</span>
-                                            <textarea name="message" id="message" placeholder="Write Message"></textarea>
+                                            <span>Pesan*</span>
+                                            <textarea name="message" id="message" placeholder="Masukkan Pesan Anda"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
