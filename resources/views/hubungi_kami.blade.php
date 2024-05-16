@@ -64,9 +64,9 @@
 
                                     </div>
                                     <div class="content">
-                                        <p>Call Us 7/24</p>
+                                        <p>Telepon</p>
                                         <h3>
-                                            <a href="tel:+2085550112">+208-555-0112</a>
+                                            <a href="tel:+6281266187125">+6281266187125</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -86,9 +86,9 @@
                                         </svg>
                                     </div>
                                     <div class="content">
-                                        <p>Make a Quote</p>
+                                        <p>Email</p>
                                         <h3>
-                                            <a href="mailto:infotech@gmail.com">Infotech@gmail.com</a>
+                                            <a href="mailto:admin@proskill.sch.id">admin@proskill.sch.id</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -105,9 +105,10 @@
                                         </svg>
                                     </div>
                                     <div class="content">
-                                        <p>Location</p>
+                                        <p>Alamat</p>
                                         <h3>
-                                            4517 Washington ave.
+                                            Jl. H. Ungar No.2C, Tj. Ayun Sakti, Kec. Bukit Bestari, Kota Tanjung Pinang,
+                                            Kepulauan Riau 29113
                                         </h3>
                                     </div>
                                 </div>
@@ -132,7 +133,7 @@
                             </p>
                             <form action="contact.php" id="contact-form" method="POST" class="contact-form-items">
                                 <div class="row g-4">
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
                                         <div class="form-clt">
                                             <span>Your name*</span>
                                             <input type="text" name="name" id="name" placeholder="Your Name">
