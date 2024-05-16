@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                     <div class="icon-items">
                                         <div class="icon">
                                             <i class="icon-icon-13"></i>
