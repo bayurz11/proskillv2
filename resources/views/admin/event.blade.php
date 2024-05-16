@@ -149,8 +149,8 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama event</th>
                                         <th>Lokasi</th>
+                                        <th>Nama event</th>
                                         <th>Mulai Event</th>
                                         <th>Durasi</th>
                                         <th>Action</th>
