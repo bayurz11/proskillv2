@@ -37,9 +37,29 @@
                                 style="max-width: 100%; max-height: 200px; display: none;">
 
                             <div class="mb-3">
+                                <label for="pimpinan" class="form-label">content</label>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                                <textarea id="content" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
+                                <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="content_input" name="content">
+                                <script>
+                                    ClassicEditor
+                                        .create(document.querySelector('#content'))
+                                        .then(editor => {
+                                            editor.model.document.on('change:data', () => {
+                                                const content_input = document.querySelector('#content_input');
+                                                content_input.value = editor.getData();
+                                            });
+                                        })
+                                        .catch(error => {
+                                            console.error(error);
+                                        });
+                                </script>
+                            </div>
+                            {{-- <div class="mb-3">
                                 <label class="form-label" for="easyMdeExample">Isi Artikel</label>
                                 <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
-                            </div>
+                            </div> --}}
                             <div class="mb-3">
                                 <label for="category" class="form-label">Kategori Artikel</label>
                                 <input type="text" class="form-control" id="category" name="category">
