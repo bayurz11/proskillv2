@@ -241,9 +241,9 @@
                                 <div class="team-content">
                                     <h3>
                                         <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032"
-                                            target="_blank">NPSN</a>
+                                            target="_blank">{{ $izins->nama_izin }}</a>
                                     </h3>
-                                    <p>K9999032</p>
+                                    <p>{{ $izins->no_izin }}</p>
                                 </div>
                             </div>
                         @endforeach
