@@ -231,14 +231,14 @@
                                         <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img">
                                     </div>
                                     <img src="{{ asset('public/uploads/' . $izinData->banner) }}">
-                                    <div class="social-profile">
+                                    {{-- <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="team-content">
                                     <h3>
