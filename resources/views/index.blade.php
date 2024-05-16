@@ -522,7 +522,6 @@
         </div>
     </section>
 
-    <!-- Event Section Start -->
     <section class="event-section section-padding bg-cover"
         style="background-image: url('public/assets/img/event-bg.jpg');">
         <div class="event-top-shape">
@@ -535,7 +534,7 @@
                 <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Kegiatan & <br> Jadwal Acara</h2>
             </div>
             <div class="row">
-                @foreach ($event as $events)
+                @foreach ($event->sortByDesc('mulai')->take(3) as $events)
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3,5s">
                         <div class="event-box-items">
                             <div class="event-image">
@@ -579,9 +578,9 @@
                     </div>
                 @endforeach
             </div>
-
         </div>
     </section>
+
 
     <!-- News Section Start -->
     <section class="news-section section-padding fix">
