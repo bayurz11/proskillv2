@@ -37,8 +37,24 @@
                                 style="max-width: 100%; max-height: 200px; display: none;">
 
                             <div class="mb-3">
-                                <label class="form-label" for="easyMdeExample">Deskripsi</label>
-                                <textarea class="form-control" name="deskripsi" id="easyMdeExample" rows="10"></textarea>
+                                <label for="pimpinan" class="form-label">Deskripsi</label>
+                                <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+                                <textarea id="deskripsi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
+                                <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="deskripsi_input" name="deskripsi">
+                                <script>
+                                    ClassicEditor
+                                        .create(document.querySelector('#deskripsi'))
+                                        .then(editor => {
+                                            editor.model.document.on('change:data', () => {
+                                                const deskripsi_input = document.querySelector('#deskripsi_input');
+                                                deskripsi_input.value = editor.getData();
+                                            });
+                                        })
+                                        .catch(error => {
+                                            console.error(error);
+                                        });
+                                </script>
                             </div>
                             <div class="mb-3">
                                 <label for="lokasi" class="form-label">Lokasi Event</label>

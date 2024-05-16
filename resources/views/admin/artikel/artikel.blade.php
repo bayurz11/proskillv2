@@ -56,10 +56,7 @@
                                         });
                                 </script>
                             </div>
-                            {{-- <div class="mb-3">
-                                <label class="form-label" for="easyMdeExample">Isi Artikel</label>
-                                <textarea class="form-control" name="content" id="easyMdeExample" rows="10"></textarea>
-                            </div> --}}
+
                             <div class="mb-3">
                                 <label for="category" class="form-label">Kategori Artikel</label>
                                 <input type="text" class="form-control" id="category" name="category">
