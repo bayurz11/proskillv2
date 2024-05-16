@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">>@yield('title')</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">@yield('title')</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
@@ -126,11 +126,11 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="contact-content">
-                            <h2>Ready to Get Started?</h2>
+                            {{-- <h2>Ready to Get Started?</h2>
                             <p>
                                 Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in
                                 turpis. Quisque rhoncus, eros in auctor ultrices,
-                            </p>
+                            </p> --}}
                             <form action="contact.php" id="contact-form" method="POST" class="contact-form-items">
                                 <div class="row g-4">
                                     <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
