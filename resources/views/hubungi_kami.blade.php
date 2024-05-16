@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="video-image">
+                            {{-- <div class="video-image">
                                 <img src="assets/img/video.jpg" alt="img">
                                 <div class="video-box">
                                     <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
@@ -121,7 +121,7 @@
                                         <i class="fa-solid fa-play"></i>
                                     </a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="col-lg-6">
