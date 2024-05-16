@@ -228,7 +228,7 @@
                                     <div class="shape-img">
                                         <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img">
                                     </div>
-                                    <img src="{{ asset('public/assets/img/team/01.jpg') }}" alt="team-img">
+                                    <img src="{{ asset('public/uploads/' . $izinData->banner) }}">
                                     <div class="social-profile">
                                         <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
                                         <ul>
