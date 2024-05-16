@@ -125,13 +125,13 @@ class AboutUsController extends Controller
 
             $userId = Auth::id();
 
-            $aboutUs = new AboutUs();
-            $aboutUs->banner = $gambarName;
-            $aboutUs->tgl = $request->tgl;
-            $aboutUs->user_id = $userId;
-            $aboutUs->link = $request->link;
-            $aboutUs->badan_izin = $request->badan_izin;
-            $aboutUs->save();
+            $izin = new Izin();
+            $izin->banner = $gambarName;
+            $izin->tgl = $request->tgl;
+            $izin->user_id = $userId;
+            $izin->link = $request->link;
+            $izin->badan_izin = $request->badan_izin;
+            $izin->save();
 
             return redirect()->route('izin_setting')->with('success', 'izin  berhasil ditambahkan.');
         } else {
