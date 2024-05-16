@@ -167,7 +167,7 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapus('{{ $izin->id }}')"
+                                                <button onclick="hapus('{{ $izins->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
