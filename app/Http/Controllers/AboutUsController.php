@@ -133,7 +133,7 @@ class AboutUsController extends Controller
             $aboutUs->badan_izin = $request->badan_izin;
             $aboutUs->save();
 
-            return redirect()->route('izin_setting')->with('success', 'aboutUs  berhasil dibuat.');
+            return redirect()->route('izin_setting')->with('success', 'izin  berhasil ditambahkan.');
         } else {
             // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
             return redirect()->route('izin_setting')->with('error', 'Pilih gambar terlebih dahulu.');
