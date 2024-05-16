@@ -52,12 +52,13 @@
                                 <i class="far fa-phone"></i>
                             </div>
                             <div class="offcanvas__contact-text">
-                                <a href="tel:+6281266187125">+628 1266 1871 25</a>
+                                <a href="tel:+6281266187125">+62 8126 6187 125</a>
                             </div>
                         </li>
                     </ul>
                     <div class="header-button mt-4">
-                        <a href="contact.html" class="theme-btn text-center">
+                        <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
+                            class="theme-btn text-center">
                             <span>Hubungi Kami<i class="fab fa-whatsapp"></i></span>
                         </a>
                     </div>
