@@ -240,8 +240,7 @@
                                 </div>
                                 <div class="team-content">
                                     <h3>
-                                        <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032"
-                                            target="_blank">{{ $izinData->nama_izin }}</a>
+                                        <a href="{{ $izinData->link }}" target="_blank">{{ $izinData->nama_izin }}</a>
                                     </h3>
                                     <p>{{ $izinData->no_izin }}</p>
                                 </div>
