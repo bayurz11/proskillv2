@@ -480,7 +480,7 @@
                                     Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
                                     Class aptent taciti sociosqu ad litora
                                 </p>
-                                <h6>Esther Howard</h6>
+                                <h6>Ahmad Izzan</h6>
                             </div>
                         </div>
                     </div>
@@ -495,7 +495,7 @@
                                     Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
                                     Class aptent taciti sociosqu ad litora
                                 </p>
-                                <h6>Wade Warren</h6>
+                                <h6>Imad Muhsin</h6>
                             </div>
                         </div>
                     </div>
@@ -510,7 +510,22 @@
                                     Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
                                     Class aptent taciti sociosqu ad litora
                                 </p>
-                                <h6>Jenny Wilson</h6>
+                                <h6> Helmi Imran</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-items">
+                            <div class="icon">
+                                <img src="public/assets/img/quote.png" alt="img">
+                            </div>
+                            <div class="testimonial-bg"></div>
+                            <div class="testimonial-content">
+                                <p>
+                                    Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
+                                    Class aptent taciti sociosqu ad litora
+                                </p>
+                                <h6>Rhanky Alif Zaffani</h6>
                             </div>
                         </div>
                     </div>
