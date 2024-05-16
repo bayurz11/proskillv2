@@ -535,8 +535,8 @@
                 <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Kegiatan & <br> Jadwal Acara</h2>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    @foreach ($event as $events)
+                @foreach ($event as $events)
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="event-box-items">
                             <div class="event-image">
                                 <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="event-img">
@@ -576,8 +576,8 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                </div>
+                    </div>
+                @endforeach
             </div>
 
         </div>
