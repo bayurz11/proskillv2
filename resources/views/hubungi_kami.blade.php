@@ -138,12 +138,7 @@
                                             <input type="text" name="name" id="name" placeholder="Your Name">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="form-clt">
-                                            <span>Your Email*</span>
-                                            <input type="text" name="email" id="email" placeholder="Your Email">
-                                        </div>
-                                    </div>
+
                                     <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                         <div class="form-clt">
                                             <span>Write Message*</span>
@@ -151,12 +146,28 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                                        <button type="submit" class="theme-btn">
-                                            Send Message <i class="fa-solid fa-arrow-right-long"></i>
+                                        <button type="button" onclick="sendWhatsAppMessage()" class="theme-btn">
+                                            Kirim Pesan <i class="fa-solid fa-arrow-right-long"></i>
                                         </button>
                                     </div>
                                 </div>
                             </form>
+                            <script>
+                                function sendWhatsAppMessage() {
+                                    var name = document.getElementById('name').value;
+                                    var message = document.getElementById('message').value;
+
+                                    // Format the message
+                                    var encodedMessage = encodeURIComponent(message);
+
+                                    // Construct the WhatsApp URL
+                                    var whatsappURL = 'https://wa.me/6281266187125?text=' + encodeURIComponent('Halo, saya ' + name + '. ' +
+                                        message);
+
+                                    // Open WhatsApp in a new tab
+                                    window.open(whatsappURL, '_blank');
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
