@@ -6,6 +6,7 @@ use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Event;
 use App\Models\HeroSection;
+use App\Models\Izin;
 use App\Models\KelasOnline;
 use App\Models\KelasTatapMuka;
 use Illuminate\Http\Request;
@@ -63,6 +64,7 @@ class indexController extends Controller
     {
 
         $aboutUs = AboutUs::all();
-        return view('tentang_kami', compact('aboutUs'));
+        $izin = Izin::all();
+        return view('tentang_kami', compact('aboutUs', 'izin'));
     }
 }
