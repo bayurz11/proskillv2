@@ -116,7 +116,7 @@ class AboutUsController extends Controller
         return view('admin.izin', compact('user', 'izin', 'count'));
     }
 
-    public function izin_store(Request $request)
+    public function storeizin(Request $request)
     {
         // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
         if ($request->hasFile('gambar')) {
