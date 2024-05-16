@@ -546,7 +546,7 @@
                                 <ul class="post-date">
                                     <li>
                                         <img src="public/assets/img/event/calender.svg" alt="img" class="me-2">
-                                        {{ $events->tgl }}
+                                        {{ $events->mulai }}
                                     </li>
                                 </ul>
                             </div>
