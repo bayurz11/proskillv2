@@ -46,7 +46,7 @@
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#"
-                                            style="{{ Request::is('tentangkami', 'kelasOnline') ? 'color:#FE9900;' : '' }}">
+                                            style="{{ Request::is('tentangkami', 'tentangkami') ? 'color:#FE9900;' : '' }}">
                                             Profil
                                             <i class="fas fa-angle-down"></i>
                                         </a>
