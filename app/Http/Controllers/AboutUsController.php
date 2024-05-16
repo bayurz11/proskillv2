@@ -115,4 +115,28 @@ class AboutUsController extends Controller
 
         return view('admin.izin', compact('user', 'izin', 'count'));
     }
+
+    public function izin_store(Request $request)
+    {
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
+
+            $userId = Auth::id();
+
+            $aboutUs = new AboutUs();
+            $aboutUs->banner = $gambarName;
+            $aboutUs->tgl = $request->tgl;
+            $aboutUs->user_id = $userId;
+            $aboutUs->link = $request->link;
+            $aboutUs->badan_izin = $request->badan_izin;
+            $aboutUs->save();
+
+            return redirect()->route('about_us_setting')->with('success', 'aboutUs  berhasil dibuat.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('about_us_setting')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
+    }
 }
