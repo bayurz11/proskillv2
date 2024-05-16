@@ -212,8 +212,8 @@
             <div class="section-title-area">
                 <div class="section-title mt-60">
                     <span class="wow fadeInUp">Izin Operasional </span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, NPSN
-                        Kemendikbud Ristek : K9999032
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
+                        Kemendikbud Ristek.
                     </h2>
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
