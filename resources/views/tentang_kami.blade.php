@@ -96,17 +96,28 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                     <div class="icon-items">
                                         <div class="icon">
                                             <i class="icon-icon-13"></i>
                                         </div>
                                         <div class="content">
-                                            <h5>Easy To Learn</h5>
-                                            <p>Ut vehiculadictumst <br> maecenas ante.</p>
+                                            <h5>DPMPTSP</h5>
+                                            <p>503/92/5.10.05.3/2024</p>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="icon-items">
+                                        <div class="icon">
+                                            <i class="icon-icon-13"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Rekomendasi Disdik</h5>
+                                            <p>B/412.35/3/5.3.02/2024</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="about-author">
                                 <div class="author-image wow fadeInUp" data-wow-delay=".3s">
