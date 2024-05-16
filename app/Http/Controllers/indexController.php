@@ -67,4 +67,11 @@ class indexController extends Controller
         $izin = Izin::all();
         return view('tentang_kami', compact('aboutUs', 'izin'));
     }
+    public function showcontactUs()
+    {
+
+        $aboutUs = AboutUs::all();
+        $izin = Izin::all();
+        return view('hubungi_kami', compact('aboutUs', 'izin'));
+    }
 }

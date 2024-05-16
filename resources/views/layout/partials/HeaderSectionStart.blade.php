@@ -55,7 +55,7 @@
                                             <li><a href="#">Contoh sertifikat </a></li>
                                             <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
                                                     target="_blank">Brosur</a></li>
-                                            <li><a href="#">Hubungi Kami</a></li>
+                                            <li><a href="{{ route('hubungikami') }}">Hubungi Kami</a></li>
                                         </ul>
                                     </li>
                                 </ul>
