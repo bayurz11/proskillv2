@@ -211,8 +211,11 @@
         <div class="container">
             <div class="section-title-area">
                 <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Izin Organisasi</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Lembaga kami telah diberi izin organisasi</h2>
+                    <span class="wow fadeInUp">Izin Operasional </span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Terdaftar Resmi dengan Nomor Izin Operasional DPMPTSP
+                        No: 503/92/5.10.05.3/2024 <br>Rekomendasi Disdik No: B/412.35/3/5.3.02/2024
+                        <br>NPSN Kemendikbud Ristek : K9999032
+                    </h2>
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
                     <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
