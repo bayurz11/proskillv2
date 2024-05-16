@@ -536,7 +536,7 @@
             </div>
             <div class="row">
                 @foreach ($event as $events)
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3,5s">
                         <div class="event-box-items">
                             <div class="event-image">
                                 <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="event-img">
