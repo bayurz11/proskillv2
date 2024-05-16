@@ -22,7 +22,14 @@
                         </div>
                         <div class="modal-body">
 
-
+                            <div class="mb-3">
+                                <label for="nama_izin" class="form-label">Nama Izin</label>
+                                <input type="text" class="form-control" id="nama_izin" name="nama_izin">
+                            </div>
+                            <div class="mb-3">
+                                <label for="no_izin" class="form-label">N0 Izin</label>
+                                <input type="text" class="form-control" id="no_izin" name="no_izin">
+                            </div>
                             <div class="mb-3">
                                 <label for="gambar" class="form-label">Sertifikat/Gambar</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
@@ -148,6 +155,8 @@
                                         <th>link</th>
                                         <th>tgl</th>
                                         <th>Pemberi izin</th>
+                                        <th>Nama izin</th>
+                                        <th>No izin</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -160,6 +169,10 @@
                                                 @endif
                                             </td>
                                             <td> {{ $izins->tgl }}
+                                            </td>
+                                            <td> {{ $izins->nama_izin }}
+                                            </td>
+                                            <td> {{ $izins->no_izin }}
                                             </td>
                                             <td>{{ $izins->badan_izin }}</td>
                                             <td>

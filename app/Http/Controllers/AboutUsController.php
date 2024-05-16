@@ -131,6 +131,8 @@ class AboutUsController extends Controller
             $izin->user_id = $userId;
             $izin->link = $request->link;
             $izin->badan_izin = $request->badan_izin;
+            $izin->nama_izin = $request->nama_izin;
+            $izin->no_izin = $request->no_izin;
             $izin->save();
 
             return redirect()->route('izin_setting')->with('success', 'izin  berhasil ditambahkan.');
@@ -138,5 +140,20 @@ class AboutUsController extends Controller
             // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
             return redirect()->route('izin_setting')->with('error', 'Pilih gambar terlebih dahulu.');
         }
+    }
+    public function destroyizin($id)
+    {
+        // Temukan artikel berdasarkan ID
+        $izin = Izin::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$izin) {
+            return redirect()->route('izin_setting')->with('error', 'izin tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $izin->delete();
+
+        return redirect()->route('izin_setting')->with('success', 'izin berhasil dihapus');
     }
 }
