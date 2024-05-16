@@ -222,31 +222,31 @@
             <div class="swiper team-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        @foreach ($izin as $izins)
-                            <div class="team-items">
-                                <div class="team-image">
-                                    <div class="shape-img">
-                                        <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img">
-                                    </div>
-                                    <img src="{{ asset('public/assets/img/team/01.jpg') }}" alt="team-img">
-                                    <div class="social-profile">
-                                        <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
+
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img">
                                 </div>
-                                <div class="team-content">
-                                    <h3>
-                                        <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032"
-                                            target="_blank">{{ $izins->nama_izin }}</a>
-                                    </h3>
-                                    <p>{{ $izins->no_izin }}</p>
+                                <img src="{{ asset('public/assets/img/team/01.jpg') }}" alt="team-img">
+                                <div class="social-profile">
+                                    <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        @endforeach
+                            <div class="team-content">
+                                <h3>
+                                    <a href="https://referensi.data.kemdikbud.go.id/pendidikan/npsn/K9999032"
+                                        target="_blank">{{ $izins->nama_izin }}</a>
+                                </h3>
+                                <p>{{ $izins->no_izin }}</p>
+                            </div>
+                        </div>
+
 
                     </div>
 
