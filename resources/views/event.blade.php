@@ -116,7 +116,7 @@
         <div class="container">
             <div class="section-title-area">
                 <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Galery Dan Event </span>
+                    <span class="wow fadeInUp">Galery Kegiatan ProSkill Akademia </span>
                     {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
                         Kemendikbud Ristek.
                     </h2> --}}
