@@ -157,9 +157,9 @@
             <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
         </div>
         <div class="container">
-            @foreach ($links as $link)
-                <div class="swiper team-slider">
-                    <div class="swiper-wrapper">
+            <div class="swiper team-slider">
+                <div class="swiper-wrapper">
+                    @foreach ($links as $link)
                         <div class="swiper-slide">
                             <div class="team-items">
                                 <div class="team-image">
@@ -172,9 +172,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-            @endforeach
+            </div>
         </div>
     </section>
 
