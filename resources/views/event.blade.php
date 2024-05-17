@@ -163,17 +163,22 @@
                         <div class="swiper-slide">
                             <div class="team-items">
                                 <div class="team-image">
-                                    <iframe src="{{ $link->link }}" frameborder="0"
+                                    @php
+                                        // Mengubah URL standar menjadi URL embed
+                                        $embedUrl = str_replace('watch?v=', 'embed/', $link->link);
+                                    @endphp
+                                    <iframe src="{{ $embedUrl }}" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
                             </div>
-                        </div>
                     @endforeach
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
 
 
 
