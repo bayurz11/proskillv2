@@ -111,7 +111,7 @@
             <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
         </div>
         <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/testi-bee-shape.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
         </div>
         <div class="container">
             <div class="section-title-area">
