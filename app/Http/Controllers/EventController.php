@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Link;
 use App\Models\Event;
+use App\Models\Galery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
-use App\Models\Galery;
 
 class EventController extends Controller
 {
@@ -107,6 +108,17 @@ class EventController extends Controller
         }
 
         return view('admin.galery', compact('user', 'galery', 'count'));
+    }
+    public function showlink(Event $event)
+    {
+        $user = Auth::user();
+        $link = Link::all();
+        $count = $link->count();
+        if (!$user) {
+            return redirect()->route('login_admin');
+        }
+
+        return view('admin.link', compact('user', 'link', 'count'));
     }
 
     /**

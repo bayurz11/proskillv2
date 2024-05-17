@@ -78,6 +78,9 @@
                         <li class="nav-item">
                             <a href="{{ route('galery_setting') }}" class="nav-link">Galery</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('link_setting') }}" class="nav-link">Link Youtube</a>
+                        </li>
                     </ul>
                 </div>
             </li>
