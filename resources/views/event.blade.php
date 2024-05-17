@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <section class="team-section-3 fix section-padding pt-1 mt-60">
+    <section class="team-section-2 fix section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
         </div>
