@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs;
 use App\Models\Artikel;
 use App\Models\Event;
+use App\Models\Galery;
 use App\Models\HeroSection;
 use App\Models\Izin;
 use App\Models\KelasOnline;
@@ -24,8 +25,9 @@ class indexController extends Controller
 
     public function showEvent()
     {
+        $galery = Galery::all();
         $event = Event::all();
-        return view('event', compact('event'));
+        return view('event', compact('event', 'galery'));
     }
     public function Eventdetail($id)
     {
