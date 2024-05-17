@@ -165,7 +165,34 @@
                         <div class="team-items">
                             <div class="team-image">
                                 <div class="shape-img">
-                                    <!-- Custom shape or image can go here if needed -->
+                                </div>
+                                <iframe width="270" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="team-content">
+                                <h3>ProSkill Akademia Video</h3>
+                                <p>Watch our latest activity video</p>
+                            </div>
+                        </div>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                </div>
+                                <iframe width="270" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="team-content">
+                                <h3>ProSkill Akademia Video</h3>
+                                <p>Watch our latest activity video</p>
+                            </div>
+                        </div>
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
                                 </div>
                                 <iframe width="270" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
                                     frameborder="0"
