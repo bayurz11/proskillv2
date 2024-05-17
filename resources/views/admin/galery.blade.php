@@ -38,8 +38,8 @@
                                 <input type="text" class="form-control" id="lokasi" name="lokasi">
                             </div>
                             <div class="mb-3">
-                                <label for="nama_event" class="form-label">nama Event</label>
-                                <input type="text" class="form-control" id="nama_event" name="nama_event">
+                                <label for="name_event" class="form-label">nama Event</label>
+                                <input type="text" class="form-control" id="name_event" name="name_event">
                             </div>
 
                             <div class="mb-3">
@@ -131,7 +131,7 @@
                                                 <script>
                                                     function hapusgalery(id) {
                                                         if (confirm('Apakah Anda yakin ingin menghapus gambar ini?')) {
-                                                            fetch(`/event_destroy/${id}`, {
+                                                            fetch(`/galery_destroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
                                                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'

@@ -143,4 +143,19 @@ class EventController extends Controller
 
         return redirect()->route('event_setting')->with('success', 'Artikel berhasil dihapus');
     }
+    public function destroygalery(Event $event, $id)
+    {
+        // Temukan artikel berdasarkan ID
+        $galery = Galery::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$galery) {
+            return redirect()->route('galery_setting')->with('error', 'Foto tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $galery->delete();
+
+        return redirect()->route('galery_setting')->with('success', 'Gambar berhasil dihapus');
+    }
 }
