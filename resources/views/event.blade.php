@@ -169,10 +169,7 @@
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div class="team-content">
-                                <h3>ProSkill Akademia Video</h3>
-                                <p>Watch our latest activity video</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -182,8 +179,7 @@
 
 
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup"
-        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
