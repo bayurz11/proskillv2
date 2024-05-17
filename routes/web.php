@@ -57,8 +57,11 @@ Route::delete('/artikel_destroy/{id}', [ArtikelController::class, 'destroy'])->n
 Route::get('/event_setting', [EventController::class, 'show'])->name('event_setting');
 Route::post('/event_store', [EventController::class, 'store'])->name('event_store');
 Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name('event_destroy');
-Route::get('/galery_setting', [EventController::class, 'show'])->name('galery_setting');
 //---end Event---//
+
+//---Galery---//
+Route::get('/galery_setting', [EventController::class, 'show'])->name('galery_setting');
+
 
 //---about us---//
 Route::get('/about_us_setting', [AboutUsController::class, 'show'])->name('about_us_setting');
