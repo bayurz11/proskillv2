@@ -101,35 +101,6 @@
         </div>
     </section>
 
-    <div class="swiper team-slider">
-        <div class="swiper-wrapper">
-            @foreach ($galery as $galeryData)
-                <div class="swiper-slide">
-                    <div class="team-items">
-                        <div class="team-image">
-                            <div class="shape-img">
-                                {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
-                            </div>
-                            <img src="{{ asset('public/uploads/' . $galeryData->banner) }}" alt="Banner">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>
-                                {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
-                            </h3>
-                            <p>{{ $galeryData->name_event }}</p>
-                        </div>
-                        <div class="team-video">
-                            <video controls>
-                                <source src="{{ asset('public/uploads/videos/' . $galeryData->video) }}" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
 
     <!-- Galery Section Start -->
     <section class="team-section-3 fix  section-padding pt-1 mt-60">
@@ -178,16 +149,47 @@
                     @endforeach
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="contact-left-items">
-                    <div class="video-image">
-                        <img src="assets/img/video.jpg" alt="img">
-                        <div class="video-box">
-                            <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn ripple video-popup">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
+        </div>
+    </section>
+    <!-- Galery Section Start -->
+    <section class="team-section-3 fix  section-padding pt-1 mt-60">
+        <div class="tree-shape float-bob-x">
+            <img src="{{ asset('public//assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
+        </div>
+        <div class="right-shape">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
+        </div>
+        <div class="bee-shape float-bob-y">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
+        </div>
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title mt-60">
+                    <span class="wow fadeInUp">Galery Kegiatan ProSkill Akademia </span>
+                    {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
+                        Kemendikbud Ristek.
+                    </h2> --}}
+                </div>
+                <div class="array-button wow fadeInUp" data-wow-delay=".5s">
+                    <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
+                    <button class="array-next"><i class="fal fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="swiper team-slider">
+                <div class="swiper-wrapper">
+                    @foreach ($galery as $galeryData)
+                        <div class="swiper-slide">
+                            <div class="video-image">
+                                <img src="assets/img/video.jpg" alt="img">
+                                <div class="video-box">
+                                    <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+                                        class="video-btn ripple video-popup">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
