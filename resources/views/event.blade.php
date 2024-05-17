@@ -116,10 +116,10 @@
         <div class="container">
             <div class="section-title-area">
                 <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Izin Operasional </span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
+                    <span class="wow fadeInUp">Galery Dan Event </span>
+                    {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
                         Kemendikbud Ristek.
-                    </h2>
+                    </h2> --}}
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
                     <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
@@ -147,9 +147,9 @@
                                 </div>
                                 <div class="team-content">
                                     <h3>
-                                        <a href="#" target="_blank">{{ $galeryData->name_event }}</a>
+                                        {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
                                     </h3>
-                                    {{-- <p>{{ $galeryData->no_izin }}</p> --}}
+                                    <p>{{ $galeryData->name_event }}</p>
                                 </div>
                             </div>
                         </div>
