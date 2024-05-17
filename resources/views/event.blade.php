@@ -101,6 +101,35 @@
         </div>
     </section>
 
+    <div class="swiper team-slider">
+        <div class="swiper-wrapper">
+            @foreach ($galery as $galeryData)
+                <div class="swiper-slide">
+                    <div class="team-items">
+                        <div class="team-image">
+                            <div class="shape-img">
+                                {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+                            </div>
+                            <img src="{{ asset('public/uploads/' . $galeryData->banner) }}" alt="Banner">
+
+                        </div>
+                        <div class="team-content">
+                            <h3>
+                                {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
+                            </h3>
+                            <p>{{ $galeryData->name_event }}</p>
+                        </div>
+                        <div class="team-video">
+                            <video controls>
+                                <source src="{{ asset('public/uploads/videos/' . $galeryData->video) }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
 
     <!-- Galery Section Start -->
     <section class="team-section-3 fix  section-padding pt-1 mt-60">
@@ -136,14 +165,7 @@
                                         {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
                                     </div>
                                     <img src="{{ asset('public/uploads/' . $galeryData->banner) }}">
-                                    {{-- <div class="social-profile">
-                                        <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div> --}}
+
                                 </div>
                                 <div class="team-content">
                                     <h3>
@@ -173,7 +195,8 @@
 
 
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
