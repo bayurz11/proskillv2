@@ -158,8 +158,8 @@
         </div>
         <div class="container">
             <div class="swiper team-slider">
-                <div class="swiper-wrapper">
-                    @foreach ($links as $link)
+                @foreach ($links as $link)
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="team-items">
                                 <div class="team-image">
@@ -172,10 +172,10 @@
                                         allowfullscreen></iframe>
                                 </div>
                             </div>
-                    @endforeach
-                </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-        </div>
         </div>
     </section>
 
