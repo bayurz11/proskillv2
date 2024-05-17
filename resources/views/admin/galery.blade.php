@@ -101,7 +101,7 @@
                                 data-feather="plus-circle"></i>
                             Tambah Event
                         </button>
-                        <p class="text-muted mb-3">Jumlah Event : {{ $event->count() }}</p>
+                        <p class="text-muted mb-3">Jumlah Foto : {{ $galery->count() }}</p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
