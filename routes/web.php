@@ -60,7 +60,8 @@ Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name(
 //---end Event---//
 
 //---Galery---//
-Route::get('/galery_setting', [EventController::class, 'show'])->name('galery_setting');
+Route::get('/galery_setting', [EventController::class, 'showgalery'])->name('galery_setting');
+Route::post('/galery_store', [EventController::class, 'storegalery'])->name('galery_store');
 
 
 //---about us---//
