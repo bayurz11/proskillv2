@@ -164,10 +164,8 @@
                     <div class="swiper-slide">
                         <div class="team-items">
                             <div class="team-image">
-                                <div class="shape-img">
-                                </div>
-                                <iframe width="270" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
-                                    frameborder="0"
+
+                                <iframe src="https://www.youtube.com/embed/7AVct12QHVM" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
