@@ -153,29 +153,28 @@
     </section>
 
     <section class="team-section-3 fix section-padding pt-1 mt-60">
-
         <div class="bee-shape float-bob-y">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
         </div>
         <div class="container">
-
             <div class="swiper team-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-
-                                <iframe src="https://www.youtube.com/embed/7AVct12QHVM" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                    @foreach ($links as $link)
+                        <div class="swiper-slide">
+                            <div class="team-items">
+                                <div class="team-image">
+                                    <iframe src="{{ $link->link }}" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
                             </div>
-
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Whatsapp popup -->

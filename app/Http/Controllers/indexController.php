@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AboutUs;
-use App\Models\Artikel;
+use App\Models\Izin;
+use App\Models\Link;
 use App\Models\Event;
 use App\Models\Galery;
+use App\Models\AboutUs;
+use App\Models\Artikel;
 use App\Models\HeroSection;
-use App\Models\Izin;
 use App\Models\KelasOnline;
-use App\Models\KelasTatapMuka;
 use Illuminate\Http\Request;
+use App\Models\KelasTatapMuka;
 
 class indexController extends Controller
 {
@@ -25,9 +26,10 @@ class indexController extends Controller
 
     public function showEvent()
     {
+        $links = Link::all();
         $galery = Galery::all();
         $event = Event::all();
-        return view('event', compact('event', 'galery'));
+        return view('event', compact('event', 'galery', 'links'));
     }
     public function Eventdetail($id)
     {
