@@ -54,8 +54,8 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Lokasi</th>
-                                        <th>Nama event</th>
+                                        <th>Link</th>
+
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -63,8 +63,8 @@
                                     @foreach ($link as $key => $link)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $link->lokasi }}</td>
-                                            <td>{{ $link->name_event }}</td>
+                                            <td>{{ $link->link }}</td>
+
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
                                                     <i data-feather="edit"></i>
