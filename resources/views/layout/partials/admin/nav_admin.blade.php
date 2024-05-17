@@ -71,6 +71,24 @@
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false"
                     aria-controls="aboutUs">
+                    <i class="link-icon" data-feather="calendar"></i>
+                    <span class="link-title">Event dan Galery</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="aboutUs">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ route('event_setting') }}" class="nav-link">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('galery_setting') }}" class="nav-link">Galery</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false"
+                    aria-controls="aboutUs">
                     <i class="link-icon" data-feather="settings"></i>
                     <span class="link-title">Tentang Kami</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
@@ -88,8 +106,8 @@
             </li>
             <li class="nav-item nav-category">Inventaris</li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button" aria-expanded="false"
-                    aria-controls="Inventaris">
+                <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button"
+                    aria-expanded="false" aria-controls="Inventaris">
                     <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">Barang</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
