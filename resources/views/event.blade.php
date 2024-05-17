@@ -180,7 +180,7 @@
                     @foreach ($galery as $galeryData)
                         <div class="swiper-slide">
                             <div class="video-image">
-                                <img src="assets/img/video.jpg" alt="img">
+                                <img src="{{ asset('public/uploads/' . $galeryData->banner) }}">
                                 <div class="video-box">
                                     <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
                                         class="video-btn ripple video-popup">
