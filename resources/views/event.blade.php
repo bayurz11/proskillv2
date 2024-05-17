@@ -160,9 +160,67 @@
         </div>
     </section>
 
-
+    <section class="contact-section fix section-padding">
+        <div class="container">
+            <div class="contact-wrapper-2">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="contact-left-items">
+                            <div class="video-image">
+                                <img src="assets/img/video.jpg" alt="img">
+                                <div class="video-box">
+                                    <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+                                        class="video-btn ripple video-popup">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-content">
+                            <h2>Ready to Get Started?</h2>
+                            <p>
+                                Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in
+                                turpis. Quisque rhoncus, eros in auctor ultrices,
+                            </p>
+                            <form action="contact.php" id="contact-form" method="POST" class="contact-form-items">
+                                <div class="row g-4">
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="form-clt">
+                                            <span>Your name*</span>
+                                            <input type="text" name="name" id="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="form-clt">
+                                            <span>Your Email*</span>
+                                            <input type="text" name="email" id="email"
+                                                placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="form-clt">
+                                            <span>Write Message*</span>
+                                            <textarea name="message" id="message" placeholder="Write Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
+                                        <button type="submit" class="theme-btn">
+                                            Send Message <i class="fa-solid fa-arrow-right-long"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
