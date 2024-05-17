@@ -64,13 +64,13 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#aboutUs" role="button" aria-expanded="false"
-                    aria-controls="aboutUs">
+                <a class="nav-link" data-bs-toggle="collapse" href="#galery" role="button" aria-expanded="false"
+                    aria-controls="galery">
                     <i class="link-icon" data-feather="calendar"></i>
                     <span class="link-title">Event dan Galery</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="aboutUs">
+                <div class="collapse" id="galery">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
                             <a href="{{ route('event_setting') }}" class="nav-link">Event</a>
