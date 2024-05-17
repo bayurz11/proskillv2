@@ -539,6 +539,7 @@
         </div>
     </section>
 
+    <!-- Event Section Start -->
     <section class="event-section section-padding bg-cover"
         style="background-image: url('public/assets/img/event-bg.jpg');">
         <div class="event-top-shape">

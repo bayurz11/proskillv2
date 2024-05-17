@@ -60,7 +60,7 @@
                                         <li>
                                             <img src="{{ asset('public/assets/img/event/calender.svg') }}" alt="img"
                                                 class="me-2">
-                                            {{ $events->tgl }}
+                                            {{ $events->mulai }}
                                         </li>
                                     </ul>
                                 </div>
