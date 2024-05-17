@@ -103,9 +103,9 @@
 
 
     <!-- Galery Section Start -->
-    <section class="team-section-3 fix  section-padding pt-1 mt-60">
+    <section class="team-section-3 fix section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
-            <img src="{{ asset('public//assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
         </div>
         <div class="right-shape">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
@@ -118,7 +118,7 @@
                 <div class="section-title mt-60">
                     <span class="wow fadeInUp">Galery Kegiatan ProSkill Akademia </span>
                     {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
-                        Kemendikbud Ristek.
+                        Kemendikbud Ristek.
                     </h2> --}}
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
@@ -136,7 +136,6 @@
                                         {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
                                     </div>
                                     <img src="{{ asset('public/uploads/' . $galeryData->banner) }}">
-
                                 </div>
                                 <div class="team-content">
                                     <h3>
@@ -147,10 +146,29 @@
                             </div>
                         </div>
                     @endforeach
+                    <!-- Embed YouTube Video -->
+                    <div class="swiper-slide">
+                        <div class="team-items">
+                            <div class="team-image">
+                                <div class="shape-img">
+                                    <!-- Custom shape or image can go here if needed -->
+                                </div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="team-content">
+                                <h3>ProSkill Akademia Video</h3>
+                                <p>Watch our latest activity video</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
