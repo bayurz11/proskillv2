@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
+use App\Models\Galery;
 
 class EventController extends Controller
 {
@@ -67,15 +68,15 @@ class EventController extends Controller
 
             $userId = Auth::id();
 
-            $even = new Event();
-            $even->banner = $gambarName;
-            $even->name_event = $request->name_event;
-            $even->tgl = $request->tgl;
-            $even->user_id = $userId;
-            $even->lokasi = $request->lokasi;
-            $even->save();
+            $Galery = new Galery();
+            $Galery->banner = $gambarName;
+            $Galery->name_event = $request->name_event;
+            $Galery->tgl = $request->tgl;
+            $Galery->user_id = $userId;
+            $Galery->lokasi = $request->lokasi;
+            $Galery->save();
 
-            return redirect()->route('galery_setting')->with('success', 'even  berhasil dibuat.');
+            return redirect()->route('galery_setting')->with('success', 'Foto  berhasil ditambahkan.');
         } else {
             // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
             return redirect()->route('galery_setting')->with('error', 'Pilih gambar terlebih dahulu.');
@@ -99,7 +100,7 @@ class EventController extends Controller
     public function showgalery(Event $event)
     {
         $user = Auth::user();
-        $galery = Event::all();
+        $galery = Galery::all();
         $count = $galery->count();
         if (!$user) {
             return redirect()->route('login_admin');

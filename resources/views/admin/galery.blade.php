@@ -113,24 +113,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($event as $key => $even)
+                                    @foreach ($galery as $key => $galery)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $even->lokasi }}</td>
-                                            <td>{{ $even->name_event }}</td>
+                                            <td>{{ $galery->lokasi }}</td>
+                                            <td>{{ $galery->name_event }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapusevent('{{ $even->id }}')"
+                                                <button onclick="hapusgalery('{{ $galery->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
 
                                                 <script>
-                                                    function hapusevent(id) {
-                                                        if (confirm('Apakah Anda yakin ingin menghapus event ini?')) {
+                                                    function hapusgalery(id) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus gambar ini?')) {
                                                             fetch(`/event_destroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
@@ -142,7 +142,7 @@
                                                                     window.location.reload();
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
-                                                                    console.error('Gagal menghapus event');
+                                                                    console.error('Gagal menghapus gambar');
                                                                 }
                                                             }).catch(error => {
                                                                 console.error('Terjadi kesalahan:', error);
