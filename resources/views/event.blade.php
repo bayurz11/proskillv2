@@ -175,8 +175,6 @@
                                 <h3>ProSkill Akademia Video</h3>
                                 <p>Watch our latest activity video</p>
                             </div>
-                        </div>
-                        <div class="team-items">
                             <div class="team-image">
                                 <div class="shape-img">
                                 </div>
@@ -189,8 +187,6 @@
                                 <h3>ProSkill Akademia Video</h3>
                                 <p>Watch our latest activity video</p>
                             </div>
-                        </div>
-                        <div class="team-items">
                             <div class="team-image">
                                 <div class="shape-img">
                                 </div>
