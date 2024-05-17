@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <section class="team-section-2 fix section-padding pt-1 mt-60">
+    <section class="team-section-3 fix section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
         </div>
@@ -183,7 +183,7 @@
                                 <div class="shape-img">
                                     <!-- Custom shape or image can go here if needed -->
                                 </div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
+                                <iframe width="270" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
