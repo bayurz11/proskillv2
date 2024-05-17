@@ -83,6 +83,21 @@ class EventController extends Controller
             return redirect()->route('galery_setting')->with('error', 'Pilih gambar terlebih dahulu.');
         }
     }
+    public function storelink(Request $request)
+    {
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+
+
+        $userId = Auth::id();
+
+        $link = new Link();
+        $link->link = $request->link;
+        $link->user_id = $userId;
+        $link->save();
+
+
+        return redirect()->route('link_setting')->with('success', 'link video berhasil ditambahkan.');
+    }
 
     /**
      * Display the specified resource.
