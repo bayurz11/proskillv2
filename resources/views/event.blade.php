@@ -157,14 +157,13 @@
             <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
         </div>
         <div class="container">
-            <div class="swiper team-slider">
-                @foreach ($links as $link)
+            @foreach ($links as $link)
+                <div class="swiper team-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="team-items">
                                 <div class="team-image">
                                     @php
-                                        // Mengubah URL standar menjadi URL embed
                                         $embedUrl = str_replace('watch?v=', 'embed/', $link->link);
                                     @endphp
                                     <iframe src="{{ $embedUrl }}" frameborder="0"
@@ -174,8 +173,8 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </section>
 
