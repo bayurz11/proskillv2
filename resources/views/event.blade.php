@@ -146,28 +146,12 @@
                             </div>
                         </div>
                     @endforeach
-                    <!-- Embed YouTube Video -->
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    <!-- Custom shape or image can go here if needed -->
-                                </div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7AVct12QHVM"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="team-content">
-                                <h3>ProSkill Akademia Video</h3>
-                                <p>Watch our latest activity video</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
     <section class="team-section-3 fix section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
