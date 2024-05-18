@@ -37,12 +37,12 @@ class indexController extends Controller
         $events = Event::find($id);
 
         // Periksa apakah $klsoffline ditemukan
-        if (!$event) {
+        if (!$events) {
             abort(404, 'Kelas tatap muka tidak ditemukan.');
         }
 
         // Decode JSON syarat
-        $syarat = json_decode($event->syarat, true);
+        $syarat = json_decode($events->syarat, true);
 
         // Jika syarat bukan array atau kosong, berikan nilai default
         if (!is_array($syarat)) {
