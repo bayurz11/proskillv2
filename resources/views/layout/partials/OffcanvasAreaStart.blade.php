@@ -5,7 +5,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo">
-                        <a href="index.html">
+                        <a href="{{ route('/') }}">
                             <img src="{{ asset('public/assets/img/logo/logo.svg') }}" alt="logo-img">
                         </a>
                     </div>
