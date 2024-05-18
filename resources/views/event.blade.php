@@ -52,9 +52,11 @@
                         <div class="swiper-slide">
                             <div class="event-box-items mt-0 box-shadow style-bottom">
                                 <div class="event-image">
-                                    <img src="{{ asset('public/uploads/' . $events->banner) }}">
+                                    <a href="{{ route('event_detail', ['id' => $events->id]) }}"><img
+                                            src="{{ asset('public/uploads/' . $events->banner) }}"></a>
                                     <div class="event-shape">
-                                        <img src="{{ asset('public/uploads/' . $events->banner) }}">
+                                        <a href="{{ route('event_detail', ['id' => $events->id]) }}"><img
+                                                src="{{ asset('public/uploads/' . $events->banner) }}"></a>
                                     </div>
                                     <ul class="post-date">
                                         <li>
@@ -182,7 +184,8 @@
 
 
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
