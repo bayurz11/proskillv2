@@ -246,14 +246,30 @@
                                     @endif
 
                                     @foreach ($artikels->links()->elements[0] as $page => $url)
-                                        @if ($page == $artikels->currentPage())
-                                            <li class="page-numbers active" aria-current="page">
-                                                <span class="page-numbers">{{ $page }}</span>
-                                            </li>
+                                        @if (is_array($url))
+                                            @foreach ($url as $p => $link)
+                                                @if ($p == $artikels->currentPage())
+                                                    <li class="page-numbers active" aria-current="page">
+                                                        <span class="page-numbers">{{ $p }}</span>
+                                                    </li>
+                                                @else
+                                                    <li class="page-numbers">
+                                                        <a class="page-numbers"
+                                                            href="{{ $link }}">{{ $p }}</a>
+                                                    </li>
+                                                @endif
+                                            @endforeach
                                         @else
-                                            <li class="page-numbers">
-                                                <a class="page-numbers" href="{{ $url }}">{{ $page }}</a>
-                                            </li>
+                                            @if ($page == $artikels->currentPage())
+                                                <li class="page-numbers active" aria-current="page">
+                                                    <span class="page-numbers">{{ $page }}</span>
+                                                </li>
+                                            @else
+                                                <li class="page-numbers">
+                                                    <a class="page-numbers"
+                                                        href="{{ $url }}">{{ $page }}</a>
+                                                </li>
+                                            @endif
                                         @endif
                                     @endforeach
 
@@ -274,6 +290,7 @@
                                 </ul>
                             </nav>
                         </div>
+
 
 
                     </div>
