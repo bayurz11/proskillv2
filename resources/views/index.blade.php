@@ -618,8 +618,9 @@
 
                             <div class="news-right-items style-2">
                                 <div class="news-thumb" style="width: 230px; height: 236px; overflow: hidden;">
-                                    <img src="{{ asset('public/uploads/' . $article->banner) }}"
-                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                    <a href="{{ route('artikel_detail', ['id' => $article->id]) }}"><img
+                                            src="{{ asset('public/uploads/' . $article->banner) }}"
+                                            style="width: 100%; height: 100%; object-fit: cover;"></a>
                                 </div>
                                 <div class="news-content">
                                     <ul>
@@ -651,7 +652,7 @@
                                         </li>
                                     </ul>
                                     <h3>
-                                        <a href="news-details.html">
+                                        <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
                                             <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
                                                 {{ $article->title }}
                                             </a>
