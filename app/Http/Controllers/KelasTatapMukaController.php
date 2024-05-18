@@ -66,13 +66,15 @@ class KelasTatapMukaController extends Controller
     public function show(KelasTatapMuka $kelasTatapMuka)
     {
         $user = Auth::user();
+
         $kelasOffline = KelasTatapMuka::all();
         $count = $kelasOffline->count();
+        $fasilitas = json_decode($kelasOffline->fasilitas, true);
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count'));
+        return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count', 'fasilitas'));
     }
 
     /**

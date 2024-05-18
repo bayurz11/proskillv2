@@ -94,11 +94,19 @@
                                     lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
                                 </p> --}}
                                 <ul class="list-items">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        {{ $klsoffline->fasilitas }}
-                                    </li>
-
+                                    @if (!empty($fasilitas))
+                                        @foreach ($fasilitas as $item)
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                {{ $item }}
+                                            </li>
+                                        @endforeach
+                                    @else
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Tidak ada fasilitas yang tersedia.
+                                        </li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
