@@ -291,7 +291,9 @@
                             <div class="clases-items">
                                 <div class="clases-bg"></div>
                                 <div class="clases-image">
-                                    <img src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img">
+                                    <a href="{{ $kelasonline->link }}" target="_blank"><img
+                                            src="{{ asset('public/uploads/' . $kelasonline->banner) }}"
+                                            alt="img"></a>
                                 </div>
                                 <div class="clases-content">
                                     <h4><a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
@@ -299,8 +301,7 @@
                                     <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
                                     <ul class="clases-schedule">
                                         <li><span>Level</span> <br>{{ $kelasonline->level }}</li>
-                                        <li><span>Jadwal</span> <br>Fleksibe</li>
-                                        <li><span>waktu</span> <br>8 Pertemuan</li>
+
                                     </ul>
                                 </div>
                             </div>
