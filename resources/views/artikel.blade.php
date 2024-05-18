@@ -228,15 +228,48 @@
                         @endforeach
 
                         <div class="page-nav-wrap pt-5 text-center">
-                            <div class="page-nav-wrap pt-5 text-center">
-                                <ul>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center">
+                                    @if ($artikels->onFirstPage())
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"><i
+                                                    class="fa-solid fa-arrow-left-long"></i></a>
+                                        </li>
+                                    @else
+                                        <li class="page-item">
+                                            <a class="page-link" href="{{ $artikels->previousPageUrl() }}"
+                                                aria-label="Previous">
+                                                <i class="fa-solid fa-arrow-left-long"></i>
+                                            </a>
+                                        </li>
+                                    @endif
 
-                                    <li><a class="page-numbers" href="{{ $artikels->links() }}">01</a></li>
+                                    @foreach ($artikels->links()->elements[0] as $page => $url)
+                                        @if ($page == $artikels->currentPage())
+                                            <li class="page-item active" aria-current="page"><span
+                                                    class="page-link">{{ $page }}</span></li>
+                                        @else
+                                            <li class="page-item"><a class="page-link"
+                                                    href="{{ $url }}">{{ $page }}</a></li>
+                                        @endif
+                                    @endforeach
 
+                                    @if ($artikels->hasMorePages())
+                                        <li class="page-item">
+                                            <a class="page-link" href="{{ $artikels->nextPageUrl() }}" aria-label="Next">
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </a>
+                                        </li>
+                                    @else
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#"><i
+                                                    class="fa-solid fa-arrow-right-long"></i></a>
+                                        </li>
+                                    @endif
                                 </ul>
-                            </div>
-                            {{-- {{ $artikels->links() }} <!-- Tautan pagination bawaan Laravel --> --}}
+                            </nav>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -322,7 +355,8 @@
 
 
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
