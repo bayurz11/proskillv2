@@ -231,13 +231,13 @@
                             <nav aria-label="Navigasi halaman">
                                 <ul class="pagination justify-content-center">
                                     @if ($artikels->onFirstPage())
-                                        <li class="page-item disabled">
+                                        <li class="page-numbers disabled">
                                             <a class="page-numbers" href="#" tabindex="-1">
                                                 <i class="fa-solid fa-arrow-left-long"></i>
                                             </a>
                                         </li>
                                     @else
-                                        <li class="page-item">
+                                        <li class="page-numbers">
                                             <a class="page-numbers" href="{{ $artikels->previousPageUrl() }}"
                                                 aria-label="Sebelumnya">
                                                 <i class="fa-solid fa-arrow-left-long"></i>
@@ -247,25 +247,25 @@
 
                                     @foreach ($artikels->links()->elements[0] as $page => $url)
                                         @if ($page == $artikels->currentPage())
-                                            <li class="page-item active" aria-current="page">
+                                            <li class="page-numbers active" aria-current="page">
                                                 <span class="page-numbers">{{ $page }}</span>
                                             </li>
                                         @else
-                                            <li class="page-item">
+                                            <li class="page-numbers">
                                                 <a class="page-numbers" href="{{ $url }}">{{ $page }}</a>
                                             </li>
                                         @endif
                                     @endforeach
 
                                     @if ($artikels->hasMorePages())
-                                        <li class="page-item">
+                                        <li class="page-numbers">
                                             <a class="page-numbers" href="{{ $artikels->nextPageUrl() }}"
                                                 aria-label="Berikutnya">
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </a>
                                         </li>
                                     @else
-                                        <li class="page-item disabled">
+                                        <li class="page-numbers disabled">
                                             <a class="page-numbers" href="#">
                                                 <i class="fa-solid fa-arrow-right-long"></i>
                                             </a>
