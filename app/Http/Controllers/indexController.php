@@ -39,7 +39,7 @@ class indexController extends Controller
     }
     public function showArtikel()
     {
-        $artikel = Artikel::all();
+        $artikel = Artikel::orderBy('tgl', 'desc')->take(3)->get();
         $artikels = Artikel::paginate(1);
         return view('artikel', compact('artikel', 'artikels'));
     }

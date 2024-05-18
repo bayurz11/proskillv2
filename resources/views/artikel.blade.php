@@ -291,7 +291,6 @@
                             </div>
                             @foreach ($artikel as $article)
                                 <div class="recent-post-area">
-
                                     <div class="recent-items">
                                         <div class="recent-thumb">
                                             <img src="{{ asset('public/uploads/' . $article->banner) }}"
@@ -314,6 +313,7 @@
                                 </div>
                             @endforeach
                         </div>
+
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
                                 <h3>Tag</h3>
