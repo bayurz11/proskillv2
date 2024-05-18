@@ -74,7 +74,7 @@ class KelasTatapMukaController extends Controller
         $count = $kelasOffline->count();
 
         // Decode JSON fasilitas
-        $fasilitas = json_decode($kelasOffline->fasilitas, true);
+        $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
 
         // Jika fasilitas bukan array atau kosong, berikan nilai default
         if (!is_array($fasilitas)) {
@@ -83,6 +83,7 @@ class KelasTatapMukaController extends Controller
 
         return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count', 'fasilitas'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
