@@ -83,8 +83,8 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <ul class="list">
-                                            @if (!empty($events))
-                                                @foreach ($events as $item)
+                                            @if (!empty($syarat))
+                                                @foreach ($syarat as $item)
                                                     <li>
                                                         <i class="fa-solid fa-check"></i>
                                                         {{ $item['value'] }}
