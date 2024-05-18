@@ -69,7 +69,7 @@ class KelasTatapMukaController extends Controller
 
         $kelasOffline = KelasTatapMuka::all();
         $count = $kelasOffline->count();
-        $fasilitas = json_decode($kelasOffline->fasilitas, true);
+        $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
         if (!$user) {
             return redirect()->route('login_admin');
         }
