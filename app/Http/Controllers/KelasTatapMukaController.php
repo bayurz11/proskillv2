@@ -66,11 +66,19 @@ class KelasTatapMukaController extends Controller
     public function show(KelasTatapMuka $kelasTatapMuka)
     {
         $user = Auth::user();
-        $kelasOffline = KelasTatapMuka::all();
-        $count = $kelasOffline->count();
-        $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
         if (!$user) {
             return redirect()->route('login_admin');
+        }
+
+        $kelasOffline = KelasTatapMuka::all();
+        $count = $kelasOffline->count();
+
+        // Decode JSON fasilitas
+        $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
+
+        // Jika fasilitas bukan array atau kosong, berikan nilai default
+        if (!is_array($fasilitas)) {
+            $fasilitas = [];
         }
 
         return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count', 'fasilitas'));

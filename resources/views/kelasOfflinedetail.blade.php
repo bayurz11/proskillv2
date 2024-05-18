@@ -98,7 +98,7 @@
                                         @foreach ($fasilitas as $item)
                                             <li>
                                                 <i class="fa-solid fa-check"></i>
-                                                {{ $item }}
+                                                {{ $item['value'] }}
                                             </li>
                                         @endforeach
                                     @else
