@@ -78,12 +78,8 @@
                                     reprehenderit.
                                 </p>
 
-                                <h2>Requirements for the event</h2>
-                                <p class="mb-4">
-                                    Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
-                                    convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
-                                    lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
-                                </p>
+                                <h2>Persyaratan</h2>
+
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <ul class="list">
@@ -110,24 +106,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="row g-4 mt-4">
-                                    <div class="col-md-6">
-                                        <div class="thumb">
-                                            <img src="assets/img/event/event-details-2.jpg" alt="img">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="thumb">
-                                            <img src="assets/img/event/event-details-3.jpg" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-4">
-                                    Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of
-                                    magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco
-                                    laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in
-                                    reprehenderit.
-                                </p>
+
                             </div>
 
                         </div>
