@@ -40,8 +40,8 @@
                                                 {{ Request::is('event') ? 'style=color:#FE9900;' : '' }}>Event</span></a>
                                     </li>
 
-                                    <li class="{{ Request::is('artikel*', 'artikel_detail/*') ? 'active' : '' }}">
-                                        <a href="{{ url('artikel', 'artikel_detail') }}"><span
+                                    <li class="{{ Request::is('artikel*') ? 'active' : '' }}">
+                                        <a href="{{ url('artikel') }}"><span
                                                 {{ Request::is('artikel') ? 'style=color:#FE9900;' : '' }}>Artikel</span></a>
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
