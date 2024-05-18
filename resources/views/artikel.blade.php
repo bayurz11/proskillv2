@@ -228,7 +228,19 @@
                         @endforeach
 
                         <div class="page-nav-wrap pt-5 text-center">
-                            {{ $artikels->links() }} <!-- Tautan pagination bawaan Laravel -->
+                            <div class="page-nav-wrap pt-5 text-center">
+                                <ul>
+                                    <li><a class="page-numbers" href="#"><i
+                                                class="fa-solid fa-arrow-left-long"></i></a>
+                                    </li>
+                                    <li><a class="page-numbers" href=" {{ $artikels->links() }}">01</a></li>
+
+                                    <li><a class="page-numbers" href="#"><i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            {{-- {{ $artikels->links() }} <!-- Tautan pagination bawaan Laravel --> --}}
                         </div>
                     </div>
                 </div>
