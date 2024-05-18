@@ -40,7 +40,8 @@ class indexController extends Controller
     public function showArtikel()
     {
         $artikel = Artikel::all();
-        return view('artikel', compact('artikel'));
+        $artikels = Artikel::paginate(1);
+        return view('artikel', compact('artikel', 'artikels'));
     }
     public function artikeldetail($id)
     {

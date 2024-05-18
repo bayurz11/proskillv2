@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <!-- News Standard Section Start -->
+    {{-- <!-- News Standard Section Start -->
     <section class="news-standard fix section-padding">
         <div class="container">
 
@@ -179,7 +179,141 @@
                 });
             </script>
         </div>
+    </section> --}}
+
+    <section class="news-standard fix section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <div class="news-standard-wrapper">
+                        @foreach ($artikels as $article)
+                            <div class="news-standard-items">
+                                <div class="news-thumb">
+                                    <img src="{{ asset('public/uploads/' . $article->banner) }}">
+                                    <div class="post">
+                                        <span>
+                                            <?php
+                                            $category = json_decode($article->category);
+                                            foreach ($category as $item) {
+                                                echo $item->value . ' ';
+                                            }
+                                            ?>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="news-content">
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            {{ $article->tgl }}
+                                        </li>
+                                        <li>
+                                            <i class="far fa-user"></i>
+                                            {{ $article->user->name }}
+                                        </li>
+                                    </ul>
+                                    <h3>
+                                        <a
+                                            href="{{ route('artikel_detail', ['id' => $article->id]) }}">{{ $article->title }}</a>
+                                    </h3>
+                                    <p>
+                                        {!! nl2br(substr($article->content, 0, 250)) !!}
+                                    </p>
+                                    <a href="{{ route('artikel_detail', ['id' => $article->id]) }}" class="theme-btn mt-4">
+                                        Baca selengkapnya
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+
+                        <div class="page-nav-wrap pt-5 text-center">
+                            {{ $artikels->links() }} <!-- Tautan pagination bawaan Laravel -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="main-sidebar">
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h3>Pencarian</h3>
+                            </div>
+                            <div class="search-widget">
+                                <form id="searchForm" action="#" method="GET">
+                                    <input id="searchInput" type="text" placeholder="Cari di sini">
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h3>Postingan Terbaru</h3>
+                            </div>
+                            @foreach ($artikels as $article)
+                                <div class="recent-post-area">
+                                    <div class="recent-items">
+                                        <div class="recent-thumb">
+                                            <img src="{{ asset('public/uploads/' . $article->banner) }}"
+                                                style="width: 78px; height: 79px; object-fit: cover;">
+                                        </div>
+                                        <div class="recent-content">
+                                            <ul>
+                                                <li>
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    {{ $article->tgl }}
+                                                </li>
+                                            </ul>
+                                            <h6>
+                                                <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
+                                                    {{ $article->title }}
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h3>Tag</h3>
+                            </div>
+                            <div class="news-widget-categories">
+                                <div class="tagcloud">
+                                    @foreach ($artikels as $article)
+                                        <a href="news-standard.html">
+                                            <?php
+                                            $category = json_decode($article->category);
+                                            foreach ($category as $item) {
+                                                echo $item->value . ' ';
+                                            }
+                                            ?>
+                                        </a>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById('searchForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Mencegah form submit
+                    var searchText = document.getElementById('searchInput').value.toLowerCase();
+                    var items = document.querySelectorAll('.recent-content h6 a, .tagcloud a');
+                    items.forEach(function(item) {
+                        var text = item.textContent.toLowerCase();
+                        if (text.includes(searchText)) {
+                            item.style.color = 'red'; // Anda bisa mengubah gaya di sini
+                        } else {
+                            item.style.color = ''; // Reset gaya
+                        }
+                    });
+                });
+            </script>
+        </div>
     </section>
+
+
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
