@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Log;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Illuminate\Support\Facades\Auth;
@@ -67,29 +66,14 @@ class KelasTatapMukaController extends Controller
     public function show(KelasTatapMuka $kelasTatapMuka)
     {
         $user = Auth::user();
+        $kelasOffline = KelasTatapMuka::all();
+        $count = $kelasOffline->count();
         if (!$user) {
             return redirect()->route('login_admin');
         }
 
-        $kelasOffline = KelasTatapMuka::all();
-        $count = $kelasOffline->count();
-
-        // Decode JSON fasilitas
-        $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
-
-        // Debugging: Log data untuk memastikan fasilitas diambil dengan benar
-        \Log::info('Decoded fasilitas:', ['fasilitas' => $fasilitas]);
-
-        // Jika fasilitas bukan array atau kosong, berikan nilai default
-        if (!is_array($fasilitas)) {
-            $fasilitas = [];
-        }
-
-        return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count', 'fasilitas'));
+        return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count'));
     }
-
-
-
 
     /**
      * Show the form for editing the specified resource.

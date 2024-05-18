@@ -108,10 +108,6 @@
                                         </li>
                                     @endif
                                 </ul>
-
-                                <!-- Debugging: Tampilkan data fasilitas dalam bentuk raw -->
-                                <pre>{{ var_dump($fasilitas) }}</pre>
-                                </ul>
                             </div>
                         </div>
                     </div>
