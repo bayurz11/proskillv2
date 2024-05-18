@@ -66,7 +66,6 @@ class KelasTatapMukaController extends Controller
     public function show(KelasTatapMuka $kelasTatapMuka)
     {
         $user = Auth::user();
-
         $kelasOffline = KelasTatapMuka::all();
         $count = $kelasOffline->count();
         $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
