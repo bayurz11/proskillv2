@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Log;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Illuminate\Support\Facades\Auth;
@@ -76,6 +77,9 @@ class KelasTatapMukaController extends Controller
         // Decode JSON fasilitas
         $fasilitas = json_decode($kelasTatapMuka->fasilitas, true);
 
+        // Debugging: Log data untuk memastikan fasilitas diambil dengan benar
+        \Log::info('Decoded fasilitas:', ['fasilitas' => $fasilitas]);
+
         // Jika fasilitas bukan array atau kosong, berikan nilai default
         if (!is_array($fasilitas)) {
             $fasilitas = [];
@@ -83,6 +87,8 @@ class KelasTatapMukaController extends Controller
 
         return view('admin.kelasOffline', compact('user', 'kelasOffline', 'count', 'fasilitas'));
     }
+
+
 
 
     /**
