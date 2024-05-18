@@ -104,7 +104,7 @@
                                     @else
                                         <li>
                                             <i class="fa-solid fa-check"></i>
-                                            Tidak ada fasilitas yang tersedia.
+                                            Tidak ada fasilitas dan materi yang tersedia.
                                         </li>
                                     @endif
                                 </ul>
