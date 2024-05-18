@@ -87,29 +87,18 @@
                                 <p class="mb-3">
                                     {{ $klsoffline->deskripsi }}
 
-                                <h2>Requirements for The Classes</h2>
-                                <p>
+                                <h2>Materi Dan Fasilitas Yang Didapat</h2>
+                                {{-- <p>
                                     Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
                                     convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
                                     lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
-                                </p>
+                                </p> --}}
                                 <ul class="list-items">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Ut viverra bibendum lorem, at tempus nibh mattis
+                                        Pengelolaan Teknologi Komputer
                                     </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        quis nostrud exercitation ullamco laboris nisi
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Duis aute irure and dolor in reprehenderit.
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        ante rutrum sed the is sodales augue consequat.
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
