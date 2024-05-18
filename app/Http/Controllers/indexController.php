@@ -59,9 +59,22 @@ class indexController extends Controller
         $kelasOffline = KelasTatapMuka::all();
         $klsoffline = KelasTatapMuka::find($id);
 
-        $fasilitas = json_decode($kelasOffline->fasilitas, true);
+        // Periksa apakah $klsoffline ditemukan
+        if (!$klsoffline) {
+            abort(404, 'Kelas tatap muka tidak ditemukan.');
+        }
+
+        // Decode JSON fasilitas
+        $fasilitas = json_decode($klsoffline->fasilitas, true);
+
+        // Jika fasilitas bukan array atau kosong, berikan nilai default
+        if (!is_array($fasilitas)) {
+            $fasilitas = [];
+        }
+
         return view('kelasOfflinedetail', compact('kelasOffline', 'klsoffline', 'fasilitas'));
     }
+
     public function showkelasOnline()
     {
         $kelasOnline = KelasOnline::all();
