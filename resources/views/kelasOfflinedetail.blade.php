@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="details-list-area">
-                            <h3>Ditel Kelas</h3>
+                            <h3>Detail Kelas</h3>
                             <ul class="details-list">
                                 <li>
                                     <span>
