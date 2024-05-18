@@ -149,6 +149,7 @@
                                     {{ $klsoffline->sertifikat }}
                                 </li>
 
+
                             </ul>
                             <a href="#" class="theme-btn w-100 border-style mb-3">
                                 Harga Kelas Rp.{{ number_format($klsoffline->price, 0, ',', '.') }}
