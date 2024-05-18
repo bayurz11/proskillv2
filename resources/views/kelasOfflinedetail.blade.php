@@ -96,7 +96,7 @@
                                 <ul class="list-items">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Pengelolaan Teknologi Komputer
+                                        {{ $klsoffline->fasilitas }}
                                     </li>
 
                                 </ul>
