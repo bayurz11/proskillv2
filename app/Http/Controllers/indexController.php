@@ -35,7 +35,20 @@ class indexController extends Controller
     {
         $event = Event::all();
         $events = Event::find($id);
-        return view('eventDetail', compact('event', 'events'));
+
+        // Periksa apakah $klsoffline ditemukan
+        if (!$event) {
+            abort(404, 'Kelas tatap muka tidak ditemukan.');
+        }
+
+        // Decode JSON syarat
+        $syarat = json_decode($event->syarat, true);
+
+        // Jika syarat bukan array atau kosong, berikan nilai default
+        if (!is_array($syarat)) {
+            $syarat = [];
+        }
+        return view('eventDetail', compact('event', 'events', 'syarat'));
     }
     public function showArtikel()
     {

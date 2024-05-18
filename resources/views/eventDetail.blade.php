@@ -83,28 +83,23 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <ul class="list">
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                Ut viverra bibendum lorem, at tempus nibh mattis
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                quis nostrud exercitation ullamco laboris nisi
-                                            </li>
+                                            @if (!empty($fasilitas))
+                                                @foreach ($fasilitas as $item)
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        {{ $item['value'] }}
+                                                    </li>
+                                                @endforeach
+                                            @else
+                                                <li>
+                                                    <i class="fa-solid fa-check"></i>
+                                                    Tidak ada Syarat untuk mendaftar.
+                                                </li>
+                                            @endif
+
                                         </ul>
                                     </div>
-                                    <div class="col-md-6">
-                                        <ul class="list">
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                Duis aute irure and dolor in reprehenderit.
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                ante rutrum sed the is sodales augue
-                                            </li>
-                                        </ul>
-                                    </div>
+
                                 </div>
 
                             </div>
