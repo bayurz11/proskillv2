@@ -51,7 +51,8 @@
                         <div class="clases-items mt-0">
                             <div class="clases-bg style-2"></div>
                             <div class="clases-image">
-                                <img src="{{ asset('public/uploads/' . $Offline->banner) }}" alt="img">
+                                <a href="{{ route('Kelastatapmuka_detail', ['id' => $Offline->id]) }}"><img
+                                        src="{{ asset('public/uploads/' . $Offline->banner) }}" alt="img"></a>
                             </div>
                             <div class="clases-content">
                                 <h4>
