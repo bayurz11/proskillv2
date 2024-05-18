@@ -68,7 +68,29 @@
                                 <input type="text" class="form-control" id="instruktur" name="instruktur"
                                     placeholder="Masukkan instruktur kesal anda">
                             </div>
+                            <div class="mb-3">
+                                <label for="fasilitas" class="form-label">Fasilitas dan Materi</label>
+                                <input type="text" class="form-control" id="fasilitas" name="fasilitas">
+                                <small class="text-secondary">Note : Isi Dengan Fasilitas dan Materi kemudian klik
+                                    Enter</small>
+                            </div>
 
+                            <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    var input = document.querySelector('input[name=fasilitas]');
+
+                                    new Tagify(input, {
+                                        whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
+                                        dropdown: {
+                                            enabled: 1,
+                                            maxItems: 20
+                                        }
+                                    });
+                                });
+                            </script>
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Tanggal Ditulis</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl"
