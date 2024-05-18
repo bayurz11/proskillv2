@@ -58,6 +58,7 @@ class indexController extends Controller
     {
         $kelasOffline = KelasTatapMuka::all();
         $klsoffline = KelasTatapMuka::find($id);
+
         $fasilitas = json_decode($kelasOffline->fasilitas, true);
         return view('kelasOfflinedetail', compact('kelasOffline', 'klsoffline', 'fasilitas'));
     }
