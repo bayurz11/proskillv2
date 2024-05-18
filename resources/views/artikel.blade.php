@@ -289,8 +289,9 @@
                             <div class="wid-title">
                                 <h3>Postingan Terbaru</h3>
                             </div>
-                            @foreach ($artikels as $article)
+                            @foreach ($artikel as $article)
                                 <div class="recent-post-area">
+
                                     <div class="recent-items">
                                         <div class="recent-thumb">
                                             <img src="{{ asset('public/uploads/' . $article->banner) }}"
