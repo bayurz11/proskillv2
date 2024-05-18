@@ -152,7 +152,7 @@
 
                             </ul>
                             <a href="#" class="theme-btn w-100 border-style mb-3">
-                                Harga Kelas Rp.{{ number_format($klsoffline->price, 0, ',', '.') }}
+                                Harga Kelas Rp {{ number_format($klsoffline->price, 0, ',', '.') }}
                             </a>
                             <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
                                 class="theme-btn w-100">
