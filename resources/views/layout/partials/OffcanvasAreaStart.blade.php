@@ -59,7 +59,7 @@
                     <div class="header-button mt-4">
                         <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
                             class="theme-btn text-center">
-                            <span>Hubungi Kami<i class="fab fa-whatsapp"></i></span>
+                            <span>Whatsapp Admin<i class="fab fa-whatsapp"></i></span>
                         </a>
                     </div>
                     <div class="social-icon d-flex align-items-center">
