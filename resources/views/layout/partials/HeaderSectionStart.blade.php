@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="content">
-                            <span>Hubungi kami sekarang</span>
+                            <span>Whatsapp Admin sekarang</span>
                             <h5>
                                 <a href="tel:+6281266187125">+62 8126 6187 125</a>
                             </h5>
@@ -80,8 +80,8 @@
                     <div class="header-button">
                         <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn">
                             <span>
-                                Mulai Konsultasi
-                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Hubungi Admin
+                                <i class="fa-solid fa-arrow-right-long" style="color: #028E83;"></i>
                             </span>
                         </a>
                     </div>
