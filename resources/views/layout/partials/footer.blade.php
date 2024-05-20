@@ -94,7 +94,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                     <div class="single-footer-widget style-margin">
                         <div class="widget-head">
-                            <h3>Media Sosial Kami</h3>
+                            <h3>Media Sosial</h3>
                         </div>
                         <ul class="list-area">
                             <li>
