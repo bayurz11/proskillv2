@@ -20,12 +20,6 @@
                                 dengan CEPAT dan BIAYA TERJANGKAU.
                             </p>
 
-                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
-                                data-animation="fadeInUp" data-delay="1.7s" class="theme-btn hover-white"
-                                target="_blank">
-                                Mulai Konsultasi
-                                <i class="fa-solid fa-arrow-right-long"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +81,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                     <div class="single-footer-widget style-margin">
                         <div class="widget-head">
-                            <h3>Media Sosial Kami</h3>
+                            <h3>Media Sosial</h3>
                         </div>
                         <ul class="list-area">
                             <div class="social-icon d-flex align-items-center">
@@ -98,6 +92,12 @@
                                 <a href="https://www.youtube.com/channel/UCNw50VFi4Rdmv1WpKlWGHUQ" target="_blank"><i
                                         class="fa-brands fa-youtube"></i></a>
                             </div>
+                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
+                                data-animation="fadeInUp" data-delay="1.7s" class="theme-btn hover-white"
+                                target="_blank">
+                                Mulai Konsultasi
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
 
                         </ul>
                     </div>
