@@ -133,11 +133,7 @@
                             Privacy Policy
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ route('login_admin') }}">
-                            Admin Login
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </div>
