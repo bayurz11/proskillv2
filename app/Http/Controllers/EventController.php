@@ -139,65 +139,18 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($id)
+    public function edit(Event $event)
     {
-        $event = Event::find($id);
-        if ($event) {
-            return response()->json($event);
-        }
-        return response()->json(['error' => 'Event not found'], 404);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
+    public function update(UpdateEventRequest $request, Event $event)
     {
-        // Validate the request
-        $request->validate([
-            'name_event' => 'required|string|max:255',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'deskripsi' => 'required|string',
-            'lokasi' => 'required|string|max:255',
-            'mulai' => 'required|date',
-            'durasi' => 'required|string|max:255',
-            'tlp' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'syarat' => 'nullable|string',
-        ]);
-
-        // Find the event
-        $event = Event::find($id);
-        if (!$event) {
-            return redirect()->route('event_setting')->with('error', 'Event not found.');
-        }
-
-        // Handle file upload
-        if ($request->hasFile('gambar')) {
-            $gambarName = time() . '.' . $request->gambar->extension();
-            $request->gambar->move(public_path('uploads'), $gambarName);
-            $event->banner = $gambarName; // Update the banner field with new image name
-        }
-
-        // Get the current user's ID
-        $userId = Auth::id();
-
-        // Update event data
-        $event->name_event = $request->name_event;
-        $event->tgl = $request->tgl;
-        $event->user_id = $userId;
-        $event->lokasi = $request->lokasi;
-        $event->mulai = $request->mulai;
-        $event->durasi = $request->durasi;
-        $event->tlp = $request->tlp;
-        $event->email = $request->email;
-        $event->deskripsi = $request->deskripsi;
-        $event->syarat = $request->syarat;
-        $event->save();
-
-        return redirect()->route('event_setting')->with('success', 'Event successfully updated.');
+        //
     }
-
 
     /**
      * Remove the specified resource from storage.
