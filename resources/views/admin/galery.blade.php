@@ -34,7 +34,7 @@
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
                                 <label for="lokasi" class="form-label">Event Location</label>
-                                <input type="text" class="form-control" id="lokasi" name="lokasi">
+                                <input type="text" class="form-control" id="lokasi_edit" name="lokasi">
                             </div>
                             <div class="mb-3">
                                 <label for="name_event" class="form-label">Event Name</label>
@@ -66,7 +66,7 @@
                         .then(response => response.json())
                         .then(data => {
                             $('#edit-id').val(data.id);
-                            $('#lokasi').val(data.lokasi);
+                            $('#lokasi_edit').val(data.lokasi);
                             $('#name_event').val(data.name_event);
                             $('#tgl').val(data.tgl);
 
