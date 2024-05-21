@@ -34,7 +34,8 @@
                     .then(response => response.json())
                     .then(data => {
                         document.getElementById('edit-id').value = data.id;
-                        document.getElementById('link').value = data.link;
+                        document.getElementById('link').value = data
+                        .link; // Set nilai input sesuai dengan data.link
                         document.getElementById('editForm').action = `/data/${data.id}`;
                     })
                     .catch(error => {
