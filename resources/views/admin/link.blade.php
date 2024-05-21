@@ -28,7 +28,7 @@
                             <input type="hidden" id="edit-id" name="id">
                             <div class="mb-3">
                                 <label for="link" class="form-label">Link Video</label>
-                                <input type="text" class="form-control" id="link_edit" name="link" value="">
+                                <input type="text" class="form-control" id="link" name="link" value="">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -50,7 +50,7 @@
                             .then(response => response.json())
                             .then(data => {
                                 document.getElementById('edit-id').value = data.id;
-                                document.getElementById('link_edit').value = data
+                                document.getElementById('link').value = data
                                     .link; // Set nilai input sesuai dengan data.link
                                 document.getElementById('editForm').action = `/data/${data.id}`;
                             })
@@ -62,7 +62,6 @@
             });
         </script>
 
-
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -70,9 +69,9 @@
                         <h6 class="card-title"> link</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="btn-icon-prepend" data-feather="plus-circle"></i>
-                            Tambah Link
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
+                                data-feather="plus-circle"></i>
+                            Tambah link
                         </button>
                         <p class="text-muted mb-3">Jumlah Foto : {{ $link->count() }}</p>
                         <div class="table-responsive">
@@ -92,12 +91,12 @@
                                             <td>{{ $link->link }}</td>
 
                                             <td>
-
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     data-id="{{ $link->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
+
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
