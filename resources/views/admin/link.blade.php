@@ -10,21 +10,25 @@
                 <li class="breadcrumb-item active" aria-current="page">Link</li>
             </ol>
         </nav>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        @include('admin.modal.add_link')
+
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="{{ route('link_store') }}" method="POST" enctype="multipart/form-data">
+                    <form id="editForm" action="" method="POST" enctype="multipart/form-data">
                         @csrf
+                        @method('PUT')
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah link</h5>
+                            <h5 class="modal-title" id="editModalLabel">Edit link</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="btn-close"></button>
                         </div>
                         <div class="modal-body">
-
+                            <input type="hidden" id="edit-id" name="id">
                             <div class="mb-3">
                                 <label for="link" class="form-label">Link Video</label>
-                                <input type="text" class="form-control" id="link" name="link">
+                                <input type="text" class="form-control" id="link" name="link" value="">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -35,7 +39,28 @@
                 </div>
             </div>
         </div>
-        @include('admin.modal.edit_link')
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const editButtons = document.querySelectorAll('.edit-button');
+                editButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const id = this.getAttribute('data-id');
+                        fetch(`/data/${id}/edit`)
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById('edit-id').value = data.id;
+                                document.getElementById('link').value = data
+                                    .link; // Set nilai input sesuai dengan data.link
+                                document.getElementById('editForm').action = `/data/${data.id}`;
+                            })
+                            .catch(error => {
+                                console.error('Error fetching data:', error);
+                            });
+                    });
+                });
+            });
+        </script>
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
