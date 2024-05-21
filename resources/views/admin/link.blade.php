@@ -13,7 +13,7 @@
 
         @include('admin.modal.add_link')
 
-        <div class="modaledit fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <form id="editForm" action="" method="POST" enctype="multipart/form-data">
@@ -69,9 +69,9 @@
                         <h6 class="card-title"> link</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
-                                data-feather="plus-circle"></i>
-                            Tambah Event
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="btn-icon-prepend" data-feather="plus-circle"></i>
+                            Tambah Link
                         </button>
                         <p class="text-muted mb-3">Jumlah Foto : {{ $link->count() }}</p>
                         <div class="table-responsive">
@@ -91,12 +91,12 @@
                                             <td>{{ $link->link }}</td>
 
                                             <td>
+
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
-                                                    title="Edit" data-bs-toggle="modaledit" data-bs-target="#editModal"
+                                                    title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     data-id="{{ $link->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
-
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
