@@ -64,8 +64,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-right d-flex justify-content-end align-items-center">
-                    <div class="author-icon" style="color: #028E83;">
+                <div class="header-right d-flex justify-content-end align-items-center" style="color: #028E83;">
+                    <div class="author-icon">
                         <div class="icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="header-button">
                         <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn">
-                            <span style="color: #028E83;">
+                            <span>
                                 Hubungi Admin
                                 <i class="fa-solid fa-arrow-right-long"></i>
                             </span>
