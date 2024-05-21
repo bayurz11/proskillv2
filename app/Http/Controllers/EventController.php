@@ -194,6 +194,14 @@ class EventController extends Controller
         //
     }
 
+    public function linkupdate(Request $request, $id)
+    {
+        $data = Link::findOrFail($id);
+        $data->link = $request->input('link');
+        $data->save();
+
+        return redirect()->back()->with('success', 'Data updated successfully');
+    }
     /**
      * Remove the specified resource from storage.
      */
