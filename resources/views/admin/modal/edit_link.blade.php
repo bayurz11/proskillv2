@@ -11,7 +11,8 @@
 
                     <div class="mb-3">
                         <label for="link" class="form-label">Link Video</label>
-                        <input type="text" class="form-control" id="link" name="link">
+                        <input type="text" class="form-control" id="link" name="link"
+                            value="{{ $link->link }}">
                     </div>
                 </div>
                 <div class="modal-footer">
