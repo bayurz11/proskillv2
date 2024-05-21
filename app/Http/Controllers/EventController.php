@@ -138,6 +138,11 @@ class EventController extends Controller
         return view('admin.link', compact('user', 'link', 'count'));
     }
 
+    public function linkedit($id)
+    {
+        $data = Link::findOrFail($id);
+        return response()->json($data);
+    }
     /**
      * Show the form for editing the specified resource.
      */
