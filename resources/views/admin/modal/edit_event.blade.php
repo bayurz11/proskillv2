@@ -133,32 +133,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    function populateForm(data) {
-        $('#name_event').val(data.name_event);
-        // Note: You cannot prefill file inputs for security reasons
-        // $('#gambar').val(data.gambar); 
-        $('#lokasi').val(data.lokasi);
-        $('#mulai').val(data.mulai);
-        $('#durasi').val(data.durasi);
-        $('#tlp').val(data.tlp);
-        $('#email').val(data.email);
-        $('#syarat').val(data.syarat);
-        $('#tgl').val(data.tgl);
-
-        // Initialize CKEditor with the description
-        ClassicEditor
-            .create(document.querySelector('#deskripsi_edit'))
-            .then(editor => {
-                editor.setData(data.deskripsi_edit);
-                editor.model.document.on('change:data', () => {
-                    const deskripsi_edit = document.querySelector('#deskripsi_edit');
-                    deskripsi_edit.value = editor.getData();
-                });
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    }
-</script>
