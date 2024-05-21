@@ -132,7 +132,7 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="#">Proskill Akademia</a>
+                    © All Copyright 2024 by <a href="{{ route('tentangkami') }}">Proskill Akademia</a>
                 </p>
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
 
