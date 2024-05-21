@@ -77,7 +77,7 @@
                             </h5>
                         </div>
                     </div>
-                    <div class="header-button">
+                    <div class="header-button" style="color: #028E83;">
                         <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn">
                             <span>
                                 Hubungi Admin
