@@ -114,9 +114,9 @@ class EventController extends Controller
 
         return view('admin.event', compact('user', 'event', 'count'));
     }
-    public function showgalery(Event $event, $id)
+    public function showgalery(Event $event)
     {
-        $gallery = Galery::findOrFail($id);
+
         $user = Auth::user();
         $galery = Galery::all();
         $count = $galery->count();
@@ -124,7 +124,7 @@ class EventController extends Controller
             return redirect()->route('login_admin');
         }
 
-        return view('admin.galery', compact('user', 'galery', 'count', 'gallery'));
+        return view('admin.galery', compact('user', 'galery', 'count'));
     }
     public function showlink(Event $event)
     {
