@@ -66,10 +66,28 @@
                                             <td>{{ $link->link }}</td>
 
                                             <td>
-                                                <button type="button" class="btn btn-primary btn-icon" title="Edit"
-                                                    data-bs-toggle="modal" data-bs-target="#editModal">
+                                                <button type="button" class="btn btn-primary btn-icon edit-button"
+                                                    title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    data-id="{{ $data->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
+                                                <script>
+                                                    document.addEventListener('DOMContentLoaded', function() {
+                                                        const editButtons = document.querySelectorAll('.edit-button');
+                                                        editButtons.forEach(button => {
+                                                            button.addEventListener('click', function() {
+                                                                const id = this.getAttribute('data-id');
+                                                                fetch(`/data/${id}/edit`)
+                                                                    .then(response => response.json())
+                                                                    .then(data => {
+                                                                        document.getElementById('edit-id').value = data.id;
+                                                                        document.getElementById('link').value = data.link;
+                                                                        document.getElementById('editForm').action = `/data/${data.id}`;
+                                                                    });
+                                                            });
+                                                        });
+                                                    });
+                                                </script>
 
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
