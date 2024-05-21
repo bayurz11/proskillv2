@@ -111,7 +111,7 @@
         <div class="container">
             <div class="pricing-wrapper">
                 <div class="section-title text-center mb-0">
-                    <span class="wow fadeInUp">Bergabung Bersama Kami</span>
+                    <span class="wow fadeInUp" style="color: #FE9900; ">Bergabung Bersama Kami</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">Dengan harga murah <br> dapatkan fasilitas fantastis
                     </h2>
                 </div>
