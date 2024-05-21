@@ -175,15 +175,15 @@
                                 <label for="pimpinan" class="form-label">Deskripsi</label>
                                 <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
                                 <textarea id="deskripsi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
-                                                                                                                                    <!-- Menggunakan <textarea> untuk CKEditor -->
-                                <input type="hidden" id="deskripsi_input" name="deskripsi">
+                                                                                                                                                <!-- Menggunakan <textarea> untuk CKEditor -->
+                                <input type="hidden" id="deskripsi_update" name="deskripsi">
                                 <script>
                                     ClassicEditor
                                         .create(document.querySelector('#deskripsi'))
                                         .then(editor => {
                                             editor.model.document.on('change:data', () => {
-                                                const deskripsi_input = document.querySelector('#deskripsi_input');
-                                                deskripsi_input.value = editor.getData();
+                                                const deskripsi_update = document.querySelector('#deskripsi_update');
+                                                deskripsi_update.value = editor.getData();
                                             });
                                         })
                                         .catch(error => {
