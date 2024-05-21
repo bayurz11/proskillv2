@@ -28,7 +28,7 @@
 <body>
 
     <!-- Preloader Start -->
-    {{-- @include('layout.partials.PreloaderStart') --}}
+    @include('layout.partials.PreloaderStart')
 
     <!-- Offcanvas Area Start -->
     @include('layout.partials.OffcanvasAreaStart')
