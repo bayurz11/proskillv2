@@ -148,8 +148,9 @@ class EventController extends Controller
     public function galeryedit($id)
     {
         $gallery = Galery::findOrFail($id);
-        return view('gallery.edit', compact('gallery'));
+        return view('gallery.edit', compact('gallery')); // Pass $gallery to the view
     }
+
 
 
     /**
