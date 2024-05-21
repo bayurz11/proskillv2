@@ -93,6 +93,7 @@
                                                     });
                                                 </script>
 
+
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
