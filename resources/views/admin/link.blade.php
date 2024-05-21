@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-
+        @include('admin.modal.edit_link')
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
@@ -66,7 +66,8 @@
                                             <td>{{ $link->link }}</td>
 
                                             <td>
-                                                <button type="button" class="btn btn-primary btn-icon" title="Edit">
+                                                <button type="button" class="btn btn-primary btn-icon" title="Edit"
+                                                    data-bs-toggle="modal" data-bs-target="#editModal">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
