@@ -332,11 +332,10 @@
         <div class="container">
             <div class="cta-wrapper-2">
                 <div class="row g-4 align-items-center">
-                    <div class="col-lg-6" style="color: #028E83;">
+                    <div class="col-lg-6">
                         <div class="section-title">
-                            <span class="text-white wow fadeInUp" style="color: #FE9900;">Pertanyaan Umum</span>
-                            <h2 class="text-white wow fadeInUp" data-wow-delay=".3s" style="color: #028E83;">Mengapa
-                                Memilih Kami
+                            <span class="wow fadeInUp" style="color: #FE9900;">Pertanyaan Umum</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #028E83;">Mengapa Memilih Kami
                             </h2>
                         </div>
 
