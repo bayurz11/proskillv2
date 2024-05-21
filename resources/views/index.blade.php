@@ -40,7 +40,7 @@
                                             <div class="hero-button">
                                                 <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
                                                     data-animation="fadeInUp" data-delay="1.7s"
-                                                    style="background-color: #028E83; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;"
+                                                    style="background-color: #028E83; color: white; padding: 20px 30px; border-radius: 10px; text-decoration: none;"
                                                     class="theme-btn hover-white" target="_blank">
                                                     Mulai Konsultasi
                                                     <i class="fa-solid fa-arrow-right-long"></i>
