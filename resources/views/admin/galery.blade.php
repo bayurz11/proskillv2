@@ -11,6 +11,7 @@
             </ol>
         </nav>
         @include('admin.modal.add_galery')
+        @include('admin.modal.edit_galery')
 
 
         <div class="row">
@@ -42,7 +43,8 @@
                                             <td>{{ $galery->lokasi }}</td>
                                             <td>{{ $galery->name_event }}</td>
                                             <td>
-                                                <button type="button" class="btn btn-primary btn-icon" title="Edit">
+                                                <button type="button" class="btn btn-primary btn-icon" title="Edit"
+                                                    data-bs-target="#editModal" data-bs-toggle="Modal">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
