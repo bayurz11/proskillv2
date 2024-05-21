@@ -37,7 +37,7 @@
                                             <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #FE9900;);">
                                                 {{ $heroSection->promosi }}
                                             </p>
-                                            <div class="hero-button">
+                                            <div class="hero-button" style="background-color: #028E83;">
                                                 <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
                                                     data-animation="fadeInUp" data-delay="1.7s"
                                                     class="theme-btn hover-white" target="_blank">
