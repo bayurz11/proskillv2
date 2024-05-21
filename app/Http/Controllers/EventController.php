@@ -139,9 +139,13 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Event $event)
+    public function edit($id)
     {
-        //
+        $event = Event::find($id);
+        if ($event) {
+            return response()->json($event);
+        }
+        return response()->json(['error' => 'Event not found'], 404);
     }
 
     /**
