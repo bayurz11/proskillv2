@@ -84,27 +84,7 @@
             </div>
         </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const editButtons = document.querySelectorAll('.edit-button');
-                editButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        const id = this.getAttribute('galery-id');
-                        fetch(`/galery/${id}/edit`)
-                            .then(response => response.json())
-                            .then(galery => {
-                                document.getElementById('edit-id').value = galery.id;
-                                document.getElementById('gambar').value = galery
-                                    .link; // Set nilai input sesuai dengan data.link
-                                document.getElementById('editForm').action = `/galery/${galery.id}`;
-                            })
-                            .catch(error => {
-                                console.error('Error fetching data:', error);
-                            });
-                    });
-                });
-            });
-        </script>
+
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
@@ -135,11 +115,13 @@
                                             <td>{{ $galery->lokasi }}</td>
                                             <td>{{ $galery->name_event }}</td>
                                             <td>
+                                                <!-- Button to Open Edit Modal -->
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     data-id="{{ $galery->id }}">
-                                                    <i data-feather="edit"></i>
+                                                    <i data-feather="edit"></i> Edit
                                                 </button>
+
 
                                                 <button onclick="hapusgalery('{{ $galery->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
