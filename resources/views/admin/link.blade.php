@@ -112,11 +112,14 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
+                                                                    console.log('Link berhasil dihapus. Mengalihkan ke halaman pengaturan link.');
                                                                     // Jika penghapusan berhasil, kembali ke halaman /link_setting
                                                                     window.location.href = '{{ route('link_setting') }}';
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
-                                                                    console.error('Gagal menghapus link');
+                                                                    response.text().then(text => {
+                                                                        console.error('Gagal menghapus link:', text);
+                                                                    });
                                                                 }
                                                             }).catch(error => {
                                                                 console.error('Terjadi kesalahan:', error);
