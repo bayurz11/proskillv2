@@ -53,40 +53,6 @@
                                                     data-bs-toggle="modal" data-bs-target="#updateModal">
                                                     <i data-feather="edit"></i>
                                                 </button>
-                                                <script>
-                                                    function loadEventData(eventId) {
-                                                        // Make an AJAX request to fetch event data by eventId
-                                                        $.ajax({
-                                                            url: '/event/' + eventId, // Ensure you have a route to fetch event data
-                                                            type: 'GET',
-                                                            success: function(data) {
-                                                                // Populate the form fields with the fetched data
-                                                                $('#name_event').val(data.name_event);
-                                                                $('#lokasi').val(data.lokasi);
-                                                                $('#mulai').val(data.mulai);
-                                                                $('#durasi').val(data.durasi);
-                                                                $('#tlp').val(data.tlp);
-                                                                $('#email').val(data.email);
-                                                                $('#deskripsi').val(data.deskripsi);
-                                                                $('#syarat').val(data.syarat);
-                                                                $('#tgl').val(data.tgl);
-
-                                                                // If there's an existing image, show it
-                                                                if (data.banner) {
-                                                                    $('#preview').attr('src', '/uploads/' + data.banner).show();
-                                                                } else {
-                                                                    $('#preview').hide();
-                                                                }
-
-                                                                // Set the form action to the update route
-                                                                $('form').attr('action', '/event_update/' + eventId);
-                                                            },
-                                                            error: function(err) {
-                                                                console.error('Error fetching event data:', err);
-                                                            }
-                                                        });
-                                                    }
-                                                </script>
                                                 <button onclick="hapusevent('{{ $even->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>

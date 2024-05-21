@@ -1,10 +1,10 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form action="{{ route('event_store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Event</h5>
+                    <h5 class="modal-title" id="updateModal">Tambah Event</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                 </div>
                 <div class="modal-body">
@@ -26,16 +26,16 @@
                     <div class="mb-3">
                         <label for="pimpinan" class="form-label">Deskripsi</label>
                         <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-                        <textarea id="deskripsi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
+                        <textarea id="deskripsi_edit" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
                         <!-- Menggunakan <textarea> untuk CKEditor -->
-                        <input type="hidden" id="deskripsi_input" name="deskripsi">
+                        <input type="hidden" id="deskripsi_edit" name="deskripsi_edit">
                         <script>
                             ClassicEditor
-                                .create(document.querySelector('#deskripsi'))
+                                .create(document.querySelector('#deskripsi_edit'))
                                 .then(editor => {
                                     editor.model.document.on('change:data', () => {
-                                        const deskripsi_input = document.querySelector('#deskripsi_input');
-                                        deskripsi_input.value = editor.getData();
+                                        const deskripsi_edit = document.querySelector('#deskripsi_edit');
+                                        deskripsi_edit.value = editor.getData();
                                     });
                                 })
                                 .catch(error => {
