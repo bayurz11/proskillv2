@@ -276,7 +276,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <span class="text-white wow fadeInUp">Kelas online Kami</span>
-                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">Bergabunglah dengan Kami dan <br> Temukan Potensi
+                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Bergabunglah dengan
+                    Kami dan <br> Temukan Potensi
                     Anda!</h2>
             </div>
             <div class="array-button">
@@ -463,7 +464,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <span class="wow fadeInUp">Kesan siswa ke ProSkill</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Pengalaman mereka bukan sekadar cerita. <br> Dengarkan suara
+                <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Pengalaman mereka bukan sekadar
+                    cerita. <br> Dengarkan suara
                     siswa tentang perjalanan mereka bersama kami.</h2>
             </div>
             <div class="swiper testimonial-slider">
@@ -607,7 +609,8 @@
         <div class="container">
             <div class="section-title text-center">
                 <span class="wow fadeInUp">Artikel</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Berita dan Tips Singkat tentang Komputer</h2>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Berita dan Tips Singkat tentang
+                    Komputer</h2>
             </div>
             <div class="news-wrapper">
                 <div class="row align-items-center">
