@@ -66,20 +66,19 @@
                 </div>
                 <div class="header-right d-flex justify-content-end align-items-center">
                     <div class="author-icon">
-                        <div class="icon" style="color: #028E83;">
+                        <div class="icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
 
-                        <div class="content" style="color: #028E83;">
+                        <div class="content">
                             <span>Whatsapp Admin sekarang</span>
                             <h5>
-                                <a href="tel:+6281266187125" style="color: #028E83;">+62 8126 6187 125</a>
+                                <a href="tel:+6281266187125">+62 8126 6187 125</a>
                             </h5>
                         </div>
                     </div>
                     <div class="header-button">
-                        <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn"
-                            style="color: #028E83;">
+                        <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn">
                             <span>
                                 Hubungi Admin
                                 <i class="fa-solid fa-arrow-right-long"></i>
@@ -87,12 +86,11 @@
                         </a>
                     </div>
                     <div class="header__hamburger d-xl-none my-auto">
-                        <div class="sidebar__toggle" style="color: #028E83;">
+                        <div class="sidebar__toggle">
                             <i class="fas fa-bars"></i>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
