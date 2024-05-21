@@ -11,12 +11,11 @@
 
                     <div class="mb-3">
                         <label for="link" class="form-label">Link Video</label>
-                        <input type="text" class="form-control" id="link" name="link"
-                            value="{{ $link->link }}">
+                        <input type="text" class="form-control" id="link" name="link">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
