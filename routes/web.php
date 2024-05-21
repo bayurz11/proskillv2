@@ -69,7 +69,7 @@ Route::put('/galery/{id}', [EventController::class, 'galeryupdate'])->name('gall
 //---Link---//
 Route::get('/link_setting', [EventController::class, 'showlink'])->name('link_setting');
 Route::post('/link_store', [EventController::class, 'storelink'])->name('link_store');
-Route::delete('/galery_destroy/{id}', [EventController::class, 'destroygalery'])->name('galery_destroy');
+Route::delete('/link_destroy/{id}', [EventController::class, 'destroylink'])->name('link_destroy');
 Route::get('/data/{id}/edit', [EventController::class, 'linkedit'])->name('data.edit');
 Route::put('/data/{id}', [EventController::class, 'linkupdate'])->name('data.update');
 

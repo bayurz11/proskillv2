@@ -105,7 +105,7 @@
                                                 <script>
                                                     function hapuslink(id) {
                                                         if (confirm('Apakah Anda yakin ingin menghapus link ini?')) {
-                                                            fetch(`/galery_destroy/${id}`, {
+                                                            fetch(`/link_destroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
                                                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'

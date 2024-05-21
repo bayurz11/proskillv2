@@ -235,4 +235,19 @@ class EventController extends Controller
 
         return redirect()->route('galery_setting')->with('success', 'Gambar berhasil dihapus');
     }
+    public function destroylink(Event $event, $id)
+    {
+        // Temukan artikel berdasarkan ID
+        $link = Link::find($id);
+
+        // Periksa apakah artikel ditemukan
+        if (!$link) {
+            return redirect()->route('link_setting')->with('error', 'Link tidak ditemukan');
+        }
+
+        // Hapus artikel
+        $link->delete();
+
+        return redirect()->route('link_setting')->with('success', 'Link berhasil dihapus');
+    }
 }
