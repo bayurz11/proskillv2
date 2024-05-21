@@ -72,28 +72,6 @@
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <script>
-                                                    document.addEventListener('DOMContentLoaded', function() {
-                                                        const editButtons = document.querySelectorAll('.edit-button');
-                                                        editButtons.forEach(button => {
-                                                            button.addEventListener('click', function() {
-                                                                const id = this.getAttribute('data-id');
-                                                                fetch(`/data/${id}/edit`)
-                                                                    .then(response => response.json())
-                                                                    .then(data => {
-                                                                        // Mengisi input field dengan nilai dari data yang diambil
-                                                                        document.getElementById('edit-id').value = data.id;
-                                                                        document.getElementById('link').value = data.link;
-                                                                        document.getElementById('editForm').action = `/data/${data.id}`;
-                                                                    })
-                                                                    .catch(error => {
-                                                                        console.error('Error fetching data:', error);
-                                                                    });
-                                                            });
-                                                        });
-                                                    });
-                                                </script>
-
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
