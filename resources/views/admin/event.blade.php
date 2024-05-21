@@ -50,8 +50,7 @@
                                             <td>{{ $even->durasi }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit"
-                                                    data-bs-toggle="modal" data-bs-target="#updateModal"
-                                                    onclick="loadEventData({{ $event->id }})">
+                                                    data-bs-toggle="modal" data-bs-target="#updateModal">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
