@@ -112,8 +112,8 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Jika penghapusan berhasil, refresh halaman
-                                                                    window.location.reload();
+                                                                    // Jika penghapusan berhasil, kembali ke halaman /link_setting
+                                                                    window.location.href = '{{ route('link_setting') }}';
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
                                                                     console.error('Gagal menghapus link');
