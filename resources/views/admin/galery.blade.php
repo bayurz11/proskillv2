@@ -11,6 +11,7 @@
             </ol>
         </nav>
         @include('admin.modal.add_galery')
+
         @include('admin.modal.edit_galery')
 
 
