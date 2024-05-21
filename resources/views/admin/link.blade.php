@@ -13,7 +13,7 @@
 
         @include('admin.modal.add_link')
 
-        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modaledit fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <form id="editForm" action="" method="POST" enctype="multipart/form-data">
