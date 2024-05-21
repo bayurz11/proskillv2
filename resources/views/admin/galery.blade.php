@@ -30,7 +30,7 @@
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                                 <small class="text-secondary">Note: Upload an image for the event</small>
                             </div>
-                            <img id="preview" src="#" alt="Preview Image"
+                            <img id="preview_edit" src="#" alt="Preview Image"
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
                                 <label for="lokasi" class="form-label">Event Location</label>
@@ -38,11 +38,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="name_event" class="form-label">Event Name</label>
-                                <input type="text" class="form-control" id="name_event" name="name_event">
+                                <input type="text" class="form-control" id="name_event_edit" name="name_event">
                             </div>
                             <div class="mb-3">
                                 <label for="tgl" class="form-label">Written Date</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                                <input type="text" class="form-control" id="tgl_edit" placeholder="tgl" name="tgl"
                                     readonly>
                             </div>
                         </div>
@@ -67,14 +67,14 @@
                         .then(data => {
                             $('#edit-id').val(data.id);
                             $('#lokasi_edit').val(data.lokasi);
-                            $('#name_event').val(data.name_event);
-                            $('#tgl').val(data.tgl);
+                            $('#name_event_edit').val(data.name_event);
+                            $('#tgl_edit').val(data.tgl);
 
                             // If there is an image, show it in the preview
                             if (data.gambar) {
-                                $('#preview').attr('src', `/path/to/images/${data.gambar}`).show();
+                                $('#preview_edit').attr('src', `/path/to/images/${data.gambar}`).show();
                             } else {
-                                $('#preview').hide();
+                                $('#preview_edit').hide();
                             }
 
                             // Set the form action to the update route
@@ -94,7 +94,7 @@
                     if (input.files && input.files[0]) {
                         var reader = new FileReader();
                         reader.onload = function(e) {
-                            $('#preview').attr('src', e.target.result).show();
+                            $('#preview_edit').attr('src', e.target.result).show();
                         };
                         reader.readAsDataURL(input.files[0]);
                     }
@@ -110,7 +110,7 @@
                 ];
                 day = day < 10 ? '0' + day : day;
                 var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
-                $('#tgl').val(formattedDate);
+                $('#tgl_edit').val(formattedDate);
             });
         </script>
 
