@@ -78,7 +78,8 @@
                         </div>
                     </div>
                     <div class="header-button">
-                        <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn">
+                        <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn"
+                            style="background-color: #028E83; color: white; padding: 20px 30px; border-radius: 10px; text-decoration: none;">
                             <span>
                                 Hubungi Admin
                                 <i class="fa-solid fa-arrow-right-long"></i>
