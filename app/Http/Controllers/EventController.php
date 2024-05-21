@@ -148,7 +148,7 @@ class EventController extends Controller
     public function galeryedit($id)
     {
         $galery = Galery::findOrFail($id);
-        return view('gallery.edit', compact('galery')); // Pass $gallery to the view
+        return view('admin.modal.edit_galery', compact('galery')); // Pass $gallery to the view
     }
 
 
