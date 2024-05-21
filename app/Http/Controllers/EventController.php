@@ -151,6 +151,7 @@ class EventController extends Controller
         return view('gallery.edit', compact('gallery'));
     }
 
+
     /**
      * Update the specified resource in storage.
      */
