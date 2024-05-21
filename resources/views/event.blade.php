@@ -1,4 +1,4 @@
-@section('title', 'ProSkill Akademia | Artikel')
+@section('title', 'ProSkill Akademia | Event')
 @extends('layout.mainlayout')
 @section('content')
 

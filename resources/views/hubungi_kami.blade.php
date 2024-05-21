@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">@yield('title')</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Hubungi Kami</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
@@ -35,7 +35,7 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Tentang Kami
+                        Hubungi Kami
                     </li>
                 </ul>
             </div>
@@ -107,8 +107,7 @@
                                     <div class="content">
                                         <p>Alamat</p>
                                         <h3>
-                                            Jl. H. Ungar No.2C, Tj. Ayun Sakti, Kec. Bukit Bestari, Kota Tanjung Pinang,
-                                            Kepulauan Riau 29113
+                                            Jl. H. Ungar No.2C, Tj. Ayun Sakti, Kec. Bukit Bestari, Kota Tanjung Pinang
                                         </h3>
                                     </div>
                                 </div>
