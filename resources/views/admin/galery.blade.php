@@ -62,7 +62,7 @@
                 // Fetch data when the edit button is clicked
                 $('.edit-button').on('click', function() {
                     const id = $(this).data('id');
-                    fetch(`/data/${id}/edit`)
+                    fetch(`/galery/${id}/edit`)
                         .then(response => response.json())
                         .then(data => {
                             $('#edit-id').val(data.id);
@@ -78,7 +78,7 @@
                             }
 
                             // Set the form action to the update route
-                            $('#editForm').attr('action', `/data/${data.id}`);
+                            $('#editForm').attr('action', `/galery/${data.id}`);
                         })
                         .catch(error => {
                             console.error('Error fetching data:', error);
@@ -113,6 +113,7 @@
                 $('#tgl').val(formattedDate);
             });
         </script>
+
 
 
         <div class="row">
@@ -150,6 +151,7 @@
                                                     data-id="{{ $galery->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
+
 
 
                                                 <button onclick="hapusgalery('{{ $galery->id }}')"

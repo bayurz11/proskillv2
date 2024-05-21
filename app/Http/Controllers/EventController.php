@@ -163,30 +163,20 @@ class EventController extends Controller
      */
     public function galeryupdate(Request $request, $id)
     {
-        $gallery = Galery::findOrFail($id);
+        $data = Galery::findOrFail($id);
+        $data->lokasi = $request->lokasi;
+        $data->name_event = $request->name_event;
+        $data->tgl = $request->tgl;
 
-        // Validasi input form
-        $request->validate([
-            'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Contoh validasi untuk gambar
-            'lokasi' => 'required|string',
-            'name_event' => 'required|string',
-            'tgl' => 'required|date',
-        ]);
-
-        // Proses pembaruan data
-        $gallery->lokasi = $request->lokasi;
-        $gallery->name_event = $request->name_event;
-        $gallery->tgl = $request->tgl;
-
-        // Jika ada gambar baru diunggah, simpan gambar tersebut
         if ($request->hasFile('gambar')) {
-            $image = $request->file('gambar');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('images'), $imageName);
-            $gallery->gambar = $imageName;
+            // Handle file upload
+            $file = $request->file('gambar');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('path/to/images'), $filename);
+            $data->gambar = $filename;
         }
 
-        $gallery->save();
+        $data->save();
         return redirect()->route('galery_setting')->with('success', 'Gambar Berhasil Diupdate.');
     }
     public function update(UpdateEventRequest $request, Event $event)
