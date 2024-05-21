@@ -1,8 +1,9 @@
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('gallery_update') }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalLabel">Edit Galery</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
