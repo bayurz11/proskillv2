@@ -28,7 +28,7 @@
                             <input type="hidden" id="edit-id" name="id">
                             <div class="mb-3">
                                 <label for="link" class="form-label">Link Video</label>
-                                <input type="text" class="form-control" id="link" name="link" value="">
+                                <input type="text" class="form-control" id="link_edit" name="link" value="">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -50,7 +50,7 @@
                             .then(response => response.json())
                             .then(data => {
                                 document.getElementById('edit-id').value = data.id;
-                                document.getElementById('link').value = data
+                                document.getElementById('link_edit').value = data
                                     .link; // Set nilai input sesuai dengan data.link
                                 document.getElementById('editForm').action = `/data/${data.id}`;
                             })
@@ -61,6 +61,7 @@
                 });
             });
         </script>
+
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
