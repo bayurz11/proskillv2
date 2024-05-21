@@ -42,7 +42,7 @@
                                                     data-animation="fadeInUp" data-delay="1.7s"
                                                     style="background-color: #028E83; color: white; padding: 20px 30px; border-radius: 10px; text-decoration: none;"
                                                     class="theme-btn hover-white" target="_blank">
-                                                    Mulai Konsultasi
+                                                    Hubungi Admin
                                                     <i class="fa-solid fa-arrow-right-long"></i>
                                                 </a>
 
@@ -165,7 +165,7 @@
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                    class="theme-btn" target="_blank"> Hubungi Admin<i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                                 </ul>
 
                                 <a href="https://wa.me/6281266187125?text=Kelas%20Mahir%20Aplikasi%20Office%20Tingkat%20Advance,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                    class="theme-btn" target="_blank"> Hubungi Admin<i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>
@@ -254,7 +254,7 @@
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Kelas%20Digital%20Design%20Menggunakan%20Canva%20dan%20Figma,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank">Hubungi kami<i
+                                    class="theme-btn" target="_blank"> Hubungi Admin<i
                                         class="fa-solid fa-arrow-right-long"></i></a>
                             </div>
                         </div>

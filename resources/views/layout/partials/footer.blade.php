@@ -27,12 +27,12 @@
                                 <a href="https://www.youtube.com/channel/UCNw50VFi4Rdmv1WpKlWGHUQ" target="_blank"><i
                                         class="fa-brands fa-youtube"></i></a>
                             </div>
-                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
+                            {{-- <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
                                 data-animation="fadeInUp" data-delay="1.7s" class="theme-btn hover-white"
                                 target="_blank">
                                 Mulai Konsultasi
                                 <i class="fa-solid fa-arrow-right-long"></i>
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>
@@ -96,23 +96,21 @@
                         <div class="widget-head">
                             <h3>Media Sosial</h3>
                         </div>
-                        <ul class="list-area">
-                            <li>
-                                <a href="program-details.html">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    Download Browsur
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    Login
-                                </a>
-                            </li>
-
-                        </ul>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://www.instagram.com/proskillakademia?igsh=MTJzdjNteGNrMGVpOA=="
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/proskill-akademia/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCNw50VFi4Rdmv1WpKlWGHUQ" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -124,7 +122,7 @@
         <div class="container">
             <div class="footer-wrapper d-flex align-items-center justify-content-between">
                 <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Proskill Akademia</a>
+                    © All Copyright 2024 by <a href="#">Proskill Akademia</a>
                 </p>
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
 
