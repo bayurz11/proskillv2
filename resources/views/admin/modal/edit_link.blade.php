@@ -12,7 +12,7 @@
                     <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
                         <label for="link" class="form-label">Link Video</label>
-                        <input type="text" class="form-control" id="link" name="link">
+                        <input type="text" class="form-control" id="link" name="link" value="">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -23,3 +23,23 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const editButtons = document.querySelectorAll('.edit-button');
+        editButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const id = this.getAttribute('data-id');
+                fetch(`/data/${id}/edit`)
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('edit-id').value = data.id;
+                        document.getElementById('link').value = data.link;
+                        document.getElementById('editForm').action = `/data/${data.id}`;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                    });
+            });
+        });
+    });
+</script>
