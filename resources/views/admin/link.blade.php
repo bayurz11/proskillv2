@@ -71,6 +71,7 @@
                                                     data-id="{{ $link->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
+
                                                 <script>
                                                     document.addEventListener('DOMContentLoaded', function() {
                                                         const editButtons = document.querySelectorAll('.edit-button');
@@ -92,7 +93,6 @@
                                                         });
                                                     });
                                                 </script>
-
 
                                                 <button onclick="hapuslink('{{ $link->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
