@@ -22,7 +22,7 @@
                     <img id="preview" src="#" alt="Preview Gambar"
                         style="max-width: 100%; max-height: 200px; display: none;">
 
-                    <div class="mb-3">
+                    {{-- <div class="mb-3">
                         <label for="pimpinan" class="form-label">Deskripsi</label>
                         <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
                         <textarea id="deskripsi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
@@ -40,7 +40,7 @@
                                     console.error(error);
                                 });
                         </script>
-                    </div>
+                    </div> --}}
                     <div class="mb-3">
                         <label for="lokasi" class="form-label">Lokasi Event</label>
                         <input type="text" class="form-control" id="lokasi" name="lokasi">
