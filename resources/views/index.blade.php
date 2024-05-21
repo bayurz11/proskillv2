@@ -314,13 +314,13 @@
 
     <!-- FAQ Start -->
     <section class="cta-section-2 section-padding fix bg-cover">
-        <div class="parasuit-shape float-bob-y">
+        {{-- <div class="parasuit-shape float-bob-y">
             <img src="public/assets/img/cta/parasuit-1.png" alt="shape-img">
-        </div>
-        {{-- <div class="parasuit-shape-2 float-bob-x">
+        </div> --}}
+        <div class="parasuit-shape-2 float-bob-x">
             <img src="public/assets/img/cta/parasuit-2.png" alt="shape-img">
         </div>
-        <div class="pencil-shape">
+        {{-- <div class="pencil-shape">
             <img src="public/assets/img/cta/pencil-3.png" alt="shape-img">
         </div>
         <div class="hand-shape">
