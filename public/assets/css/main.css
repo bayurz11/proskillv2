@@ -13,7 +13,7 @@ Version: 1.0.0
     --body: #fff;
     --black: #000;
     --white: #fff;
-    --theme: #f39f5f;
+    --theme: #028E83;
     --theme2: #028E83;
     --header: #385469;
     --text: #5c707e;
@@ -5614,7 +5614,7 @@ span {
     height: 2px;
     background: linear-gradient(
         90deg,
-        #f39f5f 4.85%,
+        #028E83 4.85%,
         rgba(255, 255, 255, 0) 96.39%
     );
     content: "";
@@ -5627,7 +5627,7 @@ span {
     height: 2px;
     background: linear-gradient(
         90deg,
-        #f39f5f 4.85%,
+        #028E83 4.85%,
         rgba(255, 255, 255, 0) 96.39%
     );
     content: "";
