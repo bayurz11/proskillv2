@@ -317,7 +317,7 @@
         <div class="parasuit-shape float-bob-y">
             <img src="public/assets/img/cta/parasuit-1.png" alt="shape-img">
         </div>
-        <div class="parasuit-shape-2 float-bob-x">
+        {{-- <div class="parasuit-shape-2 float-bob-x">
             <img src="public/assets/img/cta/parasuit-2.png" alt="shape-img">
         </div>
         <div class="pencil-shape">
@@ -328,7 +328,7 @@
         </div>
         <div class="line-shape">
             <img src="public/assets/img/cta/line.png" alt="shape-img">
-        </div>
+        </div> --}}
         <div class="container">
             <div class="cta-wrapper-2">
                 <div class="row g-4 align-items-center">
