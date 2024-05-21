@@ -107,7 +107,7 @@
                                     <div class="content">
                                         <p>Alamat</p>
                                         <h3>
-                                            Jl. H. Ungar No.2C, Tj. Ayun Sakti, Kec. Bukit Bestari, Kota Tanjung Pinang
+                                            Jl. H. Ungar No.2C, Kota Tanjung Pinang, Kepulauan Riau
                                         </h3>
                                     </div>
                                 </div>
