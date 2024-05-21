@@ -12,78 +12,107 @@
         </nav>
         @include('admin.modal.add_galery')
 
+        <!-- Modal for Editing Gallery -->
         <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <form id="editForm" action="" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="modal-header">
-                            <h5 class="modal-title" id="editModalLabel">Edit Galery</h5>
+                            <h5 class="modal-title" id="editModalLabel">Edit Gallery</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <input type="hidden" id="edit-id" name="id">
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="gambar" class="form-label">Benner/Gambar</label>
+                                <label for="gambar" class="form-label">Banner/Image</label>
                                 <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                                <small class="text-secondary">Note: Unggah gambar untuk event yang akan ditulis</small>
+                                <small class="text-secondary">Note: Upload an image for the event</small>
                             </div>
-                            <img id="preview" src="#" alt="Preview Gambar"
+                            <img id="preview" src="#" alt="Preview Image"
                                 style="max-width: 100%; max-height: 200px; display: none;">
                             <div class="mb-3">
-                                <label for="lokasi" class="form-label">Lokasi Event</label>
+                                <label for="lokasi" class="form-label">Event Location</label>
                                 <input type="text" class="form-control" id="lokasi" name="lokasi">
                             </div>
                             <div class="mb-3">
-                                <label for="name_event" class="form-label">Nama Event</label>
+                                <label for="name_event" class="form-label">Event Name</label>
                                 <input type="text" class="form-control" id="name_event" name="name_event">
                             </div>
                             <div class="mb-3">
-                                <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                                <label for="tgl" class="form-label">Written Date</label>
                                 <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
                                     readonly>
                             </div>
-                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                            <script>
-                                $(document).ready(function() {
-                                    $("#gambar").change(function() {
-                                        readURL(this);
-                                    });
-                                    var currentDate = new Date();
-                                    var day = currentDate.getDate();
-                                    var month = currentDate.getMonth();
-                                    var year = currentDate.getFullYear();
-                                    var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
-                                        "September", "Oktober", "November", "Desember"
-                                    ];
-                                    day = day < 10 ? '0' + day : day;
-                                    var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
-                                    $('#tgl').val(formattedDate);
-                                });
-
-                                function readURL(input) {
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-
-                                        reader.onload = function(e) {
-                                            $('#preview').attr('src', e.target.result).show();
-                                        };
-
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
 
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Fetch data when the edit button is clicked
+                $('.edit-button').on('click', function() {
+                    const id = $(this).data('id');
+                    fetch(`/data/${id}/edit`)
+                        .then(response => response.json())
+                        .then(data => {
+                            $('#edit-id').val(data.id);
+                            $('#lokasi').val(data.lokasi);
+                            $('#name_event').val(data.name_event);
+                            $('#tgl').val(data.tgl);
+
+                            // If there is an image, show it in the preview
+                            if (data.gambar) {
+                                $('#preview').attr('src', `/path/to/images/${data.gambar}`).show();
+                            } else {
+                                $('#preview').hide();
+                            }
+
+                            // Set the form action to the update route
+                            $('#editForm').attr('action', `/data/${data.id}`);
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data:', error);
+                        });
+                });
+
+                // Display the uploaded image preview
+                $('#gambar').change(function() {
+                    readURL(this);
+                });
+
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function(e) {
+                            $('#preview').attr('src', e.target.result).show();
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+                // Set the current date to the date input
+                var currentDate = new Date();
+                var day = currentDate.getDate();
+                var month = currentDate.getMonth();
+                var year = currentDate.getFullYear();
+                var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+                    "September", "Oktober", "November", "Desember"
+                ];
+                day = day < 10 ? '0' + day : day;
+                var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+                $('#tgl').val(formattedDate);
+            });
+        </script>
 
 
         <div class="row">

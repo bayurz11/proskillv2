@@ -152,8 +152,8 @@ class EventController extends Controller
     }
     public function galeryedit($id)
     {
-        $galery = Galery::findOrFail($id);
-        return response()->json($galery);
+        $data = Galery::findOrFail($id);
+        return response()->json($data);
     }
 
 

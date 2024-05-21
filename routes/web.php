@@ -63,6 +63,8 @@ Route::delete('/event_destroy/{id}', [EventController::class, 'destroy'])->name(
 Route::get('/galery_setting', [EventController::class, 'showgalery'])->name('galery_setting');
 Route::post('/galery_store', [EventController::class, 'storegalery'])->name('galery_store');
 Route::delete('/galery_destroy/{id}', [EventController::class, 'destroygalery'])->name('galery_destroy');
+Route::get('/data/{id}/edit', [EventController::class, 'galeryedit'])->name('data.edit');
+Route::put('/data/{id}', [EventController::class, 'update'])->name('data.update');
 
 //---end Galery---//
 
