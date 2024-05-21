@@ -15,12 +15,12 @@
                                 <ul>
                                     <li class="{{ Request::is('/') ? 'active' : '' }}" style="margin-right: 50px;">
                                         <a href="{{ url('/') }}"> <span
-                                                {{ Request::is('/') ? 'style=color:#FE9900;' : '' }}>Beranda</span></a>
+                                                {{ Request::is('/') ? 'style=color:#028E83;' : '' }}>Beranda</span></a>
                                     </li>
 
                                     <li class="{{ Request::is('kelas*') ? 'active' : '' }}">
                                         <a href="#"
-                                            style="{{ Request::is('Kelastatapmuka', 'kelasOnline') ? 'color:#FE9900;' : '' }}">
+                                            style="{{ Request::is('Kelastatapmuka', 'kelasOnline') ? 'color:#028E83;' : '' }}">
                                             Kelas
                                             <i class="fas fa-angle-down"></i>
                                         </a>
@@ -37,16 +37,16 @@
 
                                     <li class="{{ Request::is('event*') ? 'active' : '' }}">
                                         <a href="{{ url('event') }}"><span
-                                                {{ Request::is('event') ? 'style=color:#FE9900;' : '' }}>Event</span></a>
+                                                {{ Request::is('event') ? 'style=color:#028E83;' : '' }}>Event</span></a>
                                     </li>
 
                                     <li class="{{ Request::is('artikel*') ? 'active' : '' }}">
                                         <a href="{{ url('artikel') }}"><span
-                                                {{ Request::is('artikel') ? 'style=color:#FE9900;' : '' }}>Artikel</span></a>
+                                                {{ Request::is('artikel') ? 'style=color:#028E83;' : '' }}>Artikel</span></a>
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#"
-                                            style="{{ Request::is('tentangkami', 'hubungikami') ? 'color:#FE9900;' : '' }}">
+                                            style="{{ Request::is('tentangkami', 'hubungikami') ? 'color:#028E83;' : '' }}">
                                             Profil
                                             <i class="fas fa-angle-down"></i>
                                         </a>
