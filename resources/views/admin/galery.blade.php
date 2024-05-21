@@ -45,7 +45,7 @@
                                             <td>{{ $galery->name_event }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon" title="Edit"
-                                                    data-bs-target="#editModal" data-bs-toggle="Modal">
+                                                    data-bs-toggle="modal" data-bs-target="#editModal">
                                                     <i data-feather="edit"></i>
                                                 </button>
 

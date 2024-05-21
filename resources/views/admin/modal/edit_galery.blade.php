@@ -1,40 +1,33 @@
-<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <form action="{{ route('galery_store') }}" method="POST" enctype="multipart/form-data">
+            <form action="#" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModal">Tambah Galery</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
+                    <h5 class="modal-title" id="editModalLabel">Edit Galery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-
                     <div class="mb-3">
                         <label for="gambar" class="form-label">Benner/Gambar</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                        <small class="text-secondary">Note : Unggah gambar untuk event yang akan
-                            ditulis</small>
+                        <small class="text-secondary">Note: Unggah gambar untuk event yang akan ditulis</small>
                     </div>
                     <img id="preview" src="#" alt="Preview Gambar"
                         style="max-width: 100%; max-height: 200px; display: none;">
-
-
                     <div class="mb-3">
                         <label for="lokasi" class="form-label">Lokasi Event</label>
                         <input type="text" class="form-control" id="lokasi" name="lokasi">
                     </div>
                     <div class="mb-3">
-                        <label for="name_event" class="form-label">nama Event</label>
+                        <label for="name_event" class="form-label">Nama Event</label>
                         <input type="text" class="form-control" id="name_event" name="name_event">
                     </div>
-
                     <div class="mb-3">
                         <label for="tgl" class="form-label">Tanggal Ditulis</label>
                         <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
                             readonly>
                     </div>
-
                     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                     <script>
                         $(document).ready(function() {
@@ -65,7 +58,6 @@
                             }
                         }
                     </script>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
