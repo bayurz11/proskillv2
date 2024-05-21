@@ -12,13 +12,12 @@
                     <div class="mb-3">
                         <label for="name_event" class="form-label">Judul event</label>
                         <input type="text" class="form-control" id="name_event" name="name_event"
-                            placeholder="Masukkan Nama event" value="{{ $even->name_event }}">
+                            placeholder="Masukkan Nama event">
                     </div>
                     <div class="mb-3">
                         <label for="gambar" class="form-label">Benner/Gambar</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                        <small class="text-secondary">Note : Unggah gambar untuk event yang akan
-                            ditulis</small>
+                        <small class="text-secondary">Note : Unggah gambar untuk event yang akan ditulis</small>
                     </div>
                     <img id="preview" src="#" alt="Preview Gambar"
                         style="max-width: 100%; max-height: 200px; display: none;">
@@ -27,7 +26,6 @@
                         <label for="pimpinan" class="form-label">Deskripsi</label>
                         <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
                         <textarea id="deskripsi" style="height: 800px; width: 200px; font-size: 18px;"></textarea>
-                        <!-- Menggunakan <textarea> untuk CKEditor -->
                         <input type="hidden" id="deskripsi_update" name="deskripsi">
                         <script>
                             ClassicEditor
@@ -85,7 +83,6 @@
                             });
                         });
                     </script>
-
 
                     <div class="mb-3">
                         <label for="tgl" class="form-label">Tanggal Ditulis</label>
