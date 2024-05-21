@@ -83,6 +83,7 @@ class EventController extends Controller
             return redirect()->route('galery_setting')->with('error', 'Pilih gambar terlebih dahulu.');
         }
     }
+
     public function storelink(Request $request)
     {
         // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
@@ -143,10 +144,43 @@ class EventController extends Controller
     {
         //
     }
+    public function galeryedit($id)
+    {
+        $gallery = Galery::findOrFail($id);
+        return view('gallery.edit', compact('gallery'));
+    }
 
     /**
      * Update the specified resource in storage.
      */
+    public function galeryupdate(Request $request, $id)
+    {
+        $gallery = Galery::findOrFail($id);
+
+        // Validasi input form
+        $request->validate([
+            'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Contoh validasi untuk gambar
+            'lokasi' => 'required|string',
+            'name_event' => 'required|string',
+            'tgl' => 'required|date',
+        ]);
+
+        // Proses pembaruan data
+        $gallery->lokasi = $request->lokasi;
+        $gallery->name_event = $request->name_event;
+        $gallery->tgl = $request->tgl;
+
+        // Jika ada gambar baru diunggah, simpan gambar tersebut
+        if ($request->hasFile('gambar')) {
+            $image = $request->file('gambar');
+            $imageName = time() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('images'), $imageName);
+            $gallery->gambar = $imageName;
+        }
+
+        $gallery->save();
+        return redirect()->route('galery_setting')->with('success', 'Gambar Berhasil Diupdate.');
+    }
     public function update(UpdateEventRequest $request, Event $event)
     {
         //
