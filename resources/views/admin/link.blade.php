@@ -92,7 +92,7 @@
 
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
-                                                    title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    title="Edit" data-bs-toggle="modaledit" data-bs-target="#editModal"
                                                     data-id="{{ $link->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
