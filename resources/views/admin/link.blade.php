@@ -80,9 +80,13 @@
                                                                 fetch(`/data/${id}/edit`)
                                                                     .then(response => response.json())
                                                                     .then(data => {
+                                                                        // Mengisi input field dengan nilai dari data yang diambil
                                                                         document.getElementById('edit-id').value = data.id;
                                                                         document.getElementById('link').value = data.link;
                                                                         document.getElementById('editForm').action = `/data/${data.id}`;
+                                                                    })
+                                                                    .catch(error => {
+                                                                        console.error('Error fetching data:', error);
                                                                     });
                                                             });
                                                         });
