@@ -148,7 +148,7 @@
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     data-id="{{ $galery->id }}">
-                                                    <i data-feather="edit"></i> Edit
+                                                    <i data-feather="edit"></i>
                                                 </button>
 
 
