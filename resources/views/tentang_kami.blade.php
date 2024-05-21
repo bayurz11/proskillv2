@@ -44,9 +44,7 @@
 
     <!-- About Activities Section Start -->
     <section class="about-activities-section-2 style-2 section-padding">
-        <div class="zebra-shape float-bob-y">
-            <img src="public/assets/img/about/zebra.png" alt="shape-img">
-        </div>
+
         <div class="bottom-shape">
             <img src="public/assets/img/section-top-shape-2.png" alt="shape-img">
         </div>
