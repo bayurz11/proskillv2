@@ -88,9 +88,9 @@
 
 
                     <div class="mb-3">
-                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                        <label for="tgl" class="form-label">Tanggal</label>
                         <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                            readonly>
+                            readonly value="{{ $event->tgl }}">
                     </div>
 
                     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
