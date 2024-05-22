@@ -298,7 +298,7 @@
                                 <div class="clases-content">
                                     <h4><a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
                                     </h4>
-                                    <p>Dasar Komputer, Productivity Tools, Internet Basics. Bergabung sekarang! </p>
+
                                     <ul class="clases-schedule">
                                         <li><span>Level</span> <br>{{ $kelasonline->level }}</li>
 
