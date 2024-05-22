@@ -5,22 +5,22 @@
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
         <div class="line-shape">
-            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img" loading="lazy">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img" loading="lazy">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img" loading="lazy">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img" loading="lazy">
         </div>
         <div class="frame-shape">
-            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img" loading="lazy">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -61,7 +61,7 @@
                                     <ul class="post-date">
                                         <li>
                                             <img src="{{ asset('public/assets/img/event/calender.svg') }}" alt="img"
-                                                class="me-2">
+                                                loading="lazy" class="me-2">
                                             {{ $events->mulai }}
                                         </li>
                                     </ul>
@@ -107,13 +107,13 @@
     <!-- Galery Section Start -->
     <section class="team-section-3 fix section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="right-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="section-title-area">
@@ -137,7 +137,7 @@
                                     <div class="shape-img">
                                         {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
                                     </div>
-                                    <img src="{{ asset('public/uploads/' . $galeryData->banner) }}">
+                                    <img src="{{ asset('public/uploads/' . $galeryData->banner) }}" loading="lazy">
                                 </div>
                                 <div class="team-content">
                                     <h3>
@@ -156,7 +156,7 @@
 
     <section class="team-section-3 fix section-padding pt-1 mt-60">
         <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="swiper team-slider">
