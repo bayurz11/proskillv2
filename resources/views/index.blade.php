@@ -10,19 +10,19 @@
                         <div class="slider-image bg-cover"
                             style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}');">
                             <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
-                                <img src="public/assets/img/hero/parasuit.png" alt="shape-img">
+                                <img src="public/assets/img/hero/parasuit.png" alt="shape-img" loading="lazy">
                             </div>
                             <div class="doll-shape" data-animation="fadeInLeft" data-delay="2.3s">
-                                <img src="public/assets/img/hero/doll.png" alt="shape-img">
+                                <img src="public/assets/img/hero/doll.png" alt="shape-img" loading="lazy">
                             </div>
                             <div class="bus-shape" data-animation="fadeInLeft" data-delay="2.4s">
-                                <img src="public/assets/img/hero/bus.png" alt="shape-img">
+                                <img src="public/assets/img/hero/bus.png" alt="shape-img" loading="lazy">
                             </div>
                             <div class="bee-shape" data-animation="fadeInUp" data-delay="2.5s">
-                                <img src="public/assets/img/hero/bee-2.png" alt="shape-img">
+                                <img src="public/assets/img/hero/bee-2.png" alt="shape-img" loading="lazy">
                             </div>
                             <div class="star-shape" data-animation="fadeInUp" data-delay="3.4s">
-                                <img src="public/assets/img/hero/star-2.png" alt="shape-img">
+                                <img src="public/assets/img/hero/star-2.png" alt="shape-img" loading="lazy">
                             </div>
                             <div class="container">
                                 <div class="row g-4 align-items-center">
@@ -74,22 +74,22 @@
                 <div class="marquee-inner to-left">
                     <ul class="marqee-list d-flex">
                         <li class="marquee-item">
-                            <span class="text-slider"><img src="public/assets/img/Figma.svg" alt="img"></span><span
-                                class="text-slider">Figma</span>
-                            <span class="text-slider"><img src="public/assets/img/microsoft_excel.svg"
-                                    alt="img"></span><span class="text-slider">Microsoft Excel</span>
-                            <span class="text-slider"><img src="public/assets/img/microsoft_powerpoint.svg"
-                                    alt="img"></span><span class="text-slider text-color">Powerpoint </span>
-                            <span class="text-slider"><img src="public/assets/img/microsoft_word.svg"
-                                    alt="img"></span><span class="text-slider">Word</span>
-                            <span class="text-slider"><img src="public/assets/img/Google Drive.svg"
-                                    alt="img"></span><span class="text-slider text-color">Google Drive</span>
-                            <span class="text-slider"><img src="public/assets/img/ChatGPT.svg" alt="img"></span><span
-                                class="text-slider">ChatGPT</span>
-                            <span class="text-slider"><img src="public/assets/img/Canva.svg" alt="img"></span><span
-                                class="text-slider">Canva</span>
-                            <span class="text-slider"><img src="public/assets/img/Edge.svg" alt="img"></span><span
-                                class="text-slider">Edge</span>
+                            <span class="text-slider"><img src="public/assets/img/Figma.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">Figma</span>
+                            <span class="text-slider"><img src="public/assets/img/microsoft_excel.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">Microsoft Excel</span>
+                            <span class="text-slider"><img src="public/assets/img/microsoft_powerpoint.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider text-color">Powerpoint </span>
+                            <span class="text-slider"><img src="public/assets/img/microsoft_word.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">Word</span>
+                            <span class="text-slider"><img src="public/assets/img/Google Drive.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider text-color">Google Drive</span>
+                            <span class="text-slider"><img src="public/assets/img/ChatGPT.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">ChatGPT</span>
+                            <span class="text-slider"><img src="public/assets/img/Canva.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">Canva</span>
+                            <span class="text-slider"><img src="public/assets/img/Edge.svg" alt="img"
+                                    loading="lazy"></span><span class="text-slider">Edge</span>
                         </li>
                     </ul>
                 </div>
@@ -100,13 +100,13 @@
     <!-- Pricing Section Start -->
     <section class="pricing-section section-bg section-padding">
         <div class="tree-shape float-bob-x">
-            <img src="public/assets/img/tree-shape.png" alt="shape-img">
+            <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
         </div>
         <div class="girl-shape float-bob-y">
-            <img src="public/assets/img/pricing/girl.png" alt="shape-img">
+            <img src="public/assets/img/pricing/girl.png" alt="shape-img" loading="lazy">
         </div>
         <div class="top-shape">
-            <img src="public/assets/img/top-shape.png" alt="shape-img">
+            <img src="public/assets/img/top-shape.png" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="pricing-wrapper">
@@ -128,7 +128,7 @@
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img">
+                                    <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Fundamental
@@ -177,7 +177,7 @@
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element-2.png" alt="shape-img">
+                                    <img src="public/assets/img/pricing/element-2.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4>
@@ -226,7 +226,7 @@
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img">
+                                    <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <div class="pricing-header">
                                     <h4>Digital Design Menggunakan <br> Canva dan Figma</h4><br>
@@ -292,8 +292,8 @@
                                 <div class="clases-bg"></div>
                                 <div class="clases-image">
                                     <a href="{{ $kelasonline->link }}" target="_blank"><img
-                                            src="{{ asset('public/uploads/' . $kelasonline->banner) }}"
-                                            alt="img"></a>
+                                            src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img"
+                                            loading="lazy"></a>
                                 </div>
                                 <div class="clases-content">
                                     <h4><a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
@@ -320,7 +320,7 @@
             <img src="public/assets/img/cta/parasuit-1.png" alt="shape-img">
         </div> --}}
         <div class="parasuit-shape-2 float-bob-x">
-            <img src="public/assets/img/cta/parasuit-2.png" alt="shape-img">
+            <img src="public/assets/img/cta/parasuit-2.png" alt="shape-img" loading="lazy">
         </div>
         {{-- <div class="pencil-shape">
             <img src="public/assets/img/cta/pencil-3.png" alt="shape-img">
@@ -453,13 +453,13 @@
     <!-- Testimonial Section Start -->
     <section class="testimonial-section fix section-padding">
         <div class="love-shape">
-            <img src="public/assets/img/team/love.png" alt="shape-img">
+            <img src="public/assets/img/team/love.png" alt="shape-img" loading="lazy">
         </div>
         <div class="right-shape">
-            <img src="public/assets/img/testi-r-shape.png" alt="shape-img">
+            <img src="public/assets/img/testi-r-shape.png" alt="shape-img" loading="lazy">
         </div>
         <div class="bee-shape float-bob-y">
-            <img src="public/assets/img/testi-bee-shape.png" alt="shape-img">
+            <img src="public/assets/img/testi-bee-shape.png" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="section-title text-center">
@@ -473,7 +473,7 @@
                     <div class="swiper-slide">
                         <div class="testimonial-items">
                             <div class="icon">
-                                <img src="public/assets/img/quote.png" alt="img">
+                                <img src="public/assets/img/quote.png" alt="img" loading="lazy">
                             </div>
                             <div class="testimonial-bg"></div>
                             <div class="testimonial-content">
@@ -488,7 +488,7 @@
                     <div class="swiper-slide">
                         <div class="testimonial-items style-2">
                             <div class="icon">
-                                <img src="public/assets/img/quote-2.png" alt="img">
+                                <img src="public/assets/img/quote-2.png" alt="img" loading="lazy">
                             </div>
                             <div class="testimonial-bg bg-2"></div>
                             <div class="testimonial-content">
@@ -503,7 +503,7 @@
                     <div class="swiper-slide">
                         <div class="testimonial-items style-3">
                             <div class="icon">
-                                <img src="public/assets/img/quote-3.png" alt="img">
+                                <img src="public/assets/img/quote-3.png" alt="img" loading="lazy">
                             </div>
                             <div class="testimonial-bg bg-3"></div>
                             <div class="testimonial-content">
@@ -519,7 +519,7 @@
                     <div class="swiper-slide">
                         <div class="testimonial-items style-3">
                             <div class="icon">
-                                <img src="public/assets/img/quote-3.png" alt="img">
+                                <img src="public/assets/img/quote-3.png" alt="img" loading="lazy">
                             </div>
                             <div class="testimonial-bg bg-3"></div>
                             <div class="testimonial-content">
@@ -557,13 +557,15 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3,5s">
                         <div class="event-box-items">
                             <div class="event-image">
-                                <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="event-img">
+                                <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="event-img"
+                                    loading="lazy">
                                 <div class="event-shape">
-                                    <img src="public/assets/img/event/shape.png" alt="shape-img">
+                                    <img src="public/assets/img/event/shape.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <ul class="post-date">
                                     <li>
-                                        <img src="public/assets/img/event/calender.svg" alt="img" class="me-2">
+                                        <img src="public/assets/img/event/calender.svg" alt="img" class="me-2"
+                                            loading="lazy">
                                         {{ $events->mulai }}
                                     </li>
                                 </ul>
@@ -604,7 +606,7 @@
     <!-- News Section Start -->
     <section class="news-section section-padding fix">
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/plane.png" alt="shape-img">
+            <img src="public/assets/img/plane.png" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="section-title text-center">
@@ -680,7 +682,8 @@
         style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
-            <img src="public/assets/img/Whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;">
+            <img src="public/assets/img/Whatsapp.png" alt="WhatsApp Icon" style="width: 50px; height: auto;"
+                loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
