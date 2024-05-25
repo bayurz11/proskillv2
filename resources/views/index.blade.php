@@ -101,7 +101,7 @@
     <section class="pricing-section section-bg section-padding">
         <style>
             .pricing-items:hover {
-                background-color: #028E83;
+                background-color: #385469;
                 /* Change the background color on hover */
                 transition: background-color 0.3s ease-in-out;
                 /* Smooth transition effect */
