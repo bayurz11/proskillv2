@@ -120,9 +120,14 @@
                 /* Change the button text color on hover */
             }
 
-            .pricing-items:hover .pricing-list {
+            .pricing-items:hover .pricing-list li {
                 color: #ffffff;
                 /* Change the text color of list items on hover */
+            }
+
+            .pricing-items:hover .pricing-list li i {
+                color: #ffffff;
+                /* Change the icon color of list items on hover */
             }
         </style>
         <div class="tree-shape float-bob-x">
