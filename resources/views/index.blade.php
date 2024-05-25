@@ -99,6 +99,27 @@
 
     <!-- Pricing Section Start -->
     <section class="pricing-section section-bg section-padding">
+        <style>
+            .pricing-items:hover {
+                background-color: #f0f0f0;
+                /* Change the background color on hover */
+                transition: background-color 0.3s ease-in-out;
+                /* Smooth transition effect */
+            }
+
+            .pricing-items:hover .pricing-header h4,
+            .pricing-items:hover .pricing-header h2 {
+                color: #ff6600;
+                /* Change the text color on hover */
+            }
+
+            .pricing-items:hover .theme-btn {
+                background-color: #ff6600;
+                /* Change the button background color on hover */
+                color: #ffffff;
+                /* Change the button text color on hover */
+            }
+        </style>
         <div class="tree-shape float-bob-x">
             <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
         </div>
@@ -112,11 +133,10 @@
             <div class="pricing-wrapper">
                 <div class="section-title text-center mb-0">
                     <span class="wow fadeInUp">Bergabung Bersama Kami</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Dengan harga murah <br>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">Dengan harga murah <br>
                         dapatkan fasilitas fantastis
                     </h2>
                 </div>
-
             </div>
             <div class="tab-content">
                 <div id="monthly" class="tab-pane fade show active" role="tabpanel">
@@ -131,11 +151,9 @@
                                     <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <div class="pricing-header">
-                                    <h4>Fundamental
-                                        Computer<br> Skill</h4><br>
+                                    <h4>Fundamental Computer<br> Skill</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
                                     <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
-
                                 </div>
                                 <ul class="pricing-list">
                                     <li>
@@ -152,13 +170,11 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Ms Powerpoint & Google Presentation
-                                        Dasar
+                                        Ms Powerpoint & Google Presentation Dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Aplikasi berbasis internet & AI
-                                        (ChatGPT,Bing)
+                                        Aplikasi berbasis internet & AI (ChatGPT, Bing)
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
@@ -180,8 +196,7 @@
                                     <img src="public/assets/img/pricing/element-2.png" alt="shape-img" loading="lazy">
                                 </div>
                                 <div class="pricing-header">
-                                    <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4>
-                                    <br>
+                                    <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4><br>
                                     <h2 style="color: #ffffff;"><sup>IDR</sup> 195K / <del>260K</del></h2>
                                     <span style="display: block; text-align: center; color: #ffffff;">(Beasiswa 25%)</span>
                                 </div>
@@ -196,8 +211,7 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Power Point & Google
-                                        Presentation
+                                        Power Point & Google Presentation
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
@@ -205,15 +219,13 @@
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Aplikasi berbasis internet & AI
-                                        (ChatGPT,Bing)
+                                        Aplikasi berbasis internet & AI (ChatGPT, Bing)
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
                                         Assessment
                                     </li>
                                 </ul>
-
                                 <a href="https://wa.me/6281266187125?text=Kelas%20Mahir%20Aplikasi%20Office%20Tingkat%20Advance,%20apakah%20masi%20tersedia?"
                                     class="theme-btn" target="_blank"> Hubungi Admin<i
                                         class="fa-solid fa-arrow-right-long"></i></a>
@@ -250,9 +262,7 @@
                                         <i class="fa-solid fa-check"></i>
                                         Assessment
                                     </li><br><br>
-                                    <li>
-
-                                    </li>
+                                    <li></li>
                                 </ul>
                                 <a href="https://wa.me/6281266187125?text=Kelas%20Digital%20Design%20Menggunakan%20Canva%20dan%20Figma,%20apakah%20masi%20tersedia?"
                                     class="theme-btn" target="_blank"> Hubungi Admin<i
@@ -261,10 +271,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <!-- Clases Section Start -->
     <section class="clases-section section-padding bg-cover"
