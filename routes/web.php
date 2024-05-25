@@ -20,6 +20,7 @@ Route::get('/Kelastatapmuka_detail/{id}', [indexController::class, 'KelasOffline
 Route::get('/kelasOnline', [indexController::class, 'showkelasOnline'])->name('kelasOnline');
 Route::get('/tentangkami', [indexController::class, 'showaboutUs'])->name('tentangkami');
 Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hubungikami');
+Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
 
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');

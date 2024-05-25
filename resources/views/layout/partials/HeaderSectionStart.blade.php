@@ -52,7 +52,7 @@
                                         </a>
                                         <ul class="submenu">
                                             <li><a href="{{ route('tentangkami') }}">Tentang Kami</a></li>
-                                            <li><a href="#">Contoh sertifikat </a></li>
+                                            <li><a href="{{ route('contohsertifikat') }}">Contoh sertifikat </a></li>
                                             <li><a href="https://drive.google.com/file/d/1FiVmF5_hau_8xRKfvoM8Wel1tUezCzA_/view"
                                                     target="_blank">Brosur</a></li>
                                             <li><a href="{{ route('hubungikami') }}">Hubungi Kami</a></li>
