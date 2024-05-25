@@ -119,6 +119,11 @@
                 color: #ffffff;
                 /* Change the button text color on hover */
             }
+
+            .pricing-items:hover .pricing-list {
+                color: #ffffff;
+                /* Change the text color of list items on hover */
+            }
         </style>
         <div class="tree-shape float-bob-x">
             <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
