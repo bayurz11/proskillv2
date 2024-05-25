@@ -114,7 +114,7 @@
             }
 
             .pricing-items:hover .theme-btn {
-                background-color: #ffffff;
+                background-color: #028E83;
                 /* Change the button background color on hover */
                 color: #ffffff;
                 /* Change the button text color on hover */
