@@ -101,7 +101,7 @@
     <section class="pricing-section section-bg section-padding">
         <style>
             .pricing-items:hover {
-                background-color: #f0f0f0;
+                background-color: #028E83;
                 /* Change the background color on hover */
                 transition: background-color 0.3s ease-in-out;
                 /* Smooth transition effect */
@@ -109,7 +109,7 @@
 
             .pricing-items:hover .pricing-header h4,
             .pricing-items:hover .pricing-header h2 {
-                color: #ff6600;
+                color: #ffffff;
                 /* Change the text color on hover */
             }
 
