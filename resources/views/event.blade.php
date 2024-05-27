@@ -3,7 +3,7 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');" loading="lazy">
         <div class="line-shape">
             <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img" loading="lazy">
         </div>
@@ -53,10 +53,10 @@
                             <div class="event-box-items mt-0 box-shadow style-bottom">
                                 <div class="event-image">
                                     <a href="{{ route('event_detail', ['id' => $events->id]) }}"><img
-                                            src="{{ asset('public/uploads/' . $events->banner) }}"></a>
+                                            src="{{ asset('public/uploads/' . $events->banner) }}" loading="lazy"></a>
                                     <div class="event-shape">
                                         <a href="{{ route('event_detail', ['id' => $events->id]) }}"><img
-                                                src="{{ asset('public/uploads/' . $events->banner) }}"></a>
+                                                src="{{ asset('public/uploads/' . $events->banner) }}" loading="lazy"></a>
                                     </div>
                                     <ul class="post-date">
                                         <li>
@@ -189,7 +189,7 @@
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;">
+                style="width: 50px; height: auto;" loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
