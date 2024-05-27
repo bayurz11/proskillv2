@@ -130,9 +130,9 @@
                 /* Change the icon color of list items on hover */
             }
         </style>
-        <div class="tree-shape float-bob-x">
+        {{-- <div class="tree-shape float-bob-x">
             <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
-        </div>
+        </div> --}}
         <div class="girl-shape float-bob-y">
             <img src="public/assets/img/pricing/girl.png" alt="shape-img" loading="lazy">
         </div>
@@ -153,13 +153,13 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="pricing-items">
-                                <div class="icon bg-cover"
+                                {{-- <div class="icon bg-cover"
                                     style="background-image: url('public/assets/img/pricing/icon-bg.png');">
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
                                     <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
-                                </div>
+                                </div> --}}
                                 <div class="pricing-header">
                                     <h4>Fundamental Computer<br> Skill</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
@@ -198,13 +198,13 @@
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                             <div class="pricing-items active">
-                                <div class="icon bg-cover"
+                                {{-- <div class="icon bg-cover"
                                     style="background-image: url('public/assets/img/pricing/icon-bg.png');">
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
                                     <img src="public/assets/img/pricing/element-2.png" alt="shape-img" loading="lazy">
-                                </div>
+                                </div> --}}
                                 <div class="pricing-header">
                                     <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4><br>
                                     <h2 style="color: #ffffff;"><sup>IDR</sup> 195K / <del>260K</del></h2>
@@ -243,13 +243,13 @@
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                             <div class="pricing-items">
-                                <div class="icon bg-cover"
+                                {{-- <div class="icon bg-cover"
                                     style="background-image: url('public/assets/img/pricing/icon-bg.png');">
                                     <i class="icon-icon-22"></i>
                                 </div>
                                 <div class="element-shape">
                                     <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
-                                </div>
+                                </div> --}}
                                 <div class="pricing-header">
                                     <h4>Digital Design Menggunakan <br> Canva dan Figma</h4><br>
                                     <h2 style="color: #FE9900;"><sup>IDR</sup> 195K / <del>260</del></h2>
