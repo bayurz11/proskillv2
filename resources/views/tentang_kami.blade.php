@@ -59,7 +59,7 @@
                     @endphp
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="activities-image-items">
-                            <img src="{{ asset('public/uploads/' . ($aboutUs->banner ?? 'default-banner.jpg')) }}"
+                            <img src="{{ asset('public/uploads/' . ($about->banner ?? 'default-banner.jpg')) }}"
                                 alt="About Banner">
 
 
