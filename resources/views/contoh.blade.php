@@ -86,8 +86,6 @@
                                 <p>Sertifikat Fundamental Computer
                                     Skill</p>
                             </div>
-                        </div>
-                        <div class="team-items">
                             <div class="team-image">
                                 <div class="shape-img">
                                     {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
@@ -102,6 +100,9 @@
                                     Skill</p>
                             </div>
                         </div>
+
+
+
                     </div>
                     {{-- @endforeach --}}
 
