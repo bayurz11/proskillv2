@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
+use App\Http\Controllers\InventarisController;
 use App\Http\Controllers\KelasOnlineController;
 use App\Http\Controllers\KelasTatapMukaController;
 use App\Http\Controllers\TestimonialController;
@@ -98,5 +99,7 @@ Route::get('/izin_setting', [AboutUsController::class, 'showizin'])->name('izin_
 Route::post('/izin_store', [AboutUsController::class, 'storeizin'])->name('izin_store');
 Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->name('izin_destroy');
 
+//---Inventaris---//
+Route::get('/master_barang', [InventarisController::class, 'showbarang'])->name('master_barang');
 
 //**************END DADHBOARD ADMIN **************//
