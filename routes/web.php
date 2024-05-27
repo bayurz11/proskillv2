@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
+use App\Http\Controllers\ContohsertifikatController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\EventController;
@@ -41,6 +42,12 @@ Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashb
 Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name('HeroSectionSetting');
 Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
 //---end Hero Section---//
+
+//---Contoh Sertifikat---//
+Route::get('/ContohSertifikatSetting', [ContohsertifikatController::class, 'show'])->name('ContohSertifikatSetting');
+Route::post('/ContohSertifikatStore', [ContohsertifikatController::class, 'store'])->name('ContohSertifikatStore');
+Route::delete('/ContohSertifikatDestroy/{id}', [ContohsertifikatController::class, 'destroy'])->name('ContohSertifikatDestroy');
+//---end Contoh Sertifikat---// 
 
 //---Kelas Online---//
 Route::get('/KelasOnlineSetting', [KelasOnlineController::class, 'show'])->name('KelasOnlineSetting');
@@ -90,4 +97,6 @@ Route::delete('/about_us_destroy/{id}', [AboutUsController::class, 'destroy'])->
 Route::get('/izin_setting', [AboutUsController::class, 'showizin'])->name('izin_setting');
 Route::post('/izin_store', [AboutUsController::class, 'storeizin'])->name('izin_store');
 Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->name('izin_destroy');
+
+
 //**************END DADHBOARD ADMIN **************//
