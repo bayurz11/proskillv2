@@ -87,8 +87,19 @@ class HeroSectionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(HeroSection $heroSection)
+    public function destroy($id)
     {
-        //
+        // Temukan kelasOffline berdasarkan ID
+        $hero = HeroSection::find($id);
+
+        // Periksa apakah kelasOffline ditemukan
+        if (!$hero) {
+            return redirect()->route('HeroSectionSetting')->with('error', 'data tidak ditemukan');
+        }
+
+        // Hapus kelasOffline
+        $hero->delete();
+
+        return redirect()->route('HeroSectionSetting')->with('success', 'Data berhasil dihapus');
     }
 }

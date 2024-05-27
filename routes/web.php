@@ -42,6 +42,7 @@ Route::get('/dashboard', [DashboardAdminController::class, 'show'])->name('dashb
 //---Hero Section---//
 Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name('HeroSectionSetting');
 Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
+Route::delete('/HeroSectionDestroy/{id}', [HeroSectionController::class, 'destroy'])->name('HeroSectionDestroy');
 //---end Hero Section---//
 
 //---Contoh Sertifikat---//
