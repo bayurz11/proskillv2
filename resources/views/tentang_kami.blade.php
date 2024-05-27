@@ -121,7 +121,7 @@
                                 <div class="about-author">
                                     <div class="author-image wow fadeInUp" data-wow-delay=".3s">
                                         <div class="content">
-                                            <h6>Beni Oktopiansah, ST</h6>
+                                            <h6>{{ $about->pimpinan }}</h6>
                                             <p>Pimpinan ProSkill Akademia</p>
                                         </div>
                                     </div>
