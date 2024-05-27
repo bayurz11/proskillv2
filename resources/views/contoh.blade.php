@@ -70,41 +70,41 @@
             </div>
             <div class="swiper team-slider">
                 <div class="swiper-wrapper">
-                    {{-- @foreach ($galery as $galeryData) --}}
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+                    @foreach ($galery as $galeryData)
+                        <div class="swiper-slide">
+                            <div class="team-items">
+                                <div class="team-image">
+                                    <div class="shape-img">
+                                        {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+                                    </div>
+                                    <img src="{{ asset('public/assets/img/sertifikat/sert1.png') }}" loading="lazy">
                                 </div>
-                                <img src="{{ asset('public/assets/img/sertifikat/sert1.png') }}" loading="lazy">
-                            </div>
-                            <div class="team-content">
-                                <h3>
-                                    {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
-                                </h3>
-                                <p>Sertifikat Fundamental Computer
-                                    Skill</p>
-                            </div>
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+                                <div class="team-content">
+                                    <h3>
+                                        {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
+                                    </h3>
+                                    <p>Sertifikat Fundamental Computer
+                                        Skill</p>
                                 </div>
-                                <img src="{{ asset('public/assets/img/sertifikat/sert2.png') }}" loading="lazy">
+                                <div class="team-image">
+                                    <div class="shape-img">
+                                        {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+                                    </div>
+                                    <img src="{{ asset('public/assets/img/sertifikat/sert2.png') }}" loading="lazy">
+                                </div>
+                                <div class="team-content">
+                                    <h3>
+                                        {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
+                                    </h3>
+                                    <p>Sertifikat Fundamental Computer
+                                        Skill</p>
+                                </div>
                             </div>
-                            <div class="team-content">
-                                <h3>
-                                    {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
-                                </h3>
-                                <p>Sertifikat Fundamental Computer
-                                    Skill</p>
-                            </div>
+
+
+
                         </div>
-
-
-
-                    </div>
-                    {{-- @endforeach --}}
+                    @endforeach
 
                 </div>
             </div>
