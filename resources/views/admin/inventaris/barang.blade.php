@@ -103,8 +103,11 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>tgl</th>
-                                        <th>Nana Sertifikat</th>
+                                        <th>Gambar</th>
+                                        <th>Kode Barang</th>
+                                        <th>Nana Barang</th>
+                                        <th>Jenis Barang</th>
+                                        <th>Tanggal</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
