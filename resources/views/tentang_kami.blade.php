@@ -44,7 +44,6 @@
 
     <!-- About Activities Section Start -->
     <section class="about-activities-section-2 style-2 section-padding">
-
         <div class="bottom-shape">
             <img src="public/assets/img/section-top-shape-2.png" alt="shape-img">
         </div>
@@ -62,7 +61,6 @@
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="activities-image-items">
                                 <img src="{{ asset('public/uploads/' . $about->banner) }}" alt="Banner">
-
                                 <div class="circle-shape">
                                     <img src="public/assets/img/about/circle.png" alt="Shape">
                                 </div>
@@ -147,7 +145,6 @@
                         </div>
                     @endif
                 </div>
-
             </div>
         </div>
     </section>
@@ -271,8 +268,6 @@
 
         </div>
     </section>
-
-
 
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup"
