@@ -59,7 +59,9 @@
                     @endphp
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="activities-image-items">
-                            <img src="{{ asset('public/uploads/' . $about->banner) }}">
+                            <img src="{{ $about->banner ? asset('public/uploads/' . $about->banner) : asset('path/to/default/image.jpg') }}"
+                                alt="Banner">
+
 
                             <div class="circle-shape">
                                 <img src="public/assets/img/about/circle.png" alt="shape-img">
