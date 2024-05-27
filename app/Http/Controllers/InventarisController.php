@@ -52,6 +52,17 @@ class InventarisController extends Controller
 
         return view('admin.inventaris.barang', compact('user', 'barang', 'count'));
     }
+    public function showkategori(Inventaris $inventaris)
+    {
+        $user = Auth::user();
+        $barang = Barang::all();
+        $count = $barang->count();
+        if (!$user) {
+            return redirect()->route('login_admin');
+        }
+
+        return view('admin.inventaris.kategori', compact('user', 'barang', 'count'));
+    }
 
     /**
      * Show the form for editing the specified resource.

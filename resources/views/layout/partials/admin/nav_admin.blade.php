@@ -122,6 +122,14 @@
                 <div class="collapse" id="Inventaris">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
+                            <a href="{{ route('master_kategori') }}" class="nav-link">Kategori Barang</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="collapse" id="Inventaris">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
                             <a href="{{ route('master_barang') }}" class="nav-link">Master Barang</a>
                         </li>
 

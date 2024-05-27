@@ -100,6 +100,9 @@ Route::post('/izin_store', [AboutUsController::class, 'storeizin'])->name('izin_
 Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->name('izin_destroy');
 
 //---Inventaris---//
+//  Master Barang 
 Route::get('/master_barang', [InventarisController::class, 'showbarang'])->name('master_barang');
+//kategori barang
+Route::get('/master_kategori', [InventarisController::class, 'showkategori'])->name('master_kategori');
 
 //**************END DADHBOARD ADMIN **************//
