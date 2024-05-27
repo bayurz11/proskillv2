@@ -75,13 +75,13 @@
                             <div class="team-items">
                                 <div class="team-image">
                                     <div class="shape-img">
-                                        {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
+
                                     </div>
                                     <img src="{{ asset('public/uploads/' . $contoh->banner) }}" loading="lazy">
                                 </div>
                                 <div class="team-content">
                                     <h3>
-                                        {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
+
                                     </h3>
                                     <p>{{ $contoh->nama_sertifikat }}</p>
                                 </div>
