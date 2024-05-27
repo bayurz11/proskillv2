@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <div class="page-heading">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Contoh Sertifikat</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Testimonial</h1>
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
@@ -35,65 +35,12 @@
                         <i class="fas fa-chevron-right"></i>
                     </li>
                     <li>
-                        Contoh Sertifikat
+                        Testimonial
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
-
-
-    <!-- Galery Section Start -->
-    <section class="team-section-3 fix section-padding pt-1 mt-60">
-        <div class="tree-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="right-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="section-title-area">
-                <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Contoh sertifikat </span>
-                    {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
-                        Kemendikbud Ristek.
-                    </h2> --}}
-                </div>
-                <div class="array-button wow fadeInUp" data-wow-delay=".5s">
-                    <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
-                    <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper">
-                    {{-- @foreach ($galery as $galeryData) --}}
-                    <div class="swiper-slide">
-                        <div class="team-items">
-                            <div class="team-image">
-                                <div class="shape-img">
-                                    {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
-                                </div>
-                                <img src="{{ asset('public/assets/img/sertifikat/sert1.png') }}" loading="lazy">
-                            </div>
-                            <div class="team-content">
-                                <h3>
-                                    {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
-                                </h3>
-                                <p>Sertifikat Fundamental Computer
-                                    Skill</p>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- @endforeach --}}
-
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Whatsapp popup -->
