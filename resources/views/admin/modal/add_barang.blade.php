@@ -11,9 +11,9 @@
 
 
                     <div class="mb-3">
-                        <label for="gambar" class="form-label">Sertifikat/Gambar</label>
+                        <label for="gambar" class="form-label">Gambar</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                        <small class="text-secondary">Note : Unggah gambar untuk contoh sertifikat</small>
+                        <small class="text-secondary">Note : Unggah gambar barang</small>
                     </div>
                     <img id="preview" src="#" alt="Preview Gambar"
                         style="max-width: 100%; max-height: 200px; display: none;">
