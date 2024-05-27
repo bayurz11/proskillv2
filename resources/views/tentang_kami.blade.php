@@ -71,13 +71,13 @@
                                 <div class="section-title">
                                     <span class="wow fadeInUp">Visi ProSkill Akademia</span>
                                     <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        {!! nl2br(e($about->visi)) !!}
+                                        {!! nl2br(strip_tags($about->visi)) !!}
                                     </h2>
                                 </div>
                                 <div class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
                                     @foreach (explode("\n", $about->misi) as $paragraph)
                                         <p style="text-align:justify;">
-                                            {!! nl2br(e($paragraph)) !!}
+                                            {!! nl2br(strip_tags($paragraph)) !!}
                                         </p>
                                     @endforeach
                                 </div>
@@ -148,6 +148,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!-- Counter Section Start -->
