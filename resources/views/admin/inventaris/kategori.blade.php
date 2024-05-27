@@ -7,7 +7,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Master Barang</li>
+                <li class="breadcrumb-item active" aria-current="page">Kategori Barang</li>
             </ol>
         </nav>
         @include('admin.modal.add_kategori')
@@ -17,7 +17,7 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title">Daftar Barang</h6>
+                        <h6 class="card-title">Daftar Kategori Barang</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
