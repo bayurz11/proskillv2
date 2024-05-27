@@ -50,7 +50,7 @@ class InventarisController extends Controller
             return redirect()->route('login_admin');
         }
 
-        return view('admin.hero.contohsetting', compact('user', 'barang', 'count'));
+        return view('admin.inventaris.barang', compact('user', 'barang', 'count'));
     }
 
     /**
