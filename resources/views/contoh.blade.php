@@ -70,7 +70,7 @@
             </div>
             <div class="swiper team-slider">
                 <div class="swiper-wrapper">
-                    @foreach ($galery as $galeryData)
+                    @foreach ($contohsertifikat as $contoh)
                         <div class="swiper-slide">
                             <div class="team-items">
                                 <div class="team-image">
@@ -83,8 +83,7 @@
                                     <h3>
                                         {{-- <a href="#" target="_blank">{{ $galeryData->name_event }}</a> --}}
                                     </h3>
-                                    <p>Sertifikat Fundamental Computer
-                                        Skill</p>
+                                    <p>{{ $contoh->nama_sertifikat }}</p>
                                 </div>
 
                             </div>

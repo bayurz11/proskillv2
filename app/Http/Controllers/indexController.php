@@ -12,6 +12,7 @@ use App\Models\HeroSection;
 use App\Models\KelasOnline;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
+use App\Models\Contohsertifikat;
 
 class indexController extends Controller
 {
@@ -110,9 +111,7 @@ class indexController extends Controller
     public function contohsertifikat()
     {
 
-        $links = Link::all();
-        $galery = Galery::all();
-        $event = Event::all();
-        return view('contoh', compact('event', 'galery', 'links'));
+        $contohsertifikat = Contohsertifikat::all();
+        return view('contoh', compact('contohsertifikat'));
     }
 }
