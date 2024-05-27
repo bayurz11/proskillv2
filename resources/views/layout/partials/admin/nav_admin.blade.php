@@ -122,7 +122,7 @@
                 <div class="collapse" id="Inventaris">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/ui-components/accordion.html" class="nav-link">Accordion</a>
+                            <a href="{{ route('master_barang') }}" class="nav-link">Master Barang</a>
                         </li>
 
                     </ul>
