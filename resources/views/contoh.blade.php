@@ -77,7 +77,7 @@
                                     <div class="shape-img">
                                         {{-- <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"> --}}
                                     </div>
-                                    <img src="{{ asset('public/assets/img/sertifikat/sert1.png') }}" loading="lazy">
+                                    <img src="{{ asset('public/uploads/' . $contoh->banner) }}" loading="lazy">
                                 </div>
                                 <div class="team-content">
                                     <h3>
