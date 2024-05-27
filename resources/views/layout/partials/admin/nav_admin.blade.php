@@ -43,6 +43,7 @@
                     <span class="link-title">Artikel</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#kelas" role="button" aria-expanded="false"
                     aria-controls="kelas">
@@ -102,6 +103,14 @@
                     </ul>
                 </div>
             </li>
+
+            <li class="nav-item">
+                <a href="{{ route('ContohSertifikatSetting') }}" class="nav-link">
+                    <i class="link-icon" data-feather="book"></i>
+                    <span class="link-title">Contoh Sertifikat</span>
+                </a>
+            </li>
+
             <li class="nav-item nav-category">Inventaris</li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#Inventaris" role="button"
