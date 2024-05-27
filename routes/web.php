@@ -9,6 +9,7 @@ use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\KelasOnlineController;
 use App\Http\Controllers\KelasTatapMukaController;
+use App\Http\Controllers\TestimonialController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showEvent'])->name('event');
@@ -21,6 +22,9 @@ Route::get('/kelasOnline', [indexController::class, 'showkelasOnline'])->name('k
 Route::get('/tentangkami', [indexController::class, 'showaboutUs'])->name('tentangkami');
 Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hubungikami');
 Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
+
+//---Testimonial---//
+Route::get('/testimonial', [TestimonialController::class, 'show'])->name('testimonial');
 
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
