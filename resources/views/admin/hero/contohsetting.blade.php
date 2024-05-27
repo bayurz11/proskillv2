@@ -130,7 +130,7 @@
                                                 <script>
                                                     function hapus(id) {
                                                         if (confirm('Apakah Anda yakin ingin menghapus  ini?')) {
-                                                            fetch(`/ContohsertifikatController/${id}`, {
+                                                            fetch(`/ContohSertifikatDestroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
                                                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'
