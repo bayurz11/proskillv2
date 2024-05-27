@@ -57,91 +57,97 @@
                     @php
                         $about = $aboutUs->sortByDesc('created_at')->first();
                     @endphp
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="activities-image-items">
-                            <img src="{{ asset('public/uploads/' . ($about->banner ?? 'default-banner.jpg')) }}"
-                                alt="About Banner">
 
+                    @if ($about)
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="activities-image-items">
+                                <img src="{{ asset('public/uploads/' . $about->banner) }}" alt="Banner">
 
-                            <div class="circle-shape">
-                                <img src="public/assets/img/about/circle.png" alt="shape-img">
+                                <div class="circle-shape">
+                                    <img src="public/assets/img/about/circle.png" alt="Shape">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-
-                        <div class="activities-content">
-                            <div class="section-title">
-                                <span class="wow fadeInUp">Visi ProSkill Akademia</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                    {!! nl2br($about->visi) !!}
-                                </h2>
-                            </div>
-                            <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                @foreach (explode("\n", $about->misi) as $paragraph)
-                                    <p style="text-align:justify;">
-                                        {!! nl2br($paragraph) !!}
-                                    </p>
-                                @endforeach
-                            </p>
-                            <div class="row g-4 mt-4">
-                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="icon-items">
+                        <div class="col-lg-6">
+                            <div class="activities-content">
+                                <div class="section-title">
+                                    <span class="wow fadeInUp">Visi ProSkill Akademia</span>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                                        {!! nl2br(e($about->visi)) !!}
+                                    </h2>
+                                </div>
+                                <div class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                    @foreach (explode("\n", $about->misi) as $paragraph)
+                                        <p style="text-align:justify;">
+                                            {!! nl2br(e($paragraph)) !!}
+                                        </p>
+                                    @endforeach
+                                </div>
+                                <div class="row g-4 mt-4">
+                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="icon-items">
+                                            <div class="icon">
+                                                <i class="icon-icon-13"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>NPSN</h5>
+                                                <p>K9999032</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="icon-items">
+                                            <div class="icon">
+                                                <i class="icon-icon-13"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>DPMPTSP</h5>
+                                                <p>503/92/5.10.05.3/2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="icon-items">
+                                            <div class="icon">
+                                                <i class="icon-icon-13"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>Rekomendasi Disdik</h5>
+                                                <p>B/412.35/3/5.3.02/2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-author">
+                                    <div class="author-image wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="content">
+                                            <h6>Beni Oktopiansah, ST</h6>
+                                            <p>Pimpinan ProSkill Akademia</p>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
                                         <div class="icon">
-                                            <i class="icon-icon-13"></i>
+                                            <i class="fa-solid fa-phone"></i>
                                         </div>
                                         <div class="content">
-                                            <h5>NPSN</h5>
-                                            <p>K9999032</p>
+                                            <span>Hubungi Kami Sekarang</span>
+                                            <h5>
+                                                <a href="tel:+2085550112">+208-555-0112</a>
+                                            </h5>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
-                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                    <div class="icon-items">
-                                        <div class="icon">
-                                            <i class="icon-icon-13"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h5>DPMPTSP</h5>
-                                            <p>503/92/5.10.05.3/2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="icon-items">
-                                        <div class="icon">
-                                            <i class="icon-icon-13"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h5>Rekomendasi Disdik</h5>
-                                            <p>B/412.35/3/5.3.02/2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-author">
-                                <div class="author-image wow fadeInUp" data-wow-delay=".3s">
-
-                                    <div class="content">
-                                        <h6>Beni Oktopiansah,ST</h6>
-                                        <p> Pimpinan ProSkill Akademia</p>
-                                    </div>
-                                </div>
-                                {{-- <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="icon">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span>Call Us Now</span>
-                                        <h5>
-                                            <a href="tel:+2085550112">+208-555-0112</a>
-                                        </h5>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
-                    </div>
+                    @else
+                        <div class="col-12">
+                            <div class="alert alert-warning">
+                                <strong>Data tidak tersedia</strong>
+                            </div>
+                        </div>
+                    @endif
                 </div>
+
             </div>
         </div>
     </section>

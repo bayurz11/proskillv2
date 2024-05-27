@@ -98,10 +98,6 @@ class indexController extends Controller
         $aboutUs = AboutUs::all();
         $izin = Izin::all();
 
-        if (is_null($aboutUs)) {
-            // Tangani kasus ketika $about null, misalnya, alihkan atau tampilkan pesan kesalahan
-            return redirect()->route('home')->with('error', 'Informasi tentang tidak ditemukan.');
-        }
         return view('tentang_kami', compact('aboutUs', 'izin'));
     }
     public function showcontactUs()
