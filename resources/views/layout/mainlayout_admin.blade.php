@@ -59,6 +59,7 @@
 
 <body>
     <div class="main-wrapper">
+
         @include('layout.partials.admin.nav_admin')
         <div class="page-wrapper">
             @include('layout.partials.admin.header_admin')

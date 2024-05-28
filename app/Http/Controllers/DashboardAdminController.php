@@ -75,8 +75,11 @@ class DashboardAdminController extends Controller
 
             switch ($roleName) {
                 case 'Administrator':
-                    return redirect()->route('dashboard')->with('success', 'Selamat datang! Anda berhasil masuk.');
+                    return redirect()->route('dashboard')->notify()->success('Laravel Notify is awesome!');
                     break;
+                    // case 'Administrator':
+                    //     return redirect()->route('dashboard')->with('success', 'Selamat datang! Anda berhasil masuk.');
+                    //     break;
                 case 'Student':
                     return redirect()->route('dashboard_siswa')->with('success', 'Selamat datang! Anda berhasil masuk.');
                     break;
