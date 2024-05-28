@@ -28,10 +28,10 @@
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
                                         <div class="hero-content">
-                                            <h5 data-animation="fadeInUp" data-delay="1.3s" style="color: #FE9900; );">
+                                            <h4 data-animation="fadeInUp" data-delay="1.3s" style="color: #FE9900; );">
                                                 Selamat
-                                                Datang di Proskill</h5>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #028E83; );">
+                                                Datang di Proskill</h4>
+                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #ffffff; );">
                                                 {{ $heroSection->tagline }}</span>
                                             </h1>
                                             <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #FE9900;);">
