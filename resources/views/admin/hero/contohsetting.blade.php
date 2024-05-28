@@ -137,9 +137,8 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Jika penghapusan berhasil, arahkan ulang halaman
-                                                                    window.location.href = window.location
-                                                                        .href; // atau sesuaikan dengan halaman yang Anda inginkan
+                                                                    // Jika penghapusan berhasil, arahkan ulang ke halaman ContohSertifikatSetting
+                                                                    window.location.href = '/ContohSertifikatSetting'; // Ganti dengan URL halaman yang sesuai
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
                                                                     console.error('Gagal menghapus');
