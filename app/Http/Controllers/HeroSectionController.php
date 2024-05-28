@@ -88,7 +88,7 @@ class HeroSectionController extends Controller
             $file = $request->file('gambar');
             $filename = time() . '.' . $file->getClientOriginalExtension();
             $file->move(public_path('path/to/images'), $filename);
-            $data->gambar = $filename;
+            $data->banner = $filename;
         }
 
         $data->save();
