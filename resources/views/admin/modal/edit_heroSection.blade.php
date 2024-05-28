@@ -12,23 +12,23 @@
                     <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
                         <label for="tagline" class="form-label">Tagline</label>
-                        <input type="text" class="form-control" id="tagline" name="tagline"
+                        <input type="text" class="form-control" id="tagline_edit" name="tagline"
                             placeholder="Masukkan tagline Anda">
                     </div>
                     <div class="mb-3">
                         <label for="promosi" class="form-label">Promosi</label>
-                        <input type="text" class="form-control" id="promosi" name="promosi"
+                        <input type="text" class="form-control" id="promosi_edit" name="promosi"
                             placeholder="Masukkan promosi Anda">
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="gambar">Gambar Slider</label>
-                        <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                        <input type="file" accept="image/*" class="form-control" id="gambar_edit" name="gambar">
                     </div>
                     <img id="preview" src="#" alt="Preview banner"
                         style="max-width: 100%; max-height: 200px; display: none;">
                     <div class="mb-3">
                         <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                        <input type="text" class="form-control" id="tgl" name="tgl" readonly>
+                        <input type="text" class="form-control" id="tgl_edit" name="tgl" readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -49,15 +49,15 @@
                 .then(response => response.json())
                 .then(data => {
                     $('#edit-id').val(data.id);
-                    $('#tagline').val(data.tagline);
-                    $('#promosi').val(data.promosi);
-                    $('#tgl').val(data.tgl);
+                    $('#tagline_edit').val(data.tagline);
+                    $('#promosi_edit').val(data.promosi);
+                    $('#tgl_edit').val(data.tgl);
 
                     // If there is an image, show it in the preview
                     if (data.gambar) {
-                        $('#preview').attr('src', `/path/to/images/${data.gambar}`).show();
+                        $('#preview_edit').attr('src', `/path/to/images/${data.gambar}`).show();
                     } else {
-                        $('#preview').hide();
+                        $('#preview_edit').hide();
                     }
 
                     // Set the form action to the update route
