@@ -71,17 +71,22 @@ class HeroSectionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(HeroSection $heroSection)
+    public function edit($id)
     {
-        //
+        $data = HeroSection::findOrFail($id);
+        return response()->json($data);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateHeroSectionRequest $request, HeroSection $heroSection)
+    public function update(Request $request, $id)
     {
-        //
+        $data = HeroSection::findOrFail($id);
+        $data->link = $request->input('link');
+        $data->save();
+
+        return redirect()->back()->with('success', 'Data updated successfully');
     }
 
     /**

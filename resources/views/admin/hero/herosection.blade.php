@@ -11,47 +11,8 @@
                 <li class="breadcrumb-item active" aria-current="page">Hero Section</li>
             </ol>
         </nav>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <form action="{{ route('HeroSectionStore') }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tambah Hero</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="btn-close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="mb-3">
-                                <label for="tagline" class="form-label">Tagline</label>
-                                <input type="text" class="form-control" id="tagline" name="tagline"
-                                    placeholder="Masukkan tagline Anda">
-                            </div>
-                            <div class="mb-3">
-                                <label for="promosi" class="form-label">Promosi</label>
-                                <input type="text" class="form-control" id="promosi" name="promosi"
-                                    placeholder="Masukkan promosi Anda">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="gambar">Gambar Slider</label>
-                                <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                            </div>
-                            <img id="preview" src="#" alt="Preview banner"
-                                style="max-width: 100%; max-height: 200px; display: none;">
-                            <div class="mb-3">
-                                <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                                <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                                    readonly>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        @include('admin.modal.add_heroSection')
+        @include('admin.modal.edit_heroSection')
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
@@ -118,7 +79,9 @@
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
                                             <td>{{ $heroSection->tgl }}</td>
                                             <td>
-                                                <button type="button" class="btn btn-primary btn-icon" title="Edit">
+                                                <button type="button" class="btn btn-primary btn-icon edit-button"
+                                                    title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    data-id="{{ $link->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
