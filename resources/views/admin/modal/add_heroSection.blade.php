@@ -38,3 +38,33 @@
           </div>
       </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $("#gambar").change(function() {
+              readURL(this);
+          });
+          var currentDate = new Date();
+          var day = currentDate.getDate();
+          var month = currentDate.getMonth();
+          var year = currentDate.getFullYear();
+          var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+              "September", "Oktober", "November", "Desember"
+          ];
+          day = day < 10 ? '0' + day : day;
+          var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+          $('#tgl').val(formattedDate);
+      });
+
+      function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function(e) {
+                  $('#preview').attr('src', e.target.result).show();
+              };
+
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+  </script>
