@@ -146,10 +146,11 @@
                                                             }).catch(error => {
                                                                 console.error('Terjadi kesalahan:', error);
                                                             });
+                                                        } else {
+                                                            alert('Penghapusan dibatalkan.');
                                                         }
                                                     }
                                                 </script>
-
 
                                             </td>
                                         </tr>
