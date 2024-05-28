@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Log;
 use Illuminate\Http\Request;
 use App\Models\Contohsertifikat;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreContohsertifikatRequest;
 use App\Http\Requests\UpdateContohsertifikatRequest;
