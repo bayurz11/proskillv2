@@ -137,10 +137,10 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Jika penghapusan berhasil, arahkan ulang ke halaman ContohSertifikatSetting
-                                                                    window.location.href = '/ContohSertifikatSetting'; // Ganti dengan URL halaman yang sesuai
+                                                                    console.log('Penghapusan berhasil');
+                                                                    // Pengalihan ke halaman yang sesuai
+                                                                    window.location.href = '/ContohSertifikatSetting';
                                                                 } else {
-                                                                    // Tangani kesalahan jika terjadi
                                                                     console.error('Gagal menghapus');
                                                                 }
                                                             }).catch(error => {
