@@ -6,7 +6,7 @@
                 @method('PUT')
                 <div class="modal-header">
                     <h5 class="modal-title" id="editModalLabel">Edit Hero</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="edit-id" name="id">
@@ -40,7 +40,6 @@
     </div>
 </div>
 
-
 <script>
     $(document).ready(function() {
         // Fetch data when the edit button is clicked
@@ -62,7 +61,7 @@
                     }
 
                     // Set the form action to the update route
-                    $('#editForm').attr('action', `/galery/${data.id}`);
+                    $('#editForm').attr('action', `/HeroSection/${data.id}`);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
