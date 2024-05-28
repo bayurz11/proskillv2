@@ -137,8 +137,9 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    // Jika penghapusan berhasil, refresh halaman
-                                                                    window.location.reload();
+                                                                    // Jika penghapusan berhasil, arahkan ulang halaman
+                                                                    window.location.href = window.location
+                                                                        .href; // atau sesuaikan dengan halaman yang Anda inginkan
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
                                                                     console.error('Gagal menghapus');
@@ -149,6 +150,7 @@
                                                         }
                                                     }
                                                 </script>
+
 
                                             </td>
                                         </tr>
