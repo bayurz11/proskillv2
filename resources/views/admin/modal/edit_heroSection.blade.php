@@ -5,18 +5,34 @@
                 @csrf
                 @method('PUT')
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Edit link</h5>
+                    <h5 class="modal-title" id="editModalLabel">Edit Hero</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
-                        <label for="link" class="form-label">Link Video</label>
-                        <input type="text" class="form-control" id="link_edit" name="link" value="">
+                        <label for="tagline" class="form-label">Tagline</label>
+                        <input type="text" class="form-control" id="tagline" name="tagline"
+                            placeholder="Masukkan tagline Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="promosi" class="form-label">Promosi</label>
+                        <input type="text" class="form-control" id="promosi" name="promosi"
+                            placeholder="Masukkan promosi Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="gambar">Gambar Slider</label>
+                        <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                    </div>
+                    <img id="preview" src="#" alt="Preview banner"
+                        style="max-width: 100%; max-height: 200px; display: none;">
+                    <div class="mb-3">
+                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                            readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
@@ -34,8 +50,10 @@
                     .then(response => response.json())
                     .then(data => {
                         document.getElementById('edit-id').value = data.id;
-                        document.getElementById('link_edit').value = data
-                            .link; // Set nilai input sesuai dengan data.link
+                        document.getElementById('tagline').value = data.tagline;
+                        document.getElementById('promosi').value = data.promosi;
+                        document.getElementById('preview').value = data.preview;
+                        document.getElementById('tgl').value = data.tgl;
                         document.getElementById('editForm').action = `/data/${data.id}`;
                     })
                     .catch(error => {
