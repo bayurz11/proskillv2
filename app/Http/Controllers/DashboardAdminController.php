@@ -7,6 +7,7 @@ use App\Models\UserRoles;
 use App\Models\UserProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\NewNotification;
 
 class DashboardAdminController extends Controller
 {
@@ -98,5 +99,11 @@ class DashboardAdminController extends Controller
 
         // Redirect pengguna ke halaman login dengan pesan berhasil logout
         return redirect()->route('login_admin')->with('success', 'Anda berhasil keluar.');
+    }
+
+    public function sendNotification()
+    {
+        $user = Auth::user();
+        $user->notify(new NewNotification());
     }
 }

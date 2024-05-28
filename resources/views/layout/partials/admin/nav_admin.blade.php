@@ -31,9 +31,9 @@
                         <li class="nav-item">
                             <a href="{{ route('HeroSectionSetting') }}" class="nav-link">Hero Section Setting</a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="pages/email/compose.html" class="nav-link">Compose</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </li>
