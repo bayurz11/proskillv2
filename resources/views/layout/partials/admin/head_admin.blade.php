@@ -33,4 +33,3 @@
 <!-- Plugin css for this page -->
 <link rel="stylesheet" href="public/assets_admin/vendors/easymde/easymde.min.css">
 <!-- End plugin css for this page -->
-{{-- @notifyCss --}}
