@@ -53,7 +53,8 @@ class indexController extends Controller
     public function showArtikel()
     {
         $artikel = Artikel::orderBy('tgl', 'desc')->take(3)->get();
-        $artikels = Artikel::paginate(2);
+        $artikels = Artikel::latest()->take(2)->get();
+        // $artikels = Artikel::paginate(2);
         return view('artikel', compact('artikel', 'artikels'));
     }
     public function artikeldetail($id)
