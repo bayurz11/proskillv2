@@ -46,7 +46,7 @@
         // Fetch data when the edit button is clicked
         $('.edit-button').on('click', function() {
             const id = $(this).data('id');
-            fetch(`/galery/${id}/edit`)
+            fetch(`/HeroSection/${id}/edit`)
                 .then(response => response.json())
                 .then(data => {
                     $('#edit-id').val(data.id);
