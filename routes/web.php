@@ -51,6 +51,7 @@ Route::put('/HeroSection/{id}', [HeroSectionController::class, 'update'])->name(
 Route::get('/ContohSertifikatSetting', [ContohsertifikatController::class, 'show'])->name('ContohSertifikatSetting');
 Route::post('/ContohSertifikatStore', [ContohsertifikatController::class, 'store'])->name('ContohSertifikatStore');
 Route::delete('/ContohSertifikatDestroy/{id}', [ContohsertifikatController::class, 'destroy'])->name('ContohSertifikatDestroy');
+
 //---end Contoh Sertifikat---// 
 
 //---Kelas Online---//

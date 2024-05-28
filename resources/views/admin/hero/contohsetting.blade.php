@@ -129,7 +129,7 @@
 
                                                 <script>
                                                     function hapus(id) {
-                                                        if (confirm('Apakah Anda yakin ingin menghapus  ini?')) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus ini?')) {
                                                             fetch(`/ContohSertifikatDestroy/${id}`, {
                                                                     method: 'DELETE',
                                                                     headers: {
@@ -149,7 +149,6 @@
                                                                 .catch(error => {
                                                                     console.error('Terjadi kesalahan:', error);
                                                                 });
-
                                                         }
                                                     }
                                                 </script>
