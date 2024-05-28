@@ -29,5 +29,5 @@
 <!-- Plugin js for this page -->
 <script src="public/assets_admin/vendors/easymde/easymde.min.js"></script>
 <script src="public/assets_admin/js/easymde.js"></script>
-<x-notify::notify />
-@notifyJs
+{{-- <x-notify::notify />
+@notifyJs --}}
