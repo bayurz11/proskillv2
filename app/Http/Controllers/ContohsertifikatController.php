@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contohsertifikat;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreContohsertifikatRequest;
 use App\Http\Requests\UpdateContohsertifikatRequest;
@@ -89,7 +88,6 @@ class ContohsertifikatController extends Controller
      */
     public function destroy($id)
     {
-        Log::info('Destroy method called with id: ' . $id);
         // Temukan Contohsertifikat berdasarkan ID
         $contoh = Contohsertifikat::find($id);
 
