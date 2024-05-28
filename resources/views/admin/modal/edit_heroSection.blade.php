@@ -9,6 +9,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                 </div>
                 <div class="modal-body">
+                    <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
                         <label for="tagline" class="form-label">Tagline</label>
                         <input type="text" class="form-control" id="tagline" name="tagline"
@@ -27,8 +28,7 @@
                         style="max-width: 100%; max-height: 200px; display: none;">
                     <div class="mb-3">
                         <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                            readonly>
+                        <input type="text" class="form-control" id="tgl" name="tgl" readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -40,26 +40,60 @@
     </div>
 </div>
 
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const editButtons = document.querySelectorAll('.edit-button');
-        editButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const id = this.getAttribute('data-id');
-                fetch(`/HeroSection/${id}/edit`)
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('edit-id').value = data.id;
-                        document.getElementById('tagline').value = data.tagline;
-                        document.getElementById('promosi').value = data.promosi;
-                        document.getElementById('preview').value = data.preview;
-                        document.getElementById('tgl').value = data.tgl;
-                        document.getElementById('editForm').action = `/data/${data.id}`;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching data:', error);
-                    });
-            });
+    $(document).ready(function() {
+        // Fetch data when the edit button is clicked
+        $('.edit-button').on('click', function() {
+            const id = $(this).data('id');
+            fetch(`/galery/${id}/edit`)
+                .then(response => response.json())
+                .then(data => {
+                    $('#edit-id').val(data.id);
+                    $('#tagline').val(data.tagline);
+                    $('#promosi').val(data.promosi);
+                    $('#tgl').val(data.tgl);
+
+                    // If there is an image, show it in the preview
+                    if (data.gambar) {
+                        $('#preview').attr('src', `/path/to/images/${data.gambar}`).show();
+                    } else {
+                        $('#preview').hide();
+                    }
+
+                    // Set the form action to the update route
+                    $('#editForm').attr('action', `/galery/${data.id}`);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
         });
+
+        // Display the uploaded image preview
+        $('#gambar').change(function() {
+            readURL(this);
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#preview').attr('src', e.target.result).show();
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Set the current date to the date input
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth();
+        var year = currentDate.getFullYear();
+        var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+            "September", "Oktober", "November", "Desember"
+        ];
+        day = day < 10 ? '0' + day : day;
+        var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+        $('#tgl').val(formattedDate);
     });
 </script>
