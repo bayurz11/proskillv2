@@ -82,11 +82,22 @@ class HeroSectionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = HeroSection::findOrFail($id);
-        $data->link = $request->input('link');
-        $data->save();
 
-        return redirect()->back()->with('success', 'Data updated successfully');
+        $data = HeroSection::findOrFail($id);
+        $data->tagline = $request->tagline;
+        $data->promosi = $request->promosi;
+        $data->tgl = $request->tgl;
+
+        if ($request->hasFile('gambar')) {
+            // Handle file upload
+            $file = $request->file('gambar');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('path/to/images'), $filename);
+            $data->gambar = $filename;
+        }
+
+        $data->save();
+        return redirect()->route('HeroSectionSetting')->with('success', 'Data updated successfully');
     }
 
     /**

@@ -44,7 +44,7 @@ Route::get('/HeroSectionSetting', [HeroSectionController::class, 'show'])->name(
 Route::post('/HeroSectionStore', [HeroSectionController::class, 'store'])->name('HeroSectionStore');
 Route::delete('/HeroSectionDestroy/{id}', [HeroSectionController::class, 'destroy'])->name('HeroSectionDestroy');
 Route::get('/HeroSection/{id}/edit', [HeroSectionController::class, 'edit'])->name('HeroSection.edit');
-Route::put('/HeroSection/{id}', [HeroSectionController::class, 'HeroSectionupdate'])->name('HeroSection.update');
+Route::put('/HeroSection/{id}', [HeroSectionController::class, 'update'])->name('HeroSection.update');
 //---end Hero Section---//
 
 //---Contoh Sertifikat---//
