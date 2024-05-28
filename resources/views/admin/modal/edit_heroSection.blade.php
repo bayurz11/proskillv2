@@ -21,7 +21,7 @@
                             placeholder="Masukkan promosi Anda">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="gambar">Gambar Slider</label>
+                        <label class="form-label" for="gambar_edit">Gambar Slider</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar_edit" name="gambar">
                     </div>
                     <img id="preview_edit" src="#" alt="Preview banner"
@@ -39,7 +39,6 @@
         </div>
     </div>
 </div>
-
 <script>
     $(document).ready(function() {
         // Fetch data when the edit button is clicked
@@ -69,7 +68,7 @@
         });
 
         // Display the uploaded image preview
-        $('#gambar').change(function() {
+        $('#gambar_edit').change(function() {
             readURL(this);
         });
 
@@ -93,6 +92,6 @@
         ];
         day = day < 10 ? '0' + day : day;
         var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
-        $('#tgl').val(formattedDate);
+        $('#tgl_edit').val(formattedDate);
     });
 </script>
