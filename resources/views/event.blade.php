@@ -7,7 +7,7 @@
         .breadcrumb-wrapper {
             background-size: cover;
             background-position: center;
-            padding: 10px 0;
+            padding: 2px 0;
             /* Adjust the padding as needed */
         }
 
