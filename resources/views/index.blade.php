@@ -28,13 +28,10 @@
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
                                         <div class="hero-content">
-                                            <h4 data-animation="fadeInUp" data-delay="1.3s" style="color: #FE9900; );">
-                                                Selamat
-                                                Datang di Proskill</h4>
-                                            <h1 data-animation="fadeInUp" data-delay="1.5s" style="color: #ffffff; );">
+                                            <h2 data-animation="fadeInUp" data-delay="1.5s" style="color: #ffffff; );">
                                                 {{ $heroSection->tagline }}</span>
-                                            </h1>
-                                            <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #FE9900;);">
+                                            </h2>
+                                            <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #ffffff;);">
                                                 {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
@@ -47,7 +44,6 @@
                                                 </a>
 
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -143,8 +139,7 @@
             <div class="pricing-wrapper">
                 <div class="section-title text-center mb-0">
                     <span class="wow fadeInUp">Bergabung Bersama Kami</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">Dengan harga murah <br>
-                        dapatkan fasilitas fantastis
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">Pilihan Kursus
                     </h2>
                 </div>
             </div>
