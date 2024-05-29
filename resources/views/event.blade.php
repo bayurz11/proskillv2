@@ -3,6 +3,102 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
+    <style>
+        .breadcrumb-wrapper {
+            background-size: cover;
+            background-position: center;
+            padding: 20px 0;
+            /* Adjust the padding as needed */
+        }
+
+        .breadcrumb-wrapper .line-shape img,
+        .breadcrumb-wrapper .plane-shape img,
+        .breadcrumb-wrapper .doll-shape img,
+        .breadcrumb-wrapper .parasuit-shape img,
+        .breadcrumb-wrapper .frame-shape img,
+        .breadcrumb-wrapper .bee-shape img {
+            width: 50px;
+            /* Adjust the size as needed */
+            height: auto;
+            /* Maintain the aspect ratio */
+        }
+
+        .breadcrumb-wrapper .line-shape {
+            position: absolute;
+            top: 10px;
+            /* Adjust position as needed */
+            left: 10px;
+        }
+
+        .breadcrumb-wrapper .plane-shape,
+        .breadcrumb-wrapper .doll-shape,
+        .breadcrumb-wrapper .parasuit-shape,
+        .breadcrumb-wrapper .frame-shape,
+        .breadcrumb-wrapper .bee-shape {
+            position: absolute;
+            animation: float-bob 3s infinite;
+            /* Adjust the animation duration as needed */
+        }
+
+        /* Additional position adjustments */
+        .breadcrumb-wrapper .plane-shape {
+            top: 20px;
+            right: 20px;
+        }
+
+        .breadcrumb-wrapper .doll-shape {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .breadcrumb-wrapper .parasuit-shape {
+            top: 50px;
+            left: 50px;
+        }
+
+        .breadcrumb-wrapper .frame-shape {
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .breadcrumb-wrapper .bee-shape {
+            top: 100px;
+            right: 100px;
+        }
+
+        /* Animation for floating effect */
+        @keyframes float-bob {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .float-bob-y {
+            animation: float-bob 3s infinite;
+        }
+
+        .float-bob-x {
+            animation: float-bob 3s infinite alternate;
+        }
+
+        .page-heading h1 {
+            font-size: 2.5em;
+            /* Adjust the font size as needed */
+        }
+
+        .breadcrumb-items {
+            font-size: 1.2em;
+            /* Adjust the font size as needed */
+        }
+    </style>
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');" loading="lazy">
         <div class="line-shape">
             <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img" loading="lazy">
