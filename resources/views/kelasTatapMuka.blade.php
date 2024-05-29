@@ -43,7 +43,7 @@
     </div>
 
     <!-- Clases Section Start -->
-    <section class="clases-section section-padding">
+    <section class="clases-section fix section-padding">
         <div class="container">
             <div class="row g-4">
                 @foreach ($kelasOffline as $Offline)
