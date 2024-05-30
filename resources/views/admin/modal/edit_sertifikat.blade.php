@@ -38,38 +38,58 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const editButtons = document.querySelectorAll('.edit-button');
-        editButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const id = this.getAttribute('data-id');
-                fetch(`/srt/${id}/edit`)
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('edit-id').value = data.id;
-                        document.getElementById('sertifikat_name_edit').value = data
-                            .name; // Updated to data.name
-                        document.getElementById('editForm').action = `/srt/${data.id}`;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching data:', error);
-                    });
-            });
+    $(document).ready(function() {
+        // Fetch data when the edit button is clicked
+        $('.edit-button').on('click', function() {
+            const id = $(this).data('id');
+            fetch(`/HeroSection/${id}/edit`)
+                .then(response => response.json())
+                .then(data => {
+                    $('#edit-id').val(data.id);
+                    $('#sertifikat_name_edit').val(data.sertifikat_name);
+                    $('#promosi_edit').val(data.promosi);
+                    $('#tgl_edit').val(data.tgl);
+
+                    // If there is an image, show it in the preview
+                    if (data.gambar) {
+                        $('#preview_edit').attr('src', `/path/to/images/${data.gambar}`).show();
+                    } else {
+                        $('#preview_edit').hide();
+                    }
+
+                    // Set the form action to the update route
+                    $('#editForm').attr('action', `/HeroSection/${data.id}`);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
         });
 
-        const gambarInput = document.getElementById('gambar');
-        const preview = document.getElementById('preview');
+        // Display the uploaded image preview
+        $('#gambar_edit').change(function() {
+            readURL(this);
+        });
 
-        gambarInput.addEventListener('change', function() {
-            const file = this.files[0];
-            if (file) {
-                const reader = new FileReader();
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
                 reader.onload = function(e) {
-                    preview.src = e.target.result;
-                    preview.style.display = 'block';
-                }
-                reader.readAsDataURL(file);
+                    $('#preview_edit').attr('src', e.target.result).show();
+                };
+                reader.readAsDataURL(input.files[0]);
             }
-        });
+        }
+
+        // Set the current date to the date input
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth();
+        var year = currentDate.getFullYear();
+        var monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+            "September", "Oktober", "November", "Desember"
+        ];
+        day = day < 10 ? '0' + day : day;
+        var formattedDate = day + ' ' + monthNames[month] + ' ' + year;
+        $('#tgl_edit').val(formattedDate);
     });
 </script>
