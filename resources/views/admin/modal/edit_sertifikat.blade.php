@@ -43,7 +43,7 @@
         editButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const id = this.getAttribute('data-id');
-                fetch(`/data/${id}/edit`)
+                fetch(`/sertifikat/${id}/edit`)
                     .then(response => response.json())
                     .then(data => {
                         document.getElementById('edit-id').value = data.id;
