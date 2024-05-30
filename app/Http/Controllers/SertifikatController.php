@@ -37,12 +37,12 @@ class SertifikatController extends Controller
 
             $userId = Auth::id();
 
-            $hero = new Sertifikat();
-            $hero->img = $gambarName;
-            $hero->sertifikat_name = $request->sertifikat_name;
-            $hero->tgl = $request->tgl;
-            $hero->user_id = $userId;
-            $hero->save();
+            $sertifikat = new Sertifikat();
+            $sertifikat->img = $gambarName;
+            $sertifikat->sertifikat_name = $request->sertifikat_name;
+            $sertifikat->tgl = $request->tgl;
+            $sertifikat->user_id = $userId;
+            $sertifikat->save();
 
             return redirect()->route('sertifikat')->with('success', 'Sertifikat Berhasil ditambahkan.');
         } else {
@@ -81,33 +81,19 @@ class SertifikatController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $data = Sertifikat::findOrFail($id);
+        $data->sertifikat_name = $request->sertifikat_name;
+        $data->tgl = $request->tgl;
 
-        $request->validate([
-            'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-            'sertifikat_name' => 'required|string|max:255',
-        ]);
-
-        $sertifikat = Sertifikat::find($id);
-
-        if (!$sertifikat) {
-            return redirect()->route('sertifikat.index')->with('error', 'Sertifikat tidak ditemukan.');
-        }
-        if ($sertifikat->user_id != Auth::id()) {
-            return redirect()->route('sertifikat.index')->with('error', 'Anda tidak memiliki izin untuk mengedit sertifikat ini.');
-        }
         if ($request->hasFile('gambar')) {
-
-            Storage::delete($sertifikat->img);
-
-            $gambarName = time() . '.' . $request->gambar->extension();
-            $request->gambar->move(public_path('uploads'), $gambarName);
-            $sertifikat->img = $gambarName;
+            $file = $request->file('gambar');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('uploads'), $filename);
+            $data->img = $filename;
         }
 
-        $sertifikat->sertifikat_name = $request->input('sertifikat_name');
-        $sertifikat->save();
-
-        return redirect()->route('sertifikat')->with('success', 'Sertifikat berhasil diperbarui.');
+        $data->save();
+        return redirect()->route('HeroSectionSetting')->with('success', 'Data updated successfully');
     }
 
     /**
