@@ -162,7 +162,8 @@
                                         <div class="row g-4">
                                             <div class="col-lg-6">
                                                 <div class="details-image">
-                                                    <img src="assets/img/news/post-5.jpg" alt="img">
+                                                    <img src="{{ asset('public/uploads/' . $artikel->banner) }}"
+                                                        alt="img">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
