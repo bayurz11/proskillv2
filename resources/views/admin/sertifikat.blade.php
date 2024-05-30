@@ -130,8 +130,8 @@
                                                     }
                                                 </script>
                                                 <button href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
-                                                    class="btn btn-danger btn-icon" title="prin">
-                                                    <i data-feather="print"></i>
+                                                    class="btn btn-warning btn-icon" title="prin">
+                                                    <i data-feather="printer"></i>
                                                 </button>
                                                 {{-- <a class="btn btn-sm bg-warning-light"
                                                     href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
