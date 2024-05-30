@@ -80,8 +80,13 @@ class KelasTatapMukaController extends Controller
      */
     public function edit($id)
     {
-        $data = KelasTatapMuka::findOrFail($id);
-        return response()->json($data);
+        $kelas = KelasTatapMuka::find($id);
+
+        if (!$kelas) {
+            return response()->json(['message' => 'Kelas not found'], 404);
+        }
+
+        return response()->json($kelas);
     }
 
     /**
