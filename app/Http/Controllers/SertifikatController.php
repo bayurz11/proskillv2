@@ -93,7 +93,7 @@ class SertifikatController extends Controller
         }
 
         $data->save();
-        return redirect()->route('HeroSectionSetting')->with('success', 'Data updated successfully');
+        return redirect()->route('sertifikat')->with('success', 'Data updated successfully');
     }
 
     /**
@@ -101,12 +101,15 @@ class SertifikatController extends Controller
      */
     public function destroy($id)
     {
+        // Temukan artikel berdasarkan ID
         $sertifikat = Sertifikat::find($id);
 
+        // Periksa apakah artikel ditemukan
         if (!$sertifikat) {
             return redirect()->route('sertifikat')->with('error', 'sertifikat tidak ditemukan');
         }
 
+        // Hapus artikel
         $sertifikat->delete();
 
         return redirect()->route('sertifikat')->with('success', 'sertifikat berhasil dihapus');
