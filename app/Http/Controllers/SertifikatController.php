@@ -29,22 +29,26 @@ class SertifikatController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-            'sertifikat_name' => 'required|string|max:255',
-        ]);
 
-        $gambarName = time() . '.' . $request->gambar->extension();
-        $request->gambar->move(public_path('uploads'), $gambarName);
+        // Memastikan file gambar telah dipilih sebelum mencoba mengambil ekstensi
+        if ($request->hasFile('gambar')) {
+            $gambarName = time() . '.' . $request->gambar->extension();
+            $request->gambar->move(public_path('uploads'), $gambarName);
 
-        $userId = Auth::id();
+            $userId = Auth::id();
 
-        $sertifikat = new Sertifikat();
-        $sertifikat->img = $gambarName;
-        $sertifikat->sertifikat_name = $request->sertifikat_name;
-        $sertifikat->user_id = $userId;
-        $sertifikat->save();
-        return redirect()->route('sertifikat')->with('success', 'Artikel berhasil disimpan.');
+            $hero = new Sertifikat();
+            $hero->img = $gambarName;
+            $hero->sertifikat_name = $request->sertifikat_name;
+            $hero->tgl = $request->tgl;
+            $hero->user_id = $userId;
+            $hero->save();
+
+            return redirect()->route('sertifikat')->with('success', 'Sertifikat Berhasil ditambahkan.');
+        } else {
+            // Jika tidak ada file yang dipilih, kembalikan respons dengan pesan kesalahan
+            return redirect()->route('sertifikat')->with('error', 'Pilih gambar terlebih dahulu.');
+        }
     }
 
     /**
