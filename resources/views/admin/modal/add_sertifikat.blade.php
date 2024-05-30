@@ -9,16 +9,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="gambar" class="form-label">Sertifikat/Gambar</label>
+                        <label class="form-label" for="gambar">Gambar Slider</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
-                        <small class="text-secondary">Note : Unggah gambar</small>
                     </div>
-                    <img id="preview" src="#" alt="Preview Gambar"
+                    <img id="preview" src="#" alt="Preview banner"
                         style="max-width: 100%; max-height: 200px; display: none;">
 
                     <div class="mb-3">
                         <label for="sertifikat_name" class="form-label">Nama</label>
                         <input type="text" class="form-control" id="sertifikat_name" name="sertifikat_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                            readonly>
                     </div>
                 </div>
                 <div class="modal-footer">

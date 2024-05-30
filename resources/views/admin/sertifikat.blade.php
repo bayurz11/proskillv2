@@ -134,11 +134,6 @@
                                                     <i data-feather="printer"></i>
                                                 </a>
 
-                                                {{-- <a class="btn btn-sm bg-warning-light"
-                                                    href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
-                                                    target="_blank">
-                                                    <i class="fe fe-print"></i>
-                                                </a> --}}
                                             </td>
                                         </tr>
                                     @endforeach
