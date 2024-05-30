@@ -63,6 +63,8 @@ Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name(
 Route::get('/KelasOfflineSetting', [KelasTatapMukaController::class, 'show'])->name('KelasOfflineSetting');
 Route::post('/KelasOfflineStore', [KelasTatapMukaController::class, 'store'])->name('KelasOfflineStore');
 Route::delete('/KelasOfflineDestroy/{id}', [KelasTatapMukaController::class, 'destroy'])->name('KelasOfflineDestroy');
+Route::get('/kelasoffline/{id}/edit', [KelasTatapMukaController::class, 'edit'])->name('kelasoffline.edit');
+Route::put('/kelasoffline/{id}', [KelasTatapMukaController::class, 'update'])->name('kelasoffline.update');
 //---end Kelas Tatap Muka---//
 
 //---Artikel---//

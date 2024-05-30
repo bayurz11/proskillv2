@@ -11,9 +11,9 @@
                 <div class="modal-body">
                     <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
-                        <label for="sertifikat_name_edit" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="sertifikat_name_edit"
-                            name="sertifikat_name_edit">
+                        <label for="kelas_edit" class="form-label">Nama Kelas</label>
+                        <input type="text" class="form-control" id="kelas_edit" name="kelas_edit"
+                            placeholder="Masukkan nama kelas Anda">
                     </div>
 
                     <div class="mb-3">
@@ -42,11 +42,11 @@
         // Fetch data when the edit button is clicked
         $('.edit-button').on('click', function() {
             const id = $(this).data('id');
-            fetch(`/srt/${id}/edit`)
+            fetch(`/kelasoffline/${id}/edit`)
                 .then(response => response.json())
                 .then(data => {
                     $('#edit-id').val(data.id);
-                    $('#sertifikat_name_edit').val(data.sertifikat_name);
+                    $('#kelas_edit').val(data.kelas);
                     $('#promosi_edit').val(data.promosi);
                     $('#tgl_edit').val(data.tgl);
 
