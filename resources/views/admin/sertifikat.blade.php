@@ -68,7 +68,7 @@
                                                                 }
                                                             }).then(response => {
                                                                 if (response.ok) {
-                                                                    console.log('Link berhasil dihapus. Mengalihkan ke halaman pengaturan link.');
+                                                                    console.log('Sertifikat berhasil dihapus. Mengalihkan ke halaman pengaturan link.');
                                                                     // Jika penghapusan berhasil, kembali ke halaman /link_setting
                                                                     window.location.href = '{{ route('link_setting') }}';
                                                                 } else {

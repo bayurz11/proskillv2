@@ -114,7 +114,7 @@ Route::get('/master_kategori', [InventarisController::class, 'showkategori'])->n
 
 //Sertifikat setting
 Route::any('/sertifikat', [SertifikatController::class, 'show'])->name('sertifikat');
-Route::get('/sertifikat_destroy/{id}', [SertifikatController::class, 'destroy'])->name('sertifikat_destroy');
+Route::delete('/sertifikat_destroy/{id}', [SertifikatController::class, 'destroy'])->name('sertifikat_destroy');
 Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('sertifikat_store');
 Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
 Route::get('/srt/{id}/edit', [SertifikatController::class, 'edit'])->name('srt.edit');
