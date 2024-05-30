@@ -11,7 +11,7 @@
                 <div class="modal-body">
                     <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
-                        <label for="sertifikat_name_edit" class="form-label">Nama </label>
+                        <label for="sertifikat_name_edit" class="form-label">Nama</label>
                         <input type="text" class="form-control" id="sertifikat_name_edit"
                             name="sertifikat_name_edit">
                     </div>
@@ -48,14 +48,28 @@
                     .then(data => {
                         document.getElementById('edit-id').value = data.id;
                         document.getElementById('sertifikat_name_edit').value = data
-                            .link; // Set nilai input sesuai dengan data.link
-                        document.getElementById('editForm').action =
-                            `/srt/${data.id}`;
+                            .name; // Updated to data.name
+                        document.getElementById('editForm').action = `/srt/${data.id}`;
                     })
                     .catch(error => {
                         console.error('Error fetching data:', error);
                     });
             });
+        });
+
+        const gambarInput = document.getElementById('gambar');
+        const preview = document.getElementById('preview');
+
+        gambarInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
         });
     });
 </script>
