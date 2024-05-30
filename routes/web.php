@@ -117,8 +117,8 @@ Route::any('/sertifikat', [SertifikatController::class, 'show'])->name('sertifik
 Route::get('/sertifikat_destroy/{id}', [SertifikatController::class, 'destroy'])->name('sertifikat_destroy');
 Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('sertifikat_store');
 Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
-Route::get('/sertifikat/{id}/edit', [SertifikatController::class, 'edit'])->name('sertifikat.edit');
-Route::put('/sertifikat/{id}', [SertifikatController::class, 'update'])->name('sertifikat.update');
+Route::get('/srt/{id}/edit', [SertifikatController::class, 'edit'])->name('srt.edit');
+Route::put('/srt/{id}', [SertifikatController::class, 'update'])->name('srt.update');
 // Route::put('/sertifikat_update/{id}', [SertifikatController::class, 'update'])->name('sertifikat_update');
 
 //**************END DADHBOARD ADMIN **************//
