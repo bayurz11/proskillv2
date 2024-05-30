@@ -7,7 +7,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Link</li>
+                <li class="breadcrumb-item active" aria-current="page">Sertifikat</li>
             </ol>
         </nav>
 
@@ -66,21 +66,21 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="card-title"> link</h6>
+                        <h6 class="card-title"> Sertifikat</h6>
 
                         <button type="button" class="btn btn-outline-primary position-absolute top-0 end-0 mt-3 me-3"
                             data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="btn-icon-prepend"
                                 data-feather="plus-circle"></i>
-                            Tambah link
+                            Tambah Sertifikat
                         </button>
-                        <p class="text-muted mb-3">Jumlah Foto : </p>
+                        <p class="text-muted mb-3">Jumlah Sertifikat : </p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Link</th>
-
+                                        <th>nama</th>
+                                        <th>Gambar</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
