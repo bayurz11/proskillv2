@@ -9,6 +9,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                 </div>
                 <div class="modal-body">
+                    <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
                         <label for="kelas_edit" class="form-label">Nama Kelas</label>
                         <input type="text" class="form-control" id="kelas_edit" name="kelas_edit"
@@ -99,8 +100,9 @@
             fetch(`/kelasoffline/${id}/edit`)
                 .then(response => response.json())
                 .then(data => {
+                    $('#edit-id').val(data.id);
                     $('#kelas_edit').val(data.kelas);
-                    $('#lvl_edit').val(data.lvl);
+                    $('#lvl_edit').val(data.level);
                     $('#durasi_edit').val(data.durasi);
                     $('#jumlah_siswa_edit').val(data.jumlah_siswa);
                     $('#sertifikat_edit').val(data.sertifikat);
