@@ -70,9 +70,10 @@ class SertifikatController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Sertifikat $sertifikat)
+    public function edit($id)
     {
-        //
+        $data = Sertifikat::findOrFail($id);
+        return response()->json($data);
     }
 
     /**
