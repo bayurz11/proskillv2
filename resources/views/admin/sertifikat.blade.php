@@ -13,6 +13,7 @@
 
         {{-- @include('admin.modal.add_link') --}}
         @include('admin.modal.add_sertifikat')
+        @include('admin.modal.edit_sertifikat')
 
         <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -21,7 +22,7 @@
                         @csrf
                         @method('PUT')
                         <div class="modal-header">
-                            <h5 class="modal-title" id="editModalLabel">Edit link</h5>
+                            <h5 class="modal-title" id="editModalLabel">Edit Sertifikat</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="btn-close"></button>
                         </div>
