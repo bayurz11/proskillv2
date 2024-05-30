@@ -73,6 +73,7 @@ class HeroSectionController extends Controller
      */
     public function edit($id)
     {
+
         $data = HeroSection::findOrFail($id);
         return response()->json($data);
     }

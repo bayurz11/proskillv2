@@ -14,6 +14,7 @@
         @include('admin.modal.add_heroSection')
         @include('admin.modal.edit_heroSection')
 
+
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">

@@ -78,17 +78,38 @@ class KelasTatapMukaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(KelasTatapMuka $kelasTatapMuka)
+    public function edit($id)
     {
-        //
+        $data = KelasTatapMuka::findOrFail($id);
+        return response()->json($data);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateKelasTatapMukaRequest $request, KelasTatapMuka $kelasTatapMuka)
+    public function update(Request $request, $id)
     {
-        //
+        $kelasOffline = KelasTatapMuka::findOrFail($id);
+        $kelasOffline->kelas = $request->kelas;
+        $kelasOffline->lvl = $request->lvl;
+        $kelasOffline->durasi = $request->durasi;
+        $kelasOffline->jumlah_siswa = $request->jumlah_siswa;
+        $kelasOffline->sertifikat = $request->sertifikat;
+        $kelasOffline->price = $request->price;
+        $kelasOffline->deskripsi = $request->deskripsi;
+        $kelasOffline->tgl = $request->tgl;
+        $kelasOffline->instruktur = $request->instruktur;
+        $kelasOffline->fasilitas = $request->fasilitas;
+
+        if ($request->hasFile('gambar')) {
+            $file = $request->file('gambar');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('uploads'), $filename);
+            $kelasOffline->banner = $filename;
+        }
+
+        $kelasOffline->save();
+        return redirect()->route('HeroSectionSetting')->with('success', 'Data updated successfully');
     }
 
     /**
