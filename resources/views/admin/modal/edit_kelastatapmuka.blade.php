@@ -58,7 +58,7 @@
                     }
 
                     // Set the form action to the update route
-                    $('#editForm').attr('action', `/srt/${data.id}`);
+                    $('#editForm').attr('action', `/kelasoffline/${data.id}`);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
