@@ -129,11 +129,15 @@
                                                         }
                                                     }
                                                 </script>
-                                                <a class="btn btn-sm bg-warning-light"
+                                                <button href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
+                                                    class="btn btn-danger btn-icon" title="prin">
+                                                    <i data-feather="print"></i>
+                                                </button>
+                                                {{-- <a class="btn btn-sm bg-warning-light"
                                                     href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
                                                     target="_blank">
                                                     <i class="fe fe-print"></i>
-                                                </a>
+                                                </a> --}}
                                             </td>
                                         </tr>
                                     @endforeach
