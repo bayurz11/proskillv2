@@ -73,7 +73,7 @@
                                 data-feather="plus-circle"></i>
                             Tambah link
                         </button>
-                        <p class="text-muted mb-3">Jumlah Foto : {{ $link->count() }}</p>
+                        <p class="text-muted mb-3">Jumlah Foto : </p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
