@@ -11,8 +11,21 @@
                 <div class="modal-body">
                     <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
-                        <label for="link" class="form-label">Link Video</label>
-                        <input type="text" class="form-control" id="link_edit" name="link" value="">
+                        <label for="sertifikat_name_edit" class="form-label">Nama </label>
+                        <input type="text" class="form-control" id="sertifikat_name_edit"
+                            name="sertifikat_name_edit">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="gambar">Sertifikat</label>
+                        <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                    </div>
+                    <img id="preview" src="#" alt="Preview banner"
+                        style="max-width: 100%; max-height: 200px; display: none;">
+                    <div class="mb-3">
+                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                            readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -34,7 +47,7 @@
                     .then(response => response.json())
                     .then(data => {
                         document.getElementById('edit-id').value = data.id;
-                        document.getElementById('link_edit').value = data
+                        document.getElementById('sertifikat_name_edit').value = data
                             .link; // Set nilai input sesuai dengan data.link
                         document.getElementById('editForm').action = `/data/${data.id}`;
                     })
