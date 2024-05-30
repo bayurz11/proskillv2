@@ -42,7 +42,7 @@
         // Fetch data when the edit button is clicked
         $('.edit-button').on('click', function() {
             const id = $(this).data('id');
-            fetch(`/HeroSection/${id}/edit`)
+            fetch(`/srt/${id}/edit`)
                 .then(response => response.json())
                 .then(data => {
                     $('#edit-id').val(data.id);
@@ -58,7 +58,7 @@
                     }
 
                     // Set the form action to the update route
-                    $('#editForm').attr('action', `/HeroSection/${data.id}`);
+                    $('#editForm').attr('action', `/srt/${data.id}`);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
