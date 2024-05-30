@@ -70,7 +70,7 @@
                                                                 if (response.ok) {
                                                                     console.log('Sertifikat berhasil dihapus. Mengalihkan ke halaman pengaturan link.');
                                                                     // Jika penghapusan berhasil, kembali ke halaman /link_setting
-                                                                    window.location.href = '{{ route('link_setting') }}';
+                                                                    window.location.href = '{{ route('sertifikat') }}';
                                                                 } else {
                                                                     // Tangani kesalahan jika terjadi
                                                                     response.text().then(text => {
