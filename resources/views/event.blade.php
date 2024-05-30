@@ -178,9 +178,6 @@
         </div>
     </section> --}}
 
-
-
-
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">

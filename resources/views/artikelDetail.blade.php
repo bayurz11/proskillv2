@@ -115,14 +115,14 @@
                                 }
                                 ?>
                                 </p>
-                                <div class="row g-4">
+                                {{-- <div class="row g-4">
                                     <div class="col-lg-6">
                                         <div class="details-image">
                                             <img src="assets/img/news/post-5.jpg" alt="img">
                                         </div>
                                     </div>
 
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
