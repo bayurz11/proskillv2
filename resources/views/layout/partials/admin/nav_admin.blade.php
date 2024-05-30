@@ -167,7 +167,7 @@
                 <div class="collapse" id="Kesiswaan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>
+                            <a href="{{ route('sertifikat') }}" class="nav-link">Sertifikat</a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>

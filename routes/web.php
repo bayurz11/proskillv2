@@ -1,17 +1,18 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\indexController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\ContohsertifikatController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardAdminController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\HeroSectionController;
-use App\Http\Controllers\indexController;
 use App\Http\Controllers\InventarisController;
+use App\Http\Controllers\SertifikatController;
+use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\KelasOnlineController;
-use App\Http\Controllers\KelasTatapMukaController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\KelasTatapMukaController;
+use App\Http\Controllers\ContohsertifikatController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showEvent'])->name('event');
@@ -108,5 +109,14 @@ Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->
 Route::get('/master_barang', [InventarisController::class, 'showbarang'])->name('master_barang');
 //kategori barang
 Route::get('/master_kategori', [InventarisController::class, 'showkategori'])->name('master_kategori');
+
+
+
+//Sertifikat setting
+Route::any('/sertifikat', [SertifikatController::class, 'show'])->name('sertifikat');
+Route::get('/sertifikat_destroy/{id}', [SertifikatController::class, 'destroy'])->name('sertifikat_destroy');
+Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('sertifikat_store');
+Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
+Route::put('/sertifikat_update/{id}', [SertifikatController::class, 'update'])->name('sertifikat_update');
 
 //**************END DADHBOARD ADMIN **************//
