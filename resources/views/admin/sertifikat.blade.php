@@ -90,8 +90,8 @@
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $sertifikate->sertifikat_name }}</td>
-                                            <td><img src="{{ asset('public/uploads/' . $sertifikate->banner) }}"
-                                                    alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
+                                            <td><img src="{{ asset('public/uploads/' . $sertifikate->img) }}" alt="Banner"
+                                                    class="wd-100 wd-sm-150 me-3"></td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
