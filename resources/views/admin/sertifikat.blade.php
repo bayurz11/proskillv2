@@ -11,7 +11,8 @@
             </ol>
         </nav>
 
-        @include('admin.modal.add_link')
+        {{-- @include('admin.modal.add_link') --}}
+        @include('admin.modal.add_sertifikat')
 
         <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -104,8 +105,8 @@
 
                                                 <script>
                                                     function hapuslink(id) {
-                                                        if (confirm('Apakah Anda yakin ingin menghapus link ini?')) {
-                                                            fetch(`/link_destroy/${id}`, {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus ini?')) {
+                                                            fetch(`/sertifikat_destroy/${id}`, {
                                                                 method: 'DELETE',
                                                                 headers: {
                                                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'
