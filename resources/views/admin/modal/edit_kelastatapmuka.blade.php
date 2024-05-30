@@ -9,27 +9,81 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="btn-close"></button>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" id="edit-id" name="id">
                     <div class="mb-3">
                         <label for="kelas_edit" class="form-label">Nama Kelas</label>
                         <input type="text" class="form-control" id="kelas_edit" name="kelas_edit"
                             placeholder="Masukkan nama kelas Anda">
                     </div>
-
                     <div class="mb-3">
-                        <label class="form-label" for="gambar">Sertifikat</label>
-                        <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
+                        <label class="form-label" for="gambar_edit">Gambar Slider</label>
+                        <input type="file" accept="image/*" class="form-control" id="gambar_edit" name="gambar">
                     </div>
-                    <img id="preview" src="#" alt="Preview banner"
+                    <img id="preview_edit" src="#" alt="Preview banner"
                         style="max-width: 100%; max-height: 200px; display: none;">
                     <div class="mb-3">
-                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
-                            readonly>
+                        <label for="lvl_edit" class="form-label">Level Kelas</label>
+                        <input type="text" class="form-control" id="lvl_edit" name="lvl_edit"
+                            placeholder="masukkan Level Kelas anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="durasi_edit" class="form-label">Durasi Kelas</label>
+                        <input type="text" class="form-control" id="durasi_edit" name="durasi_edit"
+                            placeholder="Masukkan durasi kelas anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="jumlah_siswa_edit" class="form-label">Jumlah Siswa</label>
+                        <input type="text" class="form-control" id="jumlah_siswa_edit" name="jumlah_siswa_edit"
+                            placeholder="Masukkan jumlah siswa kelas anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sertifikat_edit" class="form-label">Sertifikat</label>
+                        <input type="text" class="form-control" id="sertifikat_edit" name="sertifikat_edit"
+                            placeholder="Apakah Mendapatkan Sertifikat?">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price_edit" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price_edit" name="price_edit" min="0"
+                            placeholder="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="deskripsi_edit" class="form-label">Deskripsi</label>
+                        <input type="text" class="form-control" id="deskripsi_edit" name="deskripsi_edit"
+                            placeholder="Masukkan deskripsi kelas anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="instruktur_edit" class="form-label">Instruktur</label>
+                        <input type="text" class="form-control" id="instruktur_edit" name="instruktur_edit"
+                            placeholder="Masukkan instruktur kelas anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fasilitas_edit" class="form-label">Fasilitas dan Materi</label>
+                        <input type="text" class="form-control" id="fasilitas_edit" name="fasilitas_edit">
+                        <small class="text-secondary">Note: Isi Dengan Fasilitas dan Materi kemudian klik Enter</small>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var input = document.querySelector('input[name=fasilitas_edit]');
+
+                            new Tagify(input, {
+                                whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
+                                dropdown: {
+                                    enabled: 1,
+                                    maxItems: 20
+                                }
+                            });
+                        });
+                    </script>
+                    <div class="mb-3">
+                        <label for="tgl_edit" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl_edit" name="tgl_edit" readonly>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
             </form>
@@ -45,9 +99,15 @@
             fetch(`/kelasoffline/${id}/edit`)
                 .then(response => response.json())
                 .then(data => {
-                    $('#edit-id').val(data.id);
                     $('#kelas_edit').val(data.kelas);
-                    $('#promosi_edit').val(data.promosi);
+                    $('#lvl_edit').val(data.lvl);
+                    $('#durasi_edit').val(data.durasi);
+                    $('#jumlah_siswa_edit').val(data.jumlah_siswa);
+                    $('#sertifikat_edit').val(data.sertifikat);
+                    $('#price_edit').val(data.price);
+                    $('#deskripsi_edit').val(data.deskripsi);
+                    $('#instruktur_edit').val(data.instruktur);
+                    $('#fasilitas_edit').val(data.fasilitas);
                     $('#tgl_edit').val(data.tgl);
 
                     // If there is an image, show it in the preview
