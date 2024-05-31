@@ -65,7 +65,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="hari" class="form-label">Hari</label>
-                        <select class="form-control" id="hari" name="hari" onchange="showWaktuKursus()">
+                        <select class="form-control" id="hari" name="hari" onchange="updateWaktuKursus()">
                             <option value="">Pilih Hari</option>
                             <option value="senin">Senin</option>
                             <option value="selasa">Selasa</option>
@@ -81,26 +81,72 @@
                         <label for="waktu_kursus" class="form-label">Waktu Kursus</label>
                         <select class="form-control" id="waktu_kursus" name="waktu_kursus">
                             <option value="">Pilih Waktu Kursus</option>
-                            <option value="08.45-10.15">08.45-10.15</option>
-                            <option value="10.30-12.00">10.30-12.00</option>
-                            <option value="13.00-14.30">13.00-14.30</option>
-                            <option value="14.30-16.00">14.30-16.00</option>
-                            <option value="16.30-20.30">16.30-20.30</option>
                         </select>
                     </div>
 
                     <script>
-                        function showWaktuKursus() {
+                        function updateWaktuKursus() {
                             var hari = document.getElementById("hari").value;
                             var waktuKursusContainer = document.getElementById("waktuKursusContainer");
+                            var waktuKursusSelect = document.getElementById("waktu_kursus");
+
+                            // Reset options
+                            waktuKursusSelect.innerHTML = '<option value="">Pilih Waktu Kursus</option>';
 
                             if (hari) {
                                 waktuKursusContainer.style.display = "block";
+                                var options;
+
+                                if (hari === "jumat" || hari === "sabtu") {
+                                    options = [{
+                                            value: "08.45-10.15",
+                                            text: "08.45-10.15"
+                                        },
+                                        {
+                                            value: "10.30-12.00",
+                                            text: "10.30-12.00"
+                                        },
+                                        {
+                                            value: "13.00-14.30",
+                                            text: "13.00-14.30"
+                                        }
+                                    ];
+                                } else {
+                                    options = [{
+                                            value: "08.45-10.15",
+                                            text: "08.45-10.15"
+                                        },
+                                        {
+                                            value: "10.30-12.00",
+                                            text: "10.30-12.00"
+                                        },
+                                        {
+                                            value: "13.00-14.30",
+                                            text: "13.00-14.30"
+                                        },
+                                        {
+                                            value: "14.30-16.00",
+                                            text: "14.30-16.00"
+                                        },
+                                        {
+                                            value: "16.30-20.30",
+                                            text: "16.30-20.30"
+                                        }
+                                    ];
+                                }
+
+                                options.forEach(function(option) {
+                                    var opt = document.createElement('option');
+                                    opt.value = option.value;
+                                    opt.textContent = option.text;
+                                    waktuKursusSelect.appendChild(opt);
+                                });
                             } else {
                                 waktuKursusContainer.style.display = "none";
                             }
                         }
                     </script>
+
 
                 </div>
                 <div class="modal-footer">
