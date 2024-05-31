@@ -9,8 +9,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="sertifikat_name" class="form-label">Nama </label>
-                        <input type="text" class="form-control" id="sertifikat_name" name="sertifikat_name">
+                        <label for="nama" class="form-label">Nama </label>
+                        <input type="text" class="form-control" id="nama" name="nama">
                     </div>
                     <div class="mb-3">
                         <label for="gender" class="form-label">Gender</label>
