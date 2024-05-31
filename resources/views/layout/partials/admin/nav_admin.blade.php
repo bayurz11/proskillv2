@@ -167,10 +167,10 @@
                 <div class="collapse" id="Kesiswaan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="{{ route('sertifikat') }}" class="nav-link">Sertifikat</a>
+                            <a href="{{ route('pendaftaran_siswa') }}" class="nav-link">Pendaftaran Siswa</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>
+                            <a href="{{ route('sertifikat') }}" class="nav-link">Sertifikat</a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
@@ -184,7 +184,7 @@
         </ul>
     </div>
 </nav>
-<nav class="settings-sidebar">
+{{-- <nav class="settings-sidebar">
     <div class="sidebar-body">
         <a href="#" class="settings-sidebar-toggler">
             <i data-feather="settings"></i>
@@ -208,4 +208,4 @@
         </div>
 
     </div>
-</nav>
+</nav> --}}

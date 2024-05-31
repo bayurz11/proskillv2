@@ -13,6 +13,7 @@ use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KelasTatapMukaController;
 use App\Http\Controllers\ContohsertifikatController;
+use App\Http\Controllers\PendaftaranSiswaController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showEvent'])->name('event');
@@ -121,6 +122,8 @@ Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('
 Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
 Route::get('/srt/{id}/edit', [SertifikatController::class, 'edit'])->name('srt.edit');
 Route::put('/srt/{id}', [SertifikatController::class, 'update'])->name('srt.update');
-// Route::put('/sertifikat_update/{id}', [SertifikatController::class, 'update'])->name('sertifikat_update');
+
+//---Pendaftaran Siswa---//
+Route::get('/pendaftaran_siswa', [PendaftaranSiswaController::class, 'show'])->name('pendaftaran_siswa');
 
 //**************END DADHBOARD ADMIN **************//

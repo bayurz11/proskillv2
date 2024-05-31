@@ -56,15 +56,15 @@ class SertifikatController extends Controller
      */
     public function show(Sertifikat $sertifikat)
     {
-        if (Auth::check()) {
 
-            $user = Auth::user();
-            // $categories = Category::all();
-            // $artikel = Artikel::all();
-            $sertifikat = Sertifikat::all();
-            return view('admin.sertifikat', compact('user', 'sertifikat'));
+        $user = Auth::user();
+        $sertifikat = Sertifikat::all();
+        $count = $sertifikat->count();
+        if (!$user) {
+            return redirect()->route('login_admin');
         }
-        return redirect('/show_login');
+
+        return view('admin.sertifikat', compact('user', 'sertifikat', 'count'));
     }
 
     /**
