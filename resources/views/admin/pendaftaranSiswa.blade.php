@@ -10,12 +10,8 @@
                 <li class="breadcrumb-item active" aria-current="page">Data Siswa</li>
             </ol>
         </nav>
-
-        {{-- @include('admin.modal.add_link') --}}
-        @include('admin.modal.add_sertifikat')
-        @include('admin.modal.edit_sertifikat')
-
-
+        @include('admin.modal.add_siswa')
+        @include('admin.modal.edit_siswa')
 
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">

@@ -167,7 +167,7 @@
                 <div class="collapse" id="Kesiswaan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="{{ route('pendaftaran_siswa') }}" class="nav-link">Pendaftaran Siswa</a>
+                            <a href="{{ route('pendaftaran_siswa') }}" class="nav-link">Data Siswa</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('sertifikat') }}" class="nav-link">Sertifikat</a>
