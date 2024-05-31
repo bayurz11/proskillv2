@@ -48,8 +48,11 @@
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $siswa->nama }}</td>
-                                            <td><img src="{{ asset('public/uploads/' . $siswa->img) }}" alt="Banner"
-                                                    class="wd-100 wd-sm-150 me-3"></td>
+                                            <td>{{ $siswa->gender }}</td>
+                                            <td>{{ $siswa->umur }}</td>
+                                            <td>{{ $siswa->tempat_lahir }}</td>
+                                            <td>{{ $siswa->tanggal_lahir }}</td>
+                                            <td>{{ $siswa->kelas }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
