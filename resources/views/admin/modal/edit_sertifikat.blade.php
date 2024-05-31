@@ -23,8 +23,8 @@
                     <img id="preview" src="#" alt="Preview banner"
                         style="max-width: 100%; max-height: 200px; display: none;">
                     <div class="mb-3">
-                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
-                        <input type="text" class="form-control" id="tgl" placeholder="tgl" name="tgl"
+                        <label for="tgl_edit" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl_edit" placeholder="tgl_edit" name="tgl_edit"
                             readonly>
                     </div>
                 </div>
@@ -47,7 +47,6 @@
                 .then(data => {
                     $('#edit-id').val(data.id);
                     $('#sertifikat_name_edit').val(data.sertifikat_name);
-                    $('#promosi_edit').val(data.promosi);
                     $('#tgl_edit').val(data.tgl);
 
                     // If there is an image, show it in the preview
