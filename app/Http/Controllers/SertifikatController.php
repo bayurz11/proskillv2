@@ -82,8 +82,8 @@ class SertifikatController extends Controller
     public function update(Request $request, $id)
     {
         $data = Sertifikat::findOrFail($id);
-        $data->sertifikat_name_edit = $request->sertifikat_name;
-        $data->tgl_edit = $request->tgl;
+        $data->sertifikat_name = $request->sertifikat_name_edit;
+        $data->tgl = $request->tgl_edit;
 
         if ($request->hasFile('gambar')) {
             $file = $request->file('gambar');
