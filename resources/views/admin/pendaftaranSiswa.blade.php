@@ -28,7 +28,7 @@
                                 data-feather="plus-circle"></i>
                             Tambah Data Siswa
                         </button>
-                        <p class="text-muted mb-3">Jumlah Siswa : </p>
+                        <p class="text-muted mb-3">Jumlah Siswa : {{ $pendaftaran->count() }} </p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
@@ -44,20 +44,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($sertifikat as $key => $sertifikate)
+                                    @foreach ($pendaftaran as $key => $siswa)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $sertifikate->sertifikat_name }}</td>
-                                            <td><img src="{{ asset('public/uploads/' . $sertifikate->img) }}" alt="Banner"
+                                            <td>{{ $siswa->sertifikat_name }}</td>
+                                            <td><img src="{{ asset('public/uploads/' . $siswa->img) }}" alt="Banner"
                                                     class="wd-100 wd-sm-150 me-3"></td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                    data-id="{{ $sertifikate->id }}">
+                                                    data-id="{{ $siswa->id }}">
                                                     <i data-feather="edit"></i>
                                                 </button>
 
-                                                <button onclick="hapuslink('{{ $sertifikate->id }}')"
+                                                <button onclick="hapuslink('{{ $siswa->id }}')"
                                                     class="btn btn-danger btn-icon" title="Hapus">
                                                     <i data-feather="trash-2"></i>
                                                 </button>
@@ -87,7 +87,7 @@
                                                         }
                                                     }
                                                 </script>
-                                                <a href="{{ route('cetak_sertifikat', ['id' => $sertifikate->id]) }}"
+                                                <a href="{{ route('cetak_sertifikat', ['id' => $siswa->id]) }}"
                                                     class="btn btn-warning btn-icon" title="print" target="_blank">
                                                     <i data-feather="printer"></i>
                                                 </a>
