@@ -85,8 +85,6 @@
                             var hari = document.getElementById("hari").value;
                             var waktuKursusContainer = document.getElementById("waktuKursusContainer");
                             var waktuKursusSelect = document.getElementById("waktu_kursus");
-
-                            // Reset options
                             waktuKursusSelect.innerHTML = '<option value="">Pilih Waktu Kursus</option>';
 
                             if (hari) {
