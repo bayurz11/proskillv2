@@ -67,13 +67,9 @@
                         <label for="hari" class="form-label">Hari</label>
                         <select class="form-control" id="hari" name="hari" onchange="updateWaktuKursus()">
                             <option value="">Pilih Hari</option>
-                            <option value="senin">Senin</option>
-                            <option value="selasa">Selasa</option>
-                            <option value="rabu">Rabu</option>
-                            <option value="kamis">Kamis</option>
-                            <option value="jumat">Jumat</option>
-                            <option value="sabtu">Sabtu</option>
-                            <option value="minggu">Minggu</option>
+                            <option value="Senin & Rabu">Senin & Rabu </option>
+                            <option value="Selasa & Kamis">Selasa & Kamis</option>
+                            <option value="Jumat & Sabtu">Jumat & Sabtu</option>
                         </select>
                     </div>
 
@@ -97,7 +93,7 @@
                                 waktuKursusContainer.style.display = "block";
                                 var options;
 
-                                if (hari === "jumat" || hari === "sabtu") {
+                                if (hari === "Jumat & Sabtu") {
                                     options = [{
                                             value: "08.45-10.15",
                                             text: "08.45-10.15"
