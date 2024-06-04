@@ -261,7 +261,7 @@
                     </div> --}}
                     <div class="col-lg-6">
                         <div class="program-details-items">
-                            <h2>Materi</h2>
+                            <h3>Materi</h3>
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
@@ -383,7 +383,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="program-details-items">
-                            <h2>Fasilitas Yang Didapat</h2>
+                            <h3>Fasilitas Yang Didapat</h3>
                             <div class="details-content">
                                 <ul class="list-items">
                                     @if (!empty($fasilitas))
