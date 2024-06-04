@@ -55,15 +55,36 @@
                             placeholder="Masukkan instruktur kesal anda">
                     </div>
                     <div class="mb-3">
-                        <label for="fasilitas" class="form-label">Fasilitas dan Materi</label>
+                        <label for="fasilitas" class="form-label">Fasilitas</label>
                         <input type="text" class="form-control" id="fasilitas" name="fasilitas">
                         <small class="text-secondary">Note : Isi Dengan Fasilitas dan Materi kemudian klik
                             Enter</small>
                     </div>
+                    <div class="mb-3">
+                        <label for="materi" class="form-label">Materi</label>
+                        <input type="text" class="form-control" id="materi" name="materi">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sub_materi" class="form-label">Sub Materi</label>
+                        <input type="text" class="form-control" id="sub_materi" name="sub_materi">
 
+                    </div>
                     <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
 
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var input = document.querySelector('input[name=sub_materi]');
+
+                            new Tagify(input, {
+                                whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
+                                dropdown: {
+                                    enabled: 1,
+                                    maxItems: 100
+                                }
+                            });
+                        });
+                    </script>
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
                             var input = document.querySelector('input[name=fasilitas]');
@@ -72,7 +93,7 @@
                                 whitelist: [], // Tambahkan kata kunci yang diperbolehkan jika perlu
                                 dropdown: {
                                     enabled: 1,
-                                    maxItems: 20
+                                    maxItems: 100
                                 }
                             });
                         });
