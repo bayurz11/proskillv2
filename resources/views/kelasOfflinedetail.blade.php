@@ -111,31 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="program-details-items">
-                            <div class="details-image">
-                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
 
-                            </div>
-                            <div class="details-content">
-                                <ul class="list-items">
-                                    @if (!empty($fasilitas))
-                                        @foreach ($fasilitas as $item)
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                {{ $item['value'] }}
-                                            </li>
-                                        @endforeach
-                                    @else
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Tidak ada fasilitas dan materi yang tersedia.
-                                        </li>
-                                    @endif
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4">
                         <div class="details-list-area">
                             <h3>Detail Kelas</h3>
@@ -186,7 +162,31 @@
 
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="program-details-items">
+                            <div class="details-image">
+                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
 
+                            </div>
+                            <div class="details-content">
+                                <ul class="list-items">
+                                    @if (!empty($fasilitas))
+                                        @foreach ($fasilitas as $item)
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                {{ $item['value'] }}
+                                            </li>
+                                        @endforeach
+                                    @else
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Tidak ada fasilitas dan materi yang tersedia.
+                                        </li>
+                                    @endif
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
