@@ -163,25 +163,43 @@
 
                         </div>
                     </div>
+
+
                     <div class="col-lg-6">
                         <div class="program-details-items">
                             <h2>Materi</h2>
-                            <div class="details-content">
-                                <ul class="list-items">
-                                    @if (!empty($fasilitas))
-                                        @foreach ($fasilitas as $item)
-                                            <li>
-                                                <i class="fa-solid fa-check"></i>
-                                                {{ $item['value'] }}
-                                            </li>
-                                        @endforeach
-                                    @else
-                                        <li>
-                                            <i class="fa-solid fa-check"></i>
-                                            Tidak ada fasilitas dan materi yang tersedia.
-                                        </li>
-                                    @endif
-                                </ul>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Fasilitas
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul class="list-items">
+                                                @if (!empty($fasilitas))
+                                                    @foreach ($fasilitas as $item)
+                                                        <li>
+                                                            <i class="fa-solid fa-check"></i>
+                                                            {{ $item['value'] }}
+                                                        </li>
+                                                    @endforeach
+                                                @else
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        Tidak ada fasilitas dan materi yang tersedia.
+                                                    </li>
+                                                @endif
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
