@@ -62,6 +62,12 @@
                                 <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
 
                             </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="program-details-items">
+
                             <div class="details-content">
                                 {{-- <div class="post">
                                     <span>Kindergarten</span>
