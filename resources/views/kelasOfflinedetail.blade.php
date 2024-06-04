@@ -172,31 +172,7 @@
                                 <div class="faq-content">
                                     <div class="faq-accordion">
                                         <div class="accordion" id="accordionExample">
-                                            <div class="accordion-item mb-3">
-                                                <h5 class="accordion-header">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#faq1"
-                                                        aria-expanded="true" aria-controls="faq1">
-                                                        Fasilitas di ProSkill Akademia
-                                                    </button>
-                                                </h5>
-                                                <div id="faq1" class="accordion-collapse collapse show"
-                                                    data-bs-parent="#accordionExample">
-                                                    <div class="accordion-body">
-                                                        <ul class="list-unstyled">
-                                                            @if (!empty($fasilitas))
-                                                                @foreach ($fasilitas as $item)
-                                                                    <li><i class="fa-solid fa-check"></i>
-                                                                        {{ $item['value'] }}</li>
-                                                                @endforeach
-                                                            @else
-                                                                <li><i class="fa-solid fa-check"></i> Tidak ada fasilitas
-                                                                    dan materi yang tersedia.</li>
-                                                            @endif
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <div class="accordion-item mb-3">
                                                 <h5 class="accordion-header">
                                                     <button class="accordion-button collapsed" type="button"
@@ -209,12 +185,15 @@
                                                     data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
                                                         <ul class="list-unstyled">
-                                                            <li><i class="fas fa-check-circle"></i> Fundamental Computer
-                                                                Skill untuk SD, SMP, SMA</li>
-                                                            <li><i class="fas fa-check-circle"></i> Mahir Aplikasi Office
-                                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer</li>
-                                                            <li><i class="fas fa-check-circle"></i> Digital Design
-                                                                Menggunakan Canva dan Figma</li>
+                                                            @if (!empty($fasilitas))
+                                                                @foreach ($fasilitas as $item)
+                                                                    <li><i class="fa-solid fa-check"></i>
+                                                                        {{ $item['value'] }}</li>
+                                                                @endforeach
+                                                            @else
+                                                                <li><i class="fa-solid fa-check"></i> Tidak ada fasilitas
+                                                                    dan materi yang tersedia.</li>
+                                                            @endif
                                                         </ul>
                                                     </div>
                                                 </div>
