@@ -87,7 +87,54 @@
                                 <p class="mb-3">
                                     {{ $klsoffline->deskripsi }}
 
-                                <h2>Materi Dan Fasilitas Yang Didapat</h2>
+                                <h2>Fasilitas Yang Didapat</h2>
+                                {{-- <p>
+                                    Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
+                                    convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
+                                    lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
+                                </p> --}}
+                                <ul class="list-items">
+                                    @if (!empty($fasilitas))
+                                        @foreach ($fasilitas as $item)
+                                            <li>
+                                                <i class="fa-solid fa-check"></i>
+                                                {{ $item['value'] }}
+                                            </li>
+                                        @endforeach
+                                    @else
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            Tidak ada fasilitas dan materi yang tersedia.
+                                        </li>
+                                    @endif
+                                </ul>
+                            </div>
+                            <div class="details-content">
+                                {{-- <div class="post">
+                                    <span>Kindergarten</span>
+                                </div> --}}
+                                <h2 class="mb-0">{{ $klsoffline->kelas }}</h2>
+                                <div class="details-author-area">
+                                    <div class="author-items">
+                                        <i class="fas fa-user"></i>
+                                        <p>{{ $klsoffline->instruktur }}</p>
+                                    </div>
+                                    {{-- <ul class="class-list">
+                                        <li>
+                                            <i class="fa-regular fa-circle-play me-2"></i>
+                                            30 Classes
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star me-2"></i>
+                                            3.4 (36 Review)
+                                        </li>
+                                    </ul> --}}
+                                </div>
+                                <h2>Deskripsi Kelas</h2>
+                                <p class="mb-3">
+                                    {{ $klsoffline->deskripsi }}
+
+                                <h2>Fasilitas Yang Didapat</h2>
                                 {{-- <p>
                                     Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
                                     convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
