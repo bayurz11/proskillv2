@@ -87,13 +87,13 @@
                                 <p class="mb-3">
                                     {{ $klsoffline->deskripsi }}
 
-                                <h2>Fasilitas Yang Didapat</h2>
-                                {{-- <p>
+
+                                    {{-- <p>
                                     Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis
                                     convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum
                                     lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.
                                 </p> --}}
-                                {{-- <ul class="list-items">
+                                    {{-- <ul class="list-items">
                                     @if (!empty($fasilitas))
                                         @foreach ($fasilitas as $item)
                                             <li>
@@ -163,9 +163,9 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="program-details-items">
-
+                            <h2>Materi</h2>
                             <div class="details-content">
                                 <ul class="list-items">
                                     @if (!empty($fasilitas))
@@ -185,9 +185,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="program-details-items">
-
+                            <h2>Fasilitas Yang Didapat</h2>
                             <div class="details-content">
                                 <ul class="list-items">
                                     @if (!empty($fasilitas))
