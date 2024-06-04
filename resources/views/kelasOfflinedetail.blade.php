@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="program-details-items">
+                        <div class="program-details-items-lg-12">
 
                             <div class="details-content">
                                 {{-- <div class="post">
