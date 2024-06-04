@@ -214,10 +214,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="program-details-items">
-                            <div class="details-image">
-                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img">
 
-                            </div>
                             <div class="details-content">
                                 <ul class="list-items">
                                     @if (!empty($fasilitas))
