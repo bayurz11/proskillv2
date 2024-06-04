@@ -65,6 +65,56 @@
 
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="details-list-area">
+                            <h3>Detail Kelas</h3>
+                            <ul class="details-list">
+                                <li>
+                                    <span>
+                                        <img src="{{ asset('public/assets/img/program/icon/08.svg') }}" alt="img"
+                                            class="me-2">
+                                        Level
+                                    </span>
+                                    {{ $klsoffline->lvl }}
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="{{ asset('public/assets/img/program/icon/09.svg') }}" alt="img"
+                                            class="me-2">
+                                        Durasi
+                                    </span>
+                                    {{ $klsoffline->durasi }}
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <img src="{{ asset('public/assets/img/program/icon/11.svg') }}" alt="img"
+                                            class="me-2">
+                                        Jumlah Siswa Dalam 1 Kelas
+                                    </span>
+                                    {{ $klsoffline->jumlah_siswa }}
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="{{ asset('public/assets/img/program/icon/14.svg') }}" alt="img"
+                                            class="me-2">
+                                        Sertifikat
+                                    </span>
+                                    {{ $klsoffline->sertifikat }}
+                                </li>
+
+
+                            </ul>
+                            <a href="#" class="theme-btn w-100 border-style mb-3">
+                                Harga Kelas Rp {{ number_format($klsoffline->price, 0, ',', '.') }}
+                            </a>
+                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
+                                class="theme-btn w-100">
+                                Daftar Ke Whatsapp kami <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+
+                        </div>
+                    </div>
                     <div class="col-lg-8">
                         <div class="program-details-items">
 
@@ -117,56 +167,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="details-list-area">
-                            <h3>Detail Kelas</h3>
-                            <ul class="details-list">
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/08.svg') }}" alt="img"
-                                            class="me-2">
-                                        Level
-                                    </span>
-                                    {{ $klsoffline->lvl }}
-                                </li>
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/09.svg') }}" alt="img"
-                                            class="me-2">
-                                        Durasi
-                                    </span>
-                                    {{ $klsoffline->durasi }}
-                                </li>
 
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/11.svg') }}" alt="img"
-                                            class="me-2">
-                                        Jumlah Siswa Dalam 1 Kelas
-                                    </span>
-                                    {{ $klsoffline->jumlah_siswa }}
-                                </li>
-                                <li>
-                                    <span>
-                                        <img src="{{ asset('public/assets/img/program/icon/14.svg') }}" alt="img"
-                                            class="me-2">
-                                        Sertifikat
-                                    </span>
-                                    {{ $klsoffline->sertifikat }}
-                                </li>
-
-
-                            </ul>
-                            <a href="#" class="theme-btn w-100 border-style mb-3">
-                                Harga Kelas Rp {{ number_format($klsoffline->price, 0, ',', '.') }}
-                            </a>
-                            <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
-                                class="theme-btn w-100">
-                                Daftar Ke Whatsapp kami <i class="fa-solid fa-arrow-right-long"></i>
-                            </a>
-
-                        </div>
-                    </div>
 
 
                     {{-- <div class="col-lg-6">
