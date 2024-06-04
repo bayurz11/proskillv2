@@ -169,34 +169,106 @@
                         <div class="program-details-items">
                             <h2>Materi</h2>
                             <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link" type="button" data-toggle="collapse"
-                                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Fasilitas
-                                            </button>
-                                        </h5>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                        data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <ul class="list-items">
-                                                @if (!empty($fasilitas))
-                                                    @foreach ($fasilitas as $item)
-                                                        <li>
-                                                            <i class="fa-solid fa-check"></i>
-                                                            {{ $item['value'] }}
-                                                        </li>
-                                                    @endforeach
-                                                @else
-                                                    <li>
-                                                        <i class="fa-solid fa-check"></i>
-                                                        Tidak ada fasilitas dan materi yang tersedia.
-                                                    </li>
-                                                @endif
-                                            </ul>
+                                <div class="faq-content">
+                                    <div class="faq-accordion">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq1"
+                                                        aria-expanded="true" aria-controls="faq1">
+                                                        Fasilitas di ProSkill Akademia
+                                                    </button>
+                                                </h5>
+                                                <div id="faq1" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="list-unstyled">
+                                                            @if (!empty($fasilitas))
+                                                                @foreach ($fasilitas as $item)
+                                                                    <li><i class="fa-solid fa-check"></i>
+                                                                        {{ $item['value'] }}</li>
+                                                                @endforeach
+                                                            @else
+                                                                <li><i class="fa-solid fa-check"></i> Tidak ada fasilitas
+                                                                    dan materi yang tersedia.</li>
+                                                            @endif
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq2"
+                                                        aria-expanded="false" aria-controls="faq2">
+                                                        Program Kursus apa aja yang ada di ProSkill Akademia?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq2" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><i class="fas fa-check-circle"></i> Fundamental Computer
+                                                                Skill untuk SD, SMP, SMA</li>
+                                                            <li><i class="fas fa-check-circle"></i> Mahir Aplikasi Office
+                                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer</li>
+                                                            <li><i class="fas fa-check-circle"></i> Digital Design
+                                                                Menggunakan Canva dan Figma</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq3"
+                                                        aria-expanded="false" aria-controls="faq3">
+                                                        Brapa biaya Kursus di ProSkill Akademia?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><i class="fas fa-check-circle"></i> Fundamental Computer
+                                                                Skill untuk SD, SMP, SMA, dengan harga 240 setelah
+                                                                mendapatkan beasiswa 25% menjadi 180K/bulan dengan 8x
+                                                                pertemuan</li>
+                                                            <li><i class="fas fa-check-circle"></i> Mahir Aplikasi Office
+                                                                Tingkat Advance untuk SMA, Mahasiswa dan Freelancer, dengan
+                                                                harga 260 setelah mendapatkan beasiswa 25% menjadi
+                                                                195K/bulan dengan 8x pertemuan</li>
+                                                            <li><i class="fas fa-check-circle"></i> Digital Design
+                                                                Menggunakan Canva dan Figma, dengan harga 260 setelah
+                                                                mendapatkan beasiswa 25% menjadi 195K/bulan dengan 8x
+                                                                pertemuan</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h5 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#faq4"
+                                                        aria-expanded="false" aria-controls="faq4">
+                                                        Kapan Jadwal Kelas Kursus di ProSkill Akademia?
+                                                    </button>
+                                                </h5>
+                                                <div id="faq4" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul class="list-unstyled">
+                                                            <li><i class="fas fa-clock"></i> Senin & Rabu: 08.45-10.15,
+                                                                10.30-12.00, 13.00-14.30, 14.45-16.15</li>
+                                                            <li><i class="fas fa-clock"></i> Selasa & Kamis: 08.45-10.15,
+                                                                10.30-12.00, 13.00-14.30, 14.45-16.15</li>
+                                                            <li><i class="fas fa-clock"></i> Jumat & Sabtu: 08.45-10.15,
+                                                                10.30-12.00, 13.30-15.00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -371,7 +443,8 @@
         </div>
     </section> --}}
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
