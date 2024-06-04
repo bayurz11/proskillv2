@@ -69,8 +69,8 @@
                         <input type="text" class="form-control" id="sub_materi" name="sub_materi">
 
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />
+                    {{-- <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" /> --}}
 
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
