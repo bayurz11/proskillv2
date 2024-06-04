@@ -122,7 +122,7 @@
                                 {{-- <div class="post">
                                     <span>Kindergarten</span>
                                 </div> --}}
-                                <h3 class="mb-0">{{ $klsoffline->kelas }}</h3>
+                                <h2 class="mb-0">{{ $klsoffline->kelas }}</h2>
                                 <div class="details-author-area">
                                     <div class="author-items">
                                         <i class="fas fa-user"></i>
