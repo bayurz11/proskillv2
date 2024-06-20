@@ -27,7 +27,7 @@
 
 <body>
 
-    <!-- Preloader Start -->
+        <!-- Preloader Start -->
     @include('layout.partials.PreloaderStart')
 
     <!-- Offcanvas Area Start -->

@@ -4,24 +4,24 @@
 
     <!--<< Breadcrumb Section Start >>-->
     <div class="breadcrumb-wrapper bg-cover"
-        style="background-image: url('{{ asset('public/assets/img/breadcrumb.png') }}');">
+        style="background-image: url('{{ asset('public/assets/img/breadcrumb.png') }}');"  loading="lazy">
         <div class="line-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/line.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/line.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/doll.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/doll.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="frame-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/frame.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/frame.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -29,7 +29,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
@@ -60,7 +60,7 @@
                     <div class="col-lg-8">
                         <div class="event-details-items">
                             <div class="details-image">
-                                <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="img">
+                                <img src="{{ asset('public/uploads/' . $events->banner) }}" alt="img"  loading="lazy">
                             </div>
                             <div class="event-details-content">
                                 <div class="post-items">
@@ -72,7 +72,7 @@
                                 </div>
                                 <h2>{{ $events->name_event }}</h2>
                                 <p class="mb-3">
-                                    {!! nl2br(substr($events->deskripsi, 0, 40)) !!}
+                                    {!! nl2br(substr($events->deskripsi, 0, 1000)) !!}
                                 </p>
 
                                 <h2>Persyaratan</h2>
@@ -110,7 +110,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/01.svg ') }}" alt="img"
-                                            class="me-2">
+                                            class="me-2"  loading="lazy">
                                         Mulai Event
                                     </span>
                                     {{ $events->mulai }}
@@ -118,7 +118,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/02.svg') }}" alt="img"
-                                            class="me-2">
+                                            class="me-2"  loading="lazy">
                                         Durasi
                                     </span>
                                     {{ $events->durasi }}
@@ -126,7 +126,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/03.svg') }}" alt="img"
-                                            class="me-2">
+                                            class="me-2"  loading="lazy">
                                         Lokasi
                                     </span>
                                     {{ $events->lokasi }}
@@ -134,7 +134,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/04.svg') }}" alt="img"
-                                            class="me-2">
+                                            class="me-2"  loading="lazy">
                                         Telepon
                                     </span>
                                     {{ $events->tlp }}
@@ -142,14 +142,14 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/event/icon/05.svg') }}" alt="img"
-                                            class="me-2">
+                                            class="me-2"  loading="lazy">
                                         Email
                                     </span>
                                     {{ $events->email }}
                                 </li>
 
                             </ul>
-                            <a href="event-details.html" class="theme-btn w-100">
+                            <a href="https://wa.me/6281266187125?" class="theme-btn w-100">
                                 Daftar Sekarang <i class="fa-solid fa-arrow-right-long"></i>
                             </a>
 
@@ -170,7 +170,7 @@
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;">
+                style="width: 50px; height: auto;"  loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">

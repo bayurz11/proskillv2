@@ -14,7 +14,6 @@
         @include('admin.modal.add_heroSection')
         @include('admin.modal.edit_heroSection')
 
-
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
@@ -33,6 +32,7 @@
                                     <tr>
                                         <th>Tagline</th>
                                         <th>promosi</th>
+                                        <th>link</th>
                                         <th>banner</th>
                                         <th>Tanggal Rilis</th>
                                         <th>Action</th>
@@ -41,8 +41,13 @@
                                 <tbody>
                                     @foreach ($heroSections as $heroSection)
                                         <tr>
-                                            <td>{{ $heroSection->tagline }}</td>
-                                            <td>{{ $heroSection->promosi }}</td>
+                                            <td>{!! nl2br(substr($heroSection->tagline, 0, 20)) !!} @if (strlen($heroSection->tagline) > 40)
+                                                    ...
+                                                @endif</td>
+                                            <td>{!! nl2br(substr($heroSection->promosi, 0, 20)) !!} @if (strlen($heroSection->promosi) > 40)
+                                                    ...
+                                                @endif</td>
+                                            <td>{{ $heroSection->link }}</td>
                                             <td><img src="{{ asset('public/uploads/' . $heroSection->banner) }}"
                                                     alt="Banner" class="wd-100 wd-sm-150 me-3"></td>
                                             <td>{{ $heroSection->tgl }}</td>

@@ -33,5 +33,3 @@
 <!-- Plugin css for this page -->
 <link rel="stylesheet" href="public/assets_admin/vendors/easymde/easymde.min.css">
 <!-- End plugin css for this page -->
-{{-- <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.min.js"></script> --}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" />

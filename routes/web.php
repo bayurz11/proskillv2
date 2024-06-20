@@ -1,19 +1,16 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\indexController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\InventarisController;
-use App\Http\Controllers\SertifikatController;
-use App\Http\Controllers\HeroSectionController;
-use App\Http\Controllers\KelasOnlineController;
-use App\Http\Controllers\TestimonialController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\HeroSectionController;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\KelasOnlineController;
 use App\Http\Controllers\KelasTatapMukaController;
 use App\Http\Controllers\ContohsertifikatController;
-use App\Http\Controllers\PendaftaranSiswaController;
+use App\Http\Controllers\SertifikatController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showEvent'])->name('event');
@@ -27,14 +24,11 @@ Route::get('/tentangkami', [indexController::class, 'showaboutUs'])->name('tenta
 Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hubungikami');
 Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
 
-//---Testimonial---//
-Route::get('/testimonial', [TestimonialController::class, 'show'])->name('testimonial');
-
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
 Route::post('/loginProses', [DashboardAdminController::class, 'login'])->name('loginProses');
-Route::get('/register_admin', [DashboardAdminController::class, 'showregisteradmin'])->name('register_admin');
-Route::post('/regisProses', [DashboardAdminController::class, 'register'])->name('regisProses');
+// Route::get('/register_admin', [DashboardAdminController::class, 'showregisteradmin'])->name('register_admin');
+// Route::post('/regisProses', [DashboardAdminController::class, 'register'])->name('regisProses');
 Route::post('/logout_admin', [DashboardAdminController::class, 'logout'])->name('logout_admin');
 
 //---Dashboard---//
@@ -49,13 +43,6 @@ Route::get('/HeroSection/{id}/edit', [HeroSectionController::class, 'edit'])->na
 Route::put('/HeroSection/{id}', [HeroSectionController::class, 'update'])->name('HeroSection.update');
 //---end Hero Section---//
 
-//---Contoh Sertifikat---//
-Route::get('/ContohSertifikatSetting', [ContohsertifikatController::class, 'show'])->name('ContohSertifikatSetting');
-Route::post('/ContohSertifikatStore', [ContohsertifikatController::class, 'store'])->name('ContohSertifikatStore');
-Route::delete('/ContohSertifikatDestroy/{id}', [ContohsertifikatController::class, 'destroy'])->name('ContohSertifikatDestroy');
-
-//---end Contoh Sertifikat---// 
-
 //---Kelas Online---//
 Route::get('/KelasOnlineSetting', [KelasOnlineController::class, 'show'])->name('KelasOnlineSetting');
 Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name('KelasOnlineStore');
@@ -64,8 +51,6 @@ Route::post('/KelasOnlineStore', [KelasOnlineController::class, 'store'])->name(
 Route::get('/KelasOfflineSetting', [KelasTatapMukaController::class, 'show'])->name('KelasOfflineSetting');
 Route::post('/KelasOfflineStore', [KelasTatapMukaController::class, 'store'])->name('KelasOfflineStore');
 Route::delete('/KelasOfflineDestroy/{id}', [KelasTatapMukaController::class, 'destroy'])->name('KelasOfflineDestroy');
-Route::get('/kelasoffline/{id}/edit', [KelasTatapMukaController::class, 'edit'])->name('kelasoffline.edit');
-Route::put('/kelasoffline/{id}', [KelasTatapMukaController::class, 'update'])->name('kelasoffline.update');
 //---end Kelas Tatap Muka---//
 
 //---Artikel---//
@@ -107,13 +92,11 @@ Route::get('/izin_setting', [AboutUsController::class, 'showizin'])->name('izin_
 Route::post('/izin_store', [AboutUsController::class, 'storeizin'])->name('izin_store');
 Route::delete('/izin_destroy/{id}', [AboutUsController::class, 'destroyizin'])->name('izin_destroy');
 
-//---Inventaris---//
-//  Master Barang 
-Route::get('/master_barang', [InventarisController::class, 'showbarang'])->name('master_barang');
-//kategori barang
-Route::get('/master_kategori', [InventarisController::class, 'showkategori'])->name('master_kategori');
-
-
+//---Contoh Sertifikat---//
+Route::get('/ContohSertifikatSetting', [ContohsertifikatController::class, 'show'])->name('ContohSertifikatSetting');
+Route::post('/ContohSertifikatStore', [ContohsertifikatController::class, 'store'])->name('ContohSertifikatStore');
+Route::delete('/ContohSertifikatDestroy/{id}', [ContohsertifikatController::class, 'destroy'])->name('ContohSertifikatDestroy');
+//---end Contoh Sertifikat---// 
 
 //Sertifikat setting
 Route::any('/sertifikat', [SertifikatController::class, 'show'])->name('sertifikat');
@@ -122,8 +105,4 @@ Route::post('/sertifikat_store', [SertifikatController::class, 'store'])->name('
 Route::get('/cetak_sertifikat/{id}', [SertifikatController::class, 'cetakSertifikat'])->name('cetak_sertifikat');
 Route::get('/srt/{id}/edit', [SertifikatController::class, 'edit'])->name('srt.edit');
 Route::put('/srt/{id}', [SertifikatController::class, 'update'])->name('srt.update');
-
-//---Pendaftaran Siswa---//
-Route::get('/pendaftaran_siswa', [PendaftaranSiswaController::class, 'show'])->name('pendaftaran_siswa');
-
 //**************END DADHBOARD ADMIN **************//

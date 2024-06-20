@@ -10,7 +10,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.html">
+                            <a href="{{ route('/') }}">
                                 <img src="{{ asset('public/assets/img/logo/logo.svg') }}" alt="logo-img">
                             </a>
                         </div>
@@ -137,9 +137,9 @@
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
 
                     <li>
-                        <a href="contact.html">
-                            Privacy Policy
-                        </a>
+                        <!--<a href="contact.html">-->
+                        <!--    Privacy Policy-->
+                        <!--</a>-->
                     </li>
 
                 </ul>

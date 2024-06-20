@@ -3,7 +3,7 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');"  loading="lazy">
         <div class="line-shape">
             <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img" loading="lazy">
         </div>
@@ -28,7 +28,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
@@ -59,9 +59,7 @@
             <div class="section-title-area">
                 <div class="section-title mt-60">
                     <span class="wow fadeInUp">Contoh sertifikat </span>
-                    {{-- <h2 class="wow fadeInUp" data-wow-delay=".3s">Izin Operasional DPMPTSP, Rekomendasi Disdik, dan NPSN
-                        Kemendikbud Ristek.
-                    </h2> --}}
+                   
                 </div>
                 <div class="array-button wow fadeInUp" data-wow-delay=".5s">
                     <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
@@ -102,7 +100,7 @@
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;">
+                style="width: 50px; height: auto;"  loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">

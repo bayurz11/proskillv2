@@ -3,24 +3,24 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');"  loading="lazy">
         <div class="line-shape">
-            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="frame-shape">
-            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -28,7 +28,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
@@ -44,11 +44,12 @@
 
     <!-- About Activities Section Start -->
     <section class="about-activities-section-2 style-2 section-padding">
+
         <div class="bottom-shape">
-            <img src="public/assets/img/section-top-shape-2.png" alt="shape-img">
+            <img src="public/assets/img/section-top-shape-2.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="sun-shape">
-            <img src="public/assets/img/client/shape-2.png" alt="shape-img">
+            <img src="public/assets/img/client/shape-2.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="container">
             <div class="about-activities-wrapper style-2">
@@ -56,108 +57,106 @@
                     @php
                         $about = $aboutUs->sortByDesc('created_at')->first();
                     @endphp
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="activities-image-items">
+                            <img src="{{ asset('public/uploads/' . $about->banner) }}"  loading="lazy">
 
-                    @if ($about)
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="activities-image-items">
-                                <img src="{{ asset('public/uploads/' . $about->banner) }}" alt="Banner">
-                                <div class="circle-shape">
-                                    <img src="public/assets/img/about/circle.png" alt="Shape">
-                                </div>
+                            <div class="circle-shape">
+                                <img src="public/assets/img/about/circle.png" alt="shape-img"  loading="lazy">
                             </div>
-                        </div>
-                        <div class="col-lg-6">
                             <div class="activities-content">
-                                <div class="section-title">
-                                    <span class="wow fadeInUp">Visi ProSkill Akademia</span>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                        {!! nl2br(strip_tags($about->visi)) !!}
-                                    </h2>
-                                </div>
-                                <div class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    @foreach (explode("\n", $about->misi) as $paragraph)
-                                        <p style="text-align:justify;">
-                                            {!! nl2br(strip_tags($paragraph)) !!}
-                                        </p>
-                                    @endforeach
-                                </div>
-                                <div class="row g-4 mt-4">
-                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="icon-items">
-                                            <div class="icon">
-                                                <i class="icon-icon-13"></i>
-                                            </div>
-                                            <div class="content">
-                                                <h5>NPSN</h5>
-                                                <p>K9999032</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div class="icon-items">
-                                            <div class="icon">
-                                                <i class="icon-icon-13"></i>
-                                            </div>
-                                            <div class="content">
-                                                <h5>DPMPTSP</h5>
-                                                <p>503/92/5.10.05.3/2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="icon-items">
-                                            <div class="icon">
-                                                <i class="icon-icon-13"></i>
-                                            </div>
-                                            <div class="content">
-                                                <h5>Rekomendasi Disdik</h5>
-                                                <p>B/412.35/3/5.3.02/2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="about-author">
-                                    <div class="author-image wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="content">
-                                            <h6>{{ $about->pimpinan }}</h6>
-                                            <p>Pimpinan ProSkill Akademia</p>
-                                        </div>
-                                    </div>
-                                    {{-- <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
+                           
+                            <div class="row g-4 mt-4">
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="icon-items">
                                         <div class="icon">
-                                            <i class="fa-solid fa-phone"></i>
+                                            <i class="icon-icon-13"></i>
                                         </div>
                                         <div class="content">
-                                            <span>Hubungi Kami Sekarang</span>
-                                            <h5>
-                                                <a href="tel:+2085550112">+208-555-0112</a>
-                                            </h5>
+                                            <h5>NPSN</h5>
+                                            <p>K9999032</p>
                                         </div>
-                                    </div> --}}
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="icon-items">
+                                        <div class="icon">
+                                            <i class="icon-icon-13"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>DPMPTSP</h5>
+                                            <p>503/92/5.10.05.3/2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-8 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="icon-items">
+                                        <div class="icon">
+                                            <i class="icon-icon-13"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h5>Rekomendasi Disdik</h5>
+                                            <p>B/412.35/3/5.3.02/2024</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
-                    @else
-                        <div class="col-12">
-                            <div class="alert alert-warning">
-                                <strong>Data tidak tersedia</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="activities-content">
+                            <div class="section-title">
+                                <span class="wow fadeInUp">Visi ProSkill Akademia</span>
+                                <h5 class="wow fadeInUp" data-wow-delay=".3s">
+                                    {!! nl2br($about->visi) !!}
+                                </h5>
+                            </div>
+                            <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                @foreach (explode("\n", $about->misi) as $paragraph)
+                                    <p style="text-align:justify;">
+                                        {!! nl2br($paragraph) !!}
+                                    </p>
+                                @endforeach
+                            </p>
+                           
+                            <div class="about-author">
+                                <div class="author-image wow fadeInUp" data-wow-delay=".3s">
+
+                                    <div class="content">
+                                        <h6>Beni Oktopiansah,ST</h6>
+                                        <p> Pimpinan ProSkill Akademia</p>
+                                    </div>
+                                </div>
+                                {{-- <div class="author-icon wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span>Call Us Now</span>
+                                        <h5>
+                                            <a href="tel:+2085550112">+208-555-0112</a>
+                                        </h5>
+                                    </div>
+                                </div> --}}
                             </div>
                         </div>
-                    @endif
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-
     <!-- Counter Section Start -->
     <section class="counter-section fix">
         <div class="line-shape">
-            <img src="public/assets/img/counter/line-shape.png" alt="shape-img">
+            <img src="public/assets/img/counter/line-shape.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="box-shape float-bob-x">
-            <img src="public/assets/img/counter/box-shape.png" alt="shape-img">
+            <img src="public/assets/img/counter/box-shape.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="counter-bg"></div>
         <div class="container">
@@ -166,7 +165,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('public/assets/img/counter/icon-1.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-1.svg') }}" alt="img"  loading="lazy">
                             </div>
                             <div class="content">
                                 <h2><span class="count">25</span>+</h2>
@@ -177,7 +176,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('public/assets/img/counter/icon-2.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-2.svg') }}" alt="img"  loading="lazy">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,500</span>+</h2>
@@ -188,7 +187,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                         <div class="counter-items">
                             <div class="icon">
-                                <img src="{{ asset('public/assets/img/counter/icon-3.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-3.svg') }}" alt="img"  loading="lazy">
                             </div>
                             <div class="content">
                                 <h2><span class="count">100</span>+</h2>
@@ -199,7 +198,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="counter-items border-none">
                             <div class="icon">
-                                <img src="{{ asset('public/assets/img/counter/icon-4.svg') }}" alt="img">
+                                <img src="{{ asset('public/assets/img/counter/icon-4.svg') }}" alt="img"  loading="lazy">
                             </div>
                             <div class="content">
                                 <h2><span class="count">6,561</span>+</h2>
@@ -215,13 +214,13 @@
     <!-- Izin Section Start -->
     <section class="team-section-3 fix  section-padding pt-1 mt-60">
         <div class="tree-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/tree-shape.png') }}" alt="shape-img" loading="lazy">
+            <img src="{{ asset('public/assets/img/tree-shape.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="right-shape">
-            <img src="{{ asset('public/assets/img/testi-r-shape.png') }}" alt="shape-img" loading="lazy">
+            <img src="{{ asset('public/assets/img/testi-r-shape.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/testi-bee-shape.png') }}" alt="shape-img" loading="lazy">
+            <img src="{{ asset('public/assets/img/testi-bee-shape.png') }}" alt="shape-img"  loading="lazy">
         </div>
         <div class="container">
             <div class="section-title-area">
@@ -243,18 +242,10 @@
                             <div class="team-items">
                                 <div class="team-image">
                                     <div class="shape-img">
-                                        <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"
-                                            loading="lazy">
+                                        <img src="{{ asset('public/assets/img/team/team-shape.png') }}" alt="img"  loading="lazy">
                                     </div>
                                     <img src="{{ asset('public/uploads/' . $izinData->banner) }}" loading="lazy">
-                                    {{-- <div class="social-profile">
-                                        <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div> --}}
+                                    
                                 </div>
                                 <div class="team-content">
                                     <h3>
@@ -271,13 +262,15 @@
         </div>
     </section>
 
+
+
     <!-- Whatsapp popup -->
     <div id="whatsapp-popup"
         style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;">
+                style="width: 50px; height: auto;"  loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">

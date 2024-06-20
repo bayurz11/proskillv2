@@ -3,7 +3,6 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-
     <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');" loading="lazy">
         <div class="line-shape">
             <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img" loading="lazy">
@@ -29,7 +28,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
@@ -62,7 +61,7 @@
                                     <ul class="post-date">
                                         <li>
                                             <img src="{{ asset('public/assets/img/event/calender.svg') }}" alt="img"
-                                                loading="lazy" class="me-2">
+                                                class="me-2" loading="lazy">
                                             {{ $events->mulai }}
                                         </li>
                                     </ul>
@@ -105,81 +104,10 @@
     </section>
 
 
-    <!-- Galery Section Start -->
-    {{-- <section class="team-section-3 fix section-padding pt-1 mt-60">
-        <div class="tree-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="right-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="section-title-area">
-                <div class="section-title mt-60">
-                    <span class="wow fadeInUp">Galery Kegiatan ProSkill Akademia </span>
-                   
-                </div>
-                <div class="array-button wow fadeInUp" data-wow-delay=".5s">
-                    <button class="array-prev bor-1"><i class="fal fa-arrow-left"></i></button>
-                    <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper">
-                    @foreach ($galery as $galeryData)
-                        <div class="swiper-slide">
-                            <div class="team-items">
-                                <div class="team-image">
-                                    <div class="shape-img">
-                                        
-                                    </div>
-                                    <img src="{{ asset('public/uploads/' . $galeryData->banner) }}" loading="lazy">
-                                </div>
-                                <div class="team-content">
-                                    <h3>
-                                    </h3>
-                                    <p>{{ $galeryData->name_event }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-    {{-- <section class="team-section-3 fix section-padding pt-1 mt-60">
-        <div class="bee-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper">
-                    @foreach ($links as $link)
-                        <div class="swiper-slide">
-                            <div class="team-items">
-                                <div class="team-image">
-                                    @php
-                                        $embedUrl = str_replace('watch?v=', 'embed/', $link->link);
-                                    @endphp
-                                    <iframe src="{{ $embedUrl }}" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
+   
     <!-- Whatsapp popup -->
-    <div id="whatsapp-popup" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
+    <div id="whatsapp-popup"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: move;"
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"

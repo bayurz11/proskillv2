@@ -31,9 +31,9 @@
                         <li class="nav-item">
                             <a href="{{ route('HeroSectionSetting') }}" class="nav-link">Hero Section Setting</a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a href="pages/email/compose.html" class="nav-link">Compose</a>
-                        </li> --}}
+                        <!--<li class="nav-item">-->
+                        <!--    <a href="pages/email/compose.html" class="nav-link">Compose</a>-->
+                        <!--</li>-->
                     </ul>
                 </div>
             </li>
@@ -119,17 +119,14 @@
                     <span class="link-title">Barang</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="Inventaris">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="{{ route('master_kategori') }}" class="nav-link">Kategori Barang</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('master_barang') }}" class="nav-link">Master Barang</a>
-                        </li>
-                    </ul>
-                </div>
+                <!--<div class="collapse" id="Inventaris">-->
+                <!--    <ul class="nav sub-menu">-->
+                <!--        <li class="nav-item">-->
+                <!--            <a href="pages/ui-components/accordion.html" class="nav-link">Accordion</a>-->
+                <!--        </li>-->
 
+                <!--    </ul>-->
+                <!--</div>-->
             </li>
             <li class="nav-item nav-category">Keuangan</li>
             <li class="nav-item">
@@ -139,22 +136,22 @@
                     <span class="link-title">Keuangan</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="Keuangan">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>
-                        </li>
-                    </ul>
-                </div>
+                <!--<div class="collapse" id="Keuangan">-->
+                <!--    <ul class="nav sub-menu">-->
+                <!--        <li class="nav-item">-->
+                <!--            <a href="pages/advanced-ui/cropper.html" class="nav-link">Cropper</a>-->
+                <!--        </li>-->
+                <!--        <li class="nav-item">-->
+                <!--            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>-->
+                <!--        </li>-->
+                <!--        <li class="nav-item">-->
+                <!--            <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>-->
+                <!--        </li>-->
+                <!--        <li class="nav-item">-->
+                <!--            <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>-->
+                <!--        </li>-->
+                <!--    </ul>-->
+                <!--</div>-->
             </li>
             <li class="nav-item nav-category">Kesiswaan</li>
             <li class="nav-item">
@@ -167,45 +164,45 @@
                 <div class="collapse" id="Kesiswaan">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="{{ route('pendaftaran_siswa') }}" class="nav-link">Data Siswa</a>
+                            <a href="{{route('sertifikat')}}" class="nav-link">Sertifikat</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('sertifikat') }}" class="nav-link">Sertifikat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                        <!--    <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Owl carousel</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                        <!--    <a href="pages/advanced-ui/sortablejs.html" class="nav-link">SortableJs</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                        <!--    <a href="pages/advanced-ui/sweet-alert.html" class="nav-link">Sweet Alert</a>-->
+                        <!--</li>-->
                     </ul>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
-{{-- <nav class="settings-sidebar">
-    <div class="sidebar-body">
-        <a href="#" class="settings-sidebar-toggler">
-            <i data-feather="settings"></i>
-        </a>
-        <h6 class="text-muted mb-2">Tema</h6>
-        <div class="mb-3 pb-3 border-bottom">
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarLight"
-                    value="sidebar-light" checked>
-                <label class="form-check-label" for="sidebarLight">
-                    Light
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarDark"
-                    value="sidebar-dark">
-                <label class="form-check-label" for="sidebarDark">
-                    Dark
-                </label>
-            </div>
-        </div>
+<!--<nav class="settings-sidebar">-->
+<!--    <div class="sidebar-body">-->
+<!--        <a href="#" class="settings-sidebar-toggler">-->
+<!--            <i data-feather="settings"></i>-->
+<!--        </a>-->
+<!--        <h6 class="text-muted mb-2">Tema</h6>-->
+<!--        <div class="mb-3 pb-3 border-bottom">-->
+<!--            <div class="form-check form-check-inline">-->
+<!--                <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarLight"-->
+<!--                    value="sidebar-light" checked>-->
+<!--                <label class="form-check-label" for="sidebarLight">-->
+<!--                    Light-->
+<!--                </label>-->
+<!--            </div>-->
+<!--            <div class="form-check form-check-inline">-->
+<!--                <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarDark"-->
+<!--                    value="sidebar-dark">-->
+<!--                <label class="form-check-label" for="sidebarDark">-->
+<!--                    Dark-->
+<!--                </label>-->
+<!--            </div>-->
+<!--        </div>-->
 
-    </div>
-</nav> --}}
+<!--    </div>-->
+<!--</nav>-->

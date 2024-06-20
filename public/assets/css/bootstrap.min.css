@@ -5053,8 +5053,8 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb {
-    /* --bs-breadcrumb-padding-x: 0; */
-    /* --bs-breadcrumb-padding-y: 0; */
+    --bs-breadcrumb-padding-x: 0;
+    /*--bs-breadcrumb-padding-y: 0;*/
     --bs-breadcrumb-margin-bottom: 1rem;
     --bs-breadcrumb-bg: ;
     --bs-breadcrumb-border-radius: ;

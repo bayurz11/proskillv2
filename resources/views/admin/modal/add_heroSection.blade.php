@@ -19,6 +19,11 @@
                               placeholder="Masukkan promosi Anda">
                       </div>
                       <div class="mb-3">
+                          <label for="link" class="form-label">Link</label>
+                          <input type="text" class="form-control" id="link" name="link"
+                              placeholder="Masukkan link Anda">
+                      </div>
+                      <div class="mb-3">
                           <label class="form-label" for="gambar">Gambar Slider</label>
                           <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                       </div>

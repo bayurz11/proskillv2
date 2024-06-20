@@ -40,6 +40,8 @@ class SertifikatController extends Controller
             $sertifikat = new Sertifikat();
             $sertifikat->img = $gambarName;
             $sertifikat->sertifikat_name = $request->sertifikat_name;
+            $sertifikat->sertifikat_id = $request->sertifikat_id;
+            $sertifikat->keterangan = $request->keterangan;
             $sertifikat->tgl = $request->tgl;
             $sertifikat->user_id = $userId;
             $sertifikat->save();
@@ -56,8 +58,7 @@ class SertifikatController extends Controller
      */
     public function show(Sertifikat $sertifikat)
     {
-
-        $user = Auth::user();
+         $user = Auth::user();
         $sertifikat = Sertifikat::all();
         $count = $sertifikat->count();
         if (!$user) {
@@ -65,6 +66,8 @@ class SertifikatController extends Controller
         }
 
         return view('admin.sertifikat', compact('user', 'sertifikat', 'count'));
+        
+        
     }
 
     /**
@@ -83,6 +86,8 @@ class SertifikatController extends Controller
     {
         $data = Sertifikat::findOrFail($id);
         $data->sertifikat_name = $request->sertifikat_name_edit;
+        $data->sertifikat_id = $request->sertifikat_id_edit;
+        $data->keterangan = $request->keterangan_edit;
         $data->tgl = $request->tgl_edit;
 
         if ($request->hasFile('gambar')) {

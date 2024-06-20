@@ -42,6 +42,7 @@ class HeroSectionController extends Controller
             $hero->banner = $gambarName;
             $hero->tagline = $request->tagline;
             $hero->promosi = $request->promosi;
+            $hero->link = $request->link;
             $hero->tgl = $request->tgl;
             $hero->user_id = $userId;
             $hero->save();
@@ -73,7 +74,6 @@ class HeroSectionController extends Controller
      */
     public function edit($id)
     {
-
         $data = HeroSection::findOrFail($id);
         return response()->json($data);
     }
@@ -83,6 +83,7 @@ class HeroSectionController extends Controller
         $data = HeroSection::findOrFail($id);
         $data->tagline = $request->tagline;
         $data->promosi = $request->promosi;
+        $data->link = $request->link;
         $data->tgl = $request->tgl;
 
         if ($request->hasFile('gambar')) {

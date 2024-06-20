@@ -88,15 +88,15 @@ class ContohsertifikatController extends Controller
      */
     public function destroy($id)
     {
-        // Temukan Contohsertifikat berdasarkan ID
+        // Temukan kelasOffline berdasarkan ID
         $contoh = Contohsertifikat::find($id);
 
-        // Periksa apakah Contohsertifikat ditemukan
+        // Periksa apakah kelasOffline ditemukan
         if (!$contoh) {
             return redirect()->route('ContohSertifikatSetting')->with('error', 'contoh tidak ditemukan');
         }
 
-        // Hapus Contohsertifikat
+        // Hapus kelasOffline
         $contoh->delete();
 
         return redirect()->route('ContohSertifikatSetting')->with('success', 'contoh berhasil dihapus');

@@ -29,7 +29,7 @@
                                                 <a href="{{ url('Kelastatapmuka') }}">Kelas Tatap Muka</a>
                                             </li>
                                             <li class="{{ Request::is('kelasOnline') ? 'active' : '' }}">
-                                                <a href="{{ url('kelasOnline') }}">Kelas Online</a>
+                                                <a href="https://online.proskill.sch.id/" target="_blank">Kelas Online</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -46,7 +46,7 @@
                                     </li>
                                     <li class="{{ Request::is('lainnya*') ? 'active' : '' }}">
                                         <a href="#"
-                                            style="{{ Request::is('tentangkami', 'hubungikami') ? 'color:#028E83;' : '' }}">
+                                            style="{{ Request::is('tentangkami', 'hubungikami','contohsertifikat') ? 'color:#028E83;' : '' }}">
                                             Profil
                                             <i class="fas fa-angle-down"></i>
                                         </a>
@@ -81,7 +81,7 @@
                         <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi" class="theme-btn"
                             style="background-color: #028E83; color: white; padding: 20px 30px; border-radius: 10px; text-decoration: none;">
                             <span>
-                                Hubungi Admin
+                                Daftar Sekarang
                                 <i class="fa-solid fa-arrow-right-long"></i>
                             </span>
                         </a>

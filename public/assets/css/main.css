@@ -6,9 +6,9 @@ Description: Kidsa - Kindergarten School HTML Template<
 Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300..700&family=Roboto:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
     --body: #fff;
     --black: #000;
@@ -4582,7 +4582,7 @@ span {
 }
 .breadcrumb-wrapper .plane-shape {
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 15%;
 }
 @media (max-width: 991px) {
@@ -4633,13 +4633,13 @@ span {
 }
 .breadcrumb-wrapper .page-heading {
     position: relative;
-    padding: 70px 0 197px;
+    padding: 40px 0 177px;
     text-align: center;
     z-index: 9;
 }
 @media (max-width: 1199px) {
     .breadcrumb-wrapper .page-heading {
-        padding: 70px 0;
+        padding: 140px 0;
     }
 }
 @media (max-width: 991px) {
@@ -9006,17 +9006,17 @@ input.main-search-input::placeholder {
     text-align: center;
     margin: 30px auto;
 }
-.testimonial-items::after {
-    width: 0;
-    height: 0;
-    border-top: 20px solid var(--theme2);
-    border-right: 16px solid transparent;
-    content: "";
-    left: 60px;
-    position: absolute;
-    bottom: -10px;
-    transform: rotate(0deg);
-}
+/*.testimonial-items::after {*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-top: 20px solid var(--theme2);*/
+/*    border-right: 16px solid transparent;*/
+/*    content: "";*/
+/*    left: 60px;*/
+/*    position: absolute;*/
+/*    bottom: -10px;*/
+/*    transform: rotate(0deg);*/
+/*}*/
 .testimonial-items.style-2::after {
     border-top: 20px solid var(--theme);
 }
@@ -9060,15 +9060,15 @@ input.main-search-input::placeholder {
     position: relative;
     display: inline-block;
 }
-.testimonial-items .testimonial-content h6::before {
-    position: absolute;
-    top: 10px;
-    left: -40px;
-    content: "";
-    width: 24px;
-    height: 2px;
-    background-color: var(--white);
-}
+/*.testimonial-items .testimonial-content h6::before {*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: -40px;*/
+/*    content: "";*/
+/*    width: 24px;*/
+/*    height: 2px;*/
+/*    background-color: var(--white);*/
+/*}*/
 
 .testimonial-section-2 {
     position: relative;

@@ -129,31 +129,26 @@
 
                                                 <script>
                                                     function hapus(id) {
-                                                        if (confirm('Apakah Anda yakin ingin menghapus ini?')) {
+                                                        if (confirm('Apakah Anda yakin ingin menghapus  ini?')) {
                                                             fetch(`/ContohSertifikatDestroy/${id}`, {
-                                                                    method: 'DELETE',
-                                                                    headers: {
-                                                                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                                                                        'Content-Type': 'application/json'
-                                                                    }
-                                                                })
-                                                                .then(response => {
-                                                                    if (response.ok) {
-                                                                        // Jika penghapusan berhasil, refresh halaman
-                                                                        window.location.reload();
-                                                                    } else {
-                                                                        // Tangani kesalahan jika terjadi
-                                                                        console.error('Gagal menghapus');
-                                                                    }
-                                                                })
-                                                                .catch(error => {
-                                                                    console.error('Terjadi kesalahan:', error);
-                                                                });
+                                                                method: 'DELETE',
+                                                                headers: {
+                                                                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                                                                }
+                                                            }).then(response => {
+                                                                if (response.ok) {
+                                                                    // Jika penghapusan berhasil, refresh halaman
+                                                                    window.location.reload();
+                                                                } else {
+                                                                    // Tangani kesalahan jika terjadi
+                                                                    console.error('Gagal menghapus ');
+                                                                }
+                                                            }).catch(error => {
+                                                                console.error('Terjadi kesalahan:', error);
+                                                            });
                                                         }
                                                     }
                                                 </script>
-
-
                                             </td>
                                         </tr>
                                     @endforeach

@@ -21,6 +21,11 @@
                             placeholder="Masukkan promosi Anda">
                     </div>
                     <div class="mb-3">
+                        <label for="link" class="form-label">Link</label>
+                        <input type="text" class="form-control" id="link_edit" name="link"
+                            placeholder="Masukkan link Anda">
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label" for="gambar_edit">Gambar Slider</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar_edit" name="gambar">
                     </div>
@@ -50,6 +55,7 @@
                     $('#edit-id').val(data.id);
                     $('#tagline_edit').val(data.tagline);
                     $('#promosi_edit').val(data.promosi);
+                    $('#link_edit').val(data.link);
                     $('#tgl_edit').val(data.tgl);
 
                     // If there is an image, show it in the preview

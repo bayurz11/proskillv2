@@ -8,7 +8,7 @@
                 @foreach ($heroSections as $heroSection)
                     <div class="swiper-slide">
                         <div class="slider-image bg-cover"
-                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}');">
+                            style="background-image: url('{{ asset('public/uploads/' . $heroSection->banner) }}');" loading="lazy">
                             <div class="parasuit-shape" data-animation="fadeInLeft" data-delay="2.1s">
                                 <img src="public/assets/img/hero/parasuit.png" alt="shape-img" loading="lazy">
                             </div>
@@ -28,22 +28,24 @@
                                 <div class="row g-4 align-items-center">
                                     <div class="col-lg-8">
                                         <div class="hero-content">
+                                            
                                             <h2 data-animation="fadeInUp" data-delay="1.5s" style="color: #ffffff; );">
                                                 {{ $heroSection->tagline }}</span>
-                                            </h2>
+                                            </h2> <br>
                                             <p data-animation="fadeInUp" data-delay="1.7s" style=" color: #ffffff;);">
                                                 {{ $heroSection->promosi }}
                                             </p>
                                             <div class="hero-button">
-                                                <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20konsultasi"
+                                                <a href="{{ $heroSection->link }}"
                                                     data-animation="fadeInUp" data-delay="1.7s"
                                                     style="background-color: #028E83; color: white; padding: 20px 30px; border-radius: 10px; text-decoration: none;"
                                                     class="theme-btn hover-white" target="_blank">
-                                                    Hubungi Admin
+                                                    Detail Kelas
                                                     <i class="fa-solid fa-arrow-right-long"></i>
                                                 </a>
 
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -93,257 +95,248 @@
         </div>
     </div>
 
-    <!-- Pricing Section Start -->
+     <!-- Pricing Section Start -->
     <section class="pricing-section section-bg section-padding">
-        <style>
-            .pricing-items:hover {
-                background-color: #385469;
-                /* Change the background color on hover */
-                transition: background-color 0.3s ease-in-out;
-                /* Smooth transition effect */
-            }
+    <style>
+        .pricing-items:hover {
+            background-color: #385469;
+            /* Change the background color on hover */
+            transition: background-color 0.3s ease-in-out;
+            /* Smooth transition effect */
+        }
 
-            .pricing-items:hover .pricing-header h4,
-            .pricing-items:hover .pricing-header h2 {
-                color: #ffffff;
-                /* Change the text color on hover */
-            }
+        .pricing-items:hover .pricing-header h4,
+        .pricing-items:hover .pricing-header h2 {
+            color: #ffffff;
+            /* Change the text color on hover */
+        }
 
-            .pricing-items:hover .theme-btn {
-                background-color: #028E83;
-                /* Change the button background color on hover */
-                color: #ffffff;
-                /* Change the button text color on hover */
-            }
+        .pricing-items:hover .theme-btn {
+            background-color: #028E83;
+            /* Change the button background color on hover */
+            color: #ffffff;
+            /* Change the button text color on hover */
+        }
 
-            .pricing-items:hover .pricing-list li {
-                color: #ffffff;
-                /* Change the text color of list items on hover */
-            }
+        .pricing-items:hover .pricing-list li {
+            color: #ffffff;
+            /* Change the text color of list items on hover */
+        }
 
-            .pricing-items:hover .pricing-list li i {
-                color: #ffffff;
-                /* Change the icon color of list items on hover */
-            }
-        </style>
-        {{-- <div class="tree-shape float-bob-x">
-            <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
-        </div> --}}
-        <div class="girl-shape float-bob-y">
-            <img src="public/assets/img/pricing/girl.png" alt="shape-img" loading="lazy">
-        </div>
-        <div class="top-shape">
-            <img src="public/assets/img/top-shape.png" alt="shape-img" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="pricing-wrapper">
-                <div class="section-title text-center mb-0">
-                    <span class="wow fadeInUp">Bergabung Bersama Kami</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">Pilihan Kursus
-                    </h2>
-                </div>
+        .pricing-items:hover .pricing-list li i {
+            color: #ffffff;
+            /* Change the icon color of list items on hover */
+        }
+
+        .pricing-items:hover .details-link {
+            color: #ffffff;
+            /* Change the link text color on hover */
+        }
+        .pricing-items .details-link-advance {
+            color: #ffffff;
+            /* Change the link text color on hover */
+        }
+    </style>
+    <div class="tree-shape float-bob-x">
+        <img src="public/assets/img/tree-shape.png" alt="shape-img" loading="lazy">
+    </div>
+    <div class="girl-shape float-bob-y">
+        <img src="public/assets/img/pricing/girl.png" alt="shape-img" loading="lazy">
+    </div>
+    <div class="top-shape">
+        <img src="public/assets/img/top-shape.png" alt="shape-img" loading="lazy">
+    </div>
+    <div class="container">
+        <div class="pricing-wrapper">
+            <div class="section-title text-center mb-0">
+                <span class="wow fadeInUp">Kelas Tatap Muka</span>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">Bergabung Bersama Kami
+                </h2>
             </div>
-            <div class="tab-content">
-                <div id="monthly" class="tab-pane fade show active" role="tabpanel">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="pricing-items">
-                                {{-- <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
-                                </div> --}}
-                                <div class="pricing-header">
-                                    <h4>Fundamental Computer<br> Skill</h4><br>
-                                    <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
-                                    <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Pengelolaan Teknologi Komputer
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ms Word & Google Docs Dasar
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ms Excel & Google Sheet Dasar
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Ms Powerpoint & Google Presentation Dasar
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Aplikasi berbasis internet & AI (ChatGPT, Bing)
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Assessment
-                                    </li>
-                                </ul>
-                                <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank"> Hubungi Admin<i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+        <div class="tab-content">
+            <div id="monthly" class="tab-pane fade show active" role="tabpanel">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="pricing-items">
+                            <div class="pricing-header">
+                                <h4>Fundamental Computer<br> Skill</h4><br>
+                                <h2 style="color: #FE9900;"><sup>IDR</sup> 180K / <del>240K</del></h2>
+                                <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
                             </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Pengelolaan Teknologi Komputer
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Ms Word & Google Docs Dasar
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Ms Excel & Google Sheet Dasar
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Ms Powerpoint & Google Presentation Dasar
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Aplikasi berbasis internet & AI (ChatGPT, Bing)
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Assessment
+                                </li>
+                            </ul>
+                            <a href="https://proskill.sch.id/Kelastatapmuka_detail/10" class="details-link">Detail Kelas</a>
+                            <a href="https://wa.me/6281266187125?text=Fundamental%20Computer%20Skill%20untuk%20Siswa%20SD%20SMP%20SMA,%20apakah%20masi%20tersedia?"
+                                class="theme-btn" target="_blank"> Hubungi Admin<i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="pricing-items active">
-                                {{-- <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element-2.png" alt="shape-img" loading="lazy">
-                                </div> --}}
-                                <div class="pricing-header">
-                                    <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4><br>
-                                    <h2 style="color: #ffffff;"><sup>IDR</sup> 195K / <del>260K</del></h2>
-                                    <span style="display: block; text-align: center; color: #ffffff;">(Beasiswa 25%)</span>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Word & Google Docs Lanjut
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Excel & Google Sheet
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Power Point & Google Presentation
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Google Drive & Google forms
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Aplikasi berbasis internet & AI (ChatGPT, Bing)
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Assessment
-                                    </li>
-                                </ul>
-                                <a href="https://wa.me/6281266187125?text=Kelas%20Mahir%20Aplikasi%20Office%20Tingkat%20Advance,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank"> Hubungi Admin<i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="pricing-items active">
+                            <div class="pricing-header">
+                                <h4>Mahir Aplikasi Office <br> Tingkat Advance</h4><br>
+                                <h2 style="color: #ffffff;"><sup>IDR</sup> 195K / <del>260K</del></h2>
+                                <span style="display: block; text-align: center; color: #ffffff;">(Beasiswa 25%)</span>
                             </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Word & Google Docs Lanjut
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Excel & Google Sheet
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Power Point & Google Presentation
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Google Drive & Google forms
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Aplikasi berbasis internet & AI (ChatGPT, Bing)
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Assessment
+                                </li>
+                            </ul>
+                                    <a href="https://proskill.sch.id/Kelastatapmuka_detail/11" class="details-link-advance">Detail Kelas</a>
+                            <a href="https://wa.me/6281266187125?text=Kelas%20Mahir%20Aplikasi%20Office%20Tingkat%20Advance,%20apakah%20masi%20tersedia?"
+                                class="theme-btn" target="_blank"> Hubungi Admin<i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                            <div class="pricing-items">
-                                {{-- <div class="icon bg-cover"
-                                    style="background-image: url('public/assets/img/pricing/icon-bg.png');">
-                                    <i class="icon-icon-22"></i>
-                                </div>
-                                <div class="element-shape">
-                                    <img src="public/assets/img/pricing/element.png" alt="shape-img" loading="lazy">
-                                </div> --}}
-                                <div class="pricing-header">
-                                    <h4>Digital Design Menggunakan <br> Canva dan Figma</h4><br>
-                                    <h2 style="color: #FE9900;"><sup>IDR</sup> 195K / <del>260</del></h2>
-                                    <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Dasar-dasar Desain Grafis
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Praktek Canva
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Praktek Figma
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Assessment
-                                    </li><br><br>
-                                    <li></li>
-                                </ul>
-                                <a href="https://wa.me/6281266187125?text=Kelas%20Digital%20Design%20Menggunakan%20Canva%20dan%20Figma,%20apakah%20masi%20tersedia?"
-                                    class="theme-btn" target="_blank"> Hubungi Admin<i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="pricing-items">
+                            <div class="pricing-header">
+                                <h4>Digital Design Menggunakan <br> Canva dan Figma</h4><br>
+                                <h2 style="color: #FE9900;"><sup>IDR</sup> 195K / <del>260</del></h2>
+                                <span style="display: block; text-align: center; color: #FF0000;">(Beasiswa 25%)</span>
                             </div>
+                            <ul class="pricing-list">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Dasar-dasar Desain Grafis
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Praktek Canva
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Praktek Figma
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Assessment
+                                </li><br><br>
+                                <li></li>
+                            </ul>
+                                    <a href="https://proskill.sch.id/Kelastatapmuka_detail/12" class="details-link">Detail Kelas</a>
+                            <a href="https://wa.me/6281266187125?text=Kelas%20Digital%20Design%20Menggunakan%20Canva%20dan%20Figma,%20apakah%20masi%20tersedia?"
+                                class="theme-btn" target="_blank"> Hubungi Admin<i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- Clases Section Start -->
-    <section class="clases-section section-padding bg-cover"
-        style="background-image: url('public/assets/img/clases-bg.jpg');">
-        <div class="clases-shape">
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="text-white wow fadeInUp">Kelas online Kami</span>
-                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Bergabunglah dengan
-                    Kami dan <br> Temukan Potensi
-                    Anda!</h2>
-            </div>
-            <div class="array-button">
-                <button class="array-prev"><i class="fal fa-arrow-left"></i></button>
-                <button class="array-next"><i class="fal fa-arrow-right"></i></button>
-            </div>
-            <div class="swiper clases-slider">
-                <div class="swiper-wrapper">
-                    @foreach ($kelasOnline as $kelasonline)
-                        <div class="swiper-slide">
-                            <div class="clases-items">
-                                <div class="clases-bg"></div>
-                                <div class="clases-image">
-                                    <a href="{{ $kelasonline->link }}" target="_blank"><img
-                                            src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img"
-                                            loading="lazy"></a>
-                                </div>
-                                <div class="clases-content">
-                                    <h4><a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>
-                                    </h4>
+    <!--<section class="clases-section section-padding bg-cover"-->
+    <!--    style="background-image: url('public/assets/img/clases-bg.jpg');">-->
+    <!--    <div class="clases-shape">-->
+    <!--        <div class="wave"></div>-->
+    <!--        <div class="wave"></div>-->
+    <!--    </div>-->
+    <!--    <div class="container">-->
+    <!--        <div class="section-title text-center">-->
+    <!--            <span class="text-white wow fadeInUp">Kelas online Kami</span>-->
+    <!--            <h2 class="text-white wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Bergabunglah dengan-->
+    <!--                Kami dan <br> Temukan Potensi-->
+    <!--                Anda!</h2>-->
+    <!--        </div>-->
+    <!--        <div class="array-button">-->
+    <!--            <button class="array-prev"><i class="fal fa-arrow-left"></i></button>-->
+    <!--            <button class="array-next"><i class="fal fa-arrow-right"></i></button>-->
+    <!--        </div>-->
+    <!--        <div class="swiper clases-slider">-->
+    <!--            <div class="swiper-wrapper">-->
+    <!--                @foreach ($kelasOnline as $kelasonline)-->
+    <!--                    <div class="swiper-slide">-->
+    <!--                        <div class="clases-items">-->
+    <!--                            <div class="clases-bg"></div>-->
+    <!--                            <div class="clases-image">-->
+    <!--                                <a href="{{ $kelasonline->link }}" target="_blank"><img-->
+    <!--                                        src="{{ asset('public/uploads/' . $kelasonline->banner) }}" alt="img"-->
+    <!--                                        loading="lazy"></a>-->
+    <!--                            </div>-->
+    <!--                            <div class="clases-content">-->
+    <!--                                <h4><a href="{{ $kelasonline->link }}" target="_blank">{{ $kelasonline->kelas }}</a>-->
+    <!--                                </h4>-->
 
-                                    <ul class="clases-schedule">
-                                        <li><span>Level</span> <br>{{ $kelasonline->level }}</li>
+    <!--                                <ul class="clases-schedule">-->
+    <!--                                    <li><span>Level</span> <br>{{ $kelasonline->level }}</li>-->
 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--                                </ul>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                @endforeach-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
 
 
     <!-- FAQ Start -->
     <section class="cta-section-2 section-padding fix bg-cover">
         {{-- <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/cta/parasuit-1.png" alt="shape-img">
+            <img src="public/assets/img/cta/parasuit-1.png" alt="shape-img" loading="lazy">
         </div> --}}
         <div class="parasuit-shape-2 float-bob-x">
             <img src="public/assets/img/cta/parasuit-2.png" alt="shape-img" loading="lazy">
         </div>
         {{-- <div class="pencil-shape">
-            <img src="public/assets/img/cta/pencil-3.png" alt="shape-img">
+            <img src="public/assets/img/cta/pencil-3.png" alt="shape-img" loading="lazy">
         </div>
         <div class="hand-shape">
-            <img src="public/assets/img/cta/hand.png" alt="shape-img">
+            <img src="public/assets/img/cta/hand.png" alt="shape-img" loading="lazy">
         </div>
         <div class="line-shape">
-            <img src="public/assets/img/cta/line.png" alt="shape-img">
+            <img src="public/assets/img/cta/line.png" alt="shape-img" loading="lazy">
         </div> --}}
         <div class="container">
             <div class="cta-wrapper-2">
@@ -370,7 +363,7 @@
                                         <div id="faq2" class="accordion-collapse show" data-bs-parent="#accordion">
                                             <div class="accordion-body">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="fas fa-check-circle"></i> Private 6 Siswa per kelas</li>
+                                                    <li><i class="fas fa-check-circle"></i> Private 6-8 Siswa per kelas</li>
                                                     <li><i class="fas fa-laptop"></i> Praktek 1 Laptop per Siswa</li>
                                                     <li><i class="fas fa-snowflake"></i> Kelas Full AC</li>
                                                     <li><i class="fas fa-certificate"></i> Sertifikat</li>
@@ -466,97 +459,126 @@
 
     <!-- Testimonial Section Start -->
     <section class="testimonial-section fix section-padding">
-        <div class="love-shape">
-            <img src="public/assets/img/team/love.png" alt="shape-img" loading="lazy">
+   
+    <div class="right-shape">
+        <img src="public/assets/img/testi-r-shape.png" alt="shape-img" loading="lazy">
+    </div>
+   
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="wow fadeInUp">Kesan siswa ke ProSkill</span>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900;">
+                Pengalaman mereka bukan sekadar cerita. <br> Dengarkan suara siswa tentang perjalanan mereka bersama kami.
+            </h2>
         </div>
-        <div class="right-shape">
-            <img src="public/assets/img/testi-r-shape.png" alt="shape-img" loading="lazy">
-        </div>
-        <div class="bee-shape float-bob-y">
-            <img src="public/assets/img/testi-bee-shape.png" alt="shape-img" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="section-title text-center">
-                <span class="wow fadeInUp">Kesan siswa ke ProSkill</span>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #FE9900; ">Pengalaman mereka bukan sekadar
-                    cerita. <br> Dengarkan suara
-                    siswa tentang perjalanan mereka bersama kami.</h2>
-            </div>
-            <div class="swiper testimonial-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-items">
-                            <div class="icon">
-                                <img src="public/assets/img/quote.png" alt="img" loading="lazy">
-                            </div>
-                            <div class="testimonial-bg"></div>
-                            <div class="testimonial-content">
-                                <p>
-                                    Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
-                                    Class aptent taciti sociosqu ad litora
-                                </p>
-                                <h6>Ahmad Izzan</h6>
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-items" style="padding: 20px; background: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+                        <div class="icon">
+                           <img src="public/assets/img/testimoni/Anzeltha.jpg" alt="ANZELTHA NAJLA AUDIA" style="width: 58px; height: 58px; border-radius: 58%;" loading="lazy">
+                        </div>
+                        <div class="testimonial-content">
+                            <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; color: #888;">
+                                Sangat bermanfaat dan menambah pengetahuan besic computer
+                            </p>
+                            <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                
+                                <div>
+                                    <h6 style="margin: 0; font-size: 16px; font-weight: 600; color: #888;">ANZELTHA NAJLA AUDIA</h6>
+                                    <p style="margin: 0; font-size: 14px; color: #888;">Siswa SMP</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-items style-2">
-                            <div class="icon">
-                                <img src="public/assets/img/quote-2.png" alt="img" loading="lazy">
-                            </div>
-                            <div class="testimonial-bg bg-2"></div>
-                            <div class="testimonial-content">
-                                <p>
-                                    Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
-                                    Class aptent taciti sociosqu ad litora
-                                </p>
-                                <h6>Imad Muhsin</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-items style-3">
-                            <div class="icon">
-                                <img src="public/assets/img/quote-3.png" alt="img" loading="lazy">
-                            </div>
-                            <div class="testimonial-bg bg-3"></div>
-                            <div class="testimonial-content">
-                                <p>
-                                    Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
-                                    Class aptent taciti sociosqu ad litora
-                                </p>
-                                <h6> Helmi Imran</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-items style-3">
-                            <div class="icon">
-                                <img src="public/assets/img/quote-3.png" alt="img" loading="lazy">
-                            </div>
-                            <div class="testimonial-bg bg-3"></div>
-                            <div class="testimonial-content">
-                                <p>
-                                    Corquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida vitae nisi
-                                    Class aptent taciti sociosqu ad litora
-                                </p>
-                                <h6> Rhanky Alif Zaffani</h6>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="swiper-dot text-center pt-5">
-                    <div class="dot"></div>
+                <div class="swiper-slide">
+                    <div class="testimonial-items" style="padding: 20px; background: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+                        <div class="icon">
+                            <img src="public/assets/img/testimoni/Aziz.png" alt="Abdul Aziz" style="width: 58px; height: 58px; border-radius: 58%;" loading="lazy">
+                        </div>
+                        <div class="testimonial-content">
+                            <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; color: #888;">
+                                Kursus ini sangat bermanfaat terutama bagi orang yang awam tentang soal komputer dan AI. 
+                            </p>
+                            <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                
+                                <div>
+                                    <h6 style="margin: 0; font-size: 16px; font-weight: 600; color: #888;">Abdul Aziz</h6>
+                                    <p style="margin: 0; font-size: 14px; color: #888;">Siswa SMA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-items" style="padding: 20px; background: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+                        <div class="icon">
+                            <img src="public/assets/img/testimoni/Bayhaqi.png" alt="Bayhaqi Mufti" style="width: 58px; height: 58px; border-radius: 58%;" loading="lazy">
+                        </div>
+                        <div class="testimonial-content">
+                            <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; color: #888;">
+                                Hal yang menarik selama saya mengikuti kursus ini adalah saya bisa menggunakan aplikasi Microsoft Word, Microsoft Excel,dan Microsoft Powerpoint.Saya juga bisa menggunakan teknologi AI.
+                            </p>
+                            <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                
+                                <div>
+                                    <h6 style="margin: 0; font-size: 16px; font-weight: 600; color: #888;">Bayhaqi Mufti</h6>
+                                    <p style="margin: 0; font-size: 14px; color: #888;">Siswa SMP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-items" style="padding: 20px; background: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+                        <div class="icon">
+                           <img src="public/assets/img/testimoni/lina.jpg" alt="LINA" style="width: 58px; height: 58px; border-radius: 58%;" loading="lazy">
+                        </div>
+                        <div class="testimonial-content">
+                            <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; color: #888;">
+                                Semoga lebih banyak program baru
+                            </p>
+                            <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                
+                                <div>
+                                    <h6 style="margin: 0; font-size: 16px; font-weight: 600; color: #888;">LINA</h6>
+                                    <p style="margin: 0; font-size: 14px; color: #888;">Ibu Rumah Tangga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-items" style="padding: 20px; background: #fff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-radius: 10px; text-align: center;">
+                        <div class="icon">
+                            <img src="public/assets/img/testimoni/jeff.jpg" alt="JEFF CHUA" style="width: 58px; height: 58px; border-radius: 58%;" loading="lazy">
+                        </div>
+                        <div class="testimonial-content">
+                            <p style="font-size: 16px; line-height: 1.5; margin-bottom: 20px; color: #888;">
+Sangat bermanfaat. 
+                            </p>
+                            <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                
+                                <div>
+                                    <h6 style="margin: 0; font-size: 16px; font-weight: 600; color: #888;">JEFF CHUA</h6>
+                                    <p style="margin: 0; font-size: 14px; color: #888;">Siswa SD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-dot text-center pt-5">
+                <div class="dot"></div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Event Section Start -->
     <section class="event-section section-padding bg-cover"
-        style="background-image: url('public/assets/img/event-bg.jpg');">
+        style="background-image: url('public/assets/img/event-bg.jpg');" loading="lazy">
         <div class="event-top-shape">
             <div class="wave"></div>
             <div class="wave"></div>
@@ -637,7 +659,7 @@
                                 <div class="news-thumb" style="width: 230px; height: 236px; overflow: hidden;">
                                     <a href="{{ route('artikel_detail', ['id' => $article->id]) }}"><img
                                             src="{{ asset('public/uploads/' . $article->banner) }}"
-                                            style="width: 100%; height: 100%; object-fit: cover;"></a>
+                                            style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"></a>
                                 </div>
                                 <div class="news-content">
                                     <ul>
@@ -678,7 +700,7 @@
                                     <div class="post-items">
 
                                         <div class="content">
-                                            <span>{{ $article->user->name }}</span>
+                                            
 
                                         </div>
                                     </div>
@@ -700,7 +722,7 @@
                 loading="lazy">
         </a>
         <div id="popup-message"
-            style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
+            style="display: none; position: absolute; top: -50px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">
             hubungi Whatsapp kami
         </div>
     </div>

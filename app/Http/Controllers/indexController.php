@@ -54,7 +54,6 @@ class indexController extends Controller
     {
         $artikel = Artikel::orderBy('created_at', 'desc')->take(3)->get();
         $artikels = Artikel::orderBy('created_at', 'desc')->paginate(2);
-        // $artikels = Artikel::paginate(2);
         return view('artikel', compact('artikel', 'artikels'));
     }
     public function artikeldetail($id)
@@ -99,7 +98,6 @@ class indexController extends Controller
 
         $aboutUs = AboutUs::all();
         $izin = Izin::all();
-
         return view('tentang_kami', compact('aboutUs', 'izin'));
     }
     public function showcontactUs()
@@ -109,6 +107,7 @@ class indexController extends Controller
         $izin = Izin::all();
         return view('hubungi_kami', compact('aboutUs', 'izin'));
     }
+    
     public function contohsertifikat()
     {
 

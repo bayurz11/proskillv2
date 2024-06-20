@@ -12,6 +12,14 @@
                         <label for="sertifikat_name" class="form-label">Nama </label>
                         <input type="text" class="form-control" id="sertifikat_name" name="sertifikat_name">
                     </div>
+                    <div class="mb-3">
+                        <label for="sertifikat_id" class="form-label">ID Sertifikat </label>
+                        <input type="text" class="form-control" id="sertifikat_id" name="sertifikat_id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="keterangan" class="form-label">Keterangan </label>
+                        <input type="text" class="form-control" id="keterangan" name="keterangan">
+                    </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="gambar">Sertifikat</label>

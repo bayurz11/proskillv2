@@ -3,24 +3,24 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('public/assets/img/breadcrumb.png');"  loading="lazy">
         <div class="line-shape">
-            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/line.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/plane.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/doll.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/parasuit.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="frame-shape">
-            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/frame.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img">
+            <img src="public/assets/img/breadcrumb-shape/bee.png" alt="shape-img"  loading="lazy">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -28,7 +28,7 @@
                 <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                     <li>
                         <a href="{{ route('/') }}">
-                            Home
+                            Beranda
                         </a>
                     </li>
                     <li>
@@ -42,144 +42,7 @@
         </div>
     </div>
 
-    {{-- <!-- News Standard Section Start -->
-    <section class="news-standard fix section-padding">
-        <div class="container">
-
-            <div class="row g-4">
-                <div class="col-12 col-lg-8">
-                    <div class="news-standard-wrapper">
-                        @foreach ($artikel as $article)
-                            <div class="news-standard-items">
-                                <div class="news-thumb">
-                                    <img src="{{ asset('public/uploads/' . $article->banner) }}">
-                                    <div class="post">
-                                        <span> <?php
-                                        $category = json_decode($article->category);
-                                        foreach ($category as $item) {
-                                            echo $item->value . ' ';
-                                        }
-                                        ?></span>
-
-                                    </div>
-                                </div>
-                                <div class="news-content">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-calendar-alt"></i>
-                                            {{ $article->tgl }}
-                                        </li>
-                                        <li>
-                                            <i class="far fa-user"></i>
-                                            {{ $article->user->name }}
-                                        </li>
-                                    </ul>
-                                    <h3>
-                                        <a href="news-details.html">{{ $article->title }}</a>
-                                    </h3>
-                                    <p>
-                                        {!! nl2br(substr($article->content, 0, 250)) !!}
-                                    </p>
-                                    <a href="{{ route('artikel_detail', ['id' => $article->id]) }}" class="theme-btn mt-4">
-                                        Baca selengkapnya
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-                        <div class="page-nav-wrap pt-5 text-center">
-                            <ul>
-                                <li><a class="page-numbers" href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
-                                </li>
-                                <li><a class="page-numbers" href="#">01</a></li>
-                                <li><a class="page-numbers" href="#">02</a></li>
-                                <li><a class="page-numbers" href="#">03</a></li>
-                                <li><a class="page-numbers" href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="main-sidebar">
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Search</h3>
-                            </div>
-                            <div class="search-widget">
-                                <form id="searchForm" action="#" method="GET">
-                                    <input id="searchInput" type="text" placeholder="Search here">
-                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Recent Post</h3>
-                            </div>
-                            @foreach ($artikel as $article)
-                                <div class="recent-post-area">
-
-                                    <div class="recent-items">
-                                        <div class="recent-thumb">
-                                            <img src="{{ asset('public/uploads/' . $article->banner) }}"
-                                                style="width: 78px; height: 79px; object-fit: cover;">
-                                        </div>
-                                        <div class="recent-content">
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-calendar-days"></i>
-                                                    {{ $article->tgl }}
-                                                </li>
-                                            </ul>
-                                            <h6>
-                                                <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
-                                                    {{ $article->title }}
-                                                </a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="single-sidebar-widget">
-                            <div class="wid-title">
-                                <h3>Tags</h3>
-                            </div>
-                            <div class="news-widget-categories">
-
-                                <div class="tagcloud">
-                                    @foreach ($artikel as $article)
-                                        <a href="news-standard.html"><?php
-                                        $category = json_decode($article->category);
-                                        foreach ($category as $item) {
-                                            echo $item->value . ' ';
-                                        }
-                                        ?></a>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                document.getElementById('searchForm').addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent the form from submitting
-                    var searchText = document.getElementById('searchInput').value.toLowerCase();
-                    var items = document.querySelectorAll('.recent-content h6 a, .tagcloud a');
-                    items.forEach(function(item) {
-                        var text = item.textContent.toLowerCase();
-                        if (text.includes(searchText)) {
-                            item.style.color = 'red'; // You can change the style here
-                        } else {
-                            item.style.color = ''; // Reset style
-                        }
-                    });
-                });
-            </script>
-        </div>
-    </section> --}}
+   
 
     <section class="news-standard fix section-padding">
         <div class="container">
@@ -189,7 +52,7 @@
                         @foreach ($artikels as $article)
                             <div class="news-standard-items">
                                 <div class="news-thumb">
-                                    <img src="{{ asset('public/uploads/' . $article->banner) }}">
+                                    <img src="{{ asset('public/uploads/' . $article->banner) }}"  loading="lazy">
                                     <div class="post">
                                         <span>
                                             <?php
@@ -207,10 +70,7 @@
                                             <i class="fas fa-calendar-alt"></i>
                                             {{ $article->tgl }}
                                         </li>
-                                        <li>
-                                            <i class="far fa-user"></i>
-                                            {{ $article->user->name }}
-                                        </li>
+                                        
                                     </ul>
                                     <h3>
                                         <a
@@ -317,7 +177,7 @@
                                     <div class="recent-items">
                                         <div class="recent-thumb">
                                             <img src="{{ asset('public/uploads/' . $article->banner) }}"
-                                                style="width: 78px; height: 79px; object-fit: cover;">
+                                                style="width: 78px; height: 79px; object-fit: cover;"  loading="lazy">
                                         </div>
                                         <div class="recent-content">
                                             <ul>
@@ -337,14 +197,15 @@
                             @endforeach
                         </div>
 
+
                         <div class="single-sidebar-widget">
                             <div class="wid-title">
-                                <h3>Tag</h3>
+                                <h3>Tags</h3>
                             </div>
                             <div class="news-widget-categories">
                                 <div class="tagcloud">
                                     @foreach ($artikels as $article)
-                                        <a href="news-standard.html">
+                                        <a href="{{ route('artikel_detail', ['id' => $article->id]) }}">
                                             <?php
                                             $category = json_decode($article->category);
                                             foreach ($category as $item) {
@@ -384,7 +245,7 @@
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="public/assets/img/breadcrumb-shape/Whatsapp.png" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;">
+                style="width: 50px; height: auto;"  loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">

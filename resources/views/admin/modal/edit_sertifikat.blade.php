@@ -15,16 +15,25 @@
                         <input type="text" class="form-control" id="sertifikat_name_edit"
                             name="sertifikat_name_edit">
                     </div>
+                     <div class="mb-3">
+                        <label for="sertifikat_id_edit" class="form-label">ID Sertifikat </label>
+                        <input type="text" class="form-control" id="sertifikat_id_edit" name="sertifikat_id_edit">
+                    </div>
+                    <div class="mb-3">
+                        <label for="keterangan_edit" class="form-label">Keterangan</label>
+                        <input type="text" class="form-control" id="keterangan_edit"
+                            name="keterangan_edit">
+                    </div>
 
                     <div class="mb-3">
-                        <label class="form-label" for="gambar">Sertifikat</label>
+                        <label class="gambar" for="gambar">Sertifikat</label>
                         <input type="file" accept="image/*" class="form-control" id="gambar" name="gambar">
                     </div>
                     <img id="preview_edit" src="#" alt="Preview banner"
                         style="max-width: 100%; max-height: 200px; display: none;">
                     <div class="mb-3">
-                        <label for="tgl_edit" class="form-label">Tanggal Ditulis</label>
-                        <input type="text" class="form-control" id="tgl_edit" placeholder="tgl_edit" name="tgl_edit"
+                        <label for="tgl" class="form-label">Tanggal Ditulis</label>
+                        <input type="text" class="form-control" id="tgl_edit" placeholder="tgl" name="tgl_edit"
                             readonly>
                     </div>
                 </div>
@@ -47,6 +56,8 @@
                 .then(data => {
                     $('#edit-id').val(data.id);
                     $('#sertifikat_name_edit').val(data.sertifikat_name);
+                    $('#sertifikat_id_edit').val(data.sertifikat_id);
+                    $('#keterangan_edit').val(data.keterangan);
                     $('#tgl_edit').val(data.tgl);
 
                     // If there is an image, show it in the preview
@@ -65,7 +76,7 @@
         });
 
         // Display the uploaded image preview
-        $('#gambar_edit').change(function() {
+        $('#gambar').change(function() {
             readURL(this);
         });
 

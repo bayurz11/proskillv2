@@ -28,14 +28,16 @@
                                 data-feather="plus-circle"></i>
                             Tambah Sertifikat
                         </button>
-                        <p class="text-muted mb-3">Jumlah Sertifikat : </p>
+                        <p class="text-muted mb-3">Jumlah Sertifikat : {{ $sertifikat->count() }} </p>
                         <div class="table-responsive">
                             <table id="dataTableExample" class="table">
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>ID Sertifikat</th>
                                         <th>nama</th>
                                         <th>Gambar</th>
+                                        <th>Keterangan</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -43,9 +45,11 @@
                                     @foreach ($sertifikat as $key => $sertifikate)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
+                                            <td>{{ $sertifikate->sertifikat_id }}</td>
                                             <td>{{ $sertifikate->sertifikat_name }}</td>
                                             <td><img src="{{ asset('public/uploads/' . $sertifikate->img) }}" alt="Banner"
                                                     class="wd-100 wd-sm-150 me-3"></td>
+                                             <td>{{ $sertifikate->keterangan }}</td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-icon edit-button"
                                                     title="Edit" data-bs-toggle="modal" data-bs-target="#editModal"

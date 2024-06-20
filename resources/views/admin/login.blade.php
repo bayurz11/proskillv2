@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -29,7 +31,7 @@
     <!-- End layout styles -->
 
     <link rel="shortcut icon" href="public/assets_admin/images/favicon.png" />
-
+    
     @if (session('success'))
         <div id="success-message" class="notify alert alert-success" role="alert">
             {{ session('success') }}
@@ -139,15 +141,9 @@
                                         <div>
                                             <button type="submit"
                                                 class="btn btn-primary text-white me-2 mb-2 mb-md-0">Masuk</button>
-                                            <button type="button"
-                                                class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
-                                                <i class="btn-icon-prepend" data-feather="twitter"></i>
-                                                Sign up with Twitter
-                                            </button>
+                                            
                                         </div>
-                                        <a href="{{ route('register_admin') }}" class="d-block mt-3 text-muted">Already
-                                            a
-                                            user? Sign in</a>
+                                        
                                     </form>
                                 </div>
                             </div>
