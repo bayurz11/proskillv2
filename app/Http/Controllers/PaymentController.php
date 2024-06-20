@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Xendit\Invoice;
 use App\Models\Order;
 use Xendit\Configuration;
+// use Xendit\Invoice\Invoice;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Xendit\Invoice\InvoiceApi;
-
+use App\Http\Controllers\Controller;
 use Xendit\Invoice\CreateInvoiceRequest;
 
 class PaymentController extends Controller
@@ -70,6 +72,7 @@ class PaymentController extends Controller
         }
     }
 
+
     public function paymentSuccess(Request $request)
     {
         // Ambil external_id dari URL parameter
@@ -77,8 +80,7 @@ class PaymentController extends Controller
 
         // Panggil API Xendit untuk memverifikasi status pembayaran
         try {
-            $apiInstance = new InvoiceApi();
-            $invoice = $apiInstance->getInvoice($externalId);
+            $invoice = Invoice::retrieve($externalId);
 
             if ($invoice['status'] === 'PAID') {
                 // Temukan order berdasarkan external_id
