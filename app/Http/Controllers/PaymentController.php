@@ -21,8 +21,8 @@ class PaymentController extends Controller
 
     public function show($id)
     {
-        $product = KelasTatapMuka::find($id);
-        return view('detailpembelian', compact('product'));
+        $klsoffline = KelasTatapMuka::find($id);
+        return view('detailpembelian', compact('klsoffline'));
     }
     public function payment(Request $request)
     {

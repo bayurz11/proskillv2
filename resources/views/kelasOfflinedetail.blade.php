@@ -130,7 +130,7 @@
 
 
                             </ul>
-                            <a href="{{ route('checkout', ['id' => $product->id]) }}"
+                            <a href="{{ route('checkout', ['id' => $klsoffline->id]) }}"
                                 class="theme-btn w-100 border-style mb-3">
                                 Course Fee IDR {{ $klsoffline->price }}
                             </a>
