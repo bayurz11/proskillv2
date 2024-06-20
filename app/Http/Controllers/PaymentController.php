@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Xendit\Invoice;
 use App\Models\Order;
 use Xendit\Configuration;
-// use Xendit\Invoice\Invoice;
 use Illuminate\Support\Str;
+// use Xendit\Invoice\Invoice;
+use Xendit\Invoice\Invoice;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Xendit\Invoice\InvoiceApi;
