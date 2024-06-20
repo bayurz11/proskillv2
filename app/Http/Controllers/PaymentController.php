@@ -28,21 +28,21 @@ class PaymentController extends Controller
     {
         // Validate request
         $request->validate([
-            'id' => 'required|exists:products,id',
+            'id' => 'required|exists:klsoffline,id',
             'name' => 'required|string',
             'email' => 'required|email',
         ]);
 
         // Fetch product data
-        $product = KelasTatapMuka::find($request->id);
+        $klsoffline = KelasTatapMuka::find($request->id);
         $uuid = (string) Str::uuid();
 
         // Call Xendit
         $apiInstance = new InvoiceApi();
         $createInvoiceRequest = new CreateInvoiceRequest([
             'external_id' => $uuid,
-            'description' => $product->description,
-            'amount' => $product->price,
+            'description' => $klsoffline->description,
+            'amount' => $klsoffline->price,
             'currency' => 'IDR',
             "customer" => [
                 "given_names" => $request->name,
@@ -57,7 +57,7 @@ class PaymentController extends Controller
 
             // Insert into orders table
             $order = new Order();
-            $order->product_id = $product->id;
+            $order->product_id = $klsoffline->id;
             $order->checkout_link = $result['invoice_url'];
             $order->external_id = $uuid;
             $order->status = "pending";
