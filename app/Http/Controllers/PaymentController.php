@@ -77,7 +77,7 @@ class PaymentController extends Controller
         $result = $apiInstance->getInvoices(null, $id);
 
         //get data
-        $klsoffline = KelasTatapMuka::where('external_id', $id)->firstOrFail();
+        $klsoffline = Order::where('external_id', $id)->firstOrFail();
 
         if ($klsoffline->status == 'settled') {
             return response()->json('Pembayaran berhasil di proses');
