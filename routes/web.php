@@ -24,6 +24,7 @@ Route::get('/kelasOnline', [indexController::class, 'showkelasOnline'])->name('k
 Route::get('/tentangkami', [indexController::class, 'showaboutUs'])->name('tentangkami');
 Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hubungikami');
 Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
+Route::get('/checkout/{id}', [PaymentController::class, 'show'])->name('checkout');
 Route::post('/payment', [PaymentController::class, 'payment'])->name('payment');
 
 

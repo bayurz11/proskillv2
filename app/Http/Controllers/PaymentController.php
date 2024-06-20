@@ -19,6 +19,11 @@ class PaymentController extends Controller
         // Configuration::setXenditKey("xnd_production_1X2OuC1am3i41Q3y4ljRGCJzI01eUz0gQyIFucfMbJXXIsO5HozEabDP3AHxr"); //LIVE
     }
 
+    public function show($id)
+    {
+        $product = KelasTatapMuka::find($id);
+        return view('detailpembelian', compact('product'));
+    }
     public function payment(Request $request)
     {
         // Validate request
