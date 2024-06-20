@@ -25,8 +25,7 @@
                 @endif
 
                 @if ($klsoffline)
-                    <img src="{{ $klsoffline->banner }}" alt="{{ $klsoffline->name }}"
-                        class="img-thumbnail rounded-3 aspect-ratio-16/9" style="max-width: 500px;">
+                    <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img" loading="lazy">
                 @else
                     <p>No klsoffline details available.</p>
                 @endif
