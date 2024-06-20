@@ -24,50 +24,6 @@ class PaymentController extends Controller
         $klsoffline = KelasTatapMuka::find($id);
         return view('detailpembelian', compact('klsoffline'));
     }
-    // public function payment(Request $request)
-    // {
-    //     // Validate request
-    //     $request->validate([
-    //         'id' => 'required',
-    //         'name' => 'required|string',
-    //         'email' => 'required|email',
-    //     ]);
-
-    //     // Fetch product data
-    //     $klsoffline = KelasTatapMuka::find($request->id);
-    //     $uuid = (string) Str::uuid();
-
-    //     // Call Xendit
-    //     $apiInstance = new InvoiceApi();
-    //     $createInvoiceRequest = new CreateInvoiceRequest([
-    //         'external_id' => $uuid,
-    //         'description' => $klsoffline->description,
-    //         'amount' => $klsoffline->price,
-    //         'currency' => 'IDR',
-    //         "customer" => [
-    //             "given_names" => $request->name,
-    //             "email" => $request->email,
-    //         ],
-    //         "success_redirect_url" => "https://testproskill.proskill.sch.id/succes/{id}",
-    //         "failure_redirect_url" => "http://127.0.0.1:8000",
-    //     ]);
-
-    //     try {
-    //         $result = $apiInstance->createInvoice($createInvoiceRequest);
-
-    //         // Insert into orders table
-    //         $order = new Order();
-    //         $order->product_id = $klsoffline->id;
-    //         $order->checkout_link = $result['invoice_url'];
-    //         $order->external_id = $uuid;
-    //         $order->status = "pending";
-    //         $order->save();
-
-    //         return redirect($result['invoice_url']);
-    //     } catch (\Xendit\XenditSdkException $e) {
-    //         return redirect()->back()->with('error', 'Payment failed. Please try again.');
-    //     }
-    // }
     public function payment(Request $request)
     {
         // Validate request
@@ -92,24 +48,12 @@ class PaymentController extends Controller
                 "given_names" => $request->name,
                 "email" => $request->email,
             ],
-            // You will update these URLs below once you have the invoice ID
-            "success_redirect_url" => "",
+            "success_redirect_url" => "https://testproskill.proskill.sch.id/succes/{id}",
             "failure_redirect_url" => "http://127.0.0.1:8000",
         ]);
 
         try {
             $result = $apiInstance->createInvoice($createInvoiceRequest);
-
-            // Get the invoice ID from the result
-            $invoiceId = $result['id'];
-
-            // Build the success redirect URL with the invoice ID
-            $successUrl = "https://testproskill.proskill.sch.id/succes/{$invoiceId}";
-
-            // Update the invoice with the success URL
-            $apiInstance->updateInvoice($invoiceId, [
-                "success_redirect_url" => $successUrl
-            ]);
 
             // Insert into orders table
             $order = new Order();
