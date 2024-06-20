@@ -26,7 +26,7 @@ Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hub
 Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
 Route::get('/checkout/{id}', [PaymentController::class, 'show'])->name('checkout');
 Route::post('/payment', [PaymentController::class, 'payment'])->name('payment');
-Route::get('/payment/success', [PaymentController::class, 'paymentSuccess']);
+Route::post('/xendit/webhook', [PaymentController::class, 'handleWebhook']);
 
 
 //**************DADHBOARD ADMIN **************//

@@ -24,20 +24,65 @@ class PaymentController extends Controller
         $klsoffline = KelasTatapMuka::find($id);
         return view('detailpembelian', compact('klsoffline'));
     }
+    // public function payment(Request $request)
+    // {
+    //     // Validate request
+    //     $request->validate([
+    //         'id' => 'required',
+    //         'name' => 'required|string',
+    //         'email' => 'required|email',
+    //     ]);
+
+    //     // Fetch product data
+    //     $klsoffline = KelasTatapMuka::find($request->id);
+    //     $uuid = (string) Str::uuid();
+
+    //     // Call Xendit
+    //     $apiInstance = new InvoiceApi();
+    //     $createInvoiceRequest = new CreateInvoiceRequest([
+    //         'external_id' => $uuid,
+    //         'description' => $klsoffline->description,
+    //         'amount' => $klsoffline->price,
+    //         'currency' => 'IDR',
+    //         "customer" => [
+    //             "given_names" => $request->name,
+    //             "email" => $request->email,
+    //         ],
+    //         "success_redirect_url" => "https://testproskill.proskill.sch.id/Kelastatapmuka",
+    //         "failure_redirect_url" => "http://127.0.0.1:8000",
+    //     ]);
+
+    //     try {
+    //         $result = $apiInstance->createInvoice($createInvoiceRequest);
+
+    //         // Insert into orders table
+    //         $order = new Order();
+    //         $order->product_id = $klsoffline->id;
+    //         $order->checkout_link = $result['invoice_url'];
+    //         $order->external_id = $uuid;
+    //         $order->status = "PAID";
+    //         // $order->status = "pending";
+    //         $order->save();
+
+    //         return redirect($result['invoice_url']);
+    //     } catch (\Xendit\XenditSdkException $e) {
+    //         return redirect()->back()->with('error', 'Payment failed. Please try again.');
+    //     }
+    // }
     public function payment(Request $request)
     {
-        // Validate request
+        // Validasi request
         $request->validate([
             'id' => 'required',
             'name' => 'required|string',
             'email' => 'required|email',
         ]);
 
-        // Fetch product data
+        // Ambil data produk
         $klsoffline = KelasTatapMuka::find($request->id);
         $uuid = (string) Str::uuid();
 
-        // Call Xendit
+        // Panggil Xendit
         $apiInstance = new InvoiceApi();
         $createInvoiceRequest = new CreateInvoiceRequest([
             'external_id' => $uuid,
@@ -50,23 +95,59 @@ class PaymentController extends Controller
             ],
             "success_redirect_url" => "https://testproskill.proskill.sch.id/Kelastatapmuka",
             "failure_redirect_url" => "http://127.0.0.1:8000",
+            "callback_url" => route('xendit.webhook'), // Tambahkan baris ini
         ]);
 
         try {
             $result = $apiInstance->createInvoice($createInvoiceRequest);
 
-            // Insert into orders table
+            // Masukkan ke tabel orders
             $order = new Order();
             $order->product_id = $klsoffline->id;
             $order->checkout_link = $result['invoice_url'];
             $order->external_id = $uuid;
-            $order->status = "PAID";
-            // $order->status = "pending";
+            $order->status = "pending";
             $order->save();
 
             return redirect($result['invoice_url']);
         } catch (\Xendit\XenditSdkException $e) {
-            return redirect()->back()->with('error', 'Payment failed. Please try again.');
+            return redirect()->back()->with('error', 'Pembayaran gagal. Silakan coba lagi.');
         }
+    }
+
+
+    public function handleWebhook(Request $request)
+    {
+        // Verifikasi Xendit Callback Token
+        $expectedToken = config('services.xendit.callback_token');
+        $callbackToken = $request->header('X-CALLBACK-TOKEN');
+
+        if ($expectedToken !== $callbackToken) {
+            return response()->json(['message' => 'Token tidak valid'], 403);
+        }
+
+        // Validasi request webhook
+        $validated = $request->validate([
+            'external_id' => 'required|string',
+            'status' => 'required|string',
+        ]);
+
+        // Cari order menggunakan external_id
+        $order = Order::where('external_id', $validated['external_id'])->firstOrFail();
+
+        // Perbarui status order berdasarkan status webhook
+        if ($validated['status'] === 'PAID') {
+            $order->status = 'PAID';
+        } elseif ($validated['status'] === 'EXPIRED') {
+            $order->status = 'EXPIRED';
+        } elseif ($validated['status'] === 'FAILED') {
+            $order->status = 'FAILED';
+        }
+
+        // Simpan order
+        $order->save();
+
+        // Tanggapi Xendit
+        return response()->json(['message' => 'Webhook diterima dan diproses'], 200);
     }
 }
