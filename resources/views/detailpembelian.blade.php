@@ -24,11 +24,11 @@
                     </div>
                 @endif
 
-                @if ($product)
-                    <img src="{{ $product->image }}" alt="{{ $product->name }}"
+                @if ($klsoffline)
+                    <img src="{{ $klsoffline->banner }}" alt="{{ $klsoffline->name }}"
                         class="img-thumbnail rounded-3 aspect-ratio-16/9" style="max-width: 500px;">
                 @else
-                    <p>No product details available.</p>
+                    <p>No klsoffline details available.</p>
                 @endif
             </div>
             <div class="row g-5">
@@ -37,18 +37,18 @@
                         <span class="text-primary">Detail</span>
                         <span class="badge bg-primary rounded-pill">1</span>
                     </h4>
-                    @if ($product)
+                    @if ($klsoffline)
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div>
-                                    <h6 class="my-0">{{ $product->name }}</h6>
-                                    <small class="text-body">{{ $product->description }}</small>
+                                    <h6 class="my-0">{{ $klsoffline->name }}</h6>
+                                    <small class="text-body">{{ $klsoffline->description }}</small>
                                 </div>
-                                <span class="text-muted">{{ $product->price }}</span>
+                                <span class="text-muted">{{ $klsoffline->price }}</span>
                             </li>
                         </ul>
                     @else
-                        <p>No product details available.</p>
+                        <p>No klsoffline details available.</p>
                     @endif
 
                     <form class="card p-2">
@@ -63,10 +63,10 @@
                     <h4 class="mb-3">Billing Address</h4>
                     <form class="needs-validation" novalidate action="{{ route('payment') }}" method="POST">
                         @csrf
-                        @if ($product)
-                            <input type="hidden" name="id" value="{{ $product->id }}" required>
+                        @if ($klsoffline)
+                            <input type="hidden" name="id" value="{{ $klsoffline->id }}" required>
                         @else
-                            <p>No product details available.</p>
+                            <p>No klsoffline details available.</p>
                         @endif
                         <div class="row g-3">
                             <div class="col-sm-6">
