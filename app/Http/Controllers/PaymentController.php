@@ -73,6 +73,7 @@ class PaymentController extends Controller
     }
 
 
+
     public function paymentSuccess(Request $request)
     {
         // Ambil external_id dari URL parameter
@@ -80,7 +81,7 @@ class PaymentController extends Controller
 
         // Panggil API Xendit untuk memverifikasi status pembayaran
         try {
-            $invoice = Invoice::retrieve($externalId);
+            $invoice = Invoice::get($externalId);
 
             if ($invoice['status'] === 'PAID') {
                 // Temukan order berdasarkan external_id
