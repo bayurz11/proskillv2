@@ -41,8 +41,8 @@
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div>
-                                    <h6 class="my-0">{{ $klsoffline->name }}</h6>
-                                    <small class="text-body">{{ $klsoffline->description }}</small>
+                                    <h6 class="my-0">{{ $klsoffline->kelas }}</h6>
+                                    <small class="text-body">{{ $klsoffline->deskripsi }}</small>
                                 </div>
                                 <span class="text-muted">{{ $klsoffline->price }}</span>
                             </li>
