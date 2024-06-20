@@ -107,7 +107,7 @@ class indexController extends Controller
         $izin = Izin::all();
         return view('hubungi_kami', compact('aboutUs', 'izin'));
     }
-    
+
     public function contohsertifikat()
     {
 

@@ -3,25 +3,25 @@
 @section('content')
 
     <!--<< Breadcrumb Section Start >>-->
-    <div class="breadcrumb-wrapper bg-cover"
-        style="background-image: url('{{ asset('public/assets/img/breadcrumb.png') }}');"  loading="lazy">
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url('{{ asset('public/assets/img/breadcrumb.png') }}');"
+        loading="lazy">
         <div class="line-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/line.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/line.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="plane-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/plane.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="doll-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/doll.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/doll.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="parasuit-shape float-bob-y">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/parasuit.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="frame-shape">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/frame.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/frame.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="bee-shape float-bob-x">
-            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img"  loading="lazy">
+            <img src="{{ asset('public/assets/img/breadcrumb-shape/bee.png') }}" alt="shape-img" loading="lazy">
         </div>
         <div class="container">
             <div class="page-heading">
@@ -59,7 +59,8 @@
                     <div class="col-lg-8">
                         <div class="program-details-items">
                             <div class="details-image">
-                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"  loading="lazy">
+                                <img src="{{ asset('public/uploads/' . $klsoffline->banner) }}" alt="img"
+                                    loading="lazy">
 
                             </div>
                             <div class="details-content">
@@ -96,7 +97,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/08.svg') }}" alt="img"
-                                            class="me-2"  loading="lazy">
+                                            class="me-2" loading="lazy">
                                         Level
                                     </span>
                                     {{ $klsoffline->lvl }}
@@ -104,7 +105,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/09.svg') }}" alt="img"
-                                            class="me-2"  loading="lazy">
+                                            class="me-2" loading="lazy">
                                         Durasi
                                     </span>
                                     {{ $klsoffline->durasi }}
@@ -113,7 +114,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/11.svg') }}" alt="img"
-                                            class="me-2"  loading="lazy">
+                                            class="me-2" loading="lazy">
                                         Jumlah Siswa Dalam 1 Kelas
                                     </span>
                                     {{ $klsoffline->jumlah_siswa }}
@@ -121,7 +122,7 @@
                                 <li>
                                     <span>
                                         <img src="{{ asset('public/assets/img/program/icon/14.svg') }}" alt="img"
-                                            class="me-2"  loading="lazy">
+                                            class="me-2" loading="lazy">
                                         Sertifikat
                                     </span>
                                     {{ $klsoffline->sertifikat }}
@@ -129,7 +130,7 @@
 
 
                             </ul>
-                            <a href="#" class="theme-btn w-100 border-style mb-3">
+                            <a href="{{ route('payment') }}" class="theme-btn w-100 border-style mb-3">
                                 Course Fee IDR {{ $klsoffline->price }}
                             </a>
                             <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
@@ -333,7 +334,7 @@
         ontouchstart="handleTouchStart(event)" ontouchmove="handleTouchMove(event)">
         <a href="https://wa.me/6281266187125?" target="_blank">
             <img src="{{ asset('public/assets/img/breadcrumb-shape/Whatsapp.png') }}" alt="WhatsApp Icon"
-                style="width: 50px; height: auto;"  loading="lazy">
+                style="width: 50px; height: auto;" loading="lazy">
         </a>
         <div id="popup-message"
             style="display: none; position: absolute; top: -40px; left: -160px; background-color: #fff; padding: 10px; border: 1px solid #ccc;">

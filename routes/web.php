@@ -1,16 +1,17 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\indexController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ArtikelController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardAdminController;
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\SertifikatController;
 use App\Http\Controllers\HeroSectionController;
-use App\Http\Controllers\indexController;
 use App\Http\Controllers\KelasOnlineController;
+use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KelasTatapMukaController;
 use App\Http\Controllers\ContohsertifikatController;
-use App\Http\Controllers\SertifikatController;
 
 Route::get('/', [indexController::class, 'index'])->name('/');
 Route::get('/event', [indexController::class, 'showEvent'])->name('event');
@@ -23,6 +24,8 @@ Route::get('/kelasOnline', [indexController::class, 'showkelasOnline'])->name('k
 Route::get('/tentangkami', [indexController::class, 'showaboutUs'])->name('tentangkami');
 Route::get('/hubungikami', [indexController::class, 'showcontactUs'])->name('hubungikami');
 Route::get('/contohsertifikat', [indexController::class, 'contohsertifikat'])->name('contohsertifikat');
+Route::post('/payment', [PaymentController::class, 'payment'])->name('payment');
+
 
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
