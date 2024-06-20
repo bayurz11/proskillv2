@@ -85,20 +85,15 @@
                                     Valid email is required.
                                 </div>
                             </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Pembayaran</h4>
-                        <div class="my-3">
-                            <div class="form-check">
-                                <input id="xendit" name="paymentMethod" type="radio" class="form-check-input"
-                                    checked required>
-                                <label class="form-check-label" for="xendit">Xendit</label>
+                            <div class="col-sm-6">
+                                <label for="phone" class="form-label">Email</label>
+                                <input type="number" class="form-control" id="phone" name="phone"
+                                    placeholder="Your phone" required>
+                                <div class="invalid-feedback">
+                                    Valid phone is required.
+                                </div>
                             </div>
                         </div>
-
-                        <hr class="my-4">
 
                         <button class="w-100 btn btn-primary btn-lg" type="submit">Bayar Sekarang</button>
                     </form>

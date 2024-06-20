@@ -13,7 +13,11 @@ use Xendit\Invoice\CreateInvoiceRequest;
 class PaymentController extends Controller
 {
 
-
+    public function __construct()
+    {
+        Configuration::setXenditKey("xnd_development_Dk99ZuALmDeKEquMQlyWZDozXzyOMFayljkE46Z3dVHhkIBMLGygOzEgwOXYhaa");
+        // Configuration::setXenditKey("xnd_production_1X2OuC1am3i41Q3y4ljRGCJzI01eUz0gQyIFucfMbJXXIsO5HozEabDP3AHxr"); //LIVE
+    }
 
     public function show($id)
     {
@@ -27,6 +31,7 @@ class PaymentController extends Controller
             'id' => 'required',
             'name' => 'required|string',
             'email' => 'required|email',
+            'phone' => 'required',
         ]);
 
         // Fetch product data
@@ -43,6 +48,7 @@ class PaymentController extends Controller
             "customer" => [
                 "given_names" => $request->name,
                 "email" => $request->email,
+                "mobile_number" => $request->phone,
             ],
             "success_redirect_url" => "https://testproskill.proskill.sch.id/succes/{$uuid}",
             "failure_redirect_url" => "http://127.0.0.1:8000",
