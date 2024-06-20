@@ -48,7 +48,7 @@ class PaymentController extends Controller
                 "given_names" => $request->name,
                 "email" => $request->email,
             ],
-            "success_redirect_url" => "https://testproskill.proskill.sch.id/success/{$uuid}",
+            "success_redirect_url" => "https://testproskill.proskill.sch.id/succes/{$uuid}",
             "failure_redirect_url" => "http://127.0.0.1:8000",
         ]);
 
