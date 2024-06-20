@@ -29,6 +29,7 @@ Route::post('/payment', [PaymentController::class, 'payment'])->name('payment');
 Route::get('/succes/{id}', [PaymentController::class, 'success']);
 
 
+
 //**************DADHBOARD ADMIN **************//
 Route::get('/login_admin', [DashboardAdminController::class, 'showloginadmin'])->name('login_admin');
 Route::post('/loginProses', [DashboardAdminController::class, 'login'])->name('loginProses');
