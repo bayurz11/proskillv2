@@ -95,7 +95,7 @@ class PaymentController extends Controller
             ],
             "success_redirect_url" => "https://testproskill.proskill.sch.id/Kelastatapmuka",
             "failure_redirect_url" => "http://127.0.0.1:8000",
-            "callback_url" => route('xendit.webhook'), // Tambahkan baris ini
+            "callback_url" => route('handleWebhook'), // Tambahkan baris ini
         ]);
 
         try {
