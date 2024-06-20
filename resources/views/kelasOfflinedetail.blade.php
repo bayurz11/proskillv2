@@ -130,9 +130,16 @@
 
 
                             </ul>
-                            <a href="{{ route('payment') }}" class="theme-btn w-100 border-style mb-3">
+                            {{-- <a href="{{ route('payment') }}" class="theme-btn w-100 border-style mb-3">
                                 Course Fee IDR {{ $klsoffline->price }}
-                            </a>
+                            </a> --}}
+                            <form action="{{ route('payment') }}" method="POST" class="w-100 mb-3">
+                                @csrf <!-- This is important for Laravel to include the CSRF token -->
+                                <button type="submit" class="theme-btn w-100 border-style">
+                                    Course Fee IDR {{ $klsoffline->price }}
+                                </button>
+                            </form>
+
                             <a href="https://wa.me/6281266187125?text=Halo,%20saya%20mau%20daftar%20ke%20kelas%20ini"
                                 class="theme-btn w-100">
                                 Daftar Ke Whatsapp kami <i class="fa-solid fa-arrow-right-long"></i>
