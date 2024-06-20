@@ -84,7 +84,7 @@ class PaymentController extends Controller
         //update status
         $klsoffline->status = $result[0]['status'];
         $klsoffline->save();
-        return response()->json('Success');
+        return redirect()->route('kelastatapmuka');
     }
 
     // public function handleWebhook(Request $request)
