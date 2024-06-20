@@ -6,12 +6,12 @@ use App\Models\Order;
 use Xendit\Configuration;
 use Illuminate\Support\Str;
 // use Xendit\Invoice\Invoice;
-use Xendit\Invoice\Invoice;
 use Illuminate\Http\Request;
 use App\Models\KelasTatapMuka;
 use Xendit\Invoice\InvoiceApi;
 use App\Http\Controllers\Controller;
 use Xendit\Invoice\CreateInvoiceRequest;
+use Xendit\Invoice;
 
 class PaymentController extends Controller
 {
