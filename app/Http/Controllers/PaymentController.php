@@ -28,7 +28,7 @@ class PaymentController extends Controller
     {
         // Validate request
         $request->validate([
-            'id' => 'required|exists:klsoffline,id',
+            'id' => 'required',
             'name' => 'required|string',
             'email' => 'required|email',
         ]);
