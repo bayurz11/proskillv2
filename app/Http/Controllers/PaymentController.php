@@ -60,7 +60,8 @@ class PaymentController extends Controller
             $order->product_id = $klsoffline->id;
             $order->checkout_link = $result['invoice_url'];
             $order->external_id = $uuid;
-            $order->status = "pending";
+            $order->status = "PAID";
+            // $order->status = "pending";
             $order->save();
 
             return redirect($result['invoice_url']);
